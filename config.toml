@@ -1,5 +1,5 @@
 # Title of your site
-title = "STA 199"
+title = "MATH 250"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
@@ -12,7 +12,7 @@ googleAnalytics = ""
 
 relativeurls = false
 languageCode = "en-us"
-description = "Website for STA 199: Intro to Data Science at Duke University"
+description = "Website for MATH 250: Data Analysis at Azusa Pacific University"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 # below is critical for non-authors to show up in article listing

@@ -4,34 +4,25 @@ title: Help
 
 ## Getting help in the course
 
-We expect everyone will have questions at some point in the semester, so we encourage you to use the following resources for help: 
+I expect everyone will have questions at some point in the semester, so I encourage you to use the following resources for help: 
 
-## Ask questions during lectures and lab
+## Ask questions during class
 
-If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
+If you have a question during class, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
 
 ## Office hours
 
-The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
+I am here to help you be successful in the course. You are encouraged to attend office hours during the times posted in the Syllabus to ask questions about the course content and assignments. Even if you don’t know what your specific questions or points of confusion are, we can figure that out together. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
 
-Join using the Zoom link in [Sakai](https://sakai.duke.edu). You can find the office hours schedule on the [homepage](https://sta199-fa20-002.netlify.app/) and in Sakai. 
+Office hours will be held in person (Segerstrom 112) and on Zoom. Join using the Zoom link in [Canvas](https://canvas.apu.edu). You can find the office hours schedule on the [sylllabus page](https://apumath250.netlify.app/syllabus/) and in Canvas. 
 
-## Ed Discussion
+## Campuswire
 
-Outside of class and office hours, any general questions about course content or assignments should be posted on [Ed Discussion](https://edstem.org/us/courses/8027/discussion/). There is a chance another student has already asked a similar question, so please check the other posts on Ed Discussion before adding a new question. If you know the answer to a question posted on Ed Discussion, I encourage you to respond! 
+Outside of class and office hours, any questions about course content or assignments should be posted on [Campuswire](https://campuswire.com). The system is highly catered to getting you help quickly and efficiently from classmates and the instructor. Rather than emailing questions to the instructor, you should post your questions on Campuswire. If you know the answer to a question posted by a classmate, I encourage you to respond! 
 
 ## Email 
 
-If you have questions about personal matters that are not appropriate for the public forum on Ed Discussion (e.g. illness, accommodations, etc.), you may email Professor Tackett at [maria.tackett@duke.edu](mailto:maria.tackett@duke.edu). 
-
-
-## RStudio Containers
-
-If you're having trouble with your RStudio container...
-
-- First try opening the RStudio container using a different web browser. 
-- If you're still having issues, next try restarting the container. [Click here](https://www.introds.org/Restart_Docker_Container.pdf) for instructions on restarting the container.
-- Lastly, if the issues persist, submit a ticket to OIT and they can look into the issue further. [Click here](https://duke.qualtrics.com/jfe/form/SV_6s3DOsiCIzNya9w) to submit the ticket.
+If you have questions about personal matters that are not appropriate for the public forum on Campuswire (e.g. illness, accommodations, etc.), you may email Dr. Fitz at [kfitzgerald@apu.edu](mailto:kfitzgerald@apu.edu). 
 
 
 ## Resources for the course
@@ -46,18 +37,14 @@ If you're having trouble with your RStudio container...
 
 ## Resources for mental health and wellness
 
-- **DukeReach**: Provides comprehensive outreach services to identify and support students in managing all aspects of well being. If you have concerns about a student's behavior or health visit the website for resources and assistance. 
-Go to [studentaffairs.duke.edu/dukereach](http://studentaffairs.duke.edu/dukereach)
+- **APU CARES**: Provides comprehensive outreach services to identify and support students in managing all aspects of well being. If you or a peer are in need of support, visit the website for resources and assistance. 
+Go to [https://www.apu.edu/apucares/](https://www.apu.edu/apucares/)
 
-- **Counseling and Psychological Services (CAPS)**: CAPS services include individual, group, and couples counseling services, health coaching, psychiatric services, and workshops and discussions. Contact CAPS at (919) 660-1000
-
-- **Blue Devils Care**. A convenient and cost-effective way for Duke students to receive 24/7 mental health support through TalkNow. Go to [bluedevilscare.duke.edu](https://www.timely.md/faq/blue-devils-care-faq/)
+- **University Counseling Center**: UCC offers FREE mental health services to APU students. Seek support at [https://www.apu.edu/counselingcenter/](https://www.apu.edu/counselingcenter/) or by calling (626) 815-2109
 
 ## Resources for academic support and wellness
 
-- **The Academic Resource Center**: Contact the ARC at (919) 684-5917, [theARC@duke.edu](mailto:theARC@duke.edu), or visit their website [arc.duke.edu](https://arc.duke.edu/)
+- **Academic Success Center**: Contact at (626) 815-3886 or visit their website [https://www.apu.edu/academic-success/](https://www.apu.edu/academic-success/)
 
-- **DuWell**: Contact DuWell at (919) 681-8421, [duwell@studentaffairs.duke.edu](mailto:duwell@studentaffairs.duke.edu), or [studentaffairs.duke.edu/duwell](https://studentaffairs.duke.edu/duwell)
 
-- **WellTrack**: Contact WellTrack at [app.welltrack.com](https://app.welltrack.com/)
 

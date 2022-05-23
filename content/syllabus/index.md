@@ -2,7 +2,7 @@
 title: Syllabus
 ---
 
-[**Click here**](sta199-fa21-003-syllabus.pdf) **to download a PDF copy of the syllabus.**
+[**Click here**](MATH250_F22_syllabus.pdf) **to download a PDF copy of the syllabus.**
 
 ## Teaching team & office hours
 

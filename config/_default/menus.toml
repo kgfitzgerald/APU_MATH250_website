@@ -22,14 +22,14 @@
 
 [[main]]
     # pre = "<i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>"
-    url = "https://sakai.duke.edu"
-    name = " Sakai"
+    url = "https://canvas.apu.edu"
+    name = " Canvas"
     weight = 40
 
 [[main]]
     # pre = "<i class=\"fa fa-check-square\" aria-hidden=\"true\"></i>"
-    url = "https://www.gradescope.com"
-    name = "Gradescope"
+    url = "https://campuswire.com"
+    name = "Campuswire"
     weight = 50
     
     
@@ -41,19 +41,19 @@
     
 
 [[main]]
-    url = "https://vm-manage.oit.duke.edu/containers"
+    url = "https://rstudio.cloud"
     name = "<i class=\"fab fa-r-project fa-lg\"></i>"
     weight = 70
     
 [[main]]
-    url = "https://www.github.com/sta199-fa21-003"
+    url = "https://github.com/kgfitzgerald/APU_MATH250_website"
     name  = "<i class='fab fa-github fa-lg'></i>"
     weight = 80
     
-[[main]]
-    url = "https://edstem.org/us/courses/8027/discussion/"
-    name = "<i class=\"fas fa-comments fa-lg\"></i>"
-    weight = 90
+#[[main]]
+ #   url = "https://edstem.org/us/courses/8027/discussion/"
+  #  name = "<i class=\"fas fa-comments fa-lg\"></i>"
+   # weight = 90
 
     
 

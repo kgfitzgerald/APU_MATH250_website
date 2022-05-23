@@ -1,0 +1,165 @@
+---
+title: "Homework 01: Data Visualization"
+subtitle: "due Wednesday, September 15 at 11:59p "
+output: 
+  tufte::tufte_html:
+    css: "sta199-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+
+# Goals
+
+
+In this homework assignment, you will...
+
+- gain proficiency in data visualization
+- be able to apply principles of effective data visualization to a real dataset
+- practice data science workflow using git and GitHub
+
+# Getting started
+
+- Go to the [sta199-fa21-003](https://github.com/sta199-fa21-003) organization on GitHub. Click on the repo with the prefix **hw-01**. It contains the starter documents you need to complete the assignment.
+
+- Clone the repo and start a new project in RStudio. See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning a repo and starting a new R project.
+
+# Packages
+
+We will use the **tidyverse** package for this assignment. If you wish to use the viridis color palettes, you will need the **viridis** package as well. 
+
+```{r load-package, eval = FALSE}
+library(tidyverse)
+library(ggridges)
+library(viridis) #optional
+```
+
+# Data: The NC Courage
+
+Today, we will be working with data from the first three full seasons of the [NC Courage](https://www.nccourage.com/), a highly successful National Women's Soccer League (NWSL) Team located near Duke in Cary, NC. The Courage moved to the Triangle from Western New York in 2017 and had three very successful first seasons, culminating in [winning](https://www.nccourage.com/news_article/show/1060350) the NWSL championship game that was held at their home stadium in Cary in 2019! (Data for this lab was sourced from the [nwslR package](https://github.com/adror1/nwslR), and verified with the NC Courage website by Meredith Brown in a previous semester.)
+
+```{r read-in-data, eval= FALSE}
+courage <- read_csv("data/courage.csv")
+```
+
+The variables in the dataset are as follows:
+
+- `game_id`: an ID for the game that identifies the teams and the date.
+- `game_date`: the date of the game
+- `game_number`: the order of the game in the season (i.e., 1st, 2nd, etc.)
+- `home_team`: the name of the home team
+- `away_team`: the name of the away team
+- `opponent`: the name of the Courage's opponent
+- `home_pts`: the number of points scored by the home team
+- `away_pts`: the number of points scored by the away team
+- `result`: the outcome of the game from the Courage's perspective
+- `season`: the season the game took place in (i.e., 2017, 2018, 2019)
+
+# Exercises 
+
+As we’ve discussed in lecture, your plots should include an informative title, axes should be labeled, and careful consideration should be given to aesthetic choices.
+
+In addition, the code should not exceed the 80 character limit, so that all the code can be read when you knit to PDF. See the [Lab 02 instructions](https://sta199-fa21-003.netlify.app/labs/lab-02-data-viz.html#exercises) for instructions to add a margin line at column 80.
+
+Remember that continuing to develop a sound workflow for reproducible data analysis is important as you complete this homework and other assignments in this course. There will be periodic reminders in this assignment to remind you to knit, commit, and push your changes to GithHub. You should have at least 3 commits with meaningful commit messages by the end of the assignment.
+
+1. How many rows are in the `courage` dataset? How many columns? Include the code and resulting output used to support your answer.
+
+2. Create a bar chart to visualize the distribution of the `result` of the games. Include a clear title and axis labels. What outcome occurred most frequently?
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is a good time to knit, commit, and push.
+:::
+
+3. Now, let's examine how the Courage performed in each individual season. Create a stacked bar plot, showing the distribution of `result` within each `season`. Your encouraged (but not required) to use the viridis color palette. Include a clear title and axis labels. What are 2 - 3 observations you have from the plot?
+
+
+4. Now let's consider the distribution of points scored by the Courage in a game for all seasons. Make a histogram of the total number of points scored by Courage in a game. Use the histogram to describe the distribution of points scored by Courage.
+
+    To get started use the code below to create two new columns: 
+  
+    - `courage_points`: the number of points scored by Courage in a game
+    - `courage_home`: whether or not Courage was the home team (you will use this variable later on). 
+
+```{r start-code, eval =  FALSE}
+courage <- courage %>% 
+  mutate(courage_points = if_else(home_team == "NC", home_pts, away_pts), 
+         courage_home = if_else(home_team == "NC", "Home", "Away"))
+```
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is another good time to knit, commit, and push.
+:::
+
+5. *Does Courage have a home field advantage?* To explore this question, 
+
+
+    - Create side-by-side box plots of the number of points scored by the Courage based on whether or not they were the home team.  
+```{marginfigure}
+See the [lecture notes](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d04-viz-cat/u2-d04-viz-cat.html#14) and the [ggridges vignette](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html) for more information and example code.
+```
+    - Then create a ridge plot using `geom_density_ridges()`.
+    - What do the ridge plots reveal that boxplots do not? What do box plots reveal that ridge plots do not? 
+
+6. Each of Courage's seasons had 26 games, including playoff games. Do the total number of points scored in a game change over the course of a season? For example, do the total number of points decrease, perhaps due to fatigue, or do they increase over a season as teams get into a groove? To explore this question: 
+
+    - Create a new variable for the total number of points scored by both teams in a game, and call it `total_points`. 
+    - Then use `geom_jitter()` to create a scatterplot of the total points versus game number. The function `geom_jitter()` adds some random noise to the points so they don't overlap each other.
+    - Based on this plot, does there appear to be a general change in total number of points scored over the course of the season? Briefly explain your response. 
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is another good time to knit, commit, and push.
+:::
+
+7. Let's explore if the observations from the previous exercise differ by season. Create a new plot that builds upon the plot from the previous exercise by coloring the points by `season` and using `geom_smooth()` to show the general trend for each season. Include the argument `se = FALSE` to omit the bands around the smoothed curves. *Hint: Use `as.factor(season)` in the ggplot code, so `season` is treated as a categorical variable.*
+    
+    - Does there seem to be a difference in the pattern by season? Briefly explain your response. 
+
+8. Now, let's focus just on points scored by Courage.  Make a scatter plot to visualize the relationship between `game_number` and `courage_points`, faceted by `season`. 
+
+    - What are 2 observations you have from the plot? 
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is another good time to knit, commit, and push.
+:::
+
+# Submission 
+
+Once you are finished with the assignment, you will submit the PDF document produced from your final *knit, commit, and push* to Gradescope.
+
+**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.** **Remember -- you must turn in a .pdf file to the Gradescope page by the submission deadline to be considered "on time".**
+
+To submit your assignment:
+
+-   Go to <http://www.gradescope.com> and click *Log in* in the top right corner.
+-   Click *School Credentials* $\rightarrow$ *Duke NetID* and log in using your NetID credentials.
+-   Click on your *STA 199* course.
+-   Click on the assignment, and you'll be prompted to submit it.
+-   Mark all the pages associated with each exercise. All the pages of your assignment should be associated with at least one question (i.e., should be "checked").
+-   Select the first page of your .pdf submission to be associated with the *"Workflow & formatting"* question.
+
+# Grading (50 pts)
+
+<br>
+
+| Component | Points |
+|:----------|:-------|
+| Ex 1      | 2      |
+| Ex 2      | 6    |
+| Ex 3      | 6   |
+| Ex 4      | 4   |
+| Ex 5      | 6      |
+| Ex 6      | 8    |
+| Ex 7      | 6   |
+| Ex 8      | 6    |
+| Workflow & formatting   | 6      |
+
+**Grading notes**:
+
+-   The "Workflow & formatting" grade is to assess the reproducible workflow. This includes updating your name at the top of the assignment, having at least 3 commits with informative commit messages, labeling the code chunks, and having readable code using the tidyverse syntax that does not exceed 80 characters (i.e., we can read all your code in the knitted PDF.)

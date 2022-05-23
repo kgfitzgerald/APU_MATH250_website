@@ -1,0 +1,37 @@
+---
+title: "Prepare: Week 12"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## November 08
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required
+
+`r emo::ji("memo") `Prep Quiz 06 due
+
+`r emo::ji("movie_camera")` Watch [Models with multiple predictors](https://youtu.be/mjkNabD4oi4)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d04-model-multiple-predictors/u4-d04-model-multiple-predictors.html#1) for slides.
+
+## For November 10
+
+### Required
+
+`r emo::ji("movie_camera")` Watch [More models with multiple predictors](https://youtu.be/nJAYRnLPb10)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d05-more-model-multiple-predictors/u4-d05-more-model-multiple-predictors.html#1) for slides.
+
+
+## Optional 
+
+`r emo::ji("book")` Read [IMS Chapter 8 - Linear regression with multiple predictors](https://openintro-ims.netlify.app/model-mlr.html)
+
+

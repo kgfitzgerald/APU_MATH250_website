@@ -1,0 +1,109 @@
+---
+title: "STA 199 Lab"
+subtitle: "09.16.21"
+author: ""
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "slides.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+---
+
+```{r child = "setup.Rmd"}
+```
+## Goals
+
+- Meet your teammates!
+
+- Ice breaker / get to know your team 
+
+- Team agreement
+
+- Lab 04: Visualizing spatial data 
+
+---
+
+## Meet your Teammates!
+
+- [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/ET8EkNOunOpKr81yt0fwPqkBkcW3qMrTP1f5gvgQpRLLgg?e=ZIm5o0) to find your team number.
+
+- Sit with your team. 
+
+
+---
+
+## Icebreaker (5 minutes)
+
+- Quick introductions: Name and hometown
+
+- Choose a reporter: The person whose birthday is closest to September 16
+
+- Identify 8 things everyone in the group has in common:    
+  - Not clothes (e.g. we're all wearing shoes) 
+  - Not body parts, (e.g. we all have a nose)
+
+```{r echo = FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 0)
+```
+
+---
+## Visualizing spatial data demo 
+
+- Open the **ae-08** repo. You can add this code to the bottom of your **ae-08** Rmd file. 
+
+
+- **Practice 1**: Make a map with the counties in NC filled in based on the number of COVID-19 cases per 100,000 residents. You can use `cases` and `pp_2018` to calculate the number of COVID-19 cases per 100,000. 
+
+
+- **Practice 2**: Make a map with the counties in NC filled in based on the median age. Use `scale_fill_gradient2` to set a color gradient with a midpoint at the overall median in the data set. 
+
+---
+
+## Team name + agreement
+
+- Come up with a team name. You can't have the same name as another group in the class, so be creative! 
+  - Your TA will get your team name by the end of lab.
+
+- Fill out the team agreement. The goals of the agreement are to...
+  - Gain a common understanding of the team's goals and expectations for collaboration
+  - Make a plan for team communication
+  - Make a plan for working outside of lab. 
+  
+
+---
+
+## Demo: 
+
+- Collaboration using a single GitHub repo
+- **Pull** work from GitHub into RStudio
+
+---
+
+## Team workflow 
+
+- Only one team member should type at a time. There are markers in today's lab to help you determine who's turn it is to type. 
+
+  - Every team member should still be engaged in discussion for all questions, even if it's not your turn type. 
+  
+- Don't forget to **pull** to get your teammates' updates before making changes to the .Rmd file 
+
+- Only **one** submission for the team on Gradescope.
+
+---
+
+## Tips for working on a team
+
+- Do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report.
+
+- The labs are structured to help you learn the steps of a data analysis. Do not split up the lab among the team members; work on it together in its entirety.
+
+- Everyone has something to contribute! Use the lab groups as an opportunity to share ideas and learn from each other.
+
+
+
+

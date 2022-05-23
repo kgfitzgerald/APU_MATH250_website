@@ -1,0 +1,95 @@
+---
+title: "AE 02: Getting started with RStudio + R Markdown"
+subtitle: ""
+date: "08.25.2021"
+output: 
+  html_document: 
+    theme: readable
+---
+
+## Announcement 
+
+- Professor Tackett will have office hours **Thursday, August 26,9:30a - 11:30a** on Zoom. 
+  - Zoom Link: https://duke.zoom.us/j/96752208722
+  - Need your Duke NetID & password to join. 
+  - Full office hours start August 30.
+  
+- We'll use the "August 25 Lecture" thread pinned to the top of Ed Discussion: https://edstem.org/us/courses/8027/discussion/
+
+## Questions about the course? 
+
+## Questions from the prepare assignment?
+
+## Tour of R and RStudio 
+
+Let's take a tour of R and RStudio. Go to [vm-manage.oit.duke.edu](https://vm-manage.oit.duke.edu) and open the **STA198-199** Docker containers. 
+
+- Tour of RStudio interface 
+
+- **Console:** Use R as a calculator by typing the following in the console: 
+
+```{r eval = F}
+3 * 5 + 10
+```
+
+```{r eval = F}
+x <- 3
+x + x^2
+```
+
+```{r eval = F}
+x <- 1:10
+x*7
+```
+
+- Environment
+- Loading and viewing a data frame
+- Accessing a variable in a data frame
+- R functions
+
+## AE-02: Bechdel Test
+
+- Run the following code in the **console** to download the data and Rmd file for today's application exercise. (Note: You will learn how to clone a GitHub repo in tomorrow's lab.) Your RStudio may refresh, and you will see the R Markdown files and data set. 
+
+```{r eval = F}
+usethis::use_course("sta199-fa21-003/ae-02")
+```
+
+### Understanding the R Project & R Markdown 
+
+- R Project 
+- R Markdown file 
+
+### R Markdown vs. Console 
+
+- Run the following in the **console**
+
+```{r eval = F}
+x <- 2
+x * 3
+```
+
+- Then add the following in an R code chunk in your R Markdown file. 
+
+```{r eval = F}
+x * 3
+```
+
+- What happens? Why the error? 
+- Let's fix it! 
+
+### Bechdel test anlaysis 
+
+### GitHub demo 
+
+- Configure git using SSH -- covered in lab tomorrow!
+- Clone repo + start new project
+- Update document
+- `r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")`  knit, commit, push
+- Check changes in GitHub repo
+- See Commit history
+
+
+## Submission
+
+**There is nothing to submit for today's AE. Starting Monday, you will submit push your AE to your GitHub repo.**

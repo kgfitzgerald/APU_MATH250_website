@@ -1,0 +1,224 @@
+---
+title: "Bootstrapping"
+subtitle: "<br> <br> Introduction to Data Science @ Duke"
+author: "[introds.org](https://www.introds.org/)"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "slides.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+library(knitr)
+library(DT)
+library(emo)
+library(openintro)
+library(infer)
+library(patchwork)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+```{r echo = F}
+abb <- read_csv("data/asheville.csv")
+```
+
+class: center, middle
+
+# Bootstrapping with infer
+
+---
+
+## Package `infer`
+
+.pull-left[
+![](img/14/infer.png)
+[infer.netlify.app](https://infer.netlify.app/index.html)
+]
+
+.pull-right[
+The objective of package `infer` is to perform statistical inference using an 
+expressive statistical grammar that coheres with the tidyverse design framework.
+
+```{r}
+library(infer)
+```
+]
+
+---
+
+## Set a seed
+
+Let's set a seed
+
+```{r eval = F}
+set.seed(123)
+```
+
+`set.seed()` is an R function that allows us to control R's random number generation. Use this to make your simulation work reproducible.
+
+In other words, it ensures we'll get the same random sample each time we run the code or knit.
+
+---
+
+## Generate bootstrap means
+
+```{r eval=FALSE}
+abb %>%
+  # specify the variable of interest
+  specify(response = ppg) #<<
+```
+
+---
+
+## Generate bootstrap means
+
+```{r eval=FALSE}
+abb %>%
+  # specify the variable of interest
+  specify(response = ppg) %>% 
+  # generate 15000 bootstrap samples
+  generate(reps = 15000, type = "bootstrap") #<<
+```
+
+---
+
+## Generate bootstrap means
+
+```{r eval=FALSE}
+abb %>%
+  # specify the variable of interest
+  specify(response = ppg) %>% 
+  # generate 15000 bootstrap samples
+  generate(reps = 15000, type = "bootstrap") %>% 
+  # calculate the statistic of each bootstrap sample
+  calculate(stat = "mean") #<<
+```
+
+---
+
+## Generate bootstrap means
+
+```{r include=FALSE}
+set.seed(12345)
+```
+
+```{r}
+num_reps <- 15000
+```
+
+```{r}
+# save resulting bootstrap distribution
+boot_dist <- abb %>% #<<
+  # specify the variable of interest
+  specify(response = ppg) %>% 
+  # generate 15000 bootstrap samples
+  generate(reps = num_reps, type = "bootstrap") %>% 
+  # calculate the statistic of each bootstrap sample
+  calculate(stat = "mean")
+```
+
+---
+
+## Sample means
+
+How many observations are there in `boot_dist`? What does each observation 
+represent?
+
+--
+
+```{r}
+boot_dist
+```
+
+---
+
+## Visualize the bootstrap distribution
+
+```{r echo=FALSE, out.width = "65%"}
+boot_dist_plot <- ggplot(data = boot_dist, mapping = aes(x = stat)) +
+  geom_histogram(binwidth = 5) +
+  labs(title = "Bootstrap distribution centered around 75",
+       x = "Price per guest", y = "Count") +
+  theme_minimal()
+
+boot_dist_plot
+```
+
+---
+
+## Calculate the confidence interval
+
+A 95% confidence interval is bounded by the middle 95% of the bootstrap 
+distribution.
+
+```{r}
+boot_dist %>%
+  summarize(lower_bound = quantile(stat, 0.025),
+            upper_bound = quantile(stat, 0.975))
+```
+
+---
+
+## Visualize the confidence interval
+
+```{r echo=FALSE}
+lower_bound <- boot_dist %>% 
+  summarize(lower_bound = quantile(stat, 0.025)) %>% 
+  pull()
+
+upper_bound <- boot_dist %>% 
+  summarize(upper_bound = quantile(stat, 0.975)) %>% 
+  pull()
+```
+
+```{r echo=FALSE, out.width = "65%"}
+boot_dist_plot + 
+  geom_vline(xintercept = c(lower_bound, upper_bound), 
+             color = "skyblue", size = 2)
+```
+
+---
+
+## What the interval tells us
+
+- The population parameter is either in our interval or it isn't. It can't have a
+"95% chance" of being in any specific interval.
+
+--
+
+- The bootstrap distribution captures the variability of the sample mean, but is
+based on our original sample. If we started with a different sample,then maybe our estimated 95% confidence 
+interval would have been different also.
+
+--
+
+- All we can say is that, if we were to independently take repeated samples from
+this population and calculate a 95% CI for the mean in the exact same way, then
+we would *expect* 95% of these intervals to contian the population mean.
+
+--
+
+- However, we never know if any particular interval(s) actually do!
+
+---
+
+## Recall: Interpretation 
+
+```{r echo=FALSE, out.width = "65%"}
+boot_dist_plot + 
+  geom_vline(xintercept = c(lower_bound, upper_bound), 
+             color = "skyblue", size = 2)
+```
+
+**We are 95% confident that the mean price per night for Airbnbs in Asheville, NC is between $ `r round(lower_bound,2)` and $ `r round(upper_bound,2)`. **
+

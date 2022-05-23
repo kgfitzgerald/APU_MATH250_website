@@ -1,0 +1,16 @@
+<div id="menu">
+  <div id="menuToggler"></div>
+  <div id="menuItems" class="">
+    <script defer src="/static/fontawesome/fontawesome-all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    {{ $page := . }}
+    {{ range .Site.Menus.main }}
+      {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+      {{ $active = or $active (eq $page.Section (trim .URL "/")) }}
+      {{ $active = or $active (eq $page.RelPermalink .URL ) }}
+    <a class="menuItem {{ if $active }}current{{ end }}" href="{{ .URL }}">{{- .Pre -}}{{ .Name | safeHTML }}{{- .Post -}}</a>
+    {{ end }}
+  </div>
+</div>
+
+

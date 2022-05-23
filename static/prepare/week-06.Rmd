@@ -1,0 +1,41 @@
+---
+title: "Prepare: Week 06"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## For September 27
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required 
+
+`r emo::ji("movie_camera")` Watch [Probability](https://warpwire.duke.edu/w/8RUGAA/)
+
+- [Click here](https://sta198f2021.github.io/website/slides/week-02/w2-l03-prob.html) for slides
+
+
+## For September 29
+
+### Required
+
+`r emo::ji("memo")` Complete Prep Quiz 03 by 1:45p
+
+`r emo::ji("movie_camera")` Watch [Conditional probability](https://warpwire.duke.edu/w/9RUGAA/)
+
+- [Click here](https://sta198f2021.github.io/website/slides/week-02/w2-l04-condprob.html) for slides
+
+`r emo::ji("movie_camera")` Watch [Simpson's paradox](https://www.youtube.com/watch?v=sdas62v0iJU)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d16-simpsons-paradox/u2-d16-simpsons-paradox.html#1) for slides
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+---
+title: "AE 16: Hypothesis testing"
+date: "`2021-10-13`"
+output: 
+  html_document:
+    theme: readable
+---
+
+```{r load-packages, include = FALSE }
+library(tidyverse)
+```
+
+## Announcements
+
+- [HW 03](https://sta199-fa21-003.netlify.app/hw/hw-03.html) due **TODAY at 11:59p**
+
+- [Project Proposal](https://sta199-fa21-003.netlify.app/project/#project-proposal) due **Thu, Oct 14 at 11:59p**
+
+- Duke Chronicle [First-year Survey](https://www.dukechronicle.com/article/2021/10/duke-university-the-chronicle-class-of-2025-demographics-first-year-survey-freshmen-trinity-pratt-questionnaire) for the Class of 2025
+
+## Statistics experience
+
+[Click here](https://sta199-fa21-003.netlify.app/hw/stats-experience.html) for instructions.  
+  - Due Fri, Dec 3
+
+### Upcoming events
+
+**HackDuke Code for Good - October 23 - 24**
+
+- Free event but registration required
+- Go to [2021.hackduke.org](https://2021.hackduke.org/) for more information. 
+ 
+
+## AE 16: Hypothesis testing
+
+- Go to the `ae-16-[GITHUB USERNAME]` rep in the GitHub course organization:  https://github.com/sta199-fa21-003
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio. 

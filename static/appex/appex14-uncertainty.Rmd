@@ -1,0 +1,65 @@
+---
+title: "AE 14: Quantifying uncertainty"
+date: "`2021-10-06`"
+output: 
+  html_document:
+    theme: readable
+---
+
+```{r load-packages, include = FALSE }
+library(tidyverse)
+```
+
+## Announcements
+
+- [Lab 05](https://sta199-fa21-003.netlify.app/labs/lab-05-gss.html) due **Thu, Oct 7 at 11:59pm**
+
+- [HW 03](https://sta199-fa21-003.netlify.app/hw/hw-03.html) due **Wed, Oct 13 at 11:59p**
+
+- [Week 08](https://sta199-fa21-003.netlify.app/prepare/week-08.html) prepare 
+
+- Ed Discussion for today's class: https://edstem.org/us/courses/8027/discussion/689010
+
+
+### Upcoming events
+
+**UConn Sports Analytics Conference - October 9**
+- Cost is $5 for students. 
+- Go to [statds.org/events/ucsas2021](https://statds.org/events/ucsas2021/index.html) for more information 
+
+**HackDuke Code for Good - October 23 - 24**
+
+- Free event but registration required
+- Go to [2021.hackduke.org](https://2021.hackduke.org/) for more information. 
+ 
+## Grading 
+
+- See Gradescope for grading and feedback on Exam 01. Solutions available on Sakai. 
+
+- Mid-semester grades are available on DukeHub. Grades were calculated using the formula below and [letter grade thresholds](https://sta199-fa21-003.netlify.app/syllabus/#grading) in the syllabus. 
+
+```
+#Note: all averages rescaled to be out of 100 points
+
+Total_Points <- 
+  Mean(HW01, HW02) * 0.25 + 
+  Mean(Lab01, Lab02, Lab03, Lab04) * 0.15 + 
+  Exam01 * 0.175 + 
+  Sum(PrepQuiz01, PreqQuiz02, PrepQuiz03)/15 * 0.05 + 
+  Mean(AE06 - AE11) * 0.025
+
+Grade <- Total_Points / (0.25 + 0.15 + 0.175 + 0.05 +0.025)
+```
+
+
+## AE 14: Quantifying uncertainty
+
+- Go to the `ae-14-[GITHUB USERNAME]` rep in the GitHub course organization:  https://github.com/sta199-fa21-003
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio. 
+
+## Introduce project 
+
+Instructions available at [sta199-fa21-003.netlify.app/project](https://sta199-fa21-003.netlify.app/project/)

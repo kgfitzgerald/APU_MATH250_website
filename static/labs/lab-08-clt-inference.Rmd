@@ -1,0 +1,231 @@
+---
+title: "Lab 08: Inference using the Central Limit Theorem"
+subtitle: "due Monday, November 01 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "sta199-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(tufte)
+library(knitr)
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  digits = 2
+  )
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+# Learning Goals
+
+In this lab you will...
+
+- Use inference based on the Central Limit Theorem to draw conclusions about a population mean.
+- Compare inference based on Central Limit Theorem to simulation-based inference
+
+# Getting started
+
+- A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.
+
+- Go to the [sta199-fa21-003](https://github.com/sta199-fa21-003) course organization on GitHub.
+
+- You should see a repo with the *lab-08** prefix.
+
+- Each person on the team should clone the repository and open a new project in RStudio. Do not make any changes to the .Rmd file until the instructions tell you do to so.
+
+
+# Packages 
+
+We will use the `tidyverse` and `tidymodels` packages in this assignment. 
+
+# What makes a good burrito?
+
+The goal of today's lab is to use ClT-based inference to evaluate the synergy of burritos. 
+
+# The Data
+
+Today's dataset has been adapted from Scott Cole's *Burritos of San Diego* 
+project, located [**here**](https://srcole.github.io/100burritos/). The goal 
+of the project was to identify the best and worst burritos in San Diego, 
+characterize variance in burrito quality, and generate predictive models for 
+what makes a burrito great. 
+
+As part of this project, 71 participants reviewed burritos from 79 different 
+taco shops. Reviewers captured objective measures of the burrito (such as 
+whether it contains certain ingredients) and reviewed it on a number of metrics 
+(such as quality of the tortilla, the temperature, quality of meat, etc.). For 
+the purposes of this lab, you may consider each of these observations to be an
+independent and representative sample of all burritos.
+
+The subjective ratings in the dataset are as follows. Each variable is ranked
+on a 0 to 5 point scale, with 0 being the worst and 5 being the best. 
+
+- `tortilla`: quality of the tortilla
+- `temp`: temperature of the burrito
+- `meat`: quality of the meat
+- `fillings`: quality of non-meat fillings
+- `salsa`: quality of the salsa
+- `mfr`: meat-to-filling ratio
+- `uniformity`: whether each bite contains a uniform slew of ingredients (e.g.,
+a bite entirely composed of tortilla and sour cream would probably be terrible)
+- `synergy`: how well it all comes together
+
+In addition, the reviewers noted the presence of the following burrito
+components. Each of the following variables is a binary variable taking on 
+values `present` or `none`:
+
+- `guac`: guacamole
+- `cheese`: cheese
+- `fries`: fries (it's a thing, [look it up.](https://en.wikipedia.org/wiki/Burrito#San_Diego))
+- `sourcream`: sour cream
+- `rice`: rice
+- `beans`: beans
+
+The data are available in `burritos.csv`
+
+# Exercises
+
+## Instructions 
+
+::: {.commit}
+-   Make sure we see all relevant code and output in the knitted PDF. If you use inline code, make sure we can still see the code used to derive that answer.
+- Write a narrative for each exercise. 
+-   All narrative should be written in full sentences, and
+        visualizations should have clear title and axis labels.
+:::
+
+
+The goal of this analysis is to use inference based on the Central Limit Theorem to analyze the mean synergy rating of burritos. 
+
+<hr>
+
+1. We'll start by examining the distribution of `synergy`, a rating indicating how well all the ingredients in the burrito come together. 
+
+
+    - Visualize the distribution of `synergy` using a histogram with binwidth of 0.5. 
+
+     - Calculate the following summary statistics: the mean synergy, standard deviation of synergy, and sample size size. Save the summary statistics as `summary_stats`. Then display `summary_stat`.
+
+
+2. The goal of this analysis is to use CLT-based inference to understand the true mean synergy rating of all burritos. What is your "best guess" for the mean synergy rating of burritos?
+
+
+3. *Is the synergy in burritos generally good?* To answer this question, we will conduct a hypothesis test to evaluate if the mean synergy is greater than 3. Before conducting inference, we need to check the conditions to make sure the Central Limit Theorem can be applied in this analysis. For each condition, indicate whether it is satisfied and provide a brief explanation supporting your response. 
+
+     - Independence? 
+     - Sample size / distribution? 
+    
+4. State the null and alternative hypotheses to evaluate the question posed in the previous exercise. Write the hypotheses in words and in statistical notation. 
+
+5. Let $\bar{x}$ be the mean synergy score in a sample of 330 randomly selected burritos. Given the Central Limit Theorem and the hypotheses from the previous exercise
+
+  - What is the mean of the sampling distribution of $\bar{x}$?
+  - What is the standard error of the sampling distribution of $\bar{x}$? 
+
+6. Next, use R as a "calculator" to calculate the test statistic, $T$. Recall the formula for the test statistic: 
+
+$$T = \frac{\bar{x}- \mu_{0}}{s/\sqrt{n}}$$
+
+
+  - Explain what this value means in the context of this analysis. 
+  - What is the distribution of the test statistic, $T$? Be specific.
+    
+7. Now let's calculate the p-value and draw a conclusion. 
+
+  - Use the `pt()` function to calculate the p-value. 
+  - Explain what this value means in the context of this analysis. 
+  - State your conclusion in the context of the data using a significance level of $\alpha = 0.01$.
+
+
+8. Now let's calculate a 90% confidence interval for the mean synergy rating of all burritos. The confidence interval for a population mean is 
+
+$$\bar{x} \pm t^*_{n-1} \times \frac{s}{\sqrt{n}}$$
+
+We already know $\bar{x}$ and $\frac{s}{\sqrt{n}}$, so let's focus on the calculating $t^*_{n-1}$. We will use the `qt()` function to calculate the critical value $t^*_{n-1}$. 
+
+*Here is an example: If we want to calculate a 95% confidence interval for the mean, we will use `qt(0.975, n-1)`, where 0.975 is the cumulative probability at the upper bound of the 95% confidence interval (recall we used this value to find the upper bound when calculating bootstrap confidence intervals), and (n-1) are the degrees of freedom. *
+
+- Calculate the critical value, $t^*_{n-1}$, of the 90% confidence interval for the mean synergy rating of all burritos. 
+
+- Use R as a "calculator" to calculate the 90% confidence interval. 
+
+- Interpret the interval in the context of the data. 
+
+9. In the previous exercises, we conducted a hypothesis test and calculated a confidence interval step-by-step. We can also use `infer` for the calculations in CLT-based inference using the `t_test()` function. 
+
+
+
+- Fill in the code below to produce the calculations for the hypothesis test you conducted in Exercises 4 - 7.
+
+```{marginfigure}
+ The results should be the same as the calculations you did in exercises in the previous exercises.
+```
+
+```{r eval= F}
+burritos %>%
+  t_test(response = _____, 
+         alternative = "______", 
+         mu = ______, 
+         conf_int = FALSE)
+```
+
+
+- Next, fill in the code below to produce the 90% confidence interval for the mean synergy rating. 
+
+
+```{marginfigure}
+The results should be the same as the calculations from Exercise 8.
+```
+
+
+```{r eval= F}
+burritos %>%
+  t_test(response = _____, 
+         conf_int = TRUE, 
+         conf_level = _____) %>%
+  select(lower_ci, upper_ci)
+```
+
+10. Now let's compare inference simulation-based inference versus inference using the Central Limit Theorem. 
+
+- What is one way conducting hypothesis tests is the same in both approaches? What is one way conducting hypothesis tests differs between the two approaches?
+- What is one way calculating and interpreting confidence intervals is the same in both approaches? What is one way calculating and interpreting confidence intervals differs between the two approaches?
+
+
+
+# Submission
+
+Knit to PDF to create a PDF document. Knit and commit all remaining changes, 
+and push your work to GitHub. Make sure all files are updated on your GitHub 
+repo.
+
+Please only upload your PDF document to Gradescope. Associate the "Overall"
+graded section with the first page of your PDF, and mark where each answer is 
+to the exercises. If any answer spans multiple pages, then mark all pages.
+
+# Grading (50 points)
+
+| Component             | Points |
+|:----------------------|:-------|
+| Ex 1                  |   5   |
+| Ex 2                  |   2  |
+| Ex 3                  |   4  |
+| Ex 4                  |   4   |
+| Ex 5                  |   4    |
+| Ex 6                  |   5  |
+| Ex 7                  |   6    |
+| Ex 8                  |   8    |
+| Ex 9                  |   4   |
+| Ex 10                 |  4    |
+| Workflow & formatting | 4      |
+

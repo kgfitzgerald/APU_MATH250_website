@@ -1,0 +1,140 @@
+---
+title: "Lab 03: Data Wrangling"
+subtitle: "due Monday, September 13 at 11:59p"
+output: 
+  tufte::tufte_html:
+    css: "sta199-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+# Goals
+
+In this lab, you will...
+
+- Use data wrangling to extract meaning from data
+- continue developing a workflow for reproducible data analysis.
+
+# Getting started
+
+-   Go to the [**sta199-fa21-003**](https://www.github.com/sta199-fa21-003) organization on GitHub. Click on the repo with the prefix **lab-03**. It contains the starter documents you need to complete the lab.
+
+- Clone the repo and start a new project in RStudio. See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning a repo and starting a new R project.
+
+# Packages 
+
+We just need the **tidyverse** for this lab. 
+
+```{r load-packages, message = FALSE}
+library(tidyverse)
+```
+
+# Data 
+
+## The Greatest Crossover Event in the History of STA199 Labs
+
+This data was originally collected for [a FiveThirtyEight article](https://fivethirtyeight.com/features/avengers-death-comics-age-of-ultron/).  The version of the `avengers` data we will work with here can be uploaded from the `avengers.csv` file. 
+
+This dataset includes information about characters across the entire Marvel Cinematic Universe (MCU), so some of the names will be familiar if you are a fan of the films or comics. Don't worry if you aren't a Marvel fan; no background knowledge is needed to successfully complete this lab! 
+
+We will focus on the following variables in this lab: 
+ 
+Header | Definition
+---|---------
+`name` | The full name or alias of the character
+`appearances` | The number of comic books that character appeared in as of April 30 
+`current` | Is the member currently active on an avengers affiliated team?
+`gender` | The recorded gender of the character
+`probationary` | Sometimes the character was given probationary status as an Avenger, this is the date that happened
+`full_reserve` | The month and year the character was introduced as a full or reserve member of the Avengers
+`year` | The year the character was introduced as a full or reserve member of the Avengers
+`years_since_joining` | 2015 minus the year
+`death1` | Yes if the Avenger died, No if not. 
+`return1` | Yes if the Avenger returned from their first death, No if  they did not, blank if not applicable
+
+See FiveThirtyEight's [GitHub repo](https://github.com/fivethirtyeight/data/tree/master/avengers) for the full codebook.
+
+1. You are interested in creating a data frame with the most "classic" Avengers. Use `filter` to make a new data frame that only includes Avengers that were 1) created in 1970 or earlier and 2) were not given probationary status. Assign the new data frame as `classic_avengers`. Confirm that once you have filtered, you are left with a data frame with 27 observations. 
+
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is a good time to knit, commit, and push you work to GitHub.
+:::
+
+
+2. *Who are the newest classic Avengers?* Using a single pipeline: Create a new variable called `years_served` that represents the number of years served **as of 2021.**. (Hint: you can use either the `year` variable or `years_since_joining` variables to do this.) Then, arrange the dataset in ascending order of `years_served`. Lastly, select the `name` and `years_served` and display the first three rows.
+    - Report the names of the three newest classic Avengers and how long they have served in your narrative. 
+
+3. *Has the percentage of female Avengers changed over time?* To explore this question, find the percentage of female Avengers in the `classic_avengers` dataset and compare it to the percentage of females among **all** Avengers.  What do you conclude based on these results? 
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is another good time to knit, commit, and push you work to GitHub.
+:::
+
+4. Sort the full `avengers` dataset in descending order of `appearances` and display only the columns `name`, `appearances`, `death1`, and `return1` for the top five observations.
+    - What do you observe about these Avengers in terms of deaths and returns?
+
+5. Use the full `avengers` dataset to examine the mean and median number of appearances for Avengers who have died at least once compared to those who have **not** died at least once. 
+    - What do you learn about Marvel movies from your results? 
+    - What do the mean and median tell you about the distribution of appearances for these two groups? 
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Now is another good time to knit, commit, and push you work to GitHub.
+:::
+
+
+6. *Who's more popular - the new or classic Avengers?* Calculate the mean number of appearances for each introduction year (`year`). Then create a scatterplot of the mean appearances by introduction year. Do **not** include observations with the introduction year 1900, as "1900" indicates the value of `full_reserve` is missing. 
+    - What are 2 - 3 observations you have about the mean appearances based on introduction year? 
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` Knit, commit, and push your final changes to GitHub with a meaningful commit message.
+:::
+
+
+# Submission
+
+Once you are fully satisfied with your lab, **Knit to PDF** to create a PDF 
+document.
+
+Follow the instructions in previous labs to submit your PDF to Gradescope.
+
+Be sure to identify which problems are on each page using Gradescope.
+
+# Grading
+
+Once you are finished with the lab, you will submit the PDF document produced from your final *knit, commit, and push* to Gradescope.
+
+**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.** **Remember -- you must turn in a .pdf file to the Gradescope page by the submission deadline to be considered "on time".**
+
+To submit your assignment:
+
+-   Go to <http://www.gradescope.com> and click *Log in* in the top right corner.
+-   Click *School Credentials* $\rightarrow$ *Duke NetID* and log in using your NetID credentials.
+-   Click on your *STA 199* course.
+-   Click on the assignment, and you'll be prompted to submit it.
+-   Mark all the pages associated with exercise. All the pages of your lab should be associated with at least one question (i.e., should be "checked").
+-   Select the first page of your .pdf submission to be associated with the *"Workflow & formatting"* question.
+
+# Grading (50 pts)
+
+<br>
+
+| Component | Points |
+|:----------|:-------|
+| Ex 1      | 6      |
+| Ex 2      | 8   |
+| Ex 3      | 6    |
+| Ex 4      | 7     |
+| Ex 5      | 7      |
+| Ex 6      | 8    |
+| Workflow & formatting   | 8      |
+
+**Grading notes**:
+
+-   The "Workflow & formatting" grade is to assess the reproducible workflow. This includes having at least 3 informative commit messages, labeling the code chunks, and having readable code that does not exceed 80 characters (i.e., we can read all your code in the knitted PDF.)

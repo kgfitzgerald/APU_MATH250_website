@@ -1,0 +1,54 @@
+---
+title: "Prepare: Week 02"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For August 30
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required 
+
+`r emo::ji("movie_camera")` Watch [Data and visualization](https://www.youtube.com/watch?v=FddF4b_GuTI) 
+
+- [Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d01-data-viz/u2-d01-data-viz.html#1)
+
+`r emo::ji("movie_camera")` Watch [Visualizing data with ggplot2](https://www.youtube.com/watch?v=s2NF2J36ljE)  
+
+- [Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d02-ggplot2/u2-d02-ggplot2.html#1)
+
+
+## For September 01 
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required 
+
+`r emo::ji("movie_camera")` Watch [Visualizing numerical data](https://youtu.be/waBabVTI8ec) 
+
+- [Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d03-viz-num/u2-d03-viz-num.html#1)
+
+`r emo::ji("movie_camera")` Watch [Visualizing categorical data](https://youtu.be/21h3rEO8k2E) 
+
+- [Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d04-viz-cat/u2-d04-viz-cat.html#1)
+
+### Optional 
+
+`r emo::ji("book")` Read [R4DS:: Chapter 3 - Data Visualization](https://r4ds.had.co.nz/data-visualisation.html)
+
+`r emo::ji("book")` Read [Introduction to Modern Data Science (IMS):: Chapter 4 - Exploring Numerical Data](https://openintro-ims.netlify.app/explore-numerical.html)
+
+`r emo::ji("book")` Read [IMS:: Chapter 5 - Exploring Categorical Data](https://openintro-ims.netlify.app/explore-categorical.html)
+
+`r emo::ji("memo")` Take Quiz 00 under Tests & Quizzes in Sakai.
+
+- Going forward, prepare quizzes will be required. This quiz is optional to give you an opportunity to practice using Sakai quizzes. 
+
+

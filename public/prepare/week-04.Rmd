@@ -1,0 +1,39 @@
+---
+title: "Prepare: Week 04"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## For September 13
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required 
+
+`r emo::ji("memo")` Complete Prep Quiz 01 by 1:45p
+
+`r emo::ji("movie_camera")` Watch [Working with multiple data frames](https://youtu.be/VdV5ABsaf5Y)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df.html#1) for slides
+
+### Optional 
+
+`r emo::ji("book")` Read [R4DS - Chapter 13: Relational Data](https://r4ds.had.co.nz/relational-data.html)
+
+
+## For September 15
+
+`r emo::ji("movie_camera")` Watch [Visualizing Spatial Data](https://warpwire.duke.edu/w/Yw4GAA/).
+
+- [Click here](https://sta199-f21-001.netlify.app/slides/spatial.html#1) for slides.
+
+
+
+
+
+

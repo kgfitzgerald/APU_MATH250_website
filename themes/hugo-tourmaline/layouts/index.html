@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<!-- page -->
+<div id="homeContent">
+
+<!-- band_one.md populates this section -->
+{{ with .Site.GetPage "/home/band_one.md" }}
+  <div class="band first">
+    <div class="bandContent">
+
+      <div class="blurb">
+        <div class="tagline">
+          {{ .Title }}
+        </div>
+        <div>
+          {{ .Content | markdownify }}
+        </div>
+      </div>
+
+    </div> <!-- bandContent -->
+  </div>  <!-- band -->
+{{ end }}
+
+<!-- band_two.md populates this section -->
+{{ with .Site.GetPage "/home/band_two.md" }}
+
+  <div class="band second">
+    <div class="bandContent" >
+      <div class="blurb">
+        <div class="tagline">
+          {{ .Title }}
+        </div>
+        <div>
+          {{ .Content | markdownify }}
+        </div>
+      </div>
+    </div> <!-- bandContent -->
+  </div> <!-- band -->
+
+{{ end }}
+
+</div> 
+{{ end }}
+
+<!--{{ end }}-->
+
+

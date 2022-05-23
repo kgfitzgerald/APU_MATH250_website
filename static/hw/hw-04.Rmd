@@ -1,0 +1,153 @@
+---
+title: 'HW 04: Simulation-based inference'
+subtitle: 'due Wed, Oct 27 at 11:59pm'
+output: 
+  tufte::tufte_html:
+    css: "sta199-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+
+```{r include  = F}
+knitr::opts_chunk$set(eval = F)
+```
+
+
+# Learning goals 
+
+In this homework assignment you will...
+
+- Use simulation-based inference to draw conclusions about a population parameter
+- Use simulation-based inference to draw conclusions about the association between two variables 
+- Assess inferential conclusions made
+
+# Getting started
+
+- Go to the [sta199-fa21-003](https://github.com/sta199-fa21-003) organization on GitHub. Click on the repo with the prefix **hw-04**. It contains the starter documents you need to complete the assignment.
+
+- Clone the repo and start a new project in RStudio. See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning a repo and starting a new R project.
+
+# Packages
+
+You will work with the following packages: 
+
+```{r load-package}
+library(tidyverse)
+library(tidymodels)
+```
+
+# Data: Voice measurements and Parkinson's Disease
+  
+The dataset is adapted from [Little et al. (2007)](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-6-23#Sec18), and contains voice measurements from individuals both with and without Parkinson’s Disease (PD), a progressive neurological disorder that affects the motor system. The aim of Little et al.’s study was to examine whether Parkinson's Disease could be diagnosed by examining the spectral (sound-wave) properties of patients’ voices.
+
+147 measurements were taken from patients with PD, and 48 measurements were taken from healthy patients who served as controls. For the purposes of this assignment, you may assume that measurements are representative of the underlying populations (PD vs. healthy).
+
+The variables in the dataset are as follows:
+
+- `clip`: ID of the recording number
+- `jitter`: a measure of variation in fundamental frequency
+- `shimmer`: a measure of variation in amplitude
+- `hnr`: a ratio of total components vs. noise in the voice recording
+- `status`: PD vs. Healthy
+- `avg.f.q`: 1, 2, or 3, corresponding to average vocal fundamental frequency 
+  - 1 = low, 
+  - 2 = mid 
+  - 3 = high
+
+The data are in `parkinsons.csv` located in the `data` folder. Write code to load the data into your R Markdown file. 
+
+# Exercises 
+
+::: {.{commit}}
+-   Use a small number of reps (about 100) as you write and test out
+    your code. Once you have finalized all of your code, increase the
+    number of reps to 10,000 to produce your final results.
+-   Write your code and narrative in a reproducible way, so you can
+    easily change the number of reps. For example, consider ways you can
+    write your narrative using inline code, so the relevant values
+    update when you change the number of reps.
+-   Make sure we see all relevant code and output in the knitted PDF. If you use inline code, make sure we can still see the code used to derive that answer.
+-   For each simulation exercise, use the seed specified in the
+        exercise instructions.
+-   All narrative should be written in full sentences, and
+        visualizations should have clear title and axis labels.
+:::
+
+
+<hr> 
+
+
+1. *Is there enough evidence to suggest that the mean HNR in the voice recordings of adults with Parkinson's Disease is significantly different from 20?* State the null and alternative hypotheses in words and mathematical notation. 
+
+2. Describe precisely how you would set up the simulation to construct the null distribution for the test in Exercise 1. In your description, you can imagine using index cards to represent the data. Your description should also include specifics about the size of the sample drawn at each iteration and what statistic is calculated. You can assume the number of reps for the simulation is 10,000.
+
+3. Construct the null distribution using `set.seed(3)`. 
+
+    - Then, visualize the distribution and the shaded region corresponding to the p-value.
+    - Calculate the p-value, and state your conclusion in the context of the data, using a significance level of 0.05.
+  
+
+4. Calculate a 95% bootstrap confidence interval for the mean HNR in the voice recordings of adults with Parkinson's disease. Use `set.seed(4)`.
+    
+    - Interpret the interval in the context of the data.
+    - Which hypothesis (null or alternative) in Exercise 1 is our confidence interval most consistent with? Briefly explain your response.
+  
+5. *Do the data provide evidence that a majority of healthy adults have a "high" average vocal fundamental frequency?* State the null and alternative hypotheses in words and mathematical notation.  
+
+6. Describe precisely how you would set up the simulation to construct the null distribution for the test in Exercise 5. In your description, you can imagine using blue and red marbles to represent the data. Your description should also include specifics about the size of the sample drawn at each iteration and what statistic is calculated. You can assume the number of reps for the simulation is 10,000.
+
+7. Construct the null distribution using `set.seed(7)`. 
+
+    - Then, visualize the distribution and the shaded region corresponding to the p-value.
+    - Calculate the p-value and state your conclusion in the context of the data, using a significance level of 0.05.
+
+8. Calculate a 90% bootstrap confidence interval for the proportion of healthy adults who have a "high" vocal average vocal fundamental frequency. Interpret the interval in the context of the data. Use `set.seed(8)`.
+
+9. *Are a patient's status and average vocal fundamental frequency independent?* To answer this question, conduct a test of the following hypotheses: 
+
+    $H_0: p_{H} = p_{PD} \text{ vs. }H_a: p_{H} \neq p_{PD}$
+
+    where $p_{H}$ is the proportion of healthy adults who have "low" average vocal fundamental frequency and $p_{PD}$ is the proportion of adults with Parkinson's Disease who have "low" average vocal fundamental frequency. 
+
+    - Construct the null distribution using `set.seed(9)`. 
+    - Visualize the null distribution and the shaded region corresponding to the p-value. 
+    - Calculate the p-value and state your conclusion in the context of the data, using a significance level of 0.05
+
+10. Given your conclusion in Exercise 9, which type of error could you possibly have made? What would making such an error mean in the context of the research question?
+
+
+# Submission
+
+Knit to PDF to create a PDF document. Stage and commit all remaining changes, and push your work to GitHub. Make sure all files are updated on your GitHub 
+repo.
+
+Only upload your PDF document to Gradescope. Before you submit the 
+uploaded document, mark where each answer is to the exercises. If any answer  spans multiple pages, then mark all pages. Associate the "Workflow & formatting" section with  the first page.
+
+
+# Grading  (50 points)
+
+<br>
+
+| Component | Points |
+|:----------|:-------|
+| Ex 1     |  3  |
+| Ex 2      |  4  |
+| Ex 3      | 5   |
+| Ex 4      |  6  |
+| Ex 5     |  3 |
+| Ex 6    |4  |
+| Ex 7    | 5   |
+| Ex 8     |  6 |
+| Ex 9    |8  |
+| Ex 10    | 3  
+| Workflow & formatting   | 3    |
+
+Workflow and formatting includes having  at least three meaningful commits, a neatly formatted PDF document with readable headers, updating the name and date, using the tidyverse syntax,  and naming all code chunks.

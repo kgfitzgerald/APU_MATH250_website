@@ -1,0 +1,87 @@
+---
+title: "Exam 02 Instructions"
+subtitle: "Thu, Nov 11 at 9am - Mon, Nov 15 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "sta199-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+---
+
+# Instructions
+
+-   The exam questions are in the README portion of the repository
+    below.
+
+-   This exam is due **Monday, November 15 at 11:59pm**.
+
+-   You must submit a PDF document to Gradescope that corresponds to an
+    `.Rmd` file on your GitHub repository in order to receive credit for
+    this exam.
+
+-   **With the exception of major emergencies, late submissions will not
+    be accepted. Start and submit the exam early in order to avoid any
+    last-minute technical issues. I must receive notification from your
+    academic dean to accept a late submission.**
+
+-   **You may resubmit the exam on Gradescope before the deadline.**
+
+-   If a PDF is not uploaded to Gradescope by the submission deadline,
+    your latest commit prior to the deadline will be used as your
+    submission. There will be a penalty for failing to submit a PDF to
+    Gradescope.
+
+-   Commit and push often and at appropriate times. Part of your grade
+    will be based on quality of commit history.
+
+# Rules
+
+-   This is an individual assignment. Everything in your repository is
+    for your eyes only.
+-   You may not collaborate or communicate anything about this exam to
+    **anyone** except the instructor. For example, you may not
+    communicate with other students, the TAs, or post/solicit help on
+    the internet, email or via any other method of communication.
+-   You may use `R` documentation, as well as course materials (notes
+    and textbooks), or existing internet resources to answer exam
+    questions.
+-   You must cite any code you obtain outside of the course materials
+    (notes and textbooks) you use as inspiration. A failure to cite is
+    plagiarism. Cite any sources by providing a link to the original
+    source in your exam write-up.
+-   **No TA office hours will be held Thu, Nov 11 - Tue, Nov 16.** You may
+    not discuss the exam during TA office hours, or email the TAs
+    questions about the exam.
+-   **Ed Discussion will be inactive Thu, Nov 11 - Mon, Nov 15.**
+-   If you have questions email Prof. Tackett with "STA 199 Exam" in
+    the subject line or attend office hours. **Prof. Tackett will have
+    office hours Fri, Nov 12, 10am - 11am and during lecture on Mon, Nov 15**. Questions should only be about
+    understanding the data or the exam's instructions. You may not ask
+    questions on any topics from past assignments or material related to
+    the exam.
+-   Prof. Tackett will provide code debugging if needed, but this will
+    result in a **grade penalty** reflecting the portion of the question
+    where debugging occurred.
+
+# Academic Integrity
+
+By taking this exam, you pledge to uphold the Duke Community Standard:
+
+-   I will not lie, cheat, or steal in my academic endeavors;
+-   I will conduct myself honorably in all my endeavors; and
+-   I will act if the Standard is compromised.
+
+# Submission
+
+Upload the PDF document of the exam to Gradescope. Before you submit the
+uploaded document, mark the pages associate with each exercise. If any
+answer for an exercise spans multiple pages, mark all pages. Make sure
+to associate the "Workflow & formatting" section with the first page.
+**Failure to mark the pages in Gradescope may result in point
+deductions.**
+
+Make sure that your uploaded PDF document matches your `.Rmd` and the
+PDF in your GitHub repository exactly. Points will be deducted for
+documents that are not reproducible.

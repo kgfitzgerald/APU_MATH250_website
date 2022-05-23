@@ -1,0 +1,7 @@
+bandtwo:
+- url: /help/
+  title: Where to find help!
+  icon: fa-question-circle
+  icon_pack: fas
+  what: |
+    Click on the [Help](/help/) tab for information about office hours, Piazza, and othe resources.

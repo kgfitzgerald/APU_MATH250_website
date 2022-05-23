@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/main-site.css">
+<link rel="stylesheet" href="/css/fa5-all.css">
+<style type="text/css">
+    body {
+	background-color: #ffffff;
+	color: #404040
+}
+
+/* Links */
+
+a {
+  color: #00b3b3;
+}
+
+a:hover {
+  color: #00b3b3;
+}
+
+/* Landing page content bands */
+
+#homeContent .band.first {
+  background-color: #ffffff
+}
+
+#homeContent .band.second {
+  background-color: #fcfcfc
+}
+
+#homeContent .band.third {
+  background-color: #ffffff
+}
+
+/* Top navigation bar menu */
+
+#rStudioHeader {
+  background-color: #7A4183;
+  color: #ffffff;
+}
+
+#rStudioHeader .productName {
+  color: #ffffff
+}
+
+#rStudioHeader .productName:hover {
+  color: #00b3b3
+}
+
+#rStudioHeader #menu .menuItem.a {
+  background-color: #75aadb;
+  color: #ffffff;
+}
+
+#rStudioHeader #menu .menuItem:hover {
+  background-color: #fcfcfc;
+  color: #00b3b3;
+}
+
+#rStudioHeader #menu .menuItem.current {
+  background-color: #fcfcfc;
+  color: #00b3b3;
+  text-decoration: none;
+}
+
+/* Footer */
+
+#rStudioFooter.band {
+  background-color: #7A4183;
+}
+
+#rStudioFooter .bandContent #copyright {
+  color: #ffffff;
+}
+
+/* Tables */
+
+table tbody tr:nth-child(even){
+  background-color: #fcfcfc;
+}
+
+table tbody tr:nth-child(odd){
+  background-color: #1a162d10;
+}
+
+.latest {
+  border-top: .5em solid <no value>;
+}
+</style>
+
+  <link rel="stylesheet" href="/css/sta199.css">
+
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta name="og:image" content="https://sta199-fa20-002.netlify.app/images/" >
+
+  <meta property="twitter:card" content="summary_large_image">
+
+<meta name="twitter:image" content="https://sta199-fa20-002.netlify.app/images/" ><meta name="generator" content="Hugo 0.87.0" />
+
+<meta property="og:type" content="website"><title>Schedule - Week 06: Sim-based testing</title>
+    <meta property="og:title" content="Schedule - Week 06: Sim-based testing">
+    
+    
+    
+    
+    <meta property="description" content="Website for STA 199: Intro to Data Science at Duke University">
+    <meta property="og:description" content="Website for STA 199: Intro to Data Science at Duke University">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
+<link rel="manifest" href="/images/favicons/site.webmanifest" />
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" />
+<link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" href="/images/favicons/browserconfig.xml" >
+
+
+
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="/js/site.js"></script>
+
+
+  <script type="text/javascript" src="/js/sta199.js"></script>
+
+
+<link rel="icon" href="/images/favicon.ico" />
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+
+
+
+  <body>
+    <div id="appTidyverseSite" class="shrinkHeader alwaysShrinkHeader">
+      <div id="main">
+        
+        <div id="rStudioHeader">
+          <div class="band">
+            <div class="innards bandContent">
+              <div>
+                <a class="productName" href="/">STA 199</a>
+                
+              </div>
+              <div id="menu">
+  <div id="menuToggler"></div>
+  <div id="menuItems" class="">
+    <script defer src="/static/fontawesome/fontawesome-all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    
+      
+      
+      
+    <a class="menuItem current" href="/schedule/">Schedule</a>
+    
+      
+      
+      
+    <a class="menuItem " href="/syllabus/">Syllabus</a>
+    
+      
+      
+      
+    <a class="menuItem " href="/project/">Project</a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://sakai.duke.edu"> Sakai</a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://www.gradescope.com">Gradescope</a>
+    
+      
+      
+      
+    <a class="menuItem " href="/help/">Help</a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://vm-manage.oit.duke.edu/containers"><i class="fab fa-r-project"></i></a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://www.github.com/sta199-fa20-002"><i class='fab fa-github fa-lg'></i></a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://piazza.com/class/kdtl7z2npb07ds"><i class="ai ai-piazza ai-lg"></i></a>
+    
+  </div>
+</div>
+
+
+
+            </div>
+          </div>
+        </div>
+</head>
+<body>
+
+
+ 
+
+
+
+
+<div class="band padForHeader Footer">
+  <div class="bandContent">
+    <div class="full splitColumns withMobileMargins">
+
+      
+<div class="column25-left hideOnMobile">
+  <div class="section">
+    <div class="section">
+      <div class="schedule sectionTitle">
+          
+          <a class = "sectionTitle " href="/schedule/">
+          Schedule
+          
+          </a>
+      </div>
+    </div>
+  
+  
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-01/">Week 01: Intro</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-02/">Week 02: Data viz</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-03/">Week 03: Data wrangle</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-04/">Week 04: Probability</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-05/">Week 05: Bootstrap &#43; Data Ethics</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle current" href="/schedule/week-06/">Week 06: Sim-based testing</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-07/">Week 07: Central Limit Theorem</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-08/">Week 08: Two-sample-inference</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-09/">Week 09: Linear models</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-10/">Week 10: Multiple linear regression</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-11/">Week 11: Classification &#43; Text analysis</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-12/">Week 12: Spatial data</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-13/">Week 13: Web scraping &#43; functions</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-14/">Week 14</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="sectionTitle"><a class = "sectionTitle " href="/schedule/week-15/">Week 15</a>
+        </div>
+    </div>
+    
+  </div>
+  
+   
+  
+
+</div>
+
+      
+      <div class="column75">
+
+      <h1 class="article-title">Week 06: Sim-based testing</h1>
+      
+      
+        
+      <div class="section">
+        <div class="listItem learn-top-nav">
+          <div class="tutorial"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#lectures">Lectures</a></li>
+    <li><a href="#readings">Readings</a></li>
+    <li><a href="#assignments">Assignments</a></li>
+    <li><a href="#announcements">Announcements</a></li>
+  </ul>
+</nav></div>
+        </div>
+      </div>
+      
+      <div class="article-content">
+      <style>
+table {
+font-size: 18px;
+}
+
+</style>
+<h2 id="lectures">Lectures&nbsp;<a class="hanchor" ariaLabel="Anchor" href="#lectures">🔗&#xFE0E;</a> </h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Slides</th>
+<th>Videos</th>
+<th>Application Exercise (AE)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td><a href="https://sta199-fa20-002.netlify.app/slides/11-sim-inference-pt1.html">Simulation-based testing: Part 1</a></td>
+<td><a href="https://warpwire.duke.edu/w/B34EAA/">Simulation-based testing: Pt 1</a></td>
+<td><a href="https://sta199-fa20-002.netlify.app/appex/appex11-testing.html">AE 11: Hypothesis Testing</a></td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td><a href="https://sta199-fa20-002.netlify.app/slides/12-sim-inference-pt2.html">Simulation-based testing: Part 2</a></td>
+<td><a href="https://warpwire.duke.edu/w/vYIEAA/">Simulation-based testing: Part 2</a></td>
+<td><a href="https://sta199-fa20-002.netlify.app/appex/appex12-testing-2.html">AE 12: Hypohtesis Testing, Part 2</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="readings">Readings&nbsp;<a class="hanchor" ariaLabel="Anchor" href="#readings">🔗&#xFE0E;</a> </h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://openintro-ims.netlify.app/intro-stat-inference.html#inf-rand">Introduction to Modern Statistics: 5.1 Randomization tests</a></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><a href="https://infer.netlify.app/articles/observed_stat_examples.html">Infer examples</a></td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assignments">Assignments&nbsp;<a class="hanchor" ariaLabel="Anchor" href="#assignments">🔗&#xFE0E;</a> </h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sta199-fa20-002.netlify.app/exams/exam-01.html">Exam 01</a></td>
+<td><strong>open Thu, Sep 24 at 9a; due Sun, Sep 27 at 11:59p</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="announcements">Announcements&nbsp;<a class="hanchor" ariaLabel="Anchor" href="#announcements">🔗&#xFE0E;</a> </h2>
+<h3 id="from-the-statsci-majors-union-both-events-count-towards-stats-experiences">From the StatSci Majors Union (both events count towards stats experiences)</h3>
+<p>If you are interested in statistics, machine learning, or data science and wondering about your possible pathways after Duke, the StatSci Majors Union and the Department of Statistical Science have got you covered!</p>
+<p><strong>Alumni In Industry Panel</strong>:   It’s recruitment season, yes, but don’t panic! Next <strong>Monday Sept. 21st at 9pm ET</strong>, the SSMU will be hosting an &ldquo;Alumni In Industry&rdquo; virtual panel! Join in to hear from Duke Alumni talk about what it is like to work as statisticians in the world of tech and consulting! Panelists are:</p>
+<ul>
+<li>Hillary Song (BS &lsquo;19)is a consultant at Bain &amp; Co.</li>
+<li>Michael Lindon(MSS 15, PhD &lsquo;18) is a statistician at Optimizely</li>
+<li>James Wang(BS &lsquo;19) is a data scientist at Coinbase.</li>
+</ul>
+<p>Submit any questions you may have for the industry panel here in advance: <a href="https://forms.gle/vTyLJcMn5s2TEdQz6">https://forms.gle/vTyLJcMn5s2TEdQz6</a>. You can find more info including the Zoom link <a href="https://sakai.duke.edu">on Sakai</a>.  No registration is required but make sure to sign in to join the Zoom call.</p>
+<p><strong>PhD Programs Applications Workshop:</strong>  Thinking of applying to a PhD program in statistics, machine learning or data science?  Find out how at this Department of Statistical Science workshop  next <strong>Wednesday, 23 Sep, 8-9pm EDT!</strong> You&rsquo;ll hear from:</p>
+<ul>
+<li>Peter Hoff: Professor and Director of Graduate Studies in Statistical Science, Duke University.   <a href="https://pdhoff.github.io">https://pdhoff.github.io</a></li>
+<li>Michael Valancius, PhD Student, UNC Department of Biostatistics.  Michael graduated with a bachelor’s degree in quantitative economics at University of Miami and spent some time in industry before returning to Duke for his MSS and moving on to UNC for his PhD.   <a href="https://www.linkedin.com/in/michael-valancius/">https://www.linkedin.com/in/michael-valancius/</a></li>
+<li>Becky Tang, PhD Student, Duke Department of Statistical Science. Becky came to Duke after completing her undergraduate at Swarthmore and recently won an NSF grant to support her graduate study. <a href="https://beckytang.rbind.io">https://beckytang.rbind.io</a></li>
+<li>Fan Bu, PhD Student, Duke Department of Statistical Science. Fan came to Duke after receiving her bachelor’s degree from Peking University, where she studied data science and big data technology.
+<a href="https://fanbuduke17.github.io">https://fanbuduke17.github.io</a></li>
+<li>Peter Hase, PhD Student, UNC Department of Computer Science. Peter earned his bachelor’s degree in statistical science at Duke before joining the PhD program in Computer Science at UNC, where he works on ML and NLP.  <a href="https://peterbhase.github.io">https://peterbhase.github.io</a></li>
+</ul>
+<p>For more information on the PhD Applications Workshop see the flyer on Sakai <a href="https://sakai.duke.edu">on Sakai</a> or contact <a href="mailto:stat-dus@duke.edu">stat-dus@duke.edu</a>. Next up, a workshop on applying for Master&rsquo;s degree programs!</p>
+<p><em>Join the Statistical Science Majors Union in Duke Groups so we can keep you posted on cool stats events! <a href="https://dukegroups.com/SSMU/club_signup">https://dukegroups.com/SSMU/club_signup</a></em></p>
+
+
+      </div>
+
+    <div class="article-footer">
+      
+      <div style="float:left">
+      
+        <div class='itemTitle' align="left" style='font-size:.8em; line-height:2em'>Previous</div>
+        <a href="/schedule/week-05/">Week 05: Bootstrap &#43; Data Ethics</a>
+      
+      </div>
+      
+      
+      <div style="float:right">
+      
+      <div class='itemTitle' align="right" style='font-size:.8em; line-height:2em;'>Next</div>
+        <a href="/schedule/week-07/">Week 07: Central Limit Theorem</a>
+      
+      
+      </div>
+     </div> 
+      
+
+      </div>
+
+    </div>
+  </div>  
+</div> 
+
+
+
+</body>
+</html>

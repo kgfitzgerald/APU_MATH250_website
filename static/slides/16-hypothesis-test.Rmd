@@ -1,0 +1,726 @@
+---
+title: "Hypothesis Testing"
+subtitle: "<br> <br> Introduction to Data Science @ Duke"
+author: "[introds.org](https://www.introds.org/)"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css:  ["xaringan-themer.css", "slides.css"]
+    lib_dir: libs
+    anchor_sections: FALSE
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warn = 1
+  )
+# figure height, width, dpi + warnings
+knitr::opts_chunk$set(fig.height = 3,
+                      fig.width = 5, 
+                      dpi = 300,
+                      warning = FALSE, 
+                      message = FALSE) 
+# fontawesome
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+# magick
+dev.off <- function(){
+  invisible(grDevices::dev.off())
+}
+# code highlighting
+hook_source <- knitr::knit_hooks$get('source')
+knitr::knit_hooks$set(source = function(x, options) {
+  x <- stringr::str_replace(x, "^[[:blank:]]?([^*].+?)[[:blank:]]*#<<[[:blank:]]*$", "*\\1")
+  hook_source(x, options)
+})
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+```
+
+
+## How can we answer questions using statistics?
+
+.question[
+**Statistical hypothesis testing** is the procedure that assesses
+evidence provided by the data in favor of or against some claim
+about the population (often about a population parameter or
+potential associations).
+]
+
+---
+
+## The hypothesis testing framework
+
+.center[
+```{r, out.width = "40%", echo = FALSE}
+# Small fig.width
+include_graphics("img/16/pius.jpg")
+```
+] 
+
+.question[
+*Ei incumbit probatio qui dicit, non qui negat*
+]
+
+---
+
+## The hypothesis testing framework
+
+1. Start with two hypotheses about the population: the null hypothesis and the 
+alternative hypothesis.
+
+--
+
+2. Choose a (representative) sample, collect data, and analyze the data.
+
+--
+
+3. Figure out how likely it is to see data like what we observed, **IF** the 
+null hypothesis were in fact true.
+
+--
+
+4. If our data would have been extremely unlikely if the null claim were true, 
+then we reject it and deem the alternative claim worthy of further study. 
+Otherwise, we cannot reject the null claim.
+
+---
+
+## Organ donation consultants
+
+.center[
+```{r, out.width = "70%", echo = FALSE}
+# Small fig.width
+include_graphics("img/16/agnew_clinic.jpg")
+```
+] 
+
+<!-- People providing an organ for donation sometimes seek the help of a special  -->
+<!-- medical consultant. These consultants assist the patient in all aspects of the  -->
+<!-- surgery, with the goal of reducing the possibility of complications during the  -->
+<!-- medical procedure and recovery. Patients might choose a consultant based in part  -->
+<!-- on the historical complication rate of the consultant's clients. -->
+
+---
+
+## Organ donation consultants
+
+One consultant tried to attract patients by noting that the average complication 
+rate for liver donor surgeries in the US is about 10%, but her clients have only 
+had 3 complications in the 62 liver donor surgeries she has facilitated. She 
+claims this is strong evidence that her work meaningfully contributes to 
+reducing complications (and therefore she should be hired!).
+
+.question[
+Is this a reasonable claim to make?
+]
+
+---
+
+## Organ donation consultants
+
+.center[
+```{r, out.width = "100%", echo = FALSE}
+# Small fig.width
+include_graphics("img/16/vigen.png")
+```
+] 
+
+---
+
+## Organ donation consultants
+
+One consultant tried to attract patients by noting that the average complication 
+rate for liver donor surgeries in the US is about 10%, but her clients have only 
+had 3 complications in the 62 liver donor surgeries she has facilitated. She 
+claims this is strong evidence that her work meaningfully contributes to 
+reducing complications (and therefore she should be hired!).
+
+.question[
+Is there sufficient evidence to suggest that her complication rate is lower
+than the overall US rate?
+]
+
+---
+
+## The hypothesis testing framework
+
+1. Start with two hypotheses about the population: the null hypothesis and the 
+alternative hypothesis.
+
+2. Choose a (representative) sample, collect data, and analyze the data.
+
+3. Figure out how likely it is to see data like what we observed, **IF** the 
+null hypothesis were in fact true.
+
+4. If our data would have been extremely unlikely if the null claim were true, 
+then we reject it and deem the alternative claim worthy of further study. 
+Otherwise, we cannot reject the null claim.
+
+---
+
+## Two competing hypotheses
+
+The null hypothesis (often denoted $H_0$) states that "nothing unusual is 
+happening" or "there is no relationship," etc.
+
+On the other hand, the alternative hypothesis (often denoted $H_1$ or $H_A$) 
+states the opposite: that there *is* some sort of relationship.
+
+.question[
+In statistical hypothesis testing we **always** first assume that the null 
+hypothesis is true and then evaluate the weight of proof we have against
+this claim.
+]
+
+---
+
+## 1. Defining the hypotheses
+
+The null and alternative hypotheses are defined for **parameters** not 
+statistics.
+
+.question[
+What will our null and alternative hypotheses be for this example?
+]
+
+--
+
+- $H_0$: the true proportion of complications among her patients is equal to the 
+US population rate
+- $H_1$: the true proportion of complications among her patients is **less** 
+than the US population rate
+
+Expressed in symbols:
+
+- $H_0: p = 0.10$
+- $H_1: p < 0.10$
+
+where $p$ is the true proportion of transplants with complications among her
+patients.
+
+---
+
+## 2. Collecting and summarizing data
+
+With these two hypotheses, we now take our sample and summarize the data.
+
+The choice of summary statistic calculated depends on the type of data. In our 
+example, we use the sample proportion: $\widehat{p} = 3/62 \approx 0.048$:
+
+---
+
+## 3. Assessing the evidence observed
+
+Next, we calculate the probability of getting data like ours, *or more extreme*, 
+if $H_0$ were in fact actually true.
+
+This is a conditional probability: 
+> Given that $H_0$ is true (i.e., if $p$ were *actually* 0.10), what would 
+> be the probability of observing $\widehat{p} = 3/62$?"
+
+.question[
+This probability is known as the **p-value**.
+]
+
+---
+
+## 3. Assessing the evidence observed
+
+Let's simulate a distribution for $\hat{p}$ such that the probability of 
+complication for each patient is 0.10 for 62 patients. 
+
+This **null distribution** for $\hat{p}$ represents the distribution of the 
+observed proportions we might expect, if the null hypothesis were true.
+
+.question[
+When sampling from the null distribution, what is the expected proportion of
+complications? What would the expected count be of patients experiencing 
+complications?
+]
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(1)
+
+n_sims <- 1
+boot_dist = numeric(n_sims) 
+
+for(i in 1:n_sims){ 
+  outcomes <- c("complication", "no complication")
+  sim_dat <- sample(outcomes, size = 62, prob = c(0.1, 0.9), replace = TRUE) 
+  boot_dist[i] <- sum(sim_dat == "complication") / 62 
+} 
+
+boot_props = tibble(boot_dist)
+
+ggplot(data = boot_props, aes(x = boot_dist)) +
+  geom_histogram(binwidth = 1/62, color = "darkblue", fill = "skyblue") + 
+  labs(x = "# Complications (out of 62)", y = "Single Simulation") +
+  scale_x_continuous(breaks=c(0:16/62), labels = c(0:16), limits = c(0, 0.25)) +
+  theme(axis.text.y = element_blank(), axis.ticks = element_blank()) +
+  geom_vline(xintercept = 3/62, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(2)
+
+n_sims <- 1
+boot_dist = numeric(n_sims) 
+
+for(i in 1:n_sims){ 
+  outcomes <- c("complication", "no complication")
+  sim_dat <- sample(outcomes, size = 62, prob = c(0.1, 0.9), replace = TRUE) 
+  boot_dist[i] <- sum(sim_dat == "complication") / 62 
+} 
+
+boot_props = tibble(boot_dist)
+
+ggplot(data = boot_props, aes(x = boot_dist)) +
+  geom_histogram(binwidth = 1/62, color = "darkblue", fill = "skyblue") + 
+  labs(x = "# Complications (out of 62)", y = "Single Simulation") +
+  scale_x_continuous(breaks=c(0:16/62), labels = c(0:16), limits = c(0, 0.25)) +
+  theme(axis.text.y = element_blank(), axis.ticks = element_blank()) +
+  geom_vline(xintercept = 3/62, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(5)
+
+n_sims <- 100
+boot_dist = numeric(n_sims) 
+
+for(i in 1:n_sims){ 
+  outcomes <- c("complication", "no complication")
+  sim_dat <- sample(outcomes, size = 62, prob = c(0.1, 0.9), replace = TRUE) 
+  boot_dist[i] <- sum(sim_dat == "complication") / 62 
+} 
+
+boot_props = tibble(boot_dist)
+
+ggplot(data = boot_props, aes(x = boot_dist)) +
+  geom_histogram(binwidth = 1/62, color = "darkblue", fill = "skyblue") + 
+  labs(x = "# Complications (out of 62)", y = "Count (out of 100)") +
+  scale_x_continuous(breaks=c(0:16/62), labels = c(0:16), limits = c(0, 0.25)) +
+  theme(axis.text.y = element_blank(), axis.ticks = element_blank()) +
+  geom_vline(xintercept = 3/62, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(5)
+
+n_sims <- 5000
+boot_dist = numeric(n_sims) 
+
+for(i in 1:n_sims){ 
+  outcomes <- c("complication", "no complication")
+  sim_dat <- sample(outcomes, size = 62, prob = c(0.1, 0.9), replace = TRUE) 
+  boot_dist[i] <- sum(sim_dat == "complication") / 62 
+} 
+
+boot_props = tibble(boot_dist)
+
+ggplot(data = boot_props, aes(x = boot_dist)) +
+  geom_histogram(binwidth = 1/62, color = "darkblue", fill = "skyblue") + 
+  labs(x = "# Complications (out of 62)", y = "Count (out of 5000)") +
+  scale_x_continuous(breaks=c(0:16/62), labels = c(0:16), limits = c(0, 0.25)) +
+  theme(axis.text.y = element_blank(), axis.ticks = element_blank()) +
+  geom_vline(xintercept = 3/62, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+Supposing that the true proportion of complications is 10%, if we were to take
+repeated samples of 62 liver transplants, about 11.5% of them would have 3 or
+fewer complications.
+
+That is, **p = 0.115**.
+
+---
+
+## 4. Making a conclusion
+
+If it is very unlikely to observe our data (or more extreme) if $H_0$ were 
+actually true, then that might give us enough evidence to suggest that it is
+actually false (and that $H_1$ is true).
+
+What is "small enough"? 
+- We often consider a numeric cutpoint (the **significance level**) defined 
+*prior* to conducting the analysis.
+- Many analyses use $\alpha = 0.05$. This means that if $H_0$ were in fact true, 
+we would expect to make the wrong decision only 5% of the time. 
+
+If the p-value is less than $\alpha$, we say the results are 
+**statistically significant**. In such a case, we would make the decision to 
+**reject the null hypothesis**.
+
+---
+
+## What do we conclude when $p \ge \alpha$?
+
+If the p-value is $\alpha$ or greater, we say the results are not statistically 
+significant and we **fail to reject the null hypothesis**. 
+
+Importantly, we never "accept" the null hypothesis -- we performed the analysis
+assuming that $H_0$ was true to begin with and assessed the probability of 
+seeing our observed data or more extreme under this assumption.
+
+---
+
+## 4. Making a conclusion
+
+.question[
+There is *insufficient* evidence at $\alpha = 0.05$ to suggest that the 
+consultant's complication rate is less than the US average.
+]
+
+---
+
+## Vacation rentals in Asheville, NC
+
+
+.center[
+```{r, out.width = "45%", echo = FALSE}
+# Small fig.width
+include_graphics("img/16/asheville.jpg")
+```
+] 
+
+.question[
+Your friend claims that the mean price per guest per night for Airbnbs in 
+Asheville, NC is $100. What do you make of this statement?
+]
+
+---
+
+## 1. Defining the hypotheses
+
+Remember, the null and alternative hypotheses are defined for **parameters,**
+not statistics
+
+.question[
+What will our null and alternative hypotheses be for this example?
+]
+
+- $H_0$: the true mean price per guest is $100 per night
+- $H_1$: the true mean price per guest is NOT $100 per night
+
+Expressed in symbols:
+
+- $H_0: \mu = 100$
+- $H_1: \mu \neq 100$
+
+where $\mu$ is the true population mean price per guest per night among Airbnb
+listings in Asheville.
+
+---
+
+## 2. Collecting and summarizing data
+
+With these two hypotheses, we now take our sample and summarize the data. We 
+have a representative of 50 Airbnb listings in the file `asheville.csv`.
+
+The choice of summary statistic calculated depends on the type of data. In our 
+example, we use the sample proportion, $\bar{x} = 76.6$.
+
+
+```{r}
+asheville <- read_csv("data/asheville.csv")
+
+asheville %>% 
+  summarize(mean_price = mean(ppg))
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+We know that not every representative sample of 50 Airbnb listings in Asheville
+will have exactly a sample mean of exactly $76.6. 
+
+.question[
+How might we deal with this **variability** in the **sampling distribution of the mean** 
+using only the data that we have from our original sample?
+]
+
+--
+
+We can take **bootstrap samples**, formed by sampling *with replacement* from
+our original dataset, *of the same sample size* as our original dataset.
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+m <- mean(asheville$ppg)
+ggplot(asheville, aes(x = ppg)) +
+  geom_histogram(color = "darkblue", fill = "skyblue") +
+  scale_y_continuous(limits = c(0, 12), breaks = c(0, 3, 6, 9, 12)) +
+  scale_x_continuous(limits = c(0, 250)) + 
+  labs(x = "Price per guest per night", y = "Count", 
+         title = "Original sample") +
+  geom_vline(xintercept = m, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(1)
+temp <- asheville[sample(1:50, replace = T),]
+m <- mean(temp$ppg)
+ggplot(temp, aes(x = ppg)) +
+  geom_histogram(color = "darkblue", fill = "skyblue") +
+  scale_x_continuous(limits = c(0, 250)) + 
+  scale_y_continuous(limits = c(0, 12), breaks = c(0, 3, 6, 9, 12)) +
+  labs(x = "Price per guest per night", y = "Count", 
+         title = "Bootstrap sample 1") +
+  geom_vline(xintercept = m, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(2)
+temp <- asheville[sample(1:50, replace = T),]
+m <- mean(temp$ppg)
+ggplot(temp, aes(x = ppg)) +
+  geom_histogram(color = "darkblue", fill = "skyblue") +
+  scale_y_continuous(limits = c(0, 12), breaks = c(0, 3, 6, 9, 12)) +
+  scale_x_continuous(limits = c(0, 250)) + 
+  labs(x = "Price per guest per night", y = "Count", 
+         title = "Bootstrap sample 2") +
+  geom_vline(xintercept = m, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(3)
+temp <- asheville[sample(1:50, replace = T),]
+m <- mean(temp$ppg)
+ggplot(temp, aes(x = ppg)) +
+  geom_histogram(color = "darkblue", fill = "skyblue") +
+  scale_y_continuous(limits = c(0, 12), breaks = c(0, 3, 6, 9, 12)) +
+  scale_x_continuous(limits = c(0, 250)) + 
+  labs(x = "Price per guest per night", y = "Count", 
+         title = "Bootstrap sample 3") +
+  geom_vline(xintercept = m, lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(12345)
+library(infer)
+
+boot_means <- asheville %>% 
+  specify(response = ppg) %>% 
+  generate(reps = 5000, type = "bootstrap") %>% 
+  calculate(stat = "mean")
+
+ggplot(data = boot_means, aes(stat)) +
+  geom_histogram(binwidth = 2, color = "darkred", fill = "palevioletred") + 
+  labs(x = "Price per guest per night", y = "Count",
+       title = "Bootstrap distribution of the mean") +
+  scale_x_continuous(limits = c(0, 250)) + 
+  scale_y_continuous(limits = c(0, 600)) +
+  geom_vline(xintercept = mean(boot_means$stat), lwd = 2, color = "black")
+```
+
+---
+
+## Shifting the distribution
+
+We've captured the variability in the sample mean among samples of size 50 from
+Asheville area Airbnbs, but remember that in the hypothesis testing paradigm,
+we must assess our observed evidence *under the assumption that* $H_0$ *is true*.
+
+```{r, eval = T}
+boot_means %>% 
+  summarize(mean(stat))
+```
+
+.question[
+Where should the bootstrap distribution of means be centered under $H_0$?
+]
+
+---
+
+## Shifting the distribution
+
+```{r, echo = F, fig.height = 2.5}
+set.seed(12345)
+library(infer)
+
+boot_means <- asheville %>% 
+  specify(response = ppg) %>% 
+  generate(reps = 5000, type = "bootstrap") %>% 
+  calculate(stat = "mean")
+
+ggplot(data = boot_means, aes(stat)) +
+  geom_histogram(binwidth = 2, color = "darkred", fill = "palevioletred") + 
+  labs(x = "Price per guest per night", y = "Count",
+       title = "Bootstrap distribution of the mean") +
+  scale_x_continuous(limits = c(0, 250)) + 
+  scale_y_continuous(limits = c(0, 600)) +
+  geom_vline(xintercept = mean(boot_means$stat), lwd = 2, color = "black")
+```
+
+---
+
+## Shifting the distribution
+
+```{r, echo = F, fig.height = 2.5}
+ggplot(data = boot_means, aes(x = stat + 23.4)) + #<<
+  geom_histogram(binwidth = 2, color = "darkred", fill = "palevioletred") + 
+  labs(x = "Price per guest per night", y = "Count",
+       title = "Bootstrap distribution under null hypothesis") +
+  scale_x_continuous(limits = c(0, 250)) + 
+  scale_y_continuous(limits = c(0, 600)) +
+  geom_vline(xintercept = 100, lwd = 2, color = "black")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+ggplot(data = boot_means, aes(x = stat + 23.4)) + #<<
+  geom_histogram(binwidth = 2, color = "darkred", fill = "palevioletred") + 
+  labs(x = "Price per guest per night", y = "Count",
+       title = "Bootstrap distribution under null hypothesis") +
+  scale_x_continuous(limits = c(0, 250)) + 
+  scale_y_continuous(limits = c(0, 600)) +
+  geom_vline(xintercept = 100, lwd = 2, color = "black") +
+  geom_vline(xintercept = c(76.6, 123.4), lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+```{r, echo = F, fig.height = 2.5}
+ggplot(data = boot_means, aes(x = stat + 23.4)) + #<<
+  geom_histogram(binwidth = 2, color = "darkred", fill = "palevioletred") + 
+  labs(x = "Price per guest per night", y = "Count",
+       title = "Bootstrap distribution under null hypothesis") +
+  scale_y_continuous(limits = c(0, 600)) +
+  geom_vline(xintercept = 100, lwd = 2, color = "black") +
+  geom_vline(xintercept = c(76.6, 123.4), lwd = 2, color = "red")
+```
+
+---
+
+## 3. Assessing the evidence observed
+
+Supposing that the true mean price per guest were $100 a night, about 0.16% of
+bootstrap sample means were as extreme or even more so than our originally
+observed sample mean price per guest of $76.6.
+
+That is, **p = 0.0016**.
+
+---
+
+## 4. Making a conclusion
+
+If it is very unlikely to observe our data (or more extreme) if $H_0$ were 
+actually true, then that might give us enough evidence to suggest that it is
+actually false (and that $H_1$ is true).
+
+.question[
+There is sufficient evidence at $\alpha = 0.05$ to suggest that the mean price 
+per guest per night of Airbnb rentals in Asheville is not $100.
+]
+
+---
+
+## Ok, so what **isn't** a p-value?
+
+> *"A p-value of 0.05 means the null hypothesis has a probability of only 5% of* 
+> *being true"* 
+
+> *"A p-value of 0.05 means there is a 95% chance or greater that the null*
+> *hypothesis is incorrect"* 
+
+--
+
+# <center><span style="color:red">NO</span></center>
+
+p-values do **not** provide information on the probability that the null 
+hypothesis is true given our observed data.
+
+---
+
+## What can go wrong?
+
+Remember, a p-value is calculated *assuming* that $H_0$ is true. It cannot be 
+used to tell us how likely that assumption is correct. When we fail to reject 
+the null hypothesis, we are stating that there is **insufficient evidence** to 
+assert that it is false. This could be because...
+
+- ... $H_0$ actually *is* true!
+- ... $H_0$ is false, but we got unlucky and happened to get a sample that 
+didn't give us enough reason to say that $H_0$ was false.
+
+Even more bad news, hypothesis testing does NOT give us the tools to 
+determine which one of the two scenarios occurred.
+
+---
+
+## What can go wrong?
+
+Suppose we test a certain null hypothesis, which can be either true or false 
+(we never know for sure!). We make one of two decisions given our data: either 
+reject or fail to reject $H_0$. 
+
+--
+
+We have the following four scenarios:
+
+
+| Decision             | $H_0$ is true | $H_0$ is false |
+|----------------------|---------------|----------------|
+| Fail to reject $H_0$ | Correct decision    | *Type II Error*  |
+| Reject $H_0$         | *Type I Error*  | Correct decision     |
+
+- $\alpha$ is the probability of making a Type I error. 
+- $\beta$ is the probability of making a Type II error.
+- The **power** of a test is 1 - $\beta$: the probability that, if the null
+hypothesis is actually false, we correctly reject it.
+

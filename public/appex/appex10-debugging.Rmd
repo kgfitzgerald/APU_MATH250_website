@@ -1,0 +1,52 @@
+---
+title: "AE 10: Troubleshooting & Debugging"
+date: "2021-09-22"
+output: 
+  html_document:
+    theme: readable
+---
+
+```{r load-packages, include = FALSE }
+library(tidyverse)
+```
+
+## Announcements
+
+- HW 02 due **TODAY at 11:59p**
+
+- Ed Discussion board for today's lecture: https://edstem.org/us/courses/8027/discussion/633795
+
+- NO Lab Thursday
+
+- [Week 06](https://sta199-fa21-003.netlify.app/prepare/week-06.html) prepare
+
+## Exam 01 
+
+- Exam instructions: https://sta199-fa21-003.netlify.app/exams/exam-01.html
+
+- Covers Weeks 01 - 04
+
+- No TA office hours Friday, Sep 24 - Tuesday, Sep 28
+  - Can't ask about exam in Thursday's office hours
+
+- Ed Discussion will be inactive during exam Thursday, Sep 23 - Monday, Sep 27
+
+- If you have questions during the exam: 
+  - Email me with "STA 199 Exam" in subject line
+  - My office hours are Friday 10a - 11a on [Zoom](https://duke.zoom.us/j/94653677939) 
+
+## AE 10: Debugging & Troubleshooting 
+
+### Artwork by [\@allison_horst](https://twitter.com/allison_horst)
+
+![](img/faces-of-debugging.jpeg)
+
+### Clone the repo + start a new project
+
+- Go to the `ae-10-[GITHUB USERNAME]` rep in the GitHub course organization:  https://github.com/sta199-fa21-003
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio. 
+
+

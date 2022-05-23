@@ -1,0 +1,1062 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+  <title>Tags on STA 199</title>
+  <link>/tags/</link>
+  <description>Recent content in Tags on STA 199</description>
+  <generator>Hugo -- gohugo.io</generator>
+<language>en-us</language>
+
+<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+
+
+<item>
+  <title></title>
+  <link>/home/band_one/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/home/band_one/</guid>
+  <description>&lt;style&gt;
+.pull-left{
+float: left;
+width: 30%;
+}
+
+.pull-right{
+float: right;
+width: 65%;
+}
+&lt;/style&gt; 
+&lt;div class = &#34;pull-left&#34;&gt;
+  &lt;img src = &#34;img/sta199_sticker.png&#34;&gt;
+&lt;/div&gt;
+&lt;div class =&#34;pull-right&#34;&gt;
+&lt;h2 style = &#34;color: white&#34;&gt;STA 199: Intro to Data Science&lt;/h2&gt;
+&lt;p&gt;Intro to data science and statistical thinking. Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns, model outcomes,and make predictions, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data. The course will focus on the R statistical computing language.&lt;/p&gt;
+&lt;/div&gt;</description>
+  </item>
+  
+<item>
+  <title>Help</title>
+  <link>/help/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/help/</guid>
+  <description>&lt;h2 id=&#34;getting-help-in-the-course&#34;&gt;Getting help in the course&lt;/h2&gt;
+&lt;p&gt;We expect everyone will have questions at some point in the semester, so we encourage you to use the following resources for help:&lt;/p&gt;
+&lt;h2 id=&#34;ask-questions-during-lectures-and-lab&#34;&gt;Ask questions during lectures and lab&lt;/h2&gt;
+&lt;p&gt;If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.&lt;/p&gt;
+&lt;h2 id=&#34;office-hours&#34;&gt;Office hours&lt;/h2&gt;
+&lt;p&gt;The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!&lt;/p&gt;
+&lt;p&gt;Join using the Zoom link in &lt;a href=&#34;https://sakai.duke.edu&#34;&gt;Sakai&lt;/a&gt;. You can find the office hours schedule on the &lt;a href=&#34;https://sta199-fa20-002.netlify.app/&#34;&gt;homepage&lt;/a&gt; and in Sakai.&lt;/p&gt;
+&lt;h2 id=&#34;ed-discussion&#34;&gt;Ed Discussion&lt;/h2&gt;
+&lt;p&gt;Outside of class and office hours, any general questions about course content or assignments should be posted on &lt;a href=&#34;https://edstem.org/us/courses/8027/discussion/&#34;&gt;Ed Discussion&lt;/a&gt;. There is a chance another student has already asked a similar question, so please check the other posts on Ed Discussion before adding a new question. If you know the answer to a question posted on Ed Discussion, I encourage you to respond!&lt;/p&gt;
+&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;
+&lt;p&gt;If you have questions about personal matters that are not appropriate for the public forum on Ed Discussion (e.g. illness, accommodations, etc.), you may email Professor Tackett at &lt;a href=&#34;mailto:maria.tackett@duke.edu&#34;&gt;maria.tackett@duke.edu&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;rstudio-containers&#34;&gt;RStudio Containers&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re having trouble with your RStudio container&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First try opening the RStudio container using a different web browser.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re still having issues, next try restarting the container. &lt;a href=&#34;https://www.introds.org/Restart_Docker_Container.pdf&#34;&gt;Click here&lt;/a&gt; for instructions on restarting the container.&lt;/li&gt;
+&lt;li&gt;Lastly, if the issues persist, submit a ticket to OIT and they can look into the issue further. &lt;a href=&#34;https://duke.qualtrics.com/jfe/form/SV_6s3DOsiCIzNya9w&#34;&gt;Click here&lt;/a&gt; to submit the ticket.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources-for-the-course&#34;&gt;Resources for the course&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://openintro-ims.netlify.app/&#34;&gt;Introduction to Modern Statistics&lt;/a&gt; by Mine Çetinkaya-Rundel and Johanna Hardin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt; by Garret Grolemund and Hadley Wickham&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://moderndive.com/&#34;&gt;Statistical Inference via Data Science: A ModernDive into R and the Tidyverse&lt;/a&gt; by Chester Ismay and Albert Kim&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://beanumber.github.io/mdsr2e/&#34;&gt;Modern Data Science with R&lt;/a&gt; by Ben Baumer, Daniel Kaplan, and Nick Horton&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources-for-mental-health-and-wellness&#34;&gt;Resources for mental health and wellness&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;DukeReach&lt;/strong&gt;: Provides comprehensive outreach services to identify and support students in managing all aspects of well being. If you have concerns about a student&amp;rsquo;s behavior or health visit the website for resources and assistance.
+Go to &lt;a href=&#34;http://studentaffairs.duke.edu/dukereach&#34;&gt;studentaffairs.duke.edu/dukereach&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Counseling and Psychological Services (CAPS)&lt;/strong&gt;: CAPS services include individual, group, and couples counseling services, health coaching, psychiatric services, and workshops and discussions. Contact CAPS at (919) 660-1000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Blue Devils Care&lt;/strong&gt;. A convenient and cost-effective way for Duke students to receive 24/7 mental health support through TalkNow. Go to &lt;a href=&#34;https://www.timely.md/faq/blue-devils-care-faq/&#34;&gt;bluedevilscare.duke.edu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources-for-academic-support-and-wellness&#34;&gt;Resources for academic support and wellness&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Academic Resource Center&lt;/strong&gt;: Contact the ARC at (919) 684-5917, &lt;a href=&#34;mailto:theARC@duke.edu&#34;&gt;theARC@duke.edu&lt;/a&gt;, or visit their website &lt;a href=&#34;https://arc.duke.edu/&#34;&gt;arc.duke.edu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;DuWell&lt;/strong&gt;: Contact DuWell at (919) 681-8421, &lt;a href=&#34;mailto:duwell@studentaffairs.duke.edu&#34;&gt;duwell@studentaffairs.duke.edu&lt;/a&gt;, or &lt;a href=&#34;https://studentaffairs.duke.edu/duwell&#34;&gt;studentaffairs.duke.edu/duwell&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;WellTrack&lt;/strong&gt;: Contact WellTrack at &lt;a href=&#34;https://app.welltrack.com/&#34;&gt;app.welltrack.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  </item>
+  
+<item>
+  <title>STA 199 Final Project</title>
+  <link>/project/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/project/</guid>
+  <description>&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;
+&lt;p&gt;Proposal due &lt;strong&gt;Thursday, October 14&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Draft report due &lt;strong&gt;Wednesday, November 17&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Peer feedback due &lt;strong&gt;Monday, November 22&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Final written report due &lt;strong&gt;Friday, December 3&lt;/strong&gt; (accepted until December 5)&lt;/p&gt;
+&lt;p&gt;Presentation video, slides, repo due &lt;strong&gt;Wednesday, December 8&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Presentation comments due &lt;strong&gt;Friday, December 10&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction--grading-summary&#34;&gt;Introduction &amp;amp; grading summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: &lt;em&gt;Pick a dataset and do something with it. That is your
+final project.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The final project for this class will consist of analysis on a dataset of your own choosing. The dataset may already exist, you may collect your own data by scraping the web.&lt;/p&gt;
+&lt;p&gt;Choose the data based on your group&amp;rsquo;s interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way.&lt;/p&gt;
+&lt;h3 id=&#34;logistics&#34;&gt;Logistics&lt;/h3&gt;
+&lt;p&gt;You will work on the project with your lab groups.&lt;/p&gt;
+&lt;p&gt;The four primary deliverables for the final project are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A written, reproducible report detailing your analysis&lt;/li&gt;
+&lt;li&gt;A GitHub repository corresponding to your report&lt;/li&gt;
+&lt;li&gt;Slides + a video presentation&lt;/li&gt;
+&lt;li&gt;Formal peer review on another team&amp;rsquo;s project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;grading-summary&#34;&gt;Grading summary&lt;/h3&gt;
+&lt;p&gt;The grade breakdown is as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;100 pts&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Project proposal&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Written report&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;50 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Slides&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GitHub repo &amp;amp; reproducibility&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Video presentation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;20 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Peer feedback&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;&lt;i&gt;Note: No late projects are accepted.&lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-sources&#34;&gt;Data sources&lt;/h2&gt;
+&lt;p&gt;In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have &lt;strong&gt;at least 500 observations and at least ten variables (or has been approved by Prof. Tackett)&lt;/strong&gt;. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data.&lt;/p&gt;
+&lt;p&gt;If you are using a dataset that comes in a
+format that we haven&amp;rsquo;t encountered in class (for instance, a &lt;code&gt;.DAT&lt;/code&gt; file), make
+sure that you are able to load it into RStudio as this can be tricky depending
+on the source. If you are having trouble, ask for help before it is too late.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data sets that can&amp;rsquo;t be used:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data sets that have been used for class examples or assignments.&lt;/li&gt;
+&lt;li&gt;Data sets from Kaggle.&lt;/li&gt;
+&lt;li&gt;Data sets analyzed in another course.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There will be limits on the number of groups that can use a given data set, so I encourage you to be creative!&lt;/p&gt;
+&lt;p&gt;Some resources that may be helpful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rfun.library.duke.edu/blog/data-sources-for-regression-analysis/&#34;&gt;R Data Sources for Regression Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://data.fivethirtyeight.com/&#34;&gt;FiveThirtyEight data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34;&gt;TidyTuesday&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.who.int/gho/database/en/&#34;&gt;World Health Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://data.nber.org/data/&#34;&gt;The National Bureau of Economic Research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42&amp;amp;sId=1479329328660&#34;&gt;International Monetary Fund&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gss.norc.org/&#34;&gt;General Social Survey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://data.un.org/&#34;&gt;United Nations Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://unstats.un.org/home/&#34;&gt;United Nations Statistics Division&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://data.gov.uk/&#34;&gt;U.K. Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.data.gov/&#34;&gt;U.S. Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.census.gov/data.html&#34;&gt;U.S. Census Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ec.europa.eu/eurostat/&#34;&gt;European Statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.statcan.gc.ca/eng/start&#34;&gt;Statistics Canada&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pewresearch.org/download-datasets/&#34;&gt;Pew Research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://data.unicef.org/&#34;&gt;UNICEF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cdc.gov/datastatistics/index.html&#34;&gt;CDC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://datacatalog.worldbank.org/&#34;&gt;World Bank&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://electionstudies.org//&#34;&gt;Election Studies&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All analyses must be done in RStudio, and your final written report and
+analysis &lt;strong&gt;must be reproducible&lt;/strong&gt;. This means that you must create an R Markdown
+document attached to a GitHub repository that will create your written report
+exactly upon knitting.&lt;/p&gt;
+&lt;h2 id=&#34;project-proposal&#34;&gt;Project proposal&lt;/h2&gt;
+&lt;p&gt;There are two main purposes of the project proposal:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To help you think about the project early, so you can get a head start on finding data, reading relevant literature, thinking about the questions you wish to answer, etc.&lt;/li&gt;
+&lt;li&gt;To ensure that the data you wish to analyze, methods you plan to use, and the scope of your analysis are feasible and will help you be successful for this project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Choose &lt;strong&gt;three&lt;/strong&gt; substantially different datasets you are interested in analyzing. For each, identify the components below.&lt;/p&gt;
+&lt;p&gt;Include the following in the proposal:&lt;/p&gt;
+&lt;h3 id=&#34;introduction-and-data&#34;&gt;Introduction and Data&lt;/h3&gt;
+&lt;p&gt;For each data set, include the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Identify the source of the data,&lt;/li&gt;
+&lt;li&gt;When and how it was originally collected (by the original data curator, not necessarily how you found the data)&lt;/li&gt;
+&lt;li&gt;A brief description of the observations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;research-question&#34;&gt;Research question&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Describe the research topic along with a concise statement of the research question and hypotheses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-set&#34;&gt;Data set&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Use the &lt;code&gt;glimpse&lt;/code&gt; function to provide a glimpse of the data set.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Place the file containing your data in the &lt;code&gt;data&lt;/code&gt; folder of the project repo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
+&lt;p&gt;Submit the PDF of your proposal on Gradescope by &lt;strong&gt;Thursday, October 14 at 11:59pm&lt;/strong&gt;. Be sure to select the names of all team members in the submission and mark all the pages associated with each data set. The teaching team will provide feedback on your proposal to help you determine a data set to use for the project.&lt;/p&gt;
+&lt;h3 id=&#34;notes&#34;&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Project proposals should have no more than one page of &lt;strong&gt;text.&lt;/strong&gt; (not including the output from &lt;code&gt;glimpse&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;You &lt;strong&gt;must&lt;/strong&gt; use one of the data sets in the proposal for the final project, unless instructed otherwise by Prof. Tackett.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;proposal-grading&#34;&gt;Proposal grading&lt;/h3&gt;
+&lt;p&gt;The project proposal will be graded as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;5 pts&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Introduction/data&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Research questions&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;draft-report&#34;&gt;Draft report&lt;/h2&gt;
+&lt;p&gt;The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations.&lt;/p&gt;
+&lt;p&gt;Write the draft in the &lt;strong&gt;written-report.Rmd&lt;/strong&gt; file in your project repo. You do not need to submit the draft on Gradescope.&lt;/p&gt;
+&lt;p&gt;Below is a brief description of the sections to focus on in the draft:&lt;/p&gt;
+&lt;h4 id=&#34;introduction-and-data-1&#34;&gt;Introduction and data&lt;/h4&gt;
+&lt;p&gt;The introduction provides motivation and context for your research. Describe
+your topic (citing sources) and provide a concise, clear statement of your
+research question and hypotheses.&lt;/p&gt;
+&lt;p&gt;Then identify the source of the data, when and how it was collected, the cases,
+a general description of relevant variables.&lt;/p&gt;
+&lt;h4 id=&#34;methodology&#34;&gt;Methodology&lt;/h4&gt;
+&lt;p&gt;The methodology section should include visualizations and summary statistics
+relevant to your research question. You should also justify the choice of
+statistical method(s) used to answer your research question.&lt;/p&gt;
+&lt;h4 id=&#34;results&#34;&gt;Results&lt;/h4&gt;
+&lt;p&gt;Showcase how you arrived at answers to your research question using the
+techniques we have learned in class (and beyond, if you’re feeling adventurous).&lt;/p&gt;
+&lt;p&gt;Provide only the main results from your analysis. The goal is not to do an
+exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data,
+that you are skilled in interpreting and presenting results, and that you can
+accomplish these tasks using R. More is not better.&lt;/p&gt;
+&lt;h2 id=&#34;peer-review&#34;&gt;Peer review&lt;/h2&gt;
+&lt;p&gt;Critically reviewing others&#39; work is a crucial part of the scientific process, and STA 199 is no exception. You will be assigned a team to review. As part of the review process, you must provide your partner team a copy of your current report by &lt;strong&gt;Wednesday, November 17 at 11:59pm&lt;/strong&gt;. After giving the report to your partner team, they will have until &lt;strong&gt;Monday, November 22 at 11:59pm&lt;/strong&gt; to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience
+reading and constructively critiquing the work of others.&lt;/p&gt;
+&lt;p&gt;During the peer feedback process, you will be provided read-only access to your  partner team&amp;rsquo;s GitHub repo. Provide your feedback in the form of GitHub issues to your partner team&amp;rsquo;s GitHub repo.&lt;/p&gt;
+&lt;p&gt;Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&amp;rsquo;s report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. As you work on the draft, the focus should be on the analysis and less on crafting the final report. &lt;strong&gt;Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and deriving initial results and conclusions.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;peer-review.html&#34;&gt;Click here&lt;/a&gt; for peer review instructions.&lt;/p&gt;
+&lt;h2 id=&#34;written-report&#34;&gt;Written report&lt;/h2&gt;
+&lt;p&gt;Your final report must be written using R Markdown. All team members must contribute to the GitHub repository, with regular meaningful commits / pushes.&lt;/p&gt;
+&lt;p&gt;Before you finalize your report, make sure the printing of code chunks is turned off with the option &lt;code&gt;echo = FALSE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Submit the final report on Gradescope under the &lt;i&gt;Written Report&lt;/i&gt; assignment on Gradescope.&lt;/strong&gt; Your final report must match your GitHub repository &lt;em&gt;exactly&lt;/em&gt;. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be &lt;strong&gt;no more than 10 pages long.&lt;/strong&gt; There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.&lt;/p&gt;
+&lt;p&gt;The written report is worth 50 points, broken down as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;50 pts&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Introduction/data&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;20 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Discussion&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;introduction-and-data-2&#34;&gt;Introduction and data&lt;/h4&gt;
+&lt;p&gt;The introduction provides motivation and context for your research. Describe
+your topic (citing sources) and provide a concise, clear statement of your
+research question and hypotheses.&lt;/p&gt;
+&lt;p&gt;Then identify the source of the data, when and how it was collected, the cases,
+a general description of relevant variables.&lt;/p&gt;
+&lt;h4 id=&#34;methodology-1&#34;&gt;Methodology&lt;/h4&gt;
+&lt;p&gt;The methodology section should include visualizations and summary statistics
+relevant to your research question. You should also justify the choice of
+statistical method(s) used to answer your research question.&lt;/p&gt;
+&lt;h4 id=&#34;results-1&#34;&gt;Results&lt;/h4&gt;
+&lt;p&gt;Showcase how you arrived at answers to your research question using the
+techniques we have learned in class (and beyond, if you’re feeling adventurous).&lt;/p&gt;
+&lt;p&gt;Provide only the main results from your analysis. The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data,  that you are skilled in interpreting and presenting results, and that you can  accomplish these tasks using R. More is not necessarily better.&lt;/p&gt;
+&lt;h4 id=&#34;discussion&#34;&gt;Discussion&lt;/h4&gt;
+&lt;p&gt;This section is a conclusion and discussion. This will require a summary of
+what you have learned about your research question along with statistical
+arguments supporting your conclusions. You should critique your own methods
+and provide suggestions for improving your analysis and future work. Any potential issues
+pertaining to the reliability and validity of your data and the appropriateness of the statistical analyses should also be discussed. Additionally, include a brief paragraph on ideas for future work.&lt;/p&gt;
+&lt;h3 id=&#34;formatting&#34;&gt;Formatting&lt;/h3&gt;
+&lt;p&gt;This is an assessment of the overall presentation and formatting of the written report.&lt;/p&gt;
+&lt;h2 id=&#34;video-presentation--slides&#34;&gt;Video presentation + slides&lt;/h2&gt;
+&lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
+&lt;p&gt;In addition to the write-up, your team must also create presentation
+slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. &lt;strong&gt;For submission, convert these slides to a .pdf document to be submitted to Gradescope.&lt;/strong&gt; The slides are due on &lt;strong&gt;Wednesday, December 8 at 11:59pm&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The slide deck should have no more than &lt;strong&gt;6 content slides + 1 title slide&lt;/strong&gt;. Here is a &lt;em&gt;&lt;u&gt;suggested&lt;/u&gt;&lt;/em&gt; outline as you think through the slides; you do &lt;em&gt;&lt;u&gt;not&lt;/u&gt;&lt;/em&gt; have to use this exact format for the slide deck.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title Slide&lt;/li&gt;
+&lt;li&gt;Slide 1: Introduce the topic and motivation&lt;/li&gt;
+&lt;li&gt;Slide 2: Introduce the data&lt;/li&gt;
+&lt;li&gt;Slide 3 - 4: Highlights from EDA&lt;/li&gt;
+&lt;li&gt;Slide 4 - 5: Inference / modeling&lt;/li&gt;
+&lt;li&gt;Slide 6: Conclusions + future work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;video-presentation&#34;&gt;Video presentation&lt;/h3&gt;
+&lt;p&gt;Sometime by &lt;strong&gt;Wednesday, December 8&lt;/strong&gt;, your group will upload a video presentation of your project to Warpwire. Note that all members must present. The video presentation &lt;strong&gt;must be no longer than 8 minutes&lt;/strong&gt;. It is fine if the video is shorter than 8 minutes, but the 8-minute time limit will be strictly enforced.&lt;/p&gt;
+&lt;p&gt;For the presentation, you can speak over your slide deck, similar to the lecture content videos. Many groups have used Zoom to record the presentation; however, you can use whatever platform works best for your group. Below are a few resources to help you record video presentations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kb.siue.edu/61721&#34;&gt;Recording presentations in Zoom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac&#34;&gt;Apple Quicktime for screen recording&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=OfPbr1mRDuo&#34;&gt;Windows 10 built-in screen recording functionality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://getkap.co/&#34;&gt;Kap for screen recording&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once your video is ready, upload the video to Warpwire, then embed the video in a new discussion for the group.&lt;/p&gt;
+&lt;h4 id=&#34;to-upload-your-video-to-warpwire&#34;&gt;To upload your video to Warpwire:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Click the Warpwire tab in the course Sakai site.&lt;/li&gt;
+&lt;li&gt;Click the “+” and select “Upload files”.&lt;/li&gt;
+&lt;li&gt;Locate the video on your computer and click to upload.&lt;/li&gt;
+&lt;li&gt;Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in the discussion forum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;to-post-the-video-to-the-discussion-forum&#34;&gt;To post the video to the discussion forum&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Click the Presentations tab in the course Sakai site.&lt;/li&gt;
+&lt;li&gt;Click the Presentations topic.&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Start a new conversation&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Make the title &amp;ldquo;Your Team Name: Project Title&amp;rdquo;. For example, &amp;ldquo;Teaching Team: Our Awesome Presentation&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Click the Warpwire icon (between the table and shopping cart icons).&lt;/li&gt;
+&lt;li&gt;Select your video, then click “Insert 1 item.” This will embed your video in the conversation.&lt;/li&gt;
+&lt;li&gt;Under the video, paste the URL to your video.&lt;/li&gt;
+&lt;li&gt;You’re done!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can see the Teaching Team example in Sakai.&lt;/p&gt;
+&lt;h2 id=&#34;presentation-comments&#34;&gt;Presentation comments&lt;/h2&gt;
+&lt;p&gt;Each student will be assigned 2 presentations to watch. &lt;a href=&#34;https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EUXmwBCW5CpBigEeh9xhaeoBWZSwiajLpPap7S3iM9CNFg?e=uZtBXs&#34;&gt;Click here&lt;/a&gt; to see your viewing assignments.&lt;/p&gt;
+&lt;p&gt;Watch the group&amp;rsquo;s video, then click &amp;ldquo;Reply&amp;rdquo; to post a question for the group. You may not post a question that&amp;rsquo;s already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn&amp;rsquo;t be &amp;ldquo;Why did you use a bar plot instead of a pie chart&amp;rdquo;?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group&amp;rsquo;s specific presentation, i.e demonstrating that you&amp;rsquo;ve watched the presentation.&lt;/p&gt;
+&lt;p&gt;You may start posting questions and comments on Thursday, December 09. &lt;strong&gt;All comments must be posted by Friday, December 10 at 11:59pm.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;i&gt;This portion of the project will be assessed individually.&lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;project-repository&#34;&gt;Project repository&lt;/h2&gt;
+&lt;p&gt;All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized.&lt;/p&gt;
+&lt;p&gt;The GitHub repo should have the following structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;README&lt;/code&gt;: Short project description and data dictionary&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;written-report.Rmd&lt;/code&gt; &amp;amp; &lt;code&gt;written-report.pdf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/data&lt;/code&gt;: Folder that contains the data set for the final project.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;project-proposal.Rmd&lt;/code&gt; &amp;amp; &lt;code&gt;project-proposal.pdf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/presentation&lt;/code&gt;: Folder with the presentation slides.
+&lt;ul&gt;
+&lt;li&gt;If your presentation slides are online, you can put a link to the slides in a &lt;code&gt;README.md&lt;/code&gt; file in the &lt;code&gt;presentation&lt;/code&gt; folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.&lt;/p&gt;
+&lt;h2 id=&#34;peer-teamwork-evaluation&#34;&gt;Peer teamwork evaluation&lt;/h2&gt;
+&lt;p&gt;You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
+provide some explanation. If any individual gets an average peer score
+indicating that this was the case, their grade will be assessed accordingly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update (12/9/2021)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you have concerns with the teamwork and/or contribution from any team members, please email me by Friday, December 10 at 11:59pm with a brief description of your concerns. &lt;strong&gt;You only need to email me if you have concerns&lt;/strong&gt;. Otherwise, I will assume everyone on the team equally contributed and will receive full credit for the teamwork portion of the grade.&lt;/p&gt;
+&lt;h2 id=&#34;grading-details&#34;&gt;Grading details&lt;/h2&gt;
+&lt;p&gt;Grading of the project will take into account the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Content - What is the quality of research and/or policy question and relevancy
+of data to those questions?&lt;/li&gt;
+&lt;li&gt;Correctness - Are statistical procedures carried out and explained correctly?&lt;/li&gt;
+&lt;li&gt;Writing and Presentation - What is the quality of the statistical presentation,
+writing, and explanations?&lt;/li&gt;
+&lt;li&gt;Creativity and Critical Thought - Is the project carefully thought out? Are the
+limitations carefully considered? Does it appear that time and effort went into
+the planning and implementation of the project?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A general breakdown of scoring is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;90%-100%&lt;/em&gt;: Outstanding effort. Student understands how to apply all statistical
+concepts, can put the results into a cogent argument, can identify weaknesses in
+the argument, and can clearly communicate the results to others.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;80%-89%&lt;/em&gt;: Good effort. Student understands most of the concepts, puts together
+an adequate argument, identifies some weaknesses of their argument, and communicates
+most results clearly to others.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;70%-79%&lt;/em&gt;: Passing effort. Student has misunderstanding of concepts in several
+areas, has some trouble putting results together in a cogent argument, and communication
+of results is sometimes unclear.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;60%-69%&lt;/em&gt;: Struggling effort. Student is making some effort, but has misunderstanding
+of many concepts and is unable to put together a cogent argument. Communication
+of results is unclear.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Below 60%&lt;/em&gt;: Student is not making a sufficient effort.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;late-work-policy&#34;&gt;Late work policy&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;There is no late work accepted on this project.&lt;/strong&gt; Be sure to turn in your work early to avoid any technological mishaps.&lt;/p&gt;
+&lt;h2 id=&#34;additional-notes-and-tips&#34;&gt;Additional notes and tips&lt;/h2&gt;
+&lt;p&gt;The project is very open ended. For instance, in creating a compelling
+visualization(s) of your data in R, there is no limit on what tools or
+packages you may use. You do not need to visualize all of the data at once. A single high quality visualization will receive a much higher grade than a large number of poor quality visualizations.&lt;/p&gt;
+&lt;p&gt;Before you finalize your write up, make sure the printing of code chunks is turned off with the option &lt;code&gt;echo = FALSE&lt;/code&gt;. In addition to code chunks, ensure all messages are turned off with the options &lt;code&gt;warning = FALSE&lt;/code&gt; and &lt;code&gt;echo = FALSE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, pay attention to details in your write-up and presentation. Neatness, coherency, and clarity will count.&lt;/p&gt;
+&lt;h3 id=&#34;tips&#34;&gt;Tips&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ask questions if any of the expectations are
+unclear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Code&lt;/em&gt;: In your write up your code should be hidden (&lt;code&gt;echo = FALSE&lt;/code&gt;) so that your document is neat and easy to read. However your document should include all your code such that if I re-knit your Rmd file I should be able to obtain the results you presented.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Exception:&lt;/strong&gt; If you want to highlight something
+specific about a piece of code, you&amp;rsquo;re welcome to show that portion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Merge conflicts will
+happen, issues will arise, and that’s fine! Commit and push often, and ask questions when stuck.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure each team member is contributing, both in terms of quality and quantity of contribution (we will be reviewing commits from different team  members).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;formatting--communication&#34;&gt;Formatting + communication&lt;/h3&gt;
+&lt;h4 id=&#34;suppress-code-warnings--messages&#34;&gt;Suppress Code, Warnings, &amp;amp; Messages&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Include the following code in a code chunk at the top of your .Rmd file to suppress all code, warnings, and other messages. Use the code chunk header &lt;code&gt;{r set-up, include = FALSE}&lt;/code&gt; to suppress this set up code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;knitr&lt;span style=&#34;color:#666&#34;&gt;::&lt;/span&gt;opts_chunk&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;set&lt;/span&gt;(echo &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;FALSE&lt;/span&gt;,
+                      warning &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;FALSE&lt;/span&gt;, 
+                      message &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;FALSE&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;headers&#34;&gt;Headers&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Use headers to clearly label each section. Make sure there is a space between the last &lt;code&gt;#&lt;/code&gt; and the title, so the header renders correctly. For example, &lt;code&gt;###Section Title&lt;/code&gt; will not render as header, but &lt;code&gt;### Section Title&lt;/code&gt; will.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;references&#34;&gt;References&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Include all references in a section called &amp;ldquo;References&amp;rdquo; at the end of the report.&lt;/li&gt;
+&lt;li&gt;This course does not have specific requirements for formatting citations and references.&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html&#34;&gt;Section 4.5&lt;/a&gt; of the R Markdown Cookbook to learn about the citation functionality in R Markdown.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;appendix&#34;&gt;Appendix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have additional work that does not fit or does not belong in the body of the report, you may put it at the end of the document in section called &amp;ldquo;Appendix&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;The items in the appendix should be properly labeled.&lt;/li&gt;
+&lt;li&gt;The appendix should only be for additional material. The reader should be able to fully understand your report without viewing content in the appendix.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;resize-figures&#34;&gt;Resize figures&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Resize plots and figures, so you have more space for the narrative.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resize individual figures&lt;/strong&gt;: Use the code chunk header &lt;code&gt;{r plot1, fig.height = 3, fig.width = 5}&lt;/code&gt;, replacing &lt;code&gt;plot1&lt;/code&gt; with a meaningful label and the height and width with values appropriate for your write up.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resize all figures&lt;/strong&gt;: Include the &lt;code&gt;fig_width&lt;/code&gt; and &lt;code&gt;fig_height&lt;/code&gt; options in your YAML header as shown below:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Your Title&amp;quot;
+author: &amp;quot;Team Name + Group Members&amp;quot;
+output: 
+  pdf_document:
+    fig_width: 5
+    fig_height: 3
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace the height and width values with values appropriate for your write up.&lt;/p&gt;
+&lt;h4 id=&#34;arranging-plots&#34;&gt;Arranging plots&lt;/h4&gt;
+&lt;p&gt;Arrange plots in a grid, instead of one after the other. This is especially useful when displaying plots for exploratory data analysis and to check assumptions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;rsquo;re using ggplot2 functions, the &lt;code&gt;patchwork&lt;/code&gt; package makes it easy to arrange plots in a grid. See the documentation and examples &lt;a href=&#34;https://patchwork.data-imaginist.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;rsquo;re using base R function, i.e. when using the &lt;code&gt;emplogit&lt;/code&gt; functions, put the code &lt;code&gt;par(mfrow = c(rows,columns))&lt;/code&gt; before the code to make the plots. For example, &lt;code&gt;par(mfrow = c(2,3))&lt;/code&gt; will arrange plots in a grid with 2 rows and 3 columns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;plot-titles-and-axis-labels&#34;&gt;Plot titles and axis labels&lt;/h4&gt;
+&lt;p&gt;Be sure all plot titles and axis labels are visible and easy to read.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use informative titles, &lt;u&gt;not&lt;/u&gt; variable names, for titles and axis labels.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;coord_flip()&lt;/code&gt; to flip the &lt;em&gt;x&lt;/em&gt; and &lt;em&gt;y&lt;/em&gt; axes on the plot. This is useful if you a bar plot with an x-axis that is difficult to read due to overlapping text.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❌ &lt;strong&gt;NO! The x-axis is hard to read because the names overlap.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#00f&#34;&gt;ggplot&lt;/span&gt;(data &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; mpg, &lt;span style=&#34;color:#00f&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; manufacturer)) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;geom_bar&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;✅ &lt;strong&gt;YES! Names are readable&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#00f&#34;&gt;ggplot&lt;/span&gt;(data &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; mpg, &lt;span style=&#34;color:#00f&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; manufacturer)) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;geom_bar&lt;/span&gt;() &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;coord_flip&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;do-a-little-more-to-make-the-plot-look-professional&#34;&gt;Do a little more to make the plot look professional!&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Informative title and axis labels&lt;/li&gt;
+&lt;li&gt;Flipped coordinates to make names readable&lt;/li&gt;
+&lt;li&gt;Arranged bars based on count&lt;/li&gt;
+&lt;li&gt;Capitalized manufacturer names&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Optional: Added color - Use a coordinated color scheme throughout paper / presentation&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Optional: Applied a theme - Use same theme throughout paper / presentation&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;mpg &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;count&lt;/span&gt;(manufacturer) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;mutate&lt;/span&gt;(manufacturer &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;str_to_title&lt;/span&gt;(manufacturer)) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;ggplot&lt;/span&gt;(&lt;span style=&#34;color:#00f&#34;&gt;aes&lt;/span&gt;(x &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;fct_reorder&lt;/span&gt;(manufacturer,n), y &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; n)) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;geom_bar&lt;/span&gt;(stat &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#34;identity&amp;#34;&lt;/span&gt;, fill &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#34;steelblue&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;coord_flip&lt;/span&gt;() &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;labs&lt;/span&gt;(x &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#34;Manufacturer&amp;#34;&lt;/span&gt;, 
+       y &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#34;Count&amp;#34;&lt;/span&gt;, 
+       title &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#34;The most common manufacturer is Dodge&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;theme_bw&lt;/span&gt;() 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;tables-and-model-output&#34;&gt;Tables and model output&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;code&gt;kable&lt;/code&gt; function from the knitr package to neatly output all tables and model output. This will also ensure all model coefficients are displayed.
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;code&gt;digits&lt;/code&gt; argument to display only 3 or 4 significant digits.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;caption&lt;/code&gt; argument to add captions to your table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;model &lt;span style=&#34;color:#666&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;lm&lt;/span&gt;(mpg &lt;span style=&#34;color:#666&#34;&gt;~&lt;/span&gt; hp, data &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; mtcars)
+&lt;span style=&#34;color:#00f&#34;&gt;tidy&lt;/span&gt;(model) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
+  &lt;span style=&#34;color:#00f&#34;&gt;kable&lt;/span&gt;(digits &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;3&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;term&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;estimate&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;std.error&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;statistic&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;p.value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;(Intercept)&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;30.099&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.634&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;18.421&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;hp&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-0.068&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.010&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-6.742&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;guidelines-for-communicating-results&#34;&gt;Guidelines for communicating results&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Don&amp;rsquo;t use variable names in your narrative!&lt;/strong&gt; Use descriptive terms, so the reader understands your narrative without relying on the codebook.
+&lt;ul&gt;
+&lt;li&gt;❌ There is a negative linear relationship between mpg and hp.&lt;/li&gt;
+&lt;li&gt;✅ There is a negative linear relationship between a car&amp;rsquo;s fuel economy (in miles per gallon) and its horsepower.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Know your audience:&lt;/strong&gt; Your report should be written for a general audience who has an understanding of statistics at the level of STA 199.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Avoid subject matter jargon:&lt;/strong&gt; Don&amp;rsquo;t assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tell the &amp;ldquo;so what&amp;rdquo;:&lt;/strong&gt; Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tell a story:&lt;/strong&gt; All visualizations, tables, model output, and narrative should tell a cohesive story!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use one voice:&lt;/strong&gt; Though multiple people are writing the report, it should read as if it&amp;rsquo;s from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;additional-resources&#34;&gt;Additional resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/&#34;&gt;R Markdown Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slides.yihui.org/xaringan/#1&#34;&gt;Slides in R using Xaringan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data visualization
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ggplot2.tidyverse.org/reference/index.html&#34;&gt;ggplot2 Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ggplot2-book.org/&#34;&gt;ggplot2: Elegant Graphics for Data Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://socviz.co/index.html&#34;&gt;Data Visualization: A Practice Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://patchwork.data-imaginist.com/index.html&#34;&gt;Patchwork R Package&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  </item>
+  
+<item>
+  <title>Syllabus</title>
+  <link>/syllabus/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+<guid>/syllabus/</guid>
+  <description>&lt;p&gt;&lt;a href=&#34;sta199-fa21-003-syllabus.pdf&#34;&gt;&lt;strong&gt;Click here&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;to download a PDF copy of the syllabus.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;teaching-team--office-hours&#34;&gt;Teaching team &amp;amp; office hours&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1M_E0l5iXmQVkqoCeeM7XpyCo4_oQAirCe860SUjjgII/edit?usp=sharing&#34;&gt;Click here&lt;/a&gt; for the TA office hours Zoom links and locations. You are welcome to attend the office hours for &lt;strong&gt;any&lt;/strong&gt; STA 199 TA, regardless of section.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instructor&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Contact&lt;/th&gt;
+&lt;th&gt;Office hours&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://stat.duke.edu/~mt324/&#34;&gt;Prof. Maria Tackett&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:maria.tackett@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Fri 10a - 11a&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://duke.zoom.us/j/94653677939&#34;&gt;Zoom&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;or by appointment&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Teaching Assistants&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Contact&lt;/th&gt;
+&lt;th&gt;Office hours&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Meredith Brown&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:meredith.brown@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Mon 9a - 10a&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Mon 12p - 1p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Carson Garcia&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:carson.garcia@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Fri 3p - 5p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shannon Houser&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:shannon.houser@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 3p - 4p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Thu 2p - 3p&lt;/td&gt;
+&lt;td&gt;Old Chem 203B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.linkedin.com/in/robert-kravec-49873a89&#34;&gt;Rob Kravec&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:robert.kravec@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Thu  9 - 11a&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shirley Mathur&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:shirley.mathurc@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 6p - 7p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Wed 10a - 11a&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Manny Mokel&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:emmanuel.mokel@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 5p - 6p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Thu 5p - 6p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Margaret Reed&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:margaret.reed@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 10a - 11a&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Wed 5p - 6p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Camilla Yu&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;mailto:yue.yu652@duke.edu&#34; title=&#34;email&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tue 9a - 10a&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Wed 5p - 6p&lt;/td&gt;
+&lt;td&gt;Zoom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;course-info&#34;&gt;Course info&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;Day&lt;/th&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;th&gt;Location&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lectures&lt;/td&gt;
+&lt;td&gt;Mon &amp;amp; Wed&lt;/td&gt;
+&lt;td&gt;1:45p - 3p&lt;/td&gt;
+&lt;td&gt;Soc Sci 136&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lab 07&lt;/td&gt;
+&lt;td&gt;Thu&lt;/td&gt;
+&lt;td&gt;12p - 1:15p&lt;/td&gt;
+&lt;td&gt;Soc Sci 311&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lab 08&lt;/td&gt;
+&lt;td&gt;Thu&lt;/td&gt;
+&lt;td&gt;3:30p - 4:45p&lt;/td&gt;
+&lt;td&gt;Perkins 071 (Link #5)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lab 09&lt;/td&gt;
+&lt;td&gt;Thu&lt;/td&gt;
+&lt;td&gt;5:15p - 6:30p&lt;/td&gt;
+&lt;td&gt;Perkins 071 (Link #5)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;textbooks&#34;&gt;Textbooks&lt;/h2&gt;
+&lt;h3 id=&#34;texts&#34;&gt;Texts&lt;/h3&gt;
+&lt;p&gt;All books are freely available online. Hardcopies are also available for purchase.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Grolemund, Wickham&lt;/td&gt;
+&lt;td&gt;O&amp;rsquo;Reilly, 1st edition, 2016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://openintro-ims.netlify.app/&#34;&gt;Introduction to Modern Statistics &lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Çetinkaya-Rundel, Hardin&lt;/td&gt;
+&lt;td&gt;OpenIntro Inc., 1st Edition, 2021&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;course-learning-objectives&#34;&gt;Course Learning Objectives&lt;/h2&gt;
+&lt;p&gt;By the end of the semester, you will&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;learn to explore, visualize, and analyze data in a reproducible and shareable manner&lt;/li&gt;
+&lt;li&gt;gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization&lt;/li&gt;
+&lt;li&gt;work on problems and case studies inspired by and based on real-world questions and data&lt;/li&gt;
+&lt;li&gt;learn to effectively communicate results through written assignments and final project presentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;course-community&#34;&gt;Course community&lt;/h2&gt;
+&lt;h3 id=&#34;duke-community-standard&#34;&gt;Duke Community Standard&lt;/h3&gt;
+&lt;p&gt;As a student in this course, you have agreed to uphold the &lt;a href=&#34;https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard&#34;&gt;Duke Community Standard&lt;/a&gt; as well as the practices specific to this course.&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/_KN97j30ST4&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;h3 id=&#34;inclusive-community&#34;&gt;Inclusive community&lt;/h3&gt;
+&lt;p&gt;It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students&#39; learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with &lt;a href=&#34;https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion&#34;&gt;Duke&amp;rsquo;s Commitment to Diversity and Inclusion&lt;/a&gt;. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.&lt;/p&gt;
+&lt;p&gt;Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you feel like your performance in the class is being impacted by your experiences outside of class, please don&amp;rsquo;t hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.&lt;/li&gt;
+&lt;li&gt;I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please let me or a member of the teaching team know.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;accessibility&#34;&gt;Accessibility&lt;/h3&gt;
+&lt;p&gt;If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://access.duke.edu/students&#34;&gt;Student Disability Access Office (SDAO)&lt;/a&gt; is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to &lt;a href=&#34;https://access.duke.edu/requests&#34;&gt;request or update accommodations&lt;/a&gt; under these circumstances.&lt;/p&gt;
+&lt;h3 id=&#34;attendance-policy-related-to-covid-symptoms-exposure-or-infection&#34;&gt;Attendance Policy Related to COVID Symptoms, Exposure, or Infection&lt;/h3&gt;
+&lt;p&gt;Student health, safety, and well-being are the university&amp;rsquo;s top priorities. To help ensure your well-being and the well-being of those around you, &lt;strong&gt;please do not come to class if you have symptoms related to COVID-19, have had a known exposure to COVID-19, or have tested positive for COVID-19.&lt;/strong&gt; If any of these situations apply to you, you must follow university guidance related to the ongoing COVID-19 pandemic and current health and safety protocols.&lt;/p&gt;
+&lt;p&gt;If you are experiencing any COVID-19 symptoms, contact student health at 919-681-9355. To keep the university community as safe and healthy as possible, you will be expected to follow these guidelines. Please reach out to me and your academic dean as soon as possible if you need to quarantine or isolate so that we can discuss arrangements for your continued participation in class.&lt;/p&gt;
+&lt;h3 id=&#34;communication&#34;&gt;Communication&lt;/h3&gt;
+&lt;p&gt;All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website, &lt;a href=&#34;https://sta199-fa21-003.netlify.app/&#34;&gt;sta199-fa21-003.netlify.app&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Announcements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.&lt;/p&gt;
+&lt;h3 id=&#34;where-to-get-help&#34;&gt;Where to get help&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.&lt;/li&gt;
+&lt;li&gt;The teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!&lt;/li&gt;
+&lt;li&gt;Outside of class and office hours, any general questions about course content or assignments should be posted on &lt;a href=&#34;https://edstem.org/us/courses/8027/discussion/&#34;&gt;Ed Discussion&lt;/a&gt;. There is a chance another student has already asked a similar question, so please check the other posts in Ed Discussion before adding a new question. If you know the answer to a question posted in the discussion forum, I encourage you to respond!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out the &lt;a href=&#34;/help/&#34;&gt;Help&lt;/a&gt; tab for more resources.&lt;/p&gt;
+&lt;h3 id=&#34;email&#34;&gt;Email&lt;/h3&gt;
+&lt;p&gt;If there is a question that&amp;rsquo;s not appropriate for the public forum, you are welcome to email me directly. &lt;strong&gt;If you email me, please include &amp;ldquo;STA 199&amp;rdquo; in the subject line.&lt;/strong&gt; Barring extenuating circumstances, I will respond to STA 199 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.&lt;/p&gt;
+&lt;h2 id=&#34;activities--assessment&#34;&gt;Activities &amp;amp; Assessment&lt;/h2&gt;
+&lt;p&gt;The activities and assessments in this course are designed to help you successfully achieve the course learning objectives. They are designed to follow the &lt;strong&gt;Prepare, Practice, Perform&lt;/strong&gt; format.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Prepare&lt;/strong&gt;: Includes short videos, reading assignments, and a short quiz to introduce new concepts and ensure a basic comprehension of the material. The goal is to help you prepare for the in-class activities during lecture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Practice&lt;/strong&gt;: Includes in-class application exercises where you will begin to the concepts and methods introduced in the prepare assignment. the activities will graded for completion, as they are designed for you to gain experience with the statistical and computing techniques before working on graded assignments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Perform&lt;/strong&gt;: Includes labs, homework, exams, and the final project. These assignments build upon the prepare and practice assignments and are the opportunity for you to demonstrate your understanding of the course material and how it is applied to analyze real-world data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;prep-quizzes-prepare&#34;&gt;Prep quizzes (Prepare)&lt;/h3&gt;
+&lt;p&gt;These are low-stakes quizzes that will be completed at the beginning of each unit (about once per week) as part of the preparation for lecture. These quizzes include multiple choice and fill-in-the-blank questions. Each quiz will be administered in Sakai and may be taken up to three times. The quiz is due by the beginning of lecture on the specified due date. An overall score of 80% on all quizzes will result in full credit for prep quizzes in the final course grade.&lt;/p&gt;
+&lt;h3 id=&#34;application-exercises-practice&#34;&gt;Application Exercises (Practice)&lt;/h3&gt;
+&lt;p&gt;A majority of the in-class lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice apply the statistical concepts and code introduced in the prepare assignment. These AEs are due within three days of the corresponding lecture period. Specifically, AEs from Monday lectures are due Thursday by 11:59p ET, and AEs from Wednesday lectures are due Saturday by 11:59p ET.&lt;/p&gt;
+&lt;p&gt;Because these AEs are for practice, they will be graded based on completion, i.e., a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 80% of AEs will result in full credit for AEs in the final course grade.&lt;/p&gt;
+&lt;p&gt;In addition to AEs will be periodic activities help build a learning community. These will be short, fun activities that will help everyone in the class connect throughout the semester.&lt;/p&gt;
+&lt;h3 id=&#34;labs-perform&#34;&gt;Labs (Perform)&lt;/h3&gt;
+&lt;p&gt;In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. Most lab assignments will be completed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team&amp;rsquo;s Git repository on the course&amp;rsquo;s GitHub page as the central platform for collaboration. Commits to this repository will be used as a metric of each team member&amp;rsquo;s relative contribution for each lab, and there will be periodic peer evaluation on the team collaboration. Lab assignments will be completed using R Markdown, correspond to an appropriate GitHub repository, and submitted for grading in Gradescope.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The lowest lab grade will be dropped at the end of the semester.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;homework-perform&#34;&gt;Homework (Perform)&lt;/h3&gt;
+&lt;p&gt;In homework, you will apply what you&amp;rsquo;ve learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Similar to lab assignments, homework must be typed up using R Markdown and GitHub and submitted as a PDF in Gradescope.&lt;/p&gt;
+&lt;p&gt;One homework assignment will be dedicated to a &lt;em&gt;statistics experience&lt;/em&gt;. The statistics experience is an opportunity to engage with statistics and data science outside of the classroom through podcasts, books, seminars, data analysis competitions, and other activities. As you complete these experiences, the goal is to consider how the material you&amp;rsquo;re learning in the course connects with society more broadly.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The lowest homework grade will be dropped at the end of the semester.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;exams-perform&#34;&gt;Exams (Perform)&lt;/h3&gt;
+&lt;p&gt;There will be two, take-home, open-note exams. Through these exams you have the opportunity to demonstrate what you&amp;rsquo;ve learned in the course thus far. Each exam will include small analysis and computational tasks related to the content in the prepare, practice, and perform assignments. More details about the content and structure of the exams will be discussed during the semester.&lt;/p&gt;
+&lt;h3 id=&#34;final-project-perform&#34;&gt;Final Project (Perform)&lt;/h3&gt;
+&lt;p&gt;The purpose of the &lt;a href=&#34;/project/&#34;&gt;final project&lt;/a&gt; is to apply what you&amp;rsquo;ve learned throughout the semester to analyze an interesting data-driven research question. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided during the semester.&lt;/p&gt;
+&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
+&lt;p&gt;The final course grade will be calculated as follows:&lt;/p&gt;
+&lt;center&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Category&lt;/th&gt;
+&lt;th&gt;Percentage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Homework&lt;/td&gt;
+&lt;td&gt;25%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Labs&lt;/td&gt;
+&lt;td&gt;15%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Final Project&lt;/td&gt;
+&lt;td&gt;15%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Exam 01&lt;/td&gt;
+&lt;td&gt;17.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Exam 02&lt;/td&gt;
+&lt;td&gt;17.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Prep quizzes&lt;/td&gt;
+&lt;td&gt;5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Application Exercises&lt;/td&gt;
+&lt;td&gt;2.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Teamwork&lt;/td&gt;
+&lt;td&gt;2.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/center&gt;
+&lt;br&gt;
+&lt;p&gt;The final letter grade will be determined based on the following thresholds:&lt;/p&gt;
+&lt;center&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Letter Grade&lt;/th&gt;
+&lt;th&gt;Final Course Grade&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;&amp;gt;= 93&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A-&lt;/td&gt;
+&lt;td&gt;90 - 92.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B+&lt;/td&gt;
+&lt;td&gt;87 - 89.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;83 - 86.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B-&lt;/td&gt;
+&lt;td&gt;80 - 82.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C+&lt;/td&gt;
+&lt;td&gt;77 - 79.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C&lt;/td&gt;
+&lt;td&gt;73 - 76.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-&lt;/td&gt;
+&lt;td&gt;70 - 72.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;D+&lt;/td&gt;
+&lt;td&gt;67 - 69.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;D&lt;/td&gt;
+&lt;td&gt;63 - 66.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;D-&lt;/td&gt;
+&lt;td&gt;60 - 62.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;F&lt;/td&gt;
+&lt;td&gt;&amp;lt; 60&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;course-policies&#34;&gt;Course policies&lt;/h2&gt;
+&lt;h3 id=&#34;academic-honesty&#34;&gt;Academic honesty&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR: Don&amp;rsquo;t cheat!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please abide by the following as you work on assignments in this course:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You may discuss individual homework and lab assignments with other students; however, you may not directly share (or copy) code or write up with other students. For team assignments, you may collaborate freely within your team. You may discuss the assignment with other teams; however, you may not directly share (or copy) code or write up with another team. Unauthorized sharing (or copying) of the code or write up will be considered a violation for all students involved.&lt;/li&gt;
+&lt;li&gt;You may not discuss or otherwise work with others on the exams. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reusing code&lt;/strong&gt;: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Any violations in academic honesty standards as outlined in the &lt;a href=&#34;https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard&#34;&gt;Duke Community Standard&lt;/a&gt; and those specific to this course will automatically result in a 0 for the assignment and will be reported to the &lt;a href=&#34;https://studentaffairs.duke.edu/conduct&#34;&gt;Office of Student Conduct&lt;/a&gt; for further action.&lt;/p&gt;
+&lt;h3 id=&#34;late-work--extensions&#34;&gt;Late work &amp;amp; extensions&lt;/h3&gt;
+&lt;p&gt;The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped to accommodate such circumstances.&lt;/p&gt;
+&lt;h3 id=&#34;late-work-policy&#34;&gt;Late work policy&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Homework and labs may be submitted up to 3 days late. There will be a 5% deduction for each 24-hour period the assignment is late.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is no late work accepted for prep quizzes or application exercises, since these are designed to help you prepare for labs and homework.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The late work policy for exams will be provided with the exam instructions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The late work policy for the project will be provided with the project instructions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;waiver-for-extenuating-circumstances&#34;&gt;Waiver for extenuating circumstances&lt;/h3&gt;
+&lt;p&gt;If there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, you may email Professor Tackett before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used for once in the semester, so only use it for a truly extenuating circumstance.&lt;/p&gt;
+&lt;p&gt;If there are circumstances that are having a longer-term impact on your academic performance, please let your academic dean know, as they can be a resource. Please let Professor Tackett know if you need help contacting your academic dean.&lt;/p&gt;
+&lt;h3 id=&#34;regrade-requests&#34;&gt;Regrade Requests&lt;/h3&gt;
+&lt;p&gt;Regrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question will be graded which could potentially result in losing points.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;No grades will be changed after the final project presentations.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;additional-resources&#34;&gt;Additional resources&lt;/h2&gt;
+&lt;h3 id=&#34;academic-resource-center&#34;&gt;Academic Resource Center&lt;/h3&gt;
+&lt;p&gt;There are times may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The &lt;a href=&#34;https://arc.duke.edu&#34;&gt;Academic Resource Center (ARC)&lt;/a&gt; offers free services to all students during their undergraduate careers at Duke. Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact &lt;a href=&#34;mailto:arc@duke.edu&#34; title=&#34;email&#34;&gt;ARC@duke.edu&lt;/a&gt;, 919-684-5917.&lt;/p&gt;
+&lt;h3 id=&#34;caps&#34;&gt;CAPS&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://studentaffairs.duke.edu/caps&#34;&gt;Duke Counseling &amp;amp; Pyschological Services (CAPS)&lt;/a&gt; helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. CAPS recognizes that we are living in unprecedented times and that the changes, challenges and stressors brought on by the COVID-19 pandemic have impacted everyone, often in ways that are tax our well-being. CAPS offers many services to Duke undergraduate students, including brief individual and group counseling, couples counseling and more. CAPS staff also provides outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life. CAPS provides services to students via Telehealth. To initiate services, you can contact their front desk at 919-660-1000.&lt;/p&gt;
+&lt;h2 id=&#34;important-dates&#34;&gt;Important dates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aug 23:&lt;/strong&gt; Classes begin&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sep 3&lt;/strong&gt;: Drop/add ends&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Oct 4-5&lt;/strong&gt;: Fall break&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nov 5&lt;/strong&gt;: Last day to withdraw with W&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nov 24-26:&lt;/strong&gt; Thanksgiving recess&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dec 3&lt;/strong&gt;: Classes end&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dec 4-7&lt;/strong&gt;: Reading period&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dec 8-13&lt;/strong&gt;: Final exams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Click &lt;a href=&#34;https://registrar.duke.edu/fall-2021-academic-calendar&#34;&gt;here&lt;/a&gt; for the full Duke academic calendar.&lt;/p&gt;
+</description>
+  </item>
+  
+</channel>
+  </rss>

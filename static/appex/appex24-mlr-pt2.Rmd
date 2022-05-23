@@ -1,0 +1,41 @@
+---
+title: "AE 24: Multiple linear regression cont'd"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: readable
+---
+
+```{r load-packages, include = FALSE }
+library(tidyverse)
+```
+
+## Announcements
+
+- Ed Discussion for today's class: https://edstem.org/us/courses/8027/discussion/837903
+
+- [Exam 02](https://sta199-fa21-003.netlify.app/exams/exam-02.html): Thu, Nov 11 at 9am - Mon, Nov 15 at 11:59pm 
+  - Ed Discussion will be archived Thu, Nov 11 - Mon, Nov 15. 
+  - No lab on Nov 11
+  - No lecture on Nov 15. Lecture will be used for online office hours. Zoom link will be emailed on Monday.
+- [Prepare Week 13](https://sta199-fa21-003.netlify.app/prepare/week-13.html)
+
+## Project draft report 
+
+- [Click here](https://sta199-fa21-003.netlify.app/project/#draft-report) for instructions on the draft report
+  - Due Wed, Nov 17 at 11:59pm on GitHub
+
+
+## Statistics experience
+
+[Click here](https://sta199-fa21-003.netlify.app/hw/stats-experience.html) for instructions.  
+  - Due Fri, Dec 3
+
+## AE 24: Multiple linear regression cont'd
+
+- Go to the `ae-24-[GITHUB USERNAME]` rep in the GitHub course organization:  https://github.com/sta199-fa21-003
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio. 
+

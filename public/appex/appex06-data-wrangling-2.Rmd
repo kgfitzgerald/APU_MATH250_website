@@ -1,0 +1,48 @@
+---
+title: "AE 06: Data wrangling (let's try again!)"
+subtitle: "NYC Flights"
+date: "2021-09-08"
+output: 
+  html_document:
+    theme: readable
+---
+
+```{r load-packages, include = FALSE }
+library(tidyverse)
+```
+
+## Announcements
+
+- Professor Tackett's office hours are moved to **Fridays 10a - 11a** on Zoom beginning this week
+
+- Lab in person this week 
+
+- HW 01 due **Wednesday, September 15 at 11:59p**
+  - Focus on data visualization
+  - Repos will be available after class.
+
+- Ed Discussion board for today's lecture: https://edstem.org/us/courses/8027/discussion/590101
+
+
+- [Week 04](https://sta199-fa21-003.netlify.app/prepare/week-04.html) prepare
+
+## Workflow tips
+
+- Save your work often!!
+- Knit, commit, and push your work often!! 
+- RStudio containers will be refreshed every day at 5am, so any **unsaved work** will be lost (e.g., work you do in the console)
+  - Any saved files will not be affected
+
+## Questions from the prepare assignment? 
+
+## AE 06: NYC Flights
+
+### Clone a repo + start a new project
+
+- Go to the `ae-06-[GITHUB USERNAME]` rep in the GitHub course organization:  https://github.com/sta199-fa21-003
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio. 
+
+

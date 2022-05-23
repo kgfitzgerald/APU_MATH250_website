@@ -1,0 +1,29 @@
+---
+title: "Prepare: Week 09"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## October 18
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required
+
+`r emo::ji("computer")` Review slides [Hypothesis testing](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d12-hypothesis-testing/u4-d12-hypothesis-testing.html#33) 
+  
+  - Sections: "One and two-sided hypothesis tests" and "Testing for independence"
+
+### Optional 
+
+`r emo::ji("book")` Read [IMS: Chapter 11 - Hypothesis testing with randomization](https://openintro-ims.netlify.app/foundations-randomization.html)
+
+
+## For October 20
+
+No prepare assignment for October 20.

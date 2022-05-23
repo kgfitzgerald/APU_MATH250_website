@@ -1,0 +1,31 @@
+---
+title: "STA 199 Lab Announcements"
+subtitle: "12.02.21"
+author: ""
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "slides.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+---
+
+```{r child = "setup.Rmd"}
+```
+
+## Share your thoughts!
+
+If you haven't already, please take a few minutes to fill out the following: 
+
+`r emo::ji("white_check_mark")` Course evaluation & TA evaluation (due Dec 06)
+
+- If the class has an 90% response rate on both TA and course evals, everyone will receive +1% (.5 out of 50) on their Exam 02 score.
+
+`r emo::ji("white_check_mark")` Team Feedback #2 from Teammates (due Dec 03)
+
+`r emo::ji("white_check_mark")` Sense of Community Survey
+  - [Click here](https://duke.qualtrics.com/jfe/form/SV_40XgOZBiMmAkgZM?Q_DL=07lwm9bfAhXmbvT_40XgOZBiMmAkgZM_MLRP_5nVKNuZxGpAmHZQ&Q_CHL=email) to access survey
+

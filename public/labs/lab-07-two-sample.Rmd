@@ -1,0 +1,176 @@
+---
+title: "Lab 07: Two-sample inference"
+subtitle: "due Monday, October 25 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "sta199-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(tufte)
+library(knitr)
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  digits = 2
+  )
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+# Learning Goals
+
+In this lab you will...
+
+-   Use simulation-based inference to draw conclusions about the association between two variables.
+-  Describe simulation methods using words.
+
+# Getting started
+
+- A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.
+
+- Go to the [sta199-fa21-003](https://github.com/sta199-fa21-003) course organization on GitHub.
+
+- You should see a repo with the *lab-07** prefix.
+
+- Each person on the team should clone the repository and open a new project in RStudio. Do not make any changes to the .Rmd file until the instructions tell you do to so.
+
+
+
+# What makes a good burrito?
+
+The goal of today's lab is to use simulation-based inference to assess what makes a good burrito. 
+
+# The Data
+
+Today's dataset has been adapted from Scott Cole's *Burritos of San Diego* 
+project, located [**here**](https://srcole.github.io/100burritos/). The goal 
+of the project was to identify the best and worst burritos in San Diego, 
+characterize variance in burrito quality, and generate predictive models for 
+what makes a burrito great. 
+
+As part of this project, 71 participants reviewed burritos from 79 different 
+taco shops. Reviewers captured objective measures of the burrito (such as 
+whether it contains certain ingredients) and reviewed it on a number of metrics 
+(such as quality of the tortilla, the temperature, quality of meat, etc.). For 
+the purposes of this lab, you may consider each of these observations to be an
+independent and representative sample of all burritos.
+
+The subjective ratings in the dataset are as follows. Each variable is ranked
+on a 0 to 5 point scale, with 0 being the worst and 5 being the best. 
+
+- `tortilla`: quality of the tortilla
+- `temp`: temperature of the burrito
+- `meat`: quality of the meat
+- `fillings`: quality of non-meat fillings
+- `salsa`: quality of the salsa
+- `mfr`: meat-to-filling ratio
+- `uniformity`: whether each bite contains a uniform slew of ingredients (e.g.,
+a bite entirely composed of tortilla and sour cream would probably be terrible)
+- `synergy`: how well it all comes together
+
+In addition, the reviewers noted the presence of the following burrito
+components. Each of the following variables is a binary variable taking on 
+values `present` or `none`:
+
+- `guac`: guacamole
+- `cheese`: cheese
+- `fries`: fries (it's a thing, [look it up.](https://en.wikipedia.org/wiki/Burrito#San_Diego))
+- `sourcream`: sour cream
+- `rice`: rice
+- `beans`: beans
+
+The data are available in `burritos.csv`
+
+# Exercises
+
+## Instructions 
+
+::: {.{commit}}
+-   Use a small number of reps (about 100) as you write and test out
+    your code. Once you have finalized all of your code, increase the
+    number of reps to 10,000 to produce your final results.
+-   Write your code and narrative in a reproducible way, so you can
+    easily change the number of reps. For example, consider ways you can
+    write your narrative using inline code, so the relevant values
+    update when you change the number of reps.
+-   Make sure we see all relevant code and output in the knitted PDF. If you use inline code, make sure we can still see the code used to derive that answer.
+-   For each simulation exercise, use the seed specified in the
+        exercise instructions.
+-   All narrative should be written in full sentences, and
+        visualizations should have clear title and axis labels.
+:::
+
+
+1. Sour cream on burritos: yay or nay? Explain.
+
+2. Suppose you are worried that the presence of sour cream adversely affects the uniformity of the burrito. You decide to conduct a hypothesis test to evaluate whether the  mean uniformity of burritos with sour cream is lower than burritos without sour cream. 
+
+    - State the null and alternative hypotheses in words and mathematical notation. 
+    -  Describe precisely how you would set up the simulation to construct the null distribution for this test. In your description, you can imagine using index cards to represent the data. Your description should also include specifics about the size of the sample drawn at each iteration and what statistic is calculated. You can assume the number of reps for the simulation is 10,000. (*Hint: Consider both how we've constructed the null distribution for difference in proportions and how we've constructed it for quantitative variables.* )
+
+3. Construct the null distribution for this test using `set.see(3)`.
+
+    - Visualize the simulated null distribution and shade the area corresponding to the p-value. 
+    - Then, calculate the p-value, and state your conclusion in the context of the data, using a significance level of 0.05.
+
+
+4. Calculate and interpret a 90% confidence interval for the 
+difference you investigated in Exercises 2 and 3. Use `set.seed(4)`.
+
+5. Describe precisely how the simulation is set up to construct the bootstrap distribution used to calculate the confidence interval in Exercise 4. In your description, you can imagine using index cards to represent the data. Your description should also include specifics about the size of the sample drawn at each iteration and what statistic is calculated. You can assume the number of reps for the simulation is 10,000.
+
+6. Your friend suggests that having sour cream and having guacamole on a burrito are dependent events. You decide to conduct a hypothesis test to assess your friend's claim. The hypotheses for the test are $H_0: p_{S} = p_{NS} \text{ vs. }H_a: p_{S} \neq p_{NS}$
+
+    where $p_{S}$ is the proportion of burritos with sour cream that have guacamole and $p_{NS}$ is the proportion of burritos with no sour cream have guacamole
+
+  
+    - Construct the null distribution using `set.seed(6)`. Visualize the simulated null distribution and shade the area corresponding to the p-value. 
+    - Then, calculate the p-value, and state your conclusion in the context of the data, using a significance level of 0.05.
+
+7. Calculate and interpret a 95% confidence interval for the difference investigated in Exercise 6. Use `set.seed(7)`.
+
+8. Create a new variable for overall burrito quality by taking the average scores for all ratings (tortilla quality, temperature, meat quality, etc.) in the dataset. *Is there evidence that burritos with guacamole have a different average overall perceived quality score compared to burritos without guacamole?* Evaluate this claim using a 99% confidence interval. Use `set.seed(8)`.
+
+9. In the previous exercise, we've treated the rating variables as numeric variables. Evaluate the merits of this approach: is it appropriate? Could it potentially be misleading? Briefly explain.
+
+
+# Submission
+
+-   **Select** <u>one</u> team member to upload the team's PDF
+    submission to Gradescope.
+-   Be sure to select every team member's name in the Gradescope.
+-   Associate the "Workflow & formatting" graded section with the first
+    page of your PDF, and mark the page associated with each exercise.
+    If any answer spans multiple pages, then mark all pages.
+
+**There should only be** <u>one</u> submission per team on Gradescope.
+
+# Grading (50 points)
+
+| Component             | Points |
+|:----------------------|:-------|
+| Ex 1                  |    1   |
+| Ex 2                  |   8   |
+| Ex 3                  |    6  |
+| Ex 4                  |    5  |
+| Ex 5                  |    4   |
+| Ex 6                  |   5  |
+| Ex 7                  | 5      |
+| Ex 8                  | 8      |
+| Ex 9                  | 4      |
+| Workflow & formatting | 4      |
+
+-   The "Workflow & formatting" grade is to assess the reproducible
+    workflow. This includes having at least one informative commit by
+    each team member, labeling the code chunks, and having readable code
+    in the tidyverse syntax that does not exceed 80 characters (i.e., we
+    can read all your code in the knitted PDF.)

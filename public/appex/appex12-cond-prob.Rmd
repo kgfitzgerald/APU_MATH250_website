@@ -1,0 +1,36 @@
+---
+title: "AE 12: Conditional probability"
+date: "2021-09-29"
+output: 
+  html_document:
+    theme: readable
+---
+
+```{r load-packages, include = FALSE }
+library(tidyverse)
+```
+
+## Announcements
+
+- Lab 05 due **Thu, Oct 7 at 11:59pm**
+
+- No class Mon, Oct 4: `r emo::ji("fallen_leaf")` **Happy Fall Break!** `r emo::ji("fallen_leaf")`
+
+- No office hours Friday 3p - 4p.
+
+### HackDuke event
+
+Hi everyone! HackDuke is excited to invite you to apply to Code for Good 2021, the nation’s largest collegiate hackathon for social good! Each year, we bring together over 600 students who are passionate about changing the intention and narrative behind how technology is used today to create meaningful hacks in a 24-hour sprint. Come learn, come discuss, and come code for good.
+
+This year, we will be holding our event from October 23-24 (in-person for Duke students!). Apply online at 2021.hackduke.org! Follow us on Twitter, Facebook, and Instagram (all @HackDuke) for updates, and feel free to reach out with any questions to hackers@hackduke.org. See you there!
+
+![](img/hd2021.png)
+
+
+## AE 12: Conditional probability
+
+- Go to the `ae-12-[GITHUB USERNAME]` rep in the GitHub course organization:  https://github.com/sta199-fa21-003
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio. 

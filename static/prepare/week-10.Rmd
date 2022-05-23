@@ -1,0 +1,46 @@
+---
+title: "Prepare: Week 10"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## October 25
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required
+
+`r emo::ji("memo")` Take Prep Quiz 05 on Sakai 
+
+`r emo::ji("movie_camera")` Watch [Central limit theorem](https://warpwire.duke.edu/w/Vw4GAA/)
+
+- [Click here](https://sta199-fa21-003.netlify.app/slides/clt-intro.html#1) for slides
+
+### Optional 
+
+`r emo::ji("book")` Read [IMS: Chapter 13 - Inference with mathematical models](https://openintro-ims.netlify.app/foundations-mathematical.html?q=central%20limit%20th#CLTsection)
+
+## For October 27
+
+### Required
+
+`r emo::ji("movie_camera")` Watch [Inference using Central limit theorem](https://warpwire.duke.edu/w/WQ4GAA/)
+
+- [Click here](https://sta199-fa21-003.netlify.app/slides/clt-inference.html#1) for slides
+
+### Optional 
+
+`r emo::ji("book")` Read 
+
+- [IMS: Section 16.2 - Mathematical model for a proportion](https://openintro-ims.netlify.app/inference-one-prop.html#one-prop-norm)
+- [IMS: Section 17.3 - Mathematical model difference in proportions](https://openintro-ims.netlify.app/inference-two-props.html#math-2prop)
+- [IMS: Section 19.2 - Mathematical model for a mean](https://openintro-ims.netlify.app/inference-one-mean.html#one-mean-math)
+- [IMS: Section 20.3 - Mathematical model for testing difference in means](https://openintro-ims.netlify.app/inference-two-means.html#math2samp)
+
+
+

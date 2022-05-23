@@ -1,0 +1,130 @@
+---
+title: 'HW 03: Probability with Bob Ross'
+subtitle: 'due Wed, Oct 13 11:59pm'
+output: 
+  tufte::tufte_html:
+    css: "sta199-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+# Learning goals 
+
+In this homework assignment you will...
+
+- Apply custom color palettes to visualizations in `ggplot2`
+- Gain proficiency calculating marginal, joint, and conditional probabilities 
+- Use visualizations and probabilities to analyze multivariate associations between categorical variables
+
+
+# Getting started
+
+- Go to the [sta199-fa21-003](https://github.com/sta199-fa21-003) organization on GitHub. Click on the repo with the prefix **hw-03**. It contains the starter documents you need to complete the assignment.
+
+- Clone the repo and start a new project in RStudio. See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning a repo and starting a new R project.
+
+# Packages
+
+You will work with the following packages: 
+
+```{r load-package, eval=FALSE}
+library(tidyverse)
+library(fivethirtyeight)
+```
+
+# Data: The Work of Bob Ross
+  
+Bob Ross was a painter who was most famous for his PBS television show *The Joy of Painting*. In each episode, Ross created a new oil painting and  provided instructions and commentary as he painted it. Ambitious viewers could paint along but viewers simply enjoyed watching and listening to Ross's soothing voice as he painted an outdoor scene in 30 minutes. 
+
+In 2014, Walt Hickey wrote an article for FiveThirtyEight using statistics to analyze the paintings created on the show.The article focused on features that were often seen in Ross's paintings, such as trees, clouds, cabins, among others. [Click here](https://fivethirtyeight.com/features/a-statistical-analysis-of-the-work-of-bob-ross/) to see the article. 
+
+In this assignment, you will analyze the data that was used for the article. The data is in the `bob_ross` data set in the **fivethirtyeight** R package. Each observation represents an episode of the TV show. One painting was created in an episode.  The analysis will focus on the following variables: 
+
+- `conifer`: (0) painting has 0 coniferous trees (1) painting has at least one coniferous tree
+- `deciduous`: (0) painting has 0 deciduous trees (1) painting has at least one deciduous tree
+- `guest`:  (0) show featured Bob Ross (1) show featured guest painter
+- `tree`: (0) painting included no tree (1) painting has at least one tree
+- `trees`: (0) painting had 0 or 1 trees (1) painting has at least two trees
+
+Type `??bob_ross` in the console to see the full data dictionary.
+
+# Exercises 
+
+A few reminders as you complete the assignment: 
+
+- Regularly knit, commit, and push your updates to GitHub.
+- Write all narrative in complete sentences, and plots should have clear labels and a clear and informative title. 
+- All probabilities must be calculated in a reproducible way for all exercises, with the exception of Exercise 6.
+- All code should be written using the tidyverse and should be fully readable in the knitted PDF.
+
+<hr> 
+
+1. Though Bob Ross created an overwhelming majority of the paintings on the show *The Joy of Painting*, a guest painter was occasionally featured on the show.  What is the probability a randomly selected episode featured a guest painter?
+  
+2. Bob Ross is known for painting "happy little trees", but was he actually more likely to have a tree in this paintings than other artists? To answer this question...
+
+    - Calculate the probability a painting contained at least one tree conditioned on whether the painting was created by Bob Ross or a guest painter.
+    - Use `geom_col` to create a visualization of these probabilities. Make the axis labels for the painter "Bob Ross" and "Guest Painter" instead of 0 and 1. Fill in the bars using the color Sap Green (Hex Code #0a3410), a color commonly used in Bob Ross's paintings.
+    - Does your analysis support Bob Ross's reputation of frequently painting "happy little trees"? Briefly explain. 
+
+3. The next few questions will focus only on paintings created by Bob Ross. Make a new data frame called `ross_paintings` that only includes episodes (and thus paintings) made by Bob Ross. **Save this data frame and use it for exercises 4 - 6**
+
+4. Let's do further analysis on the trees Bob Ross painted. This exercise will focus on paintings that feature exactly one tree.
+ 
+     - What is the probability a randomly selected Bob Ross painting features exactly one tree?
+    - Suppose you randomly select a Bob Ross painting and find that it features exactly one tree. Would you expect the tree in this painting to be a coniferous or deciduous tree? Briefly explain, showing the code, output and/or visualizations used to support your response. 
+
+5. Consider all paintings created by Bob Ross. Are the following events disjoint? 
+
+    - **A**: A Bob Ross painting has a coniferous tree
+    - **B**: A Bob Ross painting has a deciduous tree
+
+    Briefly explain, showing the code, output and/or visualizations used to support your response. 
+
+6. In the FiveThirtyEight article, Walt Hickey calculates various probabilities to describe the combination of features typically found in Bob Ross paintings. He states the following about the presence of cabins and lakes in Ross's paintings: *"About 18 percent of his paintings feature a cabin. Given that Ross painted a cabin, there’s a 35 percent chance that it’s on a lake..."* Additionally, about 34% of Ross's paintings feature a lake. 
+
+    - Suppose you randomly select a Bob Ross painting and see that it features a lake. Use Bayes Theorem and the information from the article to calculate the probability this painting also features a cabin. Show your work using the Hypothetical 10000 method. *Note: You do <u>not</u> have to write reproducible code for this question. You may show you work using R as a calculator.* 
+    - Based on this analysis, are the following events independent? Briefly explain.
+        - **A**: A Bob Ross painting features a cabin 
+        - **B**: A Bob Ross painting features a lake
+
+7. **Your turn!** Use this data to explore a question of your choice about paintings created in the TV show *The Joy of Painting*. Your question should explore the relationship between 3 variables in the data set; at least one of the variables must be one that hasn't been used in exercises 1 - 6. You may use the entire data set or focus the analysis on paintings made by Bob Ross. 
+ 
+    - Clearly state the question you're exploring. 
+     - Create 1 - 2 visualizations that can be used to explore the question. Customize the colors of your visualization using some of the [colors commonly used in Bob Ross paintings](https://thomaspark.co/2015/11/bob-ross-color-palette-in-css/). *Hint: [Click here](https://ggplot2.tidyverse.org/reference/scale_manual.html) for functions to manually create color palettes in `ggplot2`.*
+    - Calculate the relevant probabilities needed to answer your question. 
+    - Write a short narrative, about 2 - 4 sentences, answering the research question based on the visualization and probabilities. *Note: The narrative should not exceed 4 sentences.* 
+ 
+ 
+
+# Submission
+
+Knit to PDF to create a PDF document. Stage and commit all remaining changes, 
+and push your work to GitHub. Make sure all files are updated on your GitHub 
+repo.
+
+Only upload your PDF document to Gradescope. Before you submit the 
+uploaded document, mark where each answer is to the exercises. If any answer 
+spans multiple pages, then mark all pages. Associate the "Overall" section with 
+the first page.
+
+# Grading (50 pts)
+
+| Component | Points |
+|:----------|:-------|
+| Ex 1     |  3  |
+| Ex 2      |  8  |
+| Ex 3      | 2    |
+| Ex 4      |  8  |
+| Ex 5     |  6 |
+| Ex 6    |8  |
+| Ex 7    | 10   |
+| Workflow & formatting   | 5    |
+
+*Workflow and formatting* includes includes having  at least three meaningful commits, a neatly formatted PDF document with readable headers, updating the name and date, using the tidyverse syntax,  and naming all code chunks.

@@ -1,0 +1,52 @@
+---
+title: "AE 29: Interactive data visualizations" 
+subtitle: ""
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+    code_folding: hide
+---
+
+```{r include = F}
+knitr::opts_chunk$set(warning = F, 
+                      message = F)
+```
+
+
+## Announcements
+
+- Ed Discussion for this class: https://edstem.org/us/courses/8027/discussion/900594
+
+- [HW 05](https://sta199-fa21-003.netlify.app/hw/hw-05.html) **due Nov 30 at 11:59pm**
+
+- **Project due dates:** 
+  - [Written report](https://sta199-fa21-003.netlify.app/project/#written-report) due **Fri, Dec 03** (accepted until Sun, Dec 05 with no late penalty)
+  - [Video presentation + slides](https://sta199-fa21-003.netlify.app/project/#video-presentation--slides) due **Wed, Dec 08 at 11:59pm**
+  - [Project GitHub repo](https://sta199-fa21-003.netlify.app/project/#project-repository) **due Wed, Dec 08 at 11:59pm**
+  - [Presentation comments](https://sta199-fa21-003.netlify.app/project/#presentation-comments) **Thu, Dec 09 - Fri, Dec 10 at 11:59pm**
+  
+- **Other due dates:**
+  - [Statistics experience](https://sta210-fa21.netlify.app/hw/stats-experience.html) due **Fri, Dec 03 at 11:59pm** on Gradescope
+  - Team Feedback #2 **due Fri, Dec 03 at 11:59pm** (Check email sent Nov 29 around 9am)
+
+## Course evaluations
+
+Please take a few minutes to fill out the course evaluations!
+
+*To complete your course evaluation feedback, you will access a new system.  The new system will have more open access to past course evaluations for students.*
+
+*Your investment in completing this evaluation thoughtfully for about 15 minutes today will help us improve this course for future students but will also help select the questions for the future evals for all courses at Duke!* 
+
+*Thank you in advance for the time you spend on this today. We hope you’ll enjoy using the new system and will find the forms you help to design useful for your (and future students’) course decisions.*
+
+##  AE 29: Interactive data visualizations
+
+- Go to the ae-29-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio.
+

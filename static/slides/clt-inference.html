@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Inference using the Central Limit Theorem</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="introds.org" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Inference using the Central Limit Theorem
+## <br> <br> Introduction to Data Science @ Duke
+### <a href="https://www.introds.org/">introds.org</a>
+
+---
+
+
+
+
+
+layout: true
+  
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+&lt;a href="https://introds.org" target="_blank"&gt;introds.org&lt;/a&gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+---
+
+
+
+## The Central Limit Theorem
+
+For a population with a well-defined mean `\(\mu\)` and standard deviation `\(\sigma\)`,
+these three properties hold for the distribution of sample average `\(\bar{X}\)`,
+assuming certain conditions hold:
+
+✅ The distribution of the sample statistic is nearly normal
+
+✅ The distribution is centered at the (often unknown) population parameter
+
+✅ The variability of the distribution is inversely proportional to the square 
+root of the sample size
+
+---
+
+## Why do we care?
+
+Knowing the distribution of the sample statistic `\(\bar{X}\)` can help us
+
+--
+
+- estimate a population parameter as **point estimate** `\(\boldsymbol{\pm}\)` **margin of error**
+  - the .vocab[margin of error] is comprised of a measure of how confident we want to be and how variable the sample statistic is
+
+&lt;br&gt; 
+--
+
+- test for a population parameter by evaluating how likely it is to obtain to observed sample statistic when assuming that the null hypothesis is true
+  - this probability will depend on how variable the sampling distribution is
+
+---
+
+class: center, middle
+
+## Inference based on the CLT
+
+---
+
+## Inference based on the CLT
+
+If necessary conditions are met, we can also use inference methods based on the CLT. Suppose we know the true population standard deviation, `\(\sigma\)`. 
+
+--
+
+Then the CLT tells us that `\(\bar{X}\)` approximately has the distribution `\(N\left(\mu, \sigma/\sqrt{n}\right)\)`. 
+
+That is,
+
+`$$Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0, 1)$$`
+
+---
+
+class: middle
+
+# What if `\(\sigma\)` isn't known?
+---
+
+## T distribution
+
+In practice, we never know the true value of `\(\sigma\)`, and so we estimate it from our data with `\(s\)`.
+
+We can make the following test statistic for testing
+a single sample's population mean, which has a .vocab[t-distribution with n-1 degrees of freedom]:
+
+.question[
+$$ T = \frac{\bar{X} - \mu}{s/\sqrt{n}} \sim t_{n-1}$$
+]
+
+---
+
+## T distribution 
+
+
+- The t-distribution is also unimodal and symmetric, and is centered at 0
+
+--
+
+- It has thicker tails than the normal distribution
+  - This is to make up for additional variability introduced by using `\(s\)` instead of `\(\sigma\)` in calculation of the 
+SE
+
+--
+
+- It is defined by the degrees of freedom 
+---
+
+## T vs Z distributions
+
+&lt;img src="clt-inference_files/figure-html/unnamed-chunk-2-1.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## T distribution
+
+.pull-left[
+.vocab[Finding probabilities under the t curve:]
+
+
+```r
+#P(t &lt; -1.96)
+pt(-1.96, df = 9)
+```
+
+```
+## [1] 0.0408222
+```
+
+
+```r
+#P(t &gt; -1.96)
+pt(-1.96, df = 9, 
+   lower.tail = FALSE)
+```
+
+```
+## [1] 0.9591778
+```
+]
+
+--
+
+.pull-right[
+
+.vocab[Finding cutoff values under the t curve:]
+
+
+```r
+# Find Q1
+qt(0.25, df = 9)
+```
+
+```
+## [1] -0.7027221
+```
+
+
+```r
+# Q3
+qt(0.75, df = 9)
+```
+
+```
+## [1] 0.7027221
+```
+]
+
+
+---
+
+## Resident satisfaction in Durham
+
+`durham_survey` contains resident responses to a survey given by the City of
+Durham in 2018. These are a randomly selected, representative sample of
+Durham residents.
+
+Questions were rated 1 - 5, with 1 being "highly dissatisfied" and 5 being
+"highly satisfied."
+
+--
+
+.question[
+Is there evidence that, on average, Durham residents are generally satisfied (score greater than 3) with the quality of the public library system? 
+]
+
+
+---
+
+## Exploratory Data Analysis
+
+.pull-left[
+.small[
+
+```r
+durham &lt;- read_csv("data/durham_survey.csv") %&gt;%
+  filter(quality_library != 9)
+```
+]
+
+.midi[
+
+```r
+durham %&gt;% 
+  summarise(x_bar = mean(quality_library), 
+            med = median(quality_library), 
+            sd = sd(quality_library), 
+            n = n())
+```
+
+```
+## # A tibble: 1 × 4
+##   x_bar   med    sd     n
+##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;
+## 1  3.97     4 0.900   521
+```
+]
+]
+
+.pull-right[
+
+&lt;img src="clt-inference_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## Hypotheses
+
+.question[
+What are the hypotheses for evaluating if Durham residents, on average, are generally satisfied with the public library system?
+]
+
+--
+
+`$$H_0: \mu = 3$$` 
+`$$H_a: \mu &gt; 3$$`
+
+---
+
+## Conditions
+
+.question[
+What conditions must be satisfied to conduct this hypothesis test using methods 
+based on the CLT? Are these conditions satisfied?
+]
+
+--
+
+**Independence?** 
+
+--
+
+✅ The residents were randomly selected for the survey, and 521 is less than 10% of the Durham population (~ 270,000).
+
+--
+
+**Sample size / distribution?**
+
+--
+
+✅ 521 &gt; 30, so the sample is large enough to apply the Central Limit Theorem. 
+
+---
+
+## Calculating the test statistic
+
+Summary statistics from the sample:
+
+
+```
+## # A tibble: 1 × 3
+##    xbar     s     n
+##   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;
+## 1  3.97 0.900   521
+```
+
+--
+
+And the CLT says:
+
+`$$\bar{x} \sim N\left(mean = \mu, SE = \frac{\sigma}{\sqrt{n}}\right)$$`
+
+--
+
+
+
+---
+
+## Calculating the test statistic
+
+.question[
+How many standard errors away from the hypothesized population mean is the observed sample 
+mean? This is our test statistic. 
+]
+
+--
+
+
+```r
+(se &lt;- durham_summary$s / sqrt(durham_summary$n)) # SE
+```
+
+```
+## [1] 0.03944416
+```
+
+--
+
+
+```r
+(t &lt;- (durham_summary$xbar - 3) / se) # Test statistic
+```
+
+```
+## [1] 24.57372
+```
+
+---
+
+## Calculating the p-value
+
+.question[
+How likely are we to observe a sample mean that is at least as extreme as the 
+observed sample mean, if in fact the null hypothesis is true?
+]
+
+
+
+```r
+(df &lt;- durham_summary$n - 1) # Degrees of freedom
+```
+
+```
+## [1] 520
+```
+
+--
+
+
+```r
+pt(t, df, lower.tail = FALSE) # P-value, P(T &gt; t |H_0 true)
+```
+
+```
+## [1] 2.247911e-89
+```
+
+---
+
+## Conclusion
+
+The p-value is very small, so we reject `\(H_0\)`.
+
+--
+
+The data provide sufficient evidence at the `\(\alpha = 0.05\)` level that Durham residents, on average, are satisfied with the quality of the public library system `\((\mu &gt;3)\)`
+
+--
+
+.question[
+Would you expect a 95% confidence interval to include 3?
+]
+
+---
+
+## Confidence interval for a mean
+
+.alert[
+**General form of the confidence interval** 
+
+`$$point~estimate \pm critical~value \times SE$$`
+]
+
+--
+
+.alert[
+**Confidence interval for the mean** 
+
+`$$\bar{x} \pm t^*_{n-1} \times \frac{s}{\sqrt{n}}$$`
+]
+
+---
+
+## Calculate 95% confidence interval 
+
+.alert[
+`$$\bar{x} \pm t^*_{n-1} \times \frac{s}{\sqrt{n}}$$`
+]
+
+--
+
+
+
+```r
+# Critical value 
+t_star &lt;- qt(0.975, df)
+```
+
+--
+
+
+```r
+# Point estimate 
+point_est &lt;- durham_summary$xbar
+```
+
+--
+
+
+```r
+# Confidence interval
+CI &lt;- point_est + c(-1,1) * t_star * se
+round(CI, 2)
+```
+
+```
+## [1] 3.89 4.05
+```
+
+---
+
+## Interpret 95% confidence interval 
+
+The 95% confidence interval is 3.89 to 4.05. 
+
+.question[
+Interpret this interval in context of the data.
+]
+
+--
+
+**We are 95% confident that the true mean rating for Durham residents' satisfaction with the library system is between 3.89 and 4.05.**
+
+---
+
+class: middle
+
+# CLT-based inference using `infer`
+
+---
+
+# CLT-based hypothesis testing in `infer`
+
+`$$H_0: \mu = 3 \text{ vs }H_a: \mu &gt; 3$$`
+--
+
+
+```r
+durham %&gt;%
+  t_test(response = quality_library, 
+         mu = 3, 
+         alternative = "greater", 
+         conf_int = FALSE)
+```
+
+```
+## # A tibble: 1 × 5
+##   statistic  t_df  p_value alternative estimate
+##       &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;
+## 1      24.6   520 2.25e-89 greater         3.97
+```
+
+---
+
+## CLT-based confidence intervals in `infer`
+
+Calculate a 95% confidence interval for the mean satisfaction rating.
+--
+
+
+```r
+durham %&gt;%
+  t_test(response = quality_library, 
+         alternative = "two-sided",
+         conf_int = TRUE, conf_level = 0.95) 
+```
+
+```
+## # A tibble: 1 × 7
+##   statistic  t_df p_value alternative estimate lower_ci upper_ci
+##       &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+## 1      101.   520       0 two.sided       3.97     3.89     4.05
+```
+
+---
+
+class: middle
+
+.question[
+What is similar, and what is different, between the CLT-based test of means vs. the simulation-based test?
+]
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightLines": true,
+"highlightStyle": "solarized-light",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

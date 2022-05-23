@@ -1,0 +1,207 @@
+---
+title: "Lab 04: Visualizing spatial data"
+subtitle: "due Monday, September 20 at  11:59p"
+output: 
+  tufte::tufte_html:
+    css: "sta199-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+## Goals
+
+In this lab you will...
+
+- practice collaboration using the data science workflow.
+- create effective spatial visualizations. 
+- use spatial visualizations to answer analysis questions. 
+
+# Meet your team!
+
+[Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/ET8EkNOunOpKr81yt0fwPqkBkcW3qMrTP1f5gvgQpRLLgg?e=ZIm5o0) to see the team assignments for STA 199.  This will be your team for labs and the final project.
+
+Before you get started on the lab, your TA will walk you through the following: 
+
+`r emo::ji("white_check_mark")` Icebreaker activity to get to know your teammates.
+
+`r emo::ji("white_check_mark")` Come up with a team name. You can't use the same name as another team, so I encourage you to be creative! Your TA will get your team name by the end of lab. 
+
+`r emo::ji("white_check_mark")` Fill out the team agreement. This will help you figure out a plan for communication,and working together during labs and outside of lab times. You can find the team agreement in the GitHub repo **team-agreement-[github_team_name]**. 
+  
+  - Have **one person** from the team clone the repo and start a new RStudio project. This person will type the team's responses as you discuss the sections of the agreement. No one else in the team should type at this point but should be contributing to the discussion.
+  - Be sure to push the completed agreement to GitHub. Each team member can refer to the document in this repo or download the PDF of the agreement for future reference. *You do <u>not</u> need to submit the agreement on Gradescope.* 
+
+# Getting started 
+
+- A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.
+
+- Go to the [sta199-fa21-003 course organization](https://www.github.com/sta199-fa21-002) on GitHub.
+
+- You should see a repo with the **lab-04** prefix. 
+  
+- Each person on the team should clone the repository and open a new project in RStudio. **Do not make any changes to the .Rmd file until the instructions tell you do to so.**
+
+# Workflow: Using git and GitHub as a team
+
+**Assign each person on your team a number 1 through 4. For teams of three, Team Member 1 can take on the role of Team Member 4.**
+
+The following exercises must be done in order. **Only one person should type in the .Rmd file and push updates at a time.** When it is not your turn to type, you should still share ideas and contribute to the team's discussion.
+
+## Update YAML 
+
+:::{.commit}
+**Team Member 1: Change the author to your team name and include each team member's name in the `author` field of the YAML in the following format. `Team Name: Member 1, Member 2, Member 3, Member 4`. Knit, commit, and push the changes to GitHub.**
+
+**Team Members 2, 3, 4: Click the **Pull** button in the Git pane to get the updated document. You should see the updated name in the .Rmd file.**
+:::
+
+# Packages 
+
+We will use the following packages: 
+
+```{r eval  = F}
+library(tidyverse)
+library(sf)
+```
+
+
+# Data: North Carolina Congressional Districts and Redistricting.
+
+In this lab you will use the `sf` package to visualize district-level congressional district data in the most recent congressional and presidential elections in North Carolina. Given the upcoming redistricting following the 2020 census, we will consider which districts may be overpopulated and thus may shrink as a result of redistricting. 
+
+The variables in `nc_dists`are as follows:
+
+- `DISTRICT `: The district number
+- `POPULATION`: District population as of 2010
+- `geometry`: `sf` geometry
+
+The variables in `nc_newdata` are as follows:
+
+- `District`: The district number
+-  `trump_pct_2020`: The two-party Republican presidential vote in 2020.
+(Calculated as Republican vote/Republican + Democratic vote) 
+- `trump_pct_2016`: The two-party Republican presidential vote in 2016.
+- `house_gop_pct_2020`: The two-party Republican U.S. House vote in 2020.
+- `population_2020`: The old/current district population in 2020 .
+
+The presidential election data is from [DailyKos Elections](https://www.dailykos.com/stories/2020/11/19/1163009/-Daily-Kos-Elections-presidential-results-by-congressional-district-for-2020-2016-and-2012) and the House election data is from the The CQ Voting and Elections Collection, accessed through Duke Libraries. The population data is from the 2020 census and has been compiled by [Daily Kos Elections](https://docs.google.com/spreadsheets/d/1Q62LAntj9AV4uRmzvp66-UA7oZ2HY91K1vosh8Y8mVg/edit#gid=853297232). 
+
+
+# Exercises
+
+**Do the following exercises in order, following each step carefully.**
+
+**Only one person at a time should type in the `.Rmd` file and push updates.**
+
+**If you are working on any portion of the lab virtually, the person working should share their screen and the others should follow along.**
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team Member 1:** If you haven't already, change the author to your team name and include each team member's name in the `author` field of the YAML in the following format. `Team Name: Team member 1, Team member 2, Team member 3, Team member 4`. 
+
+Type the team's response to Exercises 1 - 2. 
+::: 
+
+
+1. Join the `nc` and `nc_newdata` data frames to create a new data frame called `nc_data`. *Hint: Include the argument `by = c("DISTRICT" = "District")` in the join function to join the data frames based on their respective district variable. The district is stored as numeric data in `nc_new.`. Use [as.character()](https://www.rdocumentation.org/packages/fingerprint/versions/3.5.7/topics/as.character) to make district a character data type before joining.* 
+
+
+```{marginfigure}
+[Click here](https://ggplot2.tidyverse.org/reference/scale_gradient.html) for documentation on `scale_fill_gradient2`.
+```
+
+2. Create a visualization with the congressional districts in North Carolina filled in based `trump_pct_2020`, the percent of votes in that congressional district for Donald Trump. Use `scale_fill_gradient2()` to apply an informative color palette. In the function, specify the `low` and `high` colors and set the `midpoint` to 50 (representing 50% of the vote). 
+
+    The colors "#DE0100" and "#0015BC" may be good choices for Republicans and Democrats, respectively, but you are welcome to choose different colors. Give the plot an informative title, subtitle, and label fill. 
+
+    - Write 2 observations from the plot. 
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team member 1**: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.
+
+**All other team members**: **Pull** to get the updated documents from GitHub. Click on the .Rmd file, and you should see the responses to exercises 1- 2.
+
+**Team Member 2**: It's your turn! Type the team's response to exercises 3 - 4.
+:::
+
+3. Create a new variable called `trump_change` that measures the difference in the Republican vote share in 2020 and 2016. This variable should be calculated in way that represents how much better (or worse) Trump did in a district in 2020 compared to 2016.
+
+4. Create a visualization with the congressional districts in North Carolina filled in based on `trump_change`. Similar to Exercise 2, fill use informative colors, and set the midpoint to 0 (representing **no change** from 2016 to 2020.) 
+
+    - Use the plot to describe the change in votes for Trump in 2020 compared to 2016 across different congressional districts in North Carolina. 
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team member 2**: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.
+
+**All other team members**: **Pull** to get the updated documents from GitHub. Click on the .Rmd file, and you should see the responses to exercises 3 - 4.
+
+**Team Member 3**: It's your turn! Type the team's response to exercise 5.
+:::
+
+5. Now let's compare the Republican presidential performance in 2020 to the Republican *congressional* performance at the district level. The variable `house_gop_pct_2020` represents the two-party Republican percentage of the U.S. House vote in 2020. 
+
+    - First, create a new variable `gop_diff` that measures the difference between the percentage of the vote received by the Republican U.S. House candidate and the percentage received by the Republican presidential candidate in 2020. 
+    - Then, create a plot with the congressional districts in North Carolina filled in based on `gop_diff`. Choose different colors and set the midpoint at 0 (thus representing **no difference** between the House Republican candidate and Trump's vote percentage). 
+    - It may be helpful to add the district numbers to the plot. You can do so by adding 
+    `  geom_sf_text(aes(label = DISTRICT))` to the code used to make the plot.
+    - Describe what you observe from this plot. Why was `gop_diff` in one congressional district so much different from the others? (You may need to do brief research on  the 2020 North Carolina U.S. House elections to answer this question - any major news website may be useful.)
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team member 3**: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.
+
+**All other team members**: **Pull** to get the updated documents from GitHub. Click on the .Rmd file, and you should see the responses to exercise 5.
+
+**Team Member 4**: It's your turn! Type the team's response to exercise 6.
+:::
+
+6. In 2022, North Carolina will be required to draw new congressional districts, and they will all have to have equal population. The population is based on the 2020 U.S. Census. North Carolina will also have a 14th Congressional District for the first time in its history! The variable `population_2020` contains a variable measuring the population of the current (2010 census) districts. 
+
+    Make a map of each district's population based on the 2020 U.S. Census. Choose a new color palette for the scale. You can use the `scale_fill_gradient` function and do not have to set a midpoint. 
+  
+    - What do you observe? 
+    - Which which area(s) of the state have the most overpopulated districts and thus the districts that will have to reduce in size in redistricting?
+
+::: {.commit}
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team member 4**: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.
+
+**All other team members**: **Pull** to get the updated documents from GitHub. Click on the .Rmd file, and you should see the team's completed lab!
+:::
+
+# Wrapping up
+
+Go back through your write up to make sure you followed the coding style guidelines we discussed in class (e.g. no long lines of code).
+
+:::{.commit}
+**Team Member 2:** Make any edits as needed. Then knit, commit, and push the updated documents to GitHub if you made any changes.
+
+All other team members can click to pull the finalized document.
+:::
+
+# Submission
+
+- **Select <u>one</u> team member to upload the team's PDF submission to Gradescope.** 
+- Be sure to include every team member's name in the Gradescope submission 
+- Associate the "Workflow & formatting" graded section with the first page of your PDF, and mark the page associated with each exercise. If any answer spans multiple pages, then mark all pages.
+
+**There should only be <u>one</u> submission per team on Gradescope.**
+
+
+# Grading 
+
+| Component | Points |
+|:----------|:-------|
+| Team Agreement      | 4      |
+| Ex 1     | 6   |
+| Ex 2      | 8   |
+| Ex 3      | 2    |
+| Ex 4      | 8     |
+| Ex 5     | 8   |
+| Ex 6    | 8   |
+| Workflow & formatting   | 6      |
+
+- The "Workflow & formatting" grade is to assess the reproducible workflow. This includes having at least one informative commit by each team member,  labeling the code chunks, and having readable code in the tidyverse syntax that does not exceed 80 characters (i.e., we can read all your code in the knitted PDF.)

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/main-site.css">
+<link rel="stylesheet" href="/css/fa5-all.css">
+<style type="text/css">
+    body {
+	background-color: #ffffff;
+	color: #404040
+}
+
+/* Links */
+
+a {
+  color: #07acac;
+}
+
+a:hover {
+  color: #07acac;
+}
+
+/* Landing page content bands */
+
+#homeContent .band.first {
+  background-color: #ffffff
+}
+
+#homeContent .band.second {
+  background-color: #fcfcfc
+}
+
+#homeContent .band.third {
+  background-color: #ffffff
+}
+
+/* Top navigation bar menu */
+
+#rStudioHeader {
+  background-color: #4187aa;
+  color: #ffffff;
+}
+
+#rStudioHeader .productName {
+  color: #ffffff
+}
+
+#rStudioHeader .productName:hover {
+  color: #07acac
+}
+
+#rStudioHeader #menu .menuItem.a {
+  background-color: #75aadb;
+  color: #ffffff;
+}
+
+#rStudioHeader #menu .menuItem:hover {
+  background-color: #fcfcfc;
+  color: #07acac;
+}
+
+#rStudioHeader #menu .menuItem.current {
+  background-color: #fcfcfc;
+  color: #07acac;
+  text-decoration: none;
+}
+
+/* Footer */
+
+#rStudioFooter.band {
+  background-color: #4187aa;
+}
+
+#rStudioFooter .bandContent #copyright {
+  color: #ffffff;
+}
+
+/* Tables */
+
+table tbody tr:nth-child(even){
+  background-color: #fcfcfc;
+}
+
+table tbody tr:nth-child(odd){
+  background-color: #1a162d10;
+}
+
+.latest {
+  border-top: .5em solid <no value>;
+}
+</style>
+
+  <link rel="stylesheet" href="/css/sta199.css">
+
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta name="og:image" content="/images/" >
+
+  <meta property="twitter:card" content="summary_large_image">
+
+<meta name="twitter:image" content="/images/" ><meta name="generator" content="Hugo 0.87.0" />
+
+<meta property="og:type" content="website"><title>STA 199 - STA 199 Final Project</title>
+    <meta property="og:title" content="STA 199 - STA 199 Final Project">
+    
+    
+    
+    
+    <meta property="description" content="Website for STA 199: Intro to Data Science at Duke University">
+    <meta property="og:description" content="Website for STA 199: Intro to Data Science at Duke University">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
+<link rel="manifest" href="/images/favicons/site.webmanifest" />
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" />
+<link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" href="/images/favicons/browserconfig.xml" >
+
+
+
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="/js/site.js"></script>
+
+
+  <script type="text/javascript" src="/js/sta199.js"></script>
+
+
+<link rel="icon" href="/images/favicon.ico" />
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+
+
+
+  <body>
+    <div id="appTidyverseSite" class="shrinkHeader alwaysShrinkHeader">
+      <div id="main">
+        
+        <div id="rStudioHeader">
+          <div class="band">
+            <div class="innards bandContent">
+              <div>
+                <a class="productName" href="/">STA 199</a>
+                
+              </div>
+              <div id="menu">
+  <div id="menuToggler"></div>
+  <div id="menuItems" class="">
+    <script defer src="/static/fontawesome/fontawesome-all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    
+      
+      
+      
+    <a class="menuItem " href="/syllabus/">Syllabus</a>
+    
+      
+      
+      
+    <a class="menuItem " href="/schedule/">Schedule</a>
+    
+      
+      
+      
+    <a class="menuItem current" href="/project/">Project</a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://sakai.duke.edu"> Sakai</a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://www.gradescope.com">Gradescope</a>
+    
+      
+      
+      
+    <a class="menuItem " href="/help/">Help</a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://vm-manage.oit.duke.edu/containers"><i class="fab fa-r-project fa-lg"></i></a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://www.github.com/sta199-fa21-003"><i class='fab fa-github fa-lg'></i></a>
+    
+      
+      
+      
+    <a class="menuItem " href="https://edstem.org/us/courses/8027/discussion/"><i class="fas fa-comments fa-lg"></i></a>
+    
+  </div>
+</div>
+
+
+
+            </div>
+          </div>
+        </div>
+</head>
+<body>
+
+
+ 
+
+<div class="band padForHeader">
+  <div class="bandContent">
+    <div class="full splitColumns withMobileMargins">
+      <div class="column75">
+
+      <h1 class="article-title">STA 199 Final Project</h1>
+
+      <div class="article-content">
+      <h2 id="timeline">Timeline</h2>
+<p>Proposal due <strong>Thursday, October 14</strong></p>
+<p>Draft report due <strong>Wednesday, November 17</strong></p>
+<p>Peer feedback due <strong>Monday, November 22</strong></p>
+<p>Final written report due <strong>Friday, December 3</strong> (accepted until December 5)</p>
+<p>Presentation video, slides, repo due <strong>Wednesday, December 8</strong></p>
+<p>Presentation comments due <strong>Friday, December 10</strong></p>
+<h2 id="introduction--grading-summary">Introduction &amp; grading summary</h2>
+<p><strong>TL;DR</strong>: <em>Pick a dataset and do something with it. That is your
+final project.</em></p>
+<p>The final project for this class will consist of analysis on a dataset of your own choosing. The dataset may already exist, you may collect your own data by scraping the web.</p>
+<p>Choose the data based on your group&rsquo;s interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way.</p>
+<h3 id="logistics">Logistics</h3>
+<p>You will work on the project with your lab groups.</p>
+<p>The four primary deliverables for the final project are</p>
+<ul>
+<li>A written, reproducible report detailing your analysis</li>
+<li>A GitHub repository corresponding to your report</li>
+<li>Slides + a video presentation</li>
+<li>Formal peer review on another team&rsquo;s project</li>
+</ul>
+<h3 id="grading-summary">Grading summary</h3>
+<p>The grade breakdown is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Total</th>
+<th>100 pts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project proposal</strong></td>
+<td>5 pts</td>
+</tr>
+<tr>
+<td><strong>Written report</strong></td>
+<td>50 pts</td>
+</tr>
+<tr>
+<td><strong>Slides</strong></td>
+<td>10 pts</td>
+</tr>
+<tr>
+<td><strong>GitHub repo &amp; reproducibility</strong></td>
+<td>5 pts</td>
+</tr>
+<tr>
+<td><strong>Video presentation</strong></td>
+<td>20 pts</td>
+</tr>
+<tr>
+<td><strong>Peer feedback</strong></td>
+<td>10 pts</td>
+</tr>
+</tbody>
+</table>
+<p><strong><i>Note: No late projects are accepted.</i></strong></p>
+<h2 id="data-sources">Data sources</h2>
+<p>In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have <strong>at least 500 observations and at least ten variables (or has been approved by Prof. Tackett)</strong>. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data.</p>
+<p>If you are using a dataset that comes in a
+format that we haven&rsquo;t encountered in class (for instance, a <code>.DAT</code> file), make
+sure that you are able to load it into RStudio as this can be tricky depending
+on the source. If you are having trouble, ask for help before it is too late.</p>
+<p><strong>Data sets that can&rsquo;t be used:</strong></p>
+<ul>
+<li>Data sets that have been used for class examples or assignments.</li>
+<li>Data sets from Kaggle.</li>
+<li>Data sets analyzed in another course.</li>
+</ul>
+<p>There will be limits on the number of groups that can use a given data set, so I encourage you to be creative!</p>
+<p>Some resources that may be helpful:</p>
+<ul>
+<li><a href="https://rfun.library.duke.edu/blog/data-sources-for-regression-analysis/">R Data Sources for Regression Analysis</a></li>
+<li><a href="https://data.fivethirtyeight.com/">FiveThirtyEight data</a></li>
+<li><a href="https://github.com/rfordatascience/tidytuesday">TidyTuesday</a></li>
+</ul>
+<p>Additions:</p>
+<ul>
+<li><a href="https://www.who.int/gho/database/en/">World Health Organization</a></li>
+<li><a href="https://data.nber.org/data/">The National Bureau of Economic Research</a></li>
+<li><a href="https://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42&amp;sId=1479329328660">International Monetary Fund</a></li>
+<li><a href="http://gss.norc.org/">General Social Survey</a></li>
+<li><a href="http://data.un.org/">United Nations Data</a></li>
+<li><a href="https://unstats.un.org/home/">United Nations Statistics Division</a></li>
+<li><a href="https://data.gov.uk/">U.K. Data</a></li>
+<li><a href="https://www.data.gov/">U.S. Data</a></li>
+<li><a href="https://www.census.gov/data.html">U.S. Census Data</a></li>
+<li><a href="https://ec.europa.eu/eurostat/">European Statistics</a></li>
+<li><a href="https://www.statcan.gc.ca/eng/start">Statistics Canada</a></li>
+<li><a href="https://www.pewresearch.org/download-datasets/">Pew Research</a></li>
+<li><a href="https://data.unicef.org/">UNICEF</a></li>
+<li><a href="https://www.cdc.gov/datastatistics/index.html">CDC</a></li>
+<li><a href="https://datacatalog.worldbank.org/">World Bank</a></li>
+<li><a href="https://electionstudies.org//">Election Studies</a></li>
+</ul>
+<p>All analyses must be done in RStudio, and your final written report and
+analysis <strong>must be reproducible</strong>. This means that you must create an R Markdown
+document attached to a GitHub repository that will create your written report
+exactly upon knitting.</p>
+<h2 id="project-proposal">Project proposal</h2>
+<p>There are two main purposes of the project proposal:</p>
+<ul>
+<li>To help you think about the project early, so you can get a head start on finding data, reading relevant literature, thinking about the questions you wish to answer, etc.</li>
+<li>To ensure that the data you wish to analyze, methods you plan to use, and the scope of your analysis are feasible and will help you be successful for this project.</li>
+</ul>
+<p>Choose <strong>three</strong> substantially different datasets you are interested in analyzing. For each, identify the components below.</p>
+<p>Include the following in the proposal:</p>
+<h3 id="introduction-and-data">Introduction and Data</h3>
+<p>For each data set, include the following:</p>
+<ul>
+<li>Identify the source of the data,</li>
+<li>When and how it was originally collected (by the original data curator, not necessarily how you found the data)</li>
+<li>A brief description of the observations</li>
+</ul>
+<h3 id="research-question">Research question</h3>
+<ul>
+<li>Describe the research topic along with a concise statement of the research question and hypotheses.</li>
+</ul>
+<h3 id="data-set">Data set</h3>
+<ul>
+<li>
+<p>Use the <code>glimpse</code> function to provide a glimpse of the data set.</p>
+</li>
+<li>
+<p>Place the file containing your data in the <code>data</code> folder of the project repo.</p>
+</li>
+</ul>
+<h3 id="submission">Submission</h3>
+<p>Submit the PDF of your proposal on Gradescope by <strong>Thursday, October 14 at 11:59pm</strong>. Be sure to select the names of all team members in the submission and mark all the pages associated with each data set. The teaching team will provide feedback on your proposal to help you determine a data set to use for the project.</p>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>Project proposals should have no more than one page of <strong>text.</strong> (not including the output from <code>glimpse</code>).</li>
+<li>You <strong>must</strong> use one of the data sets in the proposal for the final project, unless instructed otherwise by Prof. Tackett.</li>
+</ul>
+<h3 id="proposal-grading">Proposal grading</h3>
+<p>The project proposal will be graded as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Total</th>
+<th>5 pts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Introduction/data</strong></td>
+<td>2 pts</td>
+</tr>
+<tr>
+<td><strong>Research questions</strong></td>
+<td>2 pts</td>
+</tr>
+<tr>
+<td><strong>Results</strong></td>
+<td>1 pts</td>
+</tr>
+</tbody>
+</table>
+<h2 id="draft-report">Draft report</h2>
+<p>The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations.</p>
+<p>Write the draft in the <strong>written-report.Rmd</strong> file in your project repo. You do not need to submit the draft on Gradescope.</p>
+<p>Below is a brief description of the sections to focus on in the draft:</p>
+<h4 id="introduction-and-data-1">Introduction and data</h4>
+<p>The introduction provides motivation and context for your research. Describe
+your topic (citing sources) and provide a concise, clear statement of your
+research question and hypotheses.</p>
+<p>Then identify the source of the data, when and how it was collected, the cases,
+a general description of relevant variables.</p>
+<h4 id="methodology">Methodology</h4>
+<p>The methodology section should include visualizations and summary statistics
+relevant to your research question. You should also justify the choice of
+statistical method(s) used to answer your research question.</p>
+<h4 id="results">Results</h4>
+<p>Showcase how you arrived at answers to your research question using the
+techniques we have learned in class (and beyond, if you’re feeling adventurous).</p>
+<p>Provide only the main results from your analysis. The goal is not to do an
+exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data,
+that you are skilled in interpreting and presenting results, and that you can
+accomplish these tasks using R. More is not better.</p>
+<h2 id="peer-review">Peer review</h2>
+<p>Critically reviewing others' work is a crucial part of the scientific process, and STA 199 is no exception. You will be assigned a team to review. As part of the review process, you must provide your partner team a copy of your current report by <strong>Wednesday, November 17 at 11:59pm</strong>. After giving the report to your partner team, they will have until <strong>Monday, November 22 at 11:59pm</strong> to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience
+reading and constructively critiquing the work of others.</p>
+<p>During the peer feedback process, you will be provided read-only access to your  partner team&rsquo;s GitHub repo. Provide your feedback in the form of GitHub issues to your partner team&rsquo;s GitHub repo.</p>
+<p>Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&rsquo;s report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. As you work on the draft, the focus should be on the analysis and less on crafting the final report. <strong>Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and deriving initial results and conclusions.</strong></p>
+<p><a href="peer-review.html">Click here</a> for peer review instructions.</p>
+<h2 id="written-report">Written report</h2>
+<p>Your final report must be written using R Markdown. All team members must contribute to the GitHub repository, with regular meaningful commits / pushes.</p>
+<p>Before you finalize your report, make sure the printing of code chunks is turned off with the option <code>echo = FALSE</code>.</p>
+<p><strong>Submit the final report on Gradescope under the <i>Written Report</i> assignment on Gradescope.</strong> Your final report must match your GitHub repository <em>exactly</em>. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be <strong>no more than 10 pages long.</strong> There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.</p>
+<p>The written report is worth 50 points, broken down as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Total</th>
+<th>50 pts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Introduction/data</strong></td>
+<td>5 pts</td>
+</tr>
+<tr>
+<td><strong>Methodology</strong></td>
+<td>10 pts</td>
+</tr>
+<tr>
+<td><strong>Results</strong></td>
+<td>20 pts</td>
+</tr>
+<tr>
+<td><strong>Discussion</strong></td>
+<td>10 pts</td>
+</tr>
+<tr>
+<td><strong>Formatting</strong></td>
+<td>5 pts</td>
+</tr>
+</tbody>
+</table>
+<h4 id="introduction-and-data-2">Introduction and data</h4>
+<p>The introduction provides motivation and context for your research. Describe
+your topic (citing sources) and provide a concise, clear statement of your
+research question and hypotheses.</p>
+<p>Then identify the source of the data, when and how it was collected, the cases,
+a general description of relevant variables.</p>
+<h4 id="methodology-1">Methodology</h4>
+<p>The methodology section should include visualizations and summary statistics
+relevant to your research question. You should also justify the choice of
+statistical method(s) used to answer your research question.</p>
+<h4 id="results-1">Results</h4>
+<p>Showcase how you arrived at answers to your research question using the
+techniques we have learned in class (and beyond, if you’re feeling adventurous).</p>
+<p>Provide only the main results from your analysis. The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data,  that you are skilled in interpreting and presenting results, and that you can  accomplish these tasks using R. More is not necessarily better.</p>
+<h4 id="discussion">Discussion</h4>
+<p>This section is a conclusion and discussion. This will require a summary of
+what you have learned about your research question along with statistical
+arguments supporting your conclusions. You should critique your own methods
+and provide suggestions for improving your analysis and future work. Any potential issues
+pertaining to the reliability and validity of your data and the appropriateness of the statistical analyses should also be discussed. Additionally, include a brief paragraph on ideas for future work.</p>
+<h3 id="formatting">Formatting</h3>
+<p>This is an assessment of the overall presentation and formatting of the written report.</p>
+<h2 id="video-presentation--slides">Video presentation + slides</h2>
+<h3 id="slides">Slides</h3>
+<p>In addition to the write-up, your team must also create presentation
+slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. <strong>For submission, convert these slides to a .pdf document to be submitted to Gradescope.</strong> The slides are due on <strong>Wednesday, December 8 at 11:59pm</strong></p>
+<p>The slide deck should have no more than <strong>6 content slides + 1 title slide</strong>. Here is a <em><u>suggested</u></em> outline as you think through the slides; you do <em><u>not</u></em> have to use this exact format for the slide deck.</p>
+<ul>
+<li>Title Slide</li>
+<li>Slide 1: Introduce the topic and motivation</li>
+<li>Slide 2: Introduce the data</li>
+<li>Slide 3 - 4: Highlights from EDA</li>
+<li>Slide 4 - 5: Inference / modeling</li>
+<li>Slide 6: Conclusions + future work</li>
+</ul>
+<h3 id="video-presentation">Video presentation</h3>
+<p>Sometime by <strong>Wednesday, December 8</strong>, your group will upload a video presentation of your project to Warpwire. Note that all members must present. The video presentation <strong>must be no longer than 8 minutes</strong>. It is fine if the video is shorter than 8 minutes, but the 8-minute time limit will be strictly enforced.</p>
+<p>For the presentation, you can speak over your slide deck, similar to the lecture content videos. Many groups have used Zoom to record the presentation; however, you can use whatever platform works best for your group. Below are a few resources to help you record video presentations:</p>
+<ul>
+<li><a href="https://kb.siue.edu/61721">Recording presentations in Zoom</a></li>
+<li><a href="https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac">Apple Quicktime for screen recording</a></li>
+<li><a href="https://www.youtube.com/watch?v=OfPbr1mRDuo">Windows 10 built-in screen recording functionality</a></li>
+<li><a href="https://getkap.co/">Kap for screen recording</a></li>
+</ul>
+<p>Once your video is ready, upload the video to Warpwire, then embed the video in a new discussion for the group.</p>
+<h4 id="to-upload-your-video-to-warpwire">To upload your video to Warpwire:</h4>
+<ul>
+<li>Click the Warpwire tab in the course Sakai site.</li>
+<li>Click the “+” and select “Upload files”.</li>
+<li>Locate the video on your computer and click to upload.</li>
+<li>Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in the discussion forum.</li>
+</ul>
+<h4 id="to-post-the-video-to-the-discussion-forum">To post the video to the discussion forum</h4>
+<ul>
+<li>Click the Presentations tab in the course Sakai site.</li>
+<li>Click the Presentations topic.</li>
+<li>Click &ldquo;Start a new conversation&rdquo;.</li>
+<li>Make the title &ldquo;Your Team Name: Project Title&rdquo;. For example, &ldquo;Teaching Team: Our Awesome Presentation&rdquo;.</li>
+<li>Click the Warpwire icon (between the table and shopping cart icons).</li>
+<li>Select your video, then click “Insert 1 item.” This will embed your video in the conversation.</li>
+<li>Under the video, paste the URL to your video.</li>
+<li>You’re done!</li>
+</ul>
+<p>You can see the Teaching Team example in Sakai.</p>
+<h2 id="presentation-comments">Presentation comments</h2>
+<p>Each student will be assigned 2 presentations to watch. <a href="https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EUXmwBCW5CpBigEeh9xhaeoBWZSwiajLpPap7S3iM9CNFg?e=uZtBXs">Click here</a> to see your viewing assignments.</p>
+<p>Watch the group&rsquo;s video, then click &ldquo;Reply&rdquo; to post a question for the group. You may not post a question that&rsquo;s already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn&rsquo;t be &ldquo;Why did you use a bar plot instead of a pie chart&rdquo;?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group&rsquo;s specific presentation, i.e demonstrating that you&rsquo;ve watched the presentation.</p>
+<p>You may start posting questions and comments on Thursday, December 09. <strong>All comments must be posted by Friday, December 10 at 11:59pm.</strong></p>
+<p><strong><i>This portion of the project will be assessed individually.</i></strong></p>
+<h2 id="project-repository">Project repository</h2>
+<p>All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized.</p>
+<p>The GitHub repo should have the following structure:</p>
+<ul>
+<li><code>README</code>: Short project description and data dictionary</li>
+<li><code>written-report.Rmd</code> &amp; <code>written-report.pdf</code></li>
+<li><code>/data</code>: Folder that contains the data set for the final project.</li>
+<li><code>project-proposal.Rmd</code> &amp; <code>project-proposal.pdf</code></li>
+<li><code>/presentation</code>: Folder with the presentation slides.
+<ul>
+<li>If your presentation slides are online, you can put a link to the slides in a <code>README.md</code> file in the <code>presentation</code> folder.</li>
+</ul>
+</li>
+</ul>
+<p>Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.</p>
+<h2 id="peer-teamwork-evaluation">Peer teamwork evaluation</h2>
+<p>You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
+provide some explanation. If any individual gets an average peer score
+indicating that this was the case, their grade will be assessed accordingly.</p>
+<p><strong>Update (12/9/2021)</strong></p>
+<p>If you have concerns with the teamwork and/or contribution from any team members, please email me by Friday, December 10 at 11:59pm with a brief description of your concerns. <strong>You only need to email me if you have concerns</strong>. Otherwise, I will assume everyone on the team equally contributed and will receive full credit for the teamwork portion of the grade.</p>
+<h2 id="grading-details">Grading details</h2>
+<p>Grading of the project will take into account the following:</p>
+<ul>
+<li>Content - What is the quality of research and/or policy question and relevancy
+of data to those questions?</li>
+<li>Correctness - Are statistical procedures carried out and explained correctly?</li>
+<li>Writing and Presentation - What is the quality of the statistical presentation,
+writing, and explanations?</li>
+<li>Creativity and Critical Thought - Is the project carefully thought out? Are the
+limitations carefully considered? Does it appear that time and effort went into
+the planning and implementation of the project?</li>
+</ul>
+<p>A general breakdown of scoring is as follows:</p>
+<ul>
+<li><em>90%-100%</em>: Outstanding effort. Student understands how to apply all statistical
+concepts, can put the results into a cogent argument, can identify weaknesses in
+the argument, and can clearly communicate the results to others.</li>
+<li><em>80%-89%</em>: Good effort. Student understands most of the concepts, puts together
+an adequate argument, identifies some weaknesses of their argument, and communicates
+most results clearly to others.</li>
+<li><em>70%-79%</em>: Passing effort. Student has misunderstanding of concepts in several
+areas, has some trouble putting results together in a cogent argument, and communication
+of results is sometimes unclear.</li>
+<li><em>60%-69%</em>: Struggling effort. Student is making some effort, but has misunderstanding
+of many concepts and is unable to put together a cogent argument. Communication
+of results is unclear.</li>
+<li><em>Below 60%</em>: Student is not making a sufficient effort.</li>
+</ul>
+<h2 id="late-work-policy">Late work policy</h2>
+<p><strong>There is no late work accepted on this project.</strong> Be sure to turn in your work early to avoid any technological mishaps.</p>
+<h2 id="additional-notes-and-tips">Additional notes and tips</h2>
+<p>The project is very open ended. For instance, in creating a compelling
+visualization(s) of your data in R, there is no limit on what tools or
+packages you may use. You do not need to visualize all of the data at once. A single high quality visualization will receive a much higher grade than a large number of poor quality visualizations.</p>
+<p>Before you finalize your write up, make sure the printing of code chunks is turned off with the option <code>echo = FALSE</code>. In addition to code chunks, ensure all messages are turned off with the options <code>warning = FALSE</code> and <code>echo = FALSE</code>.</p>
+<p>Finally, pay attention to details in your write-up and presentation. Neatness, coherency, and clarity will count.</p>
+<h3 id="tips">Tips</h3>
+<ul>
+<li>
+<p>Ask questions if any of the expectations are
+unclear.</p>
+</li>
+<li>
+<p><em>Code</em>: In your write up your code should be hidden (<code>echo = FALSE</code>) so that your document is neat and easy to read. However your document should include all your code such that if I re-knit your Rmd file I should be able to obtain the results you presented.</p>
+<ul>
+<li><strong>Exception:</strong> If you want to highlight something
+specific about a piece of code, you&rsquo;re welcome to show that portion.</li>
+</ul>
+</li>
+<li>
+<p>Merge conflicts will
+happen, issues will arise, and that’s fine! Commit and push often, and ask questions when stuck.</p>
+</li>
+<li>
+<p>Make sure each team member is contributing, both in terms of quality and quantity of contribution (we will be reviewing commits from different team  members).</p>
+</li>
+<li>
+<p>All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.</p>
+</li>
+</ul>
+<h3 id="formatting--communication">Formatting + communication</h3>
+<h4 id="suppress-code-warnings--messages">Suppress Code, Warnings, &amp; Messages</h4>
+<ul>
+<li>Include the following code in a code chunk at the top of your .Rmd file to suppress all code, warnings, and other messages. Use the code chunk header <code>{r set-up, include = FALSE}</code> to suppress this set up code.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">knitr<span style="color:#666">::</span>opts_chunk<span style="color:#666">$</span><span style="color:#00f">set</span>(echo <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">FALSE</span>,
+                      warning <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">FALSE</span>, 
+                      message <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">FALSE</span>)
+</code></pre></div><h4 id="headers">Headers</h4>
+<ul>
+<li>Use headers to clearly label each section. Make sure there is a space between the last <code>#</code> and the title, so the header renders correctly. For example, <code>###Section Title</code> will not render as header, but <code>### Section Title</code> will.</li>
+</ul>
+<h4 id="references">References</h4>
+<ul>
+<li>Include all references in a section called &ldquo;References&rdquo; at the end of the report.</li>
+<li>This course does not have specific requirements for formatting citations and references.</li>
+<li>See <a href="https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html">Section 4.5</a> of the R Markdown Cookbook to learn about the citation functionality in R Markdown.</li>
+</ul>
+<h4 id="appendix">Appendix</h4>
+<ul>
+<li>If you have additional work that does not fit or does not belong in the body of the report, you may put it at the end of the document in section called &ldquo;Appendix&rdquo;.</li>
+<li>The items in the appendix should be properly labeled.</li>
+<li>The appendix should only be for additional material. The reader should be able to fully understand your report without viewing content in the appendix.</li>
+</ul>
+<h4 id="resize-figures">Resize figures</h4>
+<ul>
+<li>Resize plots and figures, so you have more space for the narrative.
+<ul>
+<li><strong>Resize individual figures</strong>: Use the code chunk header <code>{r plot1, fig.height = 3, fig.width = 5}</code>, replacing <code>plot1</code> with a meaningful label and the height and width with values appropriate for your write up.</li>
+<li><strong>Resize all figures</strong>: Include the <code>fig_width</code> and <code>fig_height</code> options in your YAML header as shown below:</li>
+</ul>
+</li>
+</ul>
+<pre><code>---
+title: &quot;Your Title&quot;
+author: &quot;Team Name + Group Members&quot;
+output: 
+  pdf_document:
+    fig_width: 5
+    fig_height: 3
+---
+</code></pre><p>Replace the height and width values with values appropriate for your write up.</p>
+<h4 id="arranging-plots">Arranging plots</h4>
+<p>Arrange plots in a grid, instead of one after the other. This is especially useful when displaying plots for exploratory data analysis and to check assumptions.</p>
+<ul>
+<li>
+<p>If you&rsquo;re using ggplot2 functions, the <code>patchwork</code> package makes it easy to arrange plots in a grid. See the documentation and examples <a href="https://patchwork.data-imaginist.com/">here</a>.</p>
+</li>
+<li>
+<p>If you&rsquo;re using base R function, i.e. when using the <code>emplogit</code> functions, put the code <code>par(mfrow = c(rows,columns))</code> before the code to make the plots. For example, <code>par(mfrow = c(2,3))</code> will arrange plots in a grid with 2 rows and 3 columns.</p>
+</li>
+</ul>
+<h4 id="plot-titles-and-axis-labels">Plot titles and axis labels</h4>
+<p>Be sure all plot titles and axis labels are visible and easy to read.</p>
+<ul>
+<li>Use informative titles, <u>not</u> variable names, for titles and axis labels.</li>
+<li>Use <code>coord_flip()</code> to flip the <em>x</em> and <em>y</em> axes on the plot. This is useful if you a bar plot with an x-axis that is difficult to read due to overlapping text.</li>
+</ul>
+<p>❌ <strong>NO! The x-axis is hard to read because the names overlap.</strong></p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#00f">ggplot</span>(data <span style="color:#666">=</span> mpg, <span style="color:#00f">aes</span>(x <span style="color:#666">=</span> manufacturer)) <span style="color:#666">+</span>
+  <span style="color:#00f">geom_bar</span>()
+</code></pre></div><p><img src="/project/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>✅ <strong>YES! Names are readable</strong></p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#00f">ggplot</span>(data <span style="color:#666">=</span> mpg, <span style="color:#00f">aes</span>(x <span style="color:#666">=</span> manufacturer)) <span style="color:#666">+</span>
+  <span style="color:#00f">geom_bar</span>() <span style="color:#666">+</span>
+  <span style="color:#00f">coord_flip</span>()
+</code></pre></div><p><img src="/project/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<h4 id="do-a-little-more-to-make-the-plot-look-professional">Do a little more to make the plot look professional!</h4>
+<ul>
+<li>Informative title and axis labels</li>
+<li>Flipped coordinates to make names readable</li>
+<li>Arranged bars based on count</li>
+<li>Capitalized manufacturer names</li>
+<li><em>Optional: Added color - Use a coordinated color scheme throughout paper / presentation</em></li>
+<li><em>Optional: Applied a theme - Use same theme throughout paper / presentation</em></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mpg <span style="color:#666">%&gt;%</span>
+  <span style="color:#00f">count</span>(manufacturer) <span style="color:#666">%&gt;%</span>
+  <span style="color:#00f">mutate</span>(manufacturer <span style="color:#666">=</span> <span style="color:#00f">str_to_title</span>(manufacturer)) <span style="color:#666">%&gt;%</span>
+  <span style="color:#00f">ggplot</span>(<span style="color:#00f">aes</span>(x <span style="color:#666">=</span> <span style="color:#00f">fct_reorder</span>(manufacturer,n), y <span style="color:#666">=</span> n)) <span style="color:#666">+</span>
+  <span style="color:#00f">geom_bar</span>(stat <span style="color:#666">=</span> <span style="color:#ba2121">&#34;identity&#34;</span>, fill <span style="color:#666">=</span> <span style="color:#ba2121">&#34;steelblue&#34;</span>) <span style="color:#666">+</span>
+  <span style="color:#00f">coord_flip</span>() <span style="color:#666">+</span>
+  <span style="color:#00f">labs</span>(x <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Manufacturer&#34;</span>, 
+       y <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Count&#34;</span>, 
+       title <span style="color:#666">=</span> <span style="color:#ba2121">&#34;The most common manufacturer is Dodge&#34;</span>) <span style="color:#666">+</span>
+  <span style="color:#00f">theme_bw</span>() 
+</code></pre></div><p><img src="/project/index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<h4 id="tables-and-model-output">Tables and model output</h4>
+<ul>
+<li>Use the <code>kable</code> function from the knitr package to neatly output all tables and model output. This will also ensure all model coefficients are displayed.
+<ul>
+<li>Use the <code>digits</code> argument to display only 3 or 4 significant digits.</li>
+<li>Use the <code>caption</code> argument to add captions to your table.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">model <span style="color:#666">&lt;-</span> <span style="color:#00f">lm</span>(mpg <span style="color:#666">~</span> hp, data <span style="color:#666">=</span> mtcars)
+<span style="color:#00f">tidy</span>(model) <span style="color:#666">%&gt;%</span>
+  <span style="color:#00f">kable</span>(digits <span style="color:#666">=</span> <span style="color:#666">3</span>)
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">term</th>
+<th style="text-align:right">estimate</th>
+<th style="text-align:right">std.error</th>
+<th style="text-align:right">statistic</th>
+<th style="text-align:right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">(Intercept)</td>
+<td style="text-align:right">30.099</td>
+<td style="text-align:right">1.634</td>
+<td style="text-align:right">18.421</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td style="text-align:left">hp</td>
+<td style="text-align:right">-0.068</td>
+<td style="text-align:right">0.010</td>
+<td style="text-align:right">-6.742</td>
+<td style="text-align:right">0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="guidelines-for-communicating-results">Guidelines for communicating results</h4>
+<ul>
+<li><strong>Don&rsquo;t use variable names in your narrative!</strong> Use descriptive terms, so the reader understands your narrative without relying on the codebook.
+<ul>
+<li>❌ There is a negative linear relationship between mpg and hp.</li>
+<li>✅ There is a negative linear relationship between a car&rsquo;s fuel economy (in miles per gallon) and its horsepower.</li>
+</ul>
+</li>
+<li><strong>Know your audience:</strong> Your report should be written for a general audience who has an understanding of statistics at the level of STA 199.</li>
+<li><strong>Avoid subject matter jargon:</strong> Don&rsquo;t assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term.</li>
+<li><strong>Tell the &ldquo;so what&rdquo;:</strong> Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation.</li>
+<li><strong>Tell a story:</strong> All visualizations, tables, model output, and narrative should tell a cohesive story!</li>
+<li><strong>Use one voice:</strong> Though multiple people are writing the report, it should read as if it&rsquo;s from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.</li>
+</ul>
+<h3 id="additional-resources">Additional resources</h3>
+<ul>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a></li>
+<li><a href="https://bookdown.org/yihui/rmarkdown-cookbook/">R Markdown Cookbook</a></li>
+<li><a href="https://slides.yihui.org/xaringan/#1">Slides in R using Xaringan</a></li>
+<li>Data visualization
+<ul>
+<li><a href="https://ggplot2.tidyverse.org/reference/index.html">ggplot2 Reference</a></li>
+<li><a href="https://ggplot2-book.org/">ggplot2: Elegant Graphics for Data Analysis</a></li>
+<li><a href="https://socviz.co/index.html">Data Visualization: A Practice Introduction</a></li>
+<li><a href="https://patchwork.data-imaginist.com/index.html">Patchwork R Package</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+
+      </div>
+
+      <div class="column25">
+        
+        <div class="section hideOnMobile">
+          <div class="sectionTitle">Contents</div>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#introduction--grading-summary">Introduction &amp; grading summary</a></li>
+    <li><a href="#data-sources">Data sources</a></li>
+    <li><a href="#project-proposal">Project proposal</a></li>
+    <li><a href="#draft-report">Draft report</a></li>
+    <li><a href="#peer-review">Peer review</a></li>
+    <li><a href="#written-report">Written report</a></li>
+    <li><a href="#video-presentation--slides">Video presentation + slides</a></li>
+    <li><a href="#presentation-comments">Presentation comments</a></li>
+    <li><a href="#project-repository">Project repository</a></li>
+    <li><a href="#peer-teamwork-evaluation">Peer teamwork evaluation</a></li>
+    <li><a href="#grading-details">Grading details</a></li>
+    <li><a href="#late-work-policy">Late work policy</a></li>
+    <li><a href="#additional-notes-and-tips">Additional notes and tips</a></li>
+  </ul>
+</nav>
+        </div>
+        
+        
+      </div>
+
+    </div>
+  </div>  
+</div> 
+
+
+
+</body>
+</html>

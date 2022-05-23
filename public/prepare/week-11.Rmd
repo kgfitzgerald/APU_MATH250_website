@@ -1,0 +1,40 @@
+---
+title: "Prepare: Week 11"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## November 01
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required
+
+`r emo::ji("movie_camera")` Watch [The language of models](https://youtu.be/MWkkvDopBKc)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d01-language-of-models/u4-d01-language-of-models.html#1) for slides
+
+
+## For November 03
+
+### Required
+
+`r emo::ji("memo")` Take Prep Quiz 06 (due date extended to Mon, Nov 08)
+
+`r emo::ji("movie_camera")` Watch [Fitting and interpreting models](https://youtu.be/69U92Q3pwnA)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d02-fitting-interpreting-models/u4-d02-fitting-interpreting-models.html#1) for slides
+
+### Optional 
+
+`r emo::ji("book")` Read 
+
+- [IMS: Chapter 7 - Linear regression with a single predictor](https://openintro-ims.netlify.app/model-slr.html) 
+
+
+

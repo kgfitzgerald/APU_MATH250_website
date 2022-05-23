@@ -1,0 +1,286 @@
+---
+title: "Lab 06: Simulation-based inference"
+subtitle: "due Monday, October 18 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "sta199-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE)
+```
+
+# Learning Goals
+
+In this lab you will...
+
+-   Learn how to identify and handle merge conflicts
+-   Use simulation-based inference to draw conclusions about population
+    parameters
+
+# Getting started
+
+- A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.
+
+- Go to the [sta199-fa21-003](https://github.com/sta199-fa21-003) course organization on GitHub.
+
+- You should see a repo with the *lab-06** prefix.
+
+- Each person on the team should clone the repository and open a new project in RStudio. Do not make any changes to the .Rmd file until the instructions tell you do to so.
+
+# Merge Conflicts (uh oh)
+
+![](img/merge-no-conflict.png)
+
+You may have seen this already through the course of your collaboration
+in the past few weeks. When two collaborators make changes to a file and
+push the file to their repository, git merges these two files.
+
+![](img/merge-conflict.png)
+
+If these two files have conflicting content on the same line, git will
+produce a **merge conflict**. Merge conflicts need to be resolved
+manually, as they require a human intervention:
+
+![](img/merge-conflict-identifiers.png)
+
+To resolve the merge conflict, decide if you want to keep only your
+text, the text on GitHub, or incorporate changes from both texts. Delete
+the conflict markers `<<<<<<<`, `=======`, `>>>>>>>` and make the
+changes you want in the final merge.
+
+**Assign numbers 1, 2, 3, and 4 to each of your team members** (if only
+3 team members, just number 1 through 3). Go through the following steps
+in detail, which simulate a merge conflict. Completing this exercise
+will be part of the lab grade.
+
+## Resolving a merge conflict
+
+**Step 1: Everyone** Clone the repo with the prefix **merge-conflict**
+and open the .Rmd file.
+
+**Team Member 4** should look at the group's repo on GitHub.com to
+ensure that the other members' files are pushed to GitHub after every
+step.
+
+**Step 2: Team Member 1** Change the team name to your team name. *Knit,
+commit, and push*.
+
+**Step 3: Member 2** Change the team name to something different (i.e.,
+not your team name). *Knit, commit, and push*.
+
+You should get an error.
+
+**Pull** and review the document with the merge conflict. Read the error
+to your teammates. You can also show them the error by sharing your
+screen. A merge conflict occurred because you edited the same part of
+the document as Member 1. Resolve the conflict with whichever name you
+want to keep, then knit, commit and push again.
+
+**Step 4: Member 3** Write some narrative in the space provided. You
+should get an error.
+
+This time, no merge conflicts should occur, since you edited a different
+part of the document from Members 1 and 2. Read the error to your
+teammates. You can also show them the error by sharing your screen.
+
+Click to pull. *Then, knit, commit, and push.* All merge conflicts
+should be resolved and all documents updated in the GitHub repo.
+
+<u> You do not need to submit anything on Gradescope for the merge
+conflict activity.</u>
+
+## Workflow: Using git and GitHub as a team
+
+The following exercises must be done in order. Only one person
+should type in the .Rmd file and push updates at a time. When it is not your turn to type, you should still share ideas and contribute
+to the team's discussion.
+
+## Packages
+
+We will use the **tidyverse** and **tidymodels** packages in this lab.
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+```
+
+# Data: Durham Resident Satisfaction Survey
+
+Today's data comes from the City of Durham's annual Resident
+Satisfaction Survey for 2020. [Click
+here](https://www.dconc.gov/home/showpublisheddocument/33786/637477764750700000)
+to read the full report of results from the survey. In particular,
+`durham-survey-2020.csv` contains data from over 800 Durham residents on a variety of questions about their experience living in the city. Assume that the data are representative of
+Durham residents and may be generalized to the wider population of all
+city residents.
+
+The following variables are used in this analysis:
+
+- `age`: Age category 
+    - 1: 18 - 34 years old
+    - 2: 35 - 44 years old
+    - 3: 45 - 54 years old
+    - 4: 55 - 64 years old
+    - 5: 65+ years old
+    - 9: Age not provided
+
+- `length_in_durham`: How long respondent has lived in Durham (in years)
+    
+- `mask_public_outdoor`: How often respondent reported wearing a mask in an public outdoor gathering
+    - 1: Never
+    - 2: Rarely
+    - 3: Sometimes
+    - 4: Frequently
+    - 5: Always
+    - 9: No response provided
+
+- `condition_public_art`: How respondent rated their satisfaction with the condition of public art in Durham (1: lowest - 5: highest, 9: no response provided)
+
+Fill in the code to load the data set.
+
+```{r eval=FALSE}
+____ <- read_csv("_______")
+```
+
+# Exercises
+
+## Instructions
+
+::: {.{commit}}
+-   Use a small number of reps (about 100) as you write and test out
+    your code. Once you have finalized all of your code, increase the
+    number of reps to 10,000 to produce your final results.
+-   Write your code and narrative in a reproducible way, so you can
+    easily change the number of reps. For example, consider ways you can
+    write your narrative using inline code, so the relevant values
+    update when you change the number of reps.
+ - For each exercise, filter out observations that have values
+        corresponding to "no response" for the variable of interest in
+        that exercise.
+- For each simulation exercise, use the seed specified in the
+        exercise instructions.
+- All narrative should be written in full sentences, and
+        visualizations should have clear title and axis labels.
+:::
+
+```{marginfigure}
+**Hint**: be careful with how missing values are coded in this survey. As well,
+don't forget to set the seed specified in the instructions in order to ensure reproducibility!
+```
+
+1.  We'll begin by analyzing the typical number of years current residents have
+    lived in Durham.
+    
+    -   Visualize the distribution of the number of years respondents
+        have lived in Durham.
+    -   Is the mean or median more representative of the typical number of years current residents have lived in Durham? Briefly explain.
+    -   Calculate the point estimate for the typical number of years
+        current residents have lived in Durham.
+
+2.  Calculate a 95% bootstrap confidence interval for the typical number of years current residents have lived in Durham. The confidence interval should
+    be calculated for the parameter (mean or median) you chose in
+    Exercise 1. Use `set.seed(2)`.
+
+    Then, then interpret the interval in the context of the data.
+
+3.  Next, let's look at how frequently Durham residents wore masks at
+    public outdoor events in 2020.
+```{marginfigure}
+**Hint:** You will need to make a new variable.
+```
+
+    -   Calculate the proportion of survey respondents who wore a mask
+        frequently (`4`) or always (`5`) at public outdoor events, among those who provided a response to this question.
+        
+
+    -   Calcualte a 98% bootstrap confidence interval for the proportion
+        of Durham residents who wore a mask frequently or always at
+        public outdoor events in 2020. Use `set.seed(3)`.
+
+    -   Interpret the confidence interval in the context of the data.
+
+4.  According to data from the [United States
+    Census](https://www.census.gov/data/tables/2019/demo/age-and-sex/2019-age-sex-composition.html),
+    46% of US adults are 18 - 44 years old. Is the proportion of adults
+    in Durham who are 18 - 44 years different from the proportion of
+    adults in this age range in the United States?
+
+    -   Create a new variable indicating if a survey respondent is 18 -
+        44 years old.
+
+    -   Calculate the proportion of survey respondents who are 18-44
+        years old, among those who provided an age.
+
+5.  Conduct a hypothesis test to test the question stated in Exercise 4.
+
+    -   State the null and alternative hypotheses in both words and
+        mathematical notation.
+    -   Construct the null distribution using `set.seed(5)`. Then
+        visualize the distribution and the shaded region corresponding
+        to the p-value.
+    -   Calculate the p-value.
+    -   State your conclusion in the context of the data, using a
+        significance level of 0.05.
+
+6.  Are Durham residents generally satisfied with the condition of public
+    art in the city? We'll considered "generally satisfied" as having a
+    mean satisfaction score greater than 3.
+
+    -   State the null and alternative hypotheses in both words and
+        mathematical notation.
+    -   Construct the null distribution. Use `set.seed(6)`. Then
+        visualize the distribution and the shaded region corresponding
+        to the p-value.
+    -   Calculate the p-value.
+    -   State your conclusion in the context of the data, using a
+        significance level of 0.05.
+
+7.  Given your conclusion in Exercise 6, which type of error could you
+    possibly have made? What would making such an error mean in the
+    context of the analysis question?
+
+# Wrapping up
+
+Go back through your write up to make sure you followed the coding style
+guidelines we discussed in class (e.g. no long lines of code).
+
+# Submission
+
+-   **Select** <u>one</u> team member to upload the team's PDF
+    submission to Gradescope.
+-   Be sure to select every team member's name in the Gradescope.
+-   Associate the "Workflow & formatting" graded section with the first
+    page of your PDF, and mark the page associated with each exercise.
+    If any answer spans multiple pages, then mark all pages.
+
+**There should only be** <u>one</u> submission per team on Gradescope.
+
+# Grading (50 pts)
+
+| Component             | Points |
+|:----------------------|:-------|
+| Ex 1                  |    6   |
+| Ex 2                  |    6   |
+| Ex 3                  |     8  |
+| Ex 4                  |    4   |
+| Ex 5                  |    6   |
+| Ex 6                  |   6  |
+| Ex 7                  | 5      |
+| Merge conflict activity | 4|
+| Workflow & formatting | 5      |
+
+-   The "Workflow & formatting" grade is to assess the reproducible
+    workflow. This includes having at least one informative commit by
+    each team member, labeling the code chunks, and having readable code
+    in the tidyverse syntax that does not exceed 80 characters (i.e., we
+    can read all your code in the knitted PDF.)

@@ -1,0 +1,32 @@
+---
+title: "Prepare: Week 13"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+## November 15
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+No prepare assignment.
+
+## For November 17
+
+### Required
+
+`r emo::ji("movie_camera")` Watch [Logistic regression](https://www.youtube.com/watch?v=AidXFYSYfJg)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d06-logistic-reg/u4-d06-logistic-reg.html#1) for slides.
+
+`r emo::ji("movie_camera")` Watch [Strings in R](https://warpwire.duke.edu/w/Lw4GAA/)
+  
+- [Click here](https://sta199-f21-001.netlify.app/slides/strings.html#1) for slides.
+
+
+## Optional 
+
+`r emo::ji("book")` Read [IMS Chapter 9 - Logistic regression](https://openintro-ims.netlify.app/model-logistic.html)
+
+
+

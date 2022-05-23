@@ -1,0 +1,56 @@
+---
+title: "Prepare: Week 03"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For September 06 & 08
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required 
+
+**You can ignore the "Your Turn" sections.**
+
+`r emo::ji("movie_camera")` Watch [Tidy Data](https://youtu.be/Ux85eR3h9hw)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d05-tidy-data/u2-d05-tidy-data.html#1) for slides
+
+`r emo::ji("movie_camera")` Watch [Grammar of data wrangling](https://youtu.be/ZCaYBES_VEk)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d06-grammar-wrangle/u2-d06-grammar-wrangle.html#1) for slides
+
+`r emo::ji("movie_camera")` Watch [Working with a single data frame](https://youtu.be/0229Uq2hkJo)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d07-single-df/u2-d07-single-df.html#1) for slides
+
+
+<!--
+
+## For September 08
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required 
+
+`r emo::ji("memo")` Complete Quiz 01
+
+`r emo::ji("movie_camera")` Watch [Working with multiple data frames](https://youtu.be/VdV5ABsaf5Y)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df.html#1) for slides
+-->
+
+
+### Optional 
+
+`r emo::ji("book")` Read[Journal of Statistical Software: Tidy Data](https://www.jstatsoft.org/article/view/v059i10)
+
+`r emo::ji("book")` Read [R for Data Science (R4DS): Chapter 5 - Data transformation](https://r4ds.had.co.nz/transform.html)
+
+

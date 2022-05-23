@@ -1,0 +1,157 @@
+---
+title: "Homework 02: Data Wrangling"
+subtitle: "due Wednesday, September 22 at 11:59p "
+output: 
+  tufte::tufte_html:
+    css: "sta199-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+# Goals
+
+In this homework, you will...
+
+- develop proficiency with data wrangling.
+- analyze data from multiple data sets to answer research questions. 
+
+# Getting started
+
+- Go to the [sta199-fa21-003](https://github.com/sta199-fa21-003) organization on GitHub. Click on the repo with the prefix **hw-02**. It contains the starter documents you need to complete the assignment.
+
+- Clone the repo and start a new project in RStudio. See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning a repo and starting a new R project.
+
+# Packages
+
+We will use the **tidyverse** package for this assignment. If you wish to use the viridis color palettes, you will need the **viridis** package as well. 
+
+```{r load-package, eval=FALSE}
+library(tidyverse)
+library(viridis)
+```
+
+# Data: Congressional class of 2018
+
+In 2018, Democrats won the majority in Congress for the first time since the Tea Party wave in 2010. Yet within the Democratic Party, a wide variety of ideologies and perspectives exist. In this assignment, you will work with multiple related data sets to answer questions about Democratic members of Congress who served in the 116th Congress (2017-2019).
+
+A brief description of the datasets and how they are related to each other is provided below.
+
+The `ideologies` dataset contains information on Democratic representatives' ideologies. Observations are uniquely identified by `bioname` and `icpsr`.
+
+The variables in this dataset are:
+
+- `bioname`: The name of the representative.
+- `icpsr`: the [ICPSR](https://www.icpsr.umich.edu/web/pages/) code given to the representative.
+- `state_icpsr`: The ICPSR number given to the representative's state.
+- `district_code`: A code for the representative's district.
+- `nominate_dim1`: The representatives' first dimension DW-Nominate Score.
+
+The `district_info` dataset contains information about the representatives' district. Observations are uniquely identified by `bioname` and `bioguide_id`.
+
+The variables in this dataset are:
+
+- `bioname`: The name of the representative.
+- `bioguide_id`: the id number in the [Congressional Biogrphical Directory](https://www.congress.gov/help/field-values/member-bioguide-ids).
+- `state_abbrev`: The state abbreviation for the state that the member represents.
+- `trump16`: The percentage of the vote that Donald Trump received in the representatives district in 2016 (in theory, from 0 to 100).
+` born`: The year the representative was born.
+
+Members of Congress typically join a series of caucuses with representatives who have similar interests, districts, or ideologies. Within the Democratic Party, two prominent caucuses are the [Blue Dog Coalition](https://bluedogcaucus-costa.house.gov/), a group of more moderate Democrats, and the [Congressional Progressive Caucus](https://progressives.house.gov/caucus-members), which is made up of more progressive Democrats.
+
+The `caucus` dataset contains three variables:
+
+- `state_icpsr`: The ICPSR number given to the representative's state.
+- `district_code`: A code for the representative's district.
+- `caucus`: The caucus the representative is a member of. There are three options for this variable: Blue Dog, Progressive, or Neither. 
+
+# Exercises
+
+## Tips
+
+- Your plots should include an informative title, axes should be labeled, and careful consideration should be given to aesthetic choices.
+- In addition, the code should not exceed the 80 character limit, so that all the code can be read when you knit to PDF. See the [Lab 02 instructions](https://sta199-fa21-003.netlify.app/labs/lab-02-data-viz.html#exercises) for instructions to add a margin line at column 80 to use as a guide.
+- You should have at least 3 commits with meaningful commit messages by the end of the assignment.
+
+One ideology measure we will work with are *DW-Nominate* scores. These are created using advanced statistical methods. For the purpose of this assignment, we will be focusing on 1st Dimension DW-Nominate scores (`nominate_dim1`). These scores generally vary from -1 (most liberal) to 1 (most conservative). Since we are working with Democrats, all scores will be negative. If you are interested in learning more about this measure, [this article](https://www-cambridge-org.proxy.lib.duke.edu/core/journals/studies-in-american-political-development/article/nominate-and-american-political-development-a-primer/DC642ACEB095605E82EEF7EEC4AA9E01) provides a primer about the scores.
+
+
+1. Let's start by creating an analysis data set that includes variables from all three data sets.
+
+    - First, join the `district_info` to the `ideologies` data frame. The goal is to keep all of the rows and columns in the `ideologies` data frame. Call this new data frame `full_data`. 
+    - Next, use the appropriate join to add columns from the `caucus` data frame to `full_data`.
+    - Lastly, we need to add information to the data frame about the region a state is located in. We will use the region in later exercises. To do so, we will use information from two data sets that are already loaded as part of R - `state.region` and `state.abb`. Use the code below to create a tibble called `states` that includes the state abbreviation and the region. Then use an appropriate join to add the region from `states` to `full_data`.
+  
+```{r eval = F}
+states <- tibble(state_abbrev = state.abb, 
+                 region = state.region)
+```
+
+The final `full_data` should have 238 observations and 11 variables. 
+
+**Use `full_data` for the remainder of the assignment**. 
+
+2. We can see which states have the most progressive and most moderate Democratic delegations. Find the mean ideology by state and display the two states with the most progressive Democratic delegations and the two states with the most moderate Democratic delegations. The ideology is measured by `nominate_dim1`. Show all code and output. 
+
+    - Which two states have the most progressive Democratic delegations? Which two have the most moderate?   
+
+    - Are there any concerns you have with using these values to represent the mean ideology for a state's delegation? Briefly explain.
+
+3. Which 9 states have no Democratic representatives? Use the `states` data frame and an appropriate join to help answer this question. Show all code and output, and report the names of the states in your narrative. 
+
+4. *Is there a relationship between the percentage of the vote Donald Trump received in a district in 2016 and the DW-Nominate score for the district's  representative?* To answer this question: 
+
+    - Find the correlation between `trump_16` and `nominate_dim1   
+    - Make a visualization showing the relationship between these two variables. Include an informative title and axis labels. 
+    - Interpret the plot. 
+
+5. Now let's look at the caucus. Calculate the mean and standard deviation of ideology and the number of representatives for each caucus.
+    
+    - Which caucus is the most progressive?
+    - Which caucus has the most variability in ideology?
+    - Which caucus is the largest? 
+
+6. Let's examine how caucus membership differs by region. Create a plot of the number of representatives in each caucus faceted by region. Include an informative title and axis labels. 
+    
+    - How does caucus membership compare across region? Write two observations from the graph to support your response. 
+  
+7. *Are younger Democrats more likely to be in the Progressive Caucus than older Democrats?* To answer this question, create a new variable indicating whether the Democrat was born in the 1980's (there has yet not been a Democrat elected to Congress who was born in the 1990s). Then, find the percentage of Democrats in each group (pre-1980 and 1980 or later) who are in the Progressive Caucus. *Hint: As a step along the way, you will also want to create a variable indicating if they are a Progressive Caucus member using `if_else` or `case_when`.*
+
+    - Report your answer to the question based on your analysis output. 
+    
+# Submission
+
+Once you are finished with the assignment, you will submit the PDF document produced from your final *knit, commit, and push* to Gradescope.
+
+**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.** **Remember -- you must turn in a .pdf file to the Gradescope page by the submission deadline to be considered "on time".**
+
+To submit your assignment:
+
+-   Go to <http://www.gradescope.com> and click *Log in* in the top right corner.
+-   Click *School Credentials* $\rightarrow$ *Duke NetID* and log in using your NetID credentials.
+-   Click on your *STA 199* course.
+-   Click on the assignment, and you'll be prompted to submit it.
+-   Mark all the pages associated with each exercise. All the pages of your assignment should be associated with at least one question (i.e., should be "checked").
+-   Select the first page of your .pdf submission to be associated with the *"Workflow & formatting"* question.
+
+# Grading
+
+| Component | Points |
+|:----------|:-------|
+| Ex 1      | 8      |
+| Ex 2      | 6    |
+| Ex 3      | 4   |
+| Ex 4      | 8   |
+| Ex 5      | 6      |
+| Ex 6      | 6    |
+| Ex 7      | 6   |
+| Workflow & formatting   | 6      |
+
+**Grading notes**:
+
+-   The "Workflow & formatting" grade is to assess the reproducible workflow. This includes updating your name at the top of the assignment, having at least 3 commits with informative commit messages, labeling the code chunks, and having readable code using the tidyverse syntax that does not exceed 80 characters (i.e., we can read all your code in the knitted PDF.)

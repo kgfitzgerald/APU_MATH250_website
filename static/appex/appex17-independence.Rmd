@@ -1,0 +1,48 @@
+---
+title: "AE 17: Hypothesis tests for independence"
+date: "`2021-10-18`"
+output: 
+  html_document:
+    theme: readable
+---
+
+```{r load-packages, include = FALSE }
+library(tidyverse)
+```
+
+## Announcements
+
+- [Lab 06](https://sta199-fa21-003.netlify.app/labs/lab-06-sim-inference.html) due **today at 11:59pm**
+
+- Ed Discussion for today's class: https://edstem.org/us/courses/8027/discussion/737033
+
+
+## Statistics experience
+
+[Click here](https://sta199-fa21-003.netlify.app/hw/stats-experience.html) for instructions.  
+  
+  - Due Fri, Dec 3
+
+### Upcoming events
+
+**HackDuke Code for Good - October 23 - 24**
+
+- Free event but registration required
+- Go to [2021.hackduke.org](https://2021.hackduke.org/) for more information. 
+ 
+ **Duke Datathon - November 6 - 7**
+
+- [Click here](https://dukeml.org/datathon/) for more information 
+
+
+## AE 17: Hypothesis tests for independence
+
+- Go to the `ae-17-[GITHUB USERNAME]` rep in the GitHub course organization:  https://github.com/sta199-fa21-003
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta199-fa21-003.netlify.app/labs/lab-01-hello-r.html) for details on cloning the repo and starting a new project in RStudio. 
+
+## Mythbusters episode
+
+[Click here](https://www.discovery.com/tv-shows/mythbusters/videos/is-yawning-contagious-2) for episode clip. 

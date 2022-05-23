@@ -1,0 +1,40 @@
+---
+title: "Prepare: Week 01"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For August 25
+
+**Note:** All required prepare activities are due **<u>by the beginning of class (1:45p)</u>** on the specified date.
+
+### Required 
+
+`r emo::ji("movie_camera")` Watch [Meet the Toolkit - Programming](https://youtu.be/Q2QN1RpvLq8) 
+
+- [Slides](https://dukestatsci.github.io/introds/slides/02-meet-toolkit-r/02-meet-toolkit-r.html#1)
+
+`r emo::ji("movie_camera")` Watch [Meet the Toolkit - Version Control and Collaboration](https://youtu.be/124DQasLyNQ)  
+
+- [Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.html#1)
+
+`r emo::ji("computer")` Reserve an STA198-199 RStudio container. 
+
+  - Go to https://vm-manage.oit.duke.edu/containers
+  - Click **Reserve Container** for the STA198-199 container
+
+
+
+
+### Optional 
+
+`r emo::ji("book")` Read [*R for Data Science (R4DS)*:: Chapter 2 - Introduction](https://r4ds.had.co.nz/explore-intro.html)
+
+<br> 
+

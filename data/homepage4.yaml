@@ -1,0 +1,8 @@
+bandtwo:
+- url: /help/#resources-for-the-course
+  title: Textbooks
+  icon: fa-book
+  icon_pack: fas
+  what: |
+    - [OpenIntro Statistics 4th ed](https://leanpub.com/openintro-statistics) 
+    - [R for Data Science](https://r4ds.had.co.nz/) 

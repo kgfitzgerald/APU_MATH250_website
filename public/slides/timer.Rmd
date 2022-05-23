@@ -1,0 +1,63 @@
+---
+title: "Timers for STA 199"
+author: ""
+
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "slides.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(countdown)
+```
+
+```{r echo = F}
+countdown(minutes = 1, seconds = 0,
+          top = 0, bottom = 0,
+          left = 0, right = 0,
+          margin = "5%", 
+          font_size = "6em")
+```
+
+---
+
+```{r echo = F}
+countdown(minutes = 3, seconds = 0,
+          top = 0, bottom = 0,
+          left = 0, right = 0,
+          margin = "5%", 
+          font_size = "6em")
+```
+
+---
+
+```{r echo = F}
+countdown(minutes = 5, seconds = 0,
+          top = 0, bottom = 0,
+          left = 0, right = 0,
+          margin = "5%", 
+          font_size = "6em")
+```
+
+---
+
+
+```{r echo = F}
+countdown(minutes = 10, seconds = 0,
+          top = 0, bottom = 0,
+          left = 0, right = 0,
+          margin = "5%", 
+          font_size = "6em")
+```
+
+

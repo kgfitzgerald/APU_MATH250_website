@@ -1,0 +1,41 @@
+---
+title: "Prepare: Week 08"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## October 11
+
+**Note:** All required prepare activities are due **<u>by the beginning of class</u>** on the specified date
+
+### Required
+
+`r emo::ji("movie_camera")` Watch [Bootstrapping](https://youtu.be/bdqpI3iVOso)
+
+- [Click here](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d11-bootstrap/u4-d11-bootstrap.html#1) for slides
+
+### Optional 
+
+`r emo::ji("book")` Read [IMS: Chapter 12 - Confidence intervals with bootstrapping](https://openintro-ims.netlify.app/foundations-bootstrapping.html)
+
+
+## For October 13
+
+### Required
+
+`r emo::ji("memo")` Take Prep Quiz 04 on Sakai 
+
+`r emo::ji("movie_camera")` Watch [Hypothesis Testing](https://warpwire.duke.edu/w/YQ4GAA/)
+
+- [Click here](https://sta199-fa21-003.netlify.app/slides/16-hypothesis-test.html) for slides
+
+### Optional 
+
+`r emo::ji("book")` Read [IMS: Chapter 11 - Hypothesis testing with randomization](https://openintro-ims.netlify.app/foundations-randomization.html)
+
+

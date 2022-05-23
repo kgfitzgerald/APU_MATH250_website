@@ -1,5 +1,5 @@
 # Description for social sharing and search engines.
-description = "Website for STA 199: Intro to Data Science at Duke University"
+description = "Website for MATH 250: Data Analysis at Azusa Pacific University"
 
 # Default image for social sharing and search engines. Place image in `static/images/` folder and specify image name here.
 sharing_image = ""
@@ -28,9 +28,9 @@ MathJaxCDN = "//cdn.bootcss.com"
 MathJaxVersion = "2.7.1"
 
 [footer]
-    github_url = "https://github.com/sta199-fa20-002/website"
+    github_url = "https://github.com/kgfitzgerald/APU_MATH250_website"
     twitter_url = ""
-    support = "This website was derived from [tidymodels.org](https://tidymodels.org) with inspiration from [datavizm20](https://datavizm20.classes.andrewheiss.com/) and [introds.org](https://introds.org/)."
+    support = "The website design is derived from  [tidymodels.org](https://www.tidymodels.org) via [https://sta199-fa21-003.netlify.app](https://sta199-fa21-003.netlify.app) with inspiration from [datavizm20](https://datavizm20.classes.andrewheiss.com) and [introds.org](https://introds.org/)."
 
 # leave blank in quotes for the default = true
 # to turn off, set = false (no quotes)

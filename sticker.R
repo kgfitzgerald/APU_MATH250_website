@@ -67,3 +67,72 @@ sticker(
   filename = "./content/home/MATH_250_sticker.png",
   dpi = 1200
 )
+
+sticker(
+  subplot = p,
+  s_x = 1,
+  s_y = 1.2,
+  s_width = 1.2,
+  s_height = 1.2,
+  package = "MATH 250",
+  p_x = 1,
+  p_y = 0.5,
+  p_color = "#4187aa",
+  #p_family = p_family,
+  p_size = 6,
+  h_fill = "white",
+  h_color = "#4187aa",
+  h_size = 1,
+  #  url = "github.com/ellessenne/rsimsum",
+  #  u_color = "#FDE725",
+  #  u_family = u_family,
+  #  u_size = 1.25,
+  filename = "./public/img/MATH_250_sticker.png",
+  dpi = 1200
+)
+
+sticker(
+  subplot = p,
+  s_x = 1,
+  s_y = 1.2,
+  s_width = 1.2,
+  s_height = 1.2,
+  package = "MATH 250",
+  p_x = 1,
+  p_y = 0.5,
+  p_color = "#4187aa",
+  #p_family = p_family,
+  p_size = 6,
+  h_fill = "white",
+  h_color = "#4187aa",
+  h_size = 1,
+  #  url = "github.com/ellessenne/rsimsum",
+  #  u_color = "#FDE725",
+  #  u_family = u_family,
+  #  u_size = 1.25,
+  filename = "./static/img/MATH_250_sticker.png",
+  dpi = 1200
+)
+
+sticker(
+  subplot = p,
+  s_x = 1,
+  s_y = 1.2,
+  s_width = 1.2,
+  s_height = 1.2,
+  package = "MATH 250",
+  p_x = 1,
+  p_y = 0.5,
+  p_color = "#4187aa",
+  #p_family = p_family,
+  p_size = 6,
+  h_fill = "white",
+  h_color = "#4187aa",
+  h_size = 1,
+  #  url = "github.com/ellessenne/rsimsum",
+  #  u_color = "#FDE725",
+  #  u_family = u_family,
+  #  u_size = 1.25,
+  filename = "./public/home/MATH_250_sticker.png",
+  dpi = 1200
+)

@@ -1,5 +1,5 @@
 ---
-title: "STA 199 Final Project"
+title: "MATH 250 Final Project"
 ---
 
 ## Timeline

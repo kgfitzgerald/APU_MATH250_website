@@ -149,59 +149,61 @@ Total                                                   | 5 pts
 **Research questions**                                  | 2 pts
 **Results**                                             | 1 pts
 
-## Draft report 
+## Data cleaning & Preliminary EDA
 
-The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations. 
+The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. The cleaning-eda.Rmd file in your RStudio Cloud repo should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file used for analysis. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. This will be evaluated through RStudio Cloud; you do not need to submit this on Canvas. 
 
-Write the draft in the **written-report.Rmd** file in your project repo. You do not need to submit the draft on Gradescope. 
+This part of the project will be graded as follows:
+
+Total                                                   | 5 pts
+--------------------------------------------------------|-------
+**Original & cleaned datasets included**                | 1 pt
+**Reproducible data cleaning**                          | 2 pts
+**EDA**                                                 | 1 pt
+**Future analysis plan**                                | 1 pt
+
+## Rough Draft report 
+
+The purpose of the rough draft and peer review is to give you an opportunity to get feedback on your analysis before the final product. 
+
+Your team will write the rough draft in the **written-report.Rmd** file in your project repo. You do not need to submit the draft on Canvas. 
 
 Below is a brief description of the sections to focus on in the draft: 
 
 #### Introduction and data
 
-The introduction provides motivation and context for your research. Describe
-your topic (citing sources) and provide a concise, clear statement of your 
-research question and hypotheses.
+The introduction provides motivation and context for your research. Describe your topic (citing sources) and provide a concise, clear statement of your research question and hypotheses.
 
-Then identify the source of the data, when and how it was collected, the cases,
-a general description of relevant variables.
+Then, identify the source of the data, when and how it was collected, the cases, a general description of relevant variables.
 
 #### Methodology 
 
-The methodology section should include visualizations and summary statistics 
-relevant to your research question. You should also justify the choice of 
-statistical method(s) used to answer your research question.
+The methodology section should include visualizations and summary statistics relevant to your research question. You should also justify the choice of statistical method(s) used to answer your research question.
 
 #### Results 
 
 Showcase how you arrived at answers to your research question using the
 techniques we have learned in class (and beyond, if you’re feeling adventurous).
 
-Provide only the main results from your analysis. The goal is not to do an 
-exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data, 
-that you are skilled in interpreting and presenting results, and that you can 
-accomplish these tasks using R. More is not better.
+Provide only the main results from your analysis. The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data, that you are skilled in interpreting and presenting results, and that you can accomplish these tasks using R. More is not better.
+
+As you work on the draft, the focus should be on the analysis and less on crafting the final report. **Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and deriving initial results and conclusions.**
 
 
 ## Peer review
 
-Critically reviewing others' work is a crucial part of the scientific process, and STA 199 is no exception. You will be assigned a team to review. As part of the review process, you must provide your partner team a copy of your current report by **Wednesday, November 17 at 11:59pm**. After giving the report to your partner team, they will have until **Monday, November 22 at 11:59pm** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience 
-reading and constructively critiquing the work of others.
+Critically reviewing others' work is a crucial part of the scientific process, and giving constructive feedback is an important skill that must be practiced. The process can enhance your ability to self-assess and improve your own work as well.
 
-During the peer feedback process, you will be provided read-only access to your  partner team's GitHub repo. Provide your feedback in the form of GitHub issues to your partner team's GitHub repo. 
+You will be assigned a team to review. Time will be spent on peer review in class on **Thursday, December 1**, and your team will have until class-time on **Tuesday, December 6** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience reading and constructively critiquing the work of others.
 
-Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. As you work on the draft, the focus should be on the analysis and less on crafting the final report. **Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and deriving initial results and conclusions.**
-
-[Click here](peer-review.html) for peer review instructions. 
+Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
 
 ## Written report
 
-Your final report must be written using R Markdown. All team members must contribute to the GitHub repository, with regular meaningful commits / pushes. 
-
-Before you finalize your report, make sure the printing of code chunks is turned off with the option `echo = FALSE`.
+Your final report must be written using R Markdown. All team members must contribute meaningfully to the analysis and are responsible for what's contained in the final report. Before you finalize your report, make sure the printing of code chunks is turned off with the option `echo = FALSE`.
 
 
-**Submit the final report on Gradescope under the <i>Written Report</i> assignment on Gradescope.** Your final report must match your GitHub repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
+**Submit the final report on Canvas under the <i>Written Report</i> assignment on Gradescope.** Your final report must match your RStudio Cloud repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
 
 The written report is worth 50 points, broken down as follows:
 
@@ -215,18 +217,13 @@ Total                                                   | 50 pts
 
 #### Introduction and data
 
-The introduction provides motivation and context for your research. Describe
-your topic (citing sources) and provide a concise, clear statement of your 
-research question and hypotheses.
+The introduction provides motivation and context for your research. Describe your topic (citing sources) and provide a concise, clear statement of your research question and hypotheses.
 
-Then identify the source of the data, when and how it was collected, the cases,
-a general description of relevant variables.
+Then identify the source of the data, when and how it was collected, the cases, a general description of relevant variables.
 
 #### Methodology 
 
-The methodology section should include visualizations and summary statistics 
-relevant to your research question. You should also justify the choice of 
-statistical method(s) used to answer your research question.
+The methodology section should include visualizations and summary statistics relevant to your research question. You should also justify the choice of statistical method(s) used to answer your research question.
 
 #### Results 
 
@@ -237,24 +234,20 @@ Provide only the main results from your analysis. The goal is not to do an exhau
 
 #### Discussion
 
-This section is a conclusion and discussion. This will require a summary of
-what you have learned about your research question along with statistical
-arguments supporting your conclusions. You should critique your own methods 
-and provide suggestions for improving your analysis and future work. Any potential issues 
-pertaining to the reliability and validity of your data and the appropriateness of the statistical analyses should also be discussed. Additionally, include a brief paragraph on ideas for future work.
+This section is a conclusion and discussion. This will require a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. You should critique your own methods and provide suggestions for improving your analysis and future work. Any potential issues pertaining to the reliability and validity of your data and the appropriateness of the statistical analyses should also be discussed. Additionally, include a brief paragraph on ideas for future work.
 
 ### Formatting
 
 This is an assessment of the overall presentation and formatting of the written report.
 
-## Video presentation + slides
+## Slides + Oral Presentation
 
 ### Slides 
 
 In addition to the write-up, your team must also create presentation
-slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. **For submission, convert these slides to a .pdf document to be submitted to Gradescope.** The slides are due on **Wednesday, December 8 at 11:59pm**
+slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. The slides are due on Canvas by the time of the presentation during finals week.
 
-The slide deck should have no more than **6 content slides + 1 title slide**. Here is a *<u>suggested</u>* outline as you think through the slides; you do *<u>not</u>* have to use this exact format for the slide deck.
+Here is a *<u>suggested</u>* outline as you think through the slides; you do *<u>not</u>* have to use this exact format for the slide deck.
 
 - Title Slide
 - Slide 1: Introduce the topic and motivation
@@ -264,57 +257,17 @@ The slide deck should have no more than **6 content slides + 1 title slide**. He
 - Slide 6: Conclusions + future work
 
 
-### Video presentation
+### Oral presentation
 
-Sometime by **Wednesday, December 8**, your group will upload a video presentation of your project to Warpwire. Note that all members must present. The video presentation **must be no longer than 8 minutes**. It is fine if the video is shorter than 8 minutes, but the 8-minute time limit will be strictly enforced.
+During our final exam time slot, your group will give an oral presentation of your project. While all members are expected to contribute to the presentation and are responsible for the final product, not all group members must present. Feel free to leverage the individual strengths of your team members. For example, one person may excel in written communication, another in visual communication, and another in oral communication. Not all roles need to be shared equally among all team members so long as the overall work load is distributed fairly. 
 
-For the presentation, you can speak over your slide deck, similar to the lecture content videos. Many groups have used Zoom to record the presentation; however, you can use whatever platform works best for your group. Below are a few resources to help you record video presentations:
-
-- [Recording presentations in Zoom](https://kb.siue.edu/61721)
-- [Apple Quicktime for screen recording]( https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac)
-- [Windows 10 built-in screen recording functionality](https://www.youtube.com/watch?v=OfPbr1mRDuo)
-- [Kap for screen recording](https://getkap.co/)
-
-Once your video is ready, upload the video to Warpwire, then embed the video in a new discussion for the group.
-
-
-#### To upload your video to Warpwire:
-
-- Click the Warpwire tab in the course Sakai site.
-- Click the “+” and select “Upload files”.
-- Locate the video on your computer and click to upload.
-- Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in the discussion forum.
-
-#### To post the video to the discussion forum
-
-- Click the Presentations tab in the course Sakai site. 
-- Click the Presentations topic. 
-- Click "Start a new conversation". 
-- Make the title "Your Team Name: Project Title". For example, "Teaching Team: Our Awesome Presentation".
-- Click the Warpwire icon (between the table and shopping cart icons).
-- Select your video, then click “Insert 1 item.” This will embed your video in the conversation.
-- Under the video, paste the URL to your video.
-- You’re done! 
-
-You can see the Teaching Team example in Sakai.
-
-
-## Presentation comments 
-
-Each student will be assigned 2 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EUXmwBCW5CpBigEeh9xhaeoBWZSwiajLpPap7S3iM9CNFg?e=uZtBXs) to see your viewing assignments. 
-
-Watch the group's video, then click "Reply" to post a question for the group. You may not post a question that's already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn't be "Why did you use a bar plot instead of a pie chart"?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group's specific presentation, i.e demonstrating that you've watched the presentation. 
-
-You may start posting questions and comments on Thursday, December 09. **All comments must be posted by Friday, December 10 at 11:59pm.** 
-
-**<i>This portion of the project will be assessed individually.</i>**
-
+The oral presentation should be approximately 10-12 minutes, with about 5 minutes for questions. 
 
 ## Project repository
 
-All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized. 
+All written work (with exception of presentation slides) should be reproducible, and the RStudio project repo should be neatly organized. 
 
-The GitHub repo should have the following structure:
+The repo should have the following structure:
 
 - `README`: Short project description and data dictionary
 - `written-report.Rmd` & `written-report.pdf`
@@ -323,31 +276,20 @@ The GitHub repo should have the following structure:
 - `/presentation`: Folder with the presentation slides. 
   - If your presentation slides are online, you can put a link to the slides in a `README.md` file in the `presentation` folder.
   
-Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.
-
+Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project  repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.
 
 ## Peer teamwork evaluation
 
-You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
-provide some explanation. If any individual gets an average peer score 
-indicating that this was the case, their grade will be assessed accordingly.
-
-**Update (12/9/2021)**
-
-If you have concerns with the teamwork and/or contribution from any team members, please email me by Friday, December 10 at 11:59pm with a brief description of your concerns. **You only need to email me if you have concerns**. Otherwise, I will assume everyone on the team equally contributed and will receive full credit for the teamwork portion of the grade.
+You will be asked to fill out a survey where you provide feedback on your team dynamic & your team members contributions, and self-assess your own contributions. 
 
 ## Grading details
 
 Grading of the project will take into account the following:
 
-- Content - What is the quality of research and/or policy question and relevancy 
-of data to those questions?
+- Content - What is the quality of research and/or policy question and relevancy of data to those questions?
 - Correctness - Are statistical procedures carried out and explained correctly?
-- Writing and Presentation - What is the quality of the statistical presentation, 
-writing, and explanations?
-- Creativity and Critical Thought - Is the project carefully thought out? Are the 
-limitations carefully considered? Does it appear that time and effort went into 
-the planning and implementation of the project?
+- Writing and Presentation - What is the quality of the statistical presentation, writing, and explanations?
+- Creativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?
 
 A general breakdown of scoring is as follows:
 
@@ -369,7 +311,6 @@ of results is unclear.
 
 **There is no late work accepted on this project.** Be sure to turn in your work early to avoid any technological mishaps.
 
-
 ## Additional notes and tips
 
 The project is very open ended. For instance, in creating a compelling 
@@ -389,16 +330,12 @@ unclear.
 - *Code*: In your write up your code should be hidden (`echo = FALSE`) so that your document is neat and easy to read. However your document should include all your code such that if I re-knit your Rmd file I should be able to obtain the results you presented. 
   - **Exception:** If you want to highlight something 
 specific about a piece of code, you're welcome to show that portion. 
-- Merge conflicts will 
-happen, issues will arise, and that’s fine! Commit and push often, and ask questions when stuck.
-- Make sure each team member is contributing, both in terms of quality and quantity of contribution (we will be reviewing commits from different team  members).
-- All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.
+- Make sure each team member is contributing, both in terms of quality and quantity of contribution.
+- All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade adjusted accordingly. While different teams members may have different backgrounds and strengths, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.
 
 ### Formatting + communication 
 
 #### Suppress Code, Warnings, & Messages
-
-
 
 - Include the following code in a code chunk at the top of your .Rmd file to suppress all code, warnings, and other messages. Use the code chunk header `{r set-up, include = FALSE}` to suppress this set up code. 
 

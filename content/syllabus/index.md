@@ -6,19 +6,14 @@ title: About this course
 
 ## Course Info
 
- <span></span> | Day  |   Time   |  Location  | 
-|-------------------|------------------|------------------|------------------|
-Class | Tue & Thurs | 4:20 - 5:45 | Segerstrom 174 |
+| Course  |   Instructor |
+|-------------------|------------------|------------------|
+**MATH 250 - Data Analysis** | Katie Fitzgerald, PhD Statistics
+Fall 2022 | Assistant Professor of Statistics
+Section 01 Class #: 11324 | Email: kfitzgerald@apu.edu
+Segerstrom 174 | Office: Segerstrom 112
+Tue & Thurs 4:20 - 5:45pm | Office hours: Tue 10am – 12pm, Th 1-2:20pm
 
-**Instructor**
-
-  Name    |   Contact    |  Office hours  |  <span></span>
-|-------------------|------------------|------------------|------------------ 
-|[Dr. Katie Fitzgerald](https://www.apu.edu/clas/faculty/kfitzgerald/) | <a href="mailto:kfitzgerald@apu.edu" title="email"><i class="fa fa-envelope"></i></a>  | Tue 10a - 12p, Th 1-2:20p |  | or by appointment | 
-
-Office hours are held on Tuesdays from 10am - 12pm and on Thursdays from 1 - 2:20pm. You may come in person (Segerstrom 112) or on Zoom. See Canvas for Zoom link.
-
- 
 ## Course Materials
 
 ### Texts
@@ -41,6 +36,13 @@ Students are expected to bring a laptop to all class sessions. If access to a la
 ### Campuswire account
 
 This term we will be using Campuswire as our preferred platform for questions about homework, labs, and general course questions. The system is highly catered to getting you help quickly and efficiently from classmates and the instructor. Rather than emailing questions to the instructor, you should post your questions on Campuswire. See Canvas for Enrollment Code.
+
+## Course Communication
+
+- **Course website**: All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on this course website, [apumath250.netlify.app](apumath250.netlify.app). 
+- **Campuswire**: All outside-of-class interactions and announcements will happen on Campuswire. You are strongly encouraged to set notifications in Campuswire so that you receive alerts via email or push notifications. 
+- **Canvas** will be used only to submit assignments and view grades. 
+- **Email**: If you have a personal question that is not suitable for the public forum (e.g. about your grade or a personal accommodation), you are welcome to email me directly. I do my best to respond to emails within 24 hours Monday - Friday. Response time may be slower for emails sent Friday evening through Sunday.
 
 ## Course Learning Objectives
 
@@ -210,11 +212,5 @@ There are times may need help with the class that is beyond what can be provided
 
 The [University Counseling Center (UCC)](https://www.apu.edu/counselingcenter/) exists to empower students to realize their personal and academic potential by promoting holistic psychological, social, and spiritual wellness. Students seek counseling for a variety of reasons - help coping with pressures associated with a challenging academic environment or adjustment to college life. Counseling can be beneficial to those who are feeling anxious or depressed, who want to learn to be more effective in developing and maintaining healthy relationships with others, or who want to examine their beliefs or explore thier current life situation. UCC services are FREE for all APU students. 
 
-## Communication
-
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on this course website, [apumath250.netlify.app](apumath250.netlify.app). Canvas will be used only to submit assignments and view grades. All other course interaction and announcements will happen on Campuswire. You are strongly encouraged to set notifications in Campuswire so that you receive alerts via email or push notifications. 
-
-If you have a question about course content, assignments, or logistics, you should post your question to Campuswire. 
-
-If you have a personal question that is not suitable for the public forum (e.g. about your grade or a personal accommodation), you are welcome to email me directly. I do my best to respond to emails within 24 hours Monday - Friday. Response time may be slower for emails sent Friday evening through Sunday. 
+ 
 

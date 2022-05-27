@@ -4,36 +4,44 @@ title: "MATH 250 Final Project"
 
 ## Timeline
 
-Proposal due **Thursday, October 14**
+Choose project teams by **Thursday, October 6**
 
-Draft report due **Wednesday, November 17** 
+Proposal due **Thursday, October 13**
 
-Peer feedback due **Monday, November 22**
+Project Work Session 1: **Thursday, October 20**
 
-Final written report due **Friday, December 3** (accepted until December 5)
+Data cleaning & preliminary EDA due **Thursday, October 27**
 
-Presentation video, slides, repo due **Wednesday, December 8**
+Draft report due **Thursday, November 17** 
 
-Presentation comments due **Friday, December 10**
+In-class Peer Review  **Thursday, December 1**
+
+Peer feedback due **Tuesday, December 6**
+
+Project Work Session 2: **Thursday, December 8**
+
+Final written report due **Saturday, December 10** 
+
+Presentation: **TBD (during Final Exam time slot Dec 12 - 16)**
 
 ## Introduction & grading summary
 
 **TL;DR**: *Pick a dataset and do something with it. That is your 
 final project.*
 
-The final project for this class will consist of analysis on a dataset of your own choosing. The dataset may already exist, you may collect your own data by scraping the web.  
+The purpose of the final project is to apply what you’ve learned throughout the semester to investigate an interesting data-driven research question by analyzing a real-world dataset of your choosing. 
 
-Choose the data based on your group's interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way. 
+The project will be completed in self-assigned teams of 2-3. You should choose a dataset for your project based on your group's interests. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way. 
 
 ### Logistics
 
-You will work on the project with your lab groups.
+You should sign up for a team of 2-3 on Canvas no later than **Thursday, October 6**. 
 
 The four primary deliverables for the final project are
 
 - A written, reproducible report detailing your analysis
-- A GitHub repository corresponding to your report
-- Slides + a video presentation
+- An RStudio Cloud project repository corresponding to your report
+- An oral presentation during finals week
 - Formal peer review on another team's project
 
 ### Grading summary
@@ -43,22 +51,18 @@ The grade breakdown is as follows:
 Total                                                   | 100 pts
 --------------------------------------------------------|--------
 **Project proposal**                                    | 5 pts
+**Preliminary EDA**                                     | 5 pts
 **Written report**                                      | 50 pts
+**Project repo & reproducibility**                      | 10 pts
+**Peer feedback**                                       | 5 pts
 **Slides**                                              | 10 pts
-**GitHub repo & reproducibility**                       | 5 pts
-**Video presentation**                                  | 20 pts
-**Peer feedback**                                       | 10 pts
+**Oral presentation**                                   | 15 pts
 
 **<i>Note: No late projects are accepted.</i>**
 
 ## Data sources
 
-In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have **at least 500 observations and at least ten variables (or has been approved by Prof. Tackett)**. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data. 
-
-If you are using a dataset that comes in a 
-format that we haven't encountered in class (for instance, a `.DAT` file), make 
-sure that you are able to load it into RStudio as this can be tricky depending 
-on the source. If you are having trouble, ask for help before it is too late.
+In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have **at least 500 observations and at least ten variables (or has been approved by Dr. Fitz**. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data. 
 
 **Data sets that can't be used:** 
 
@@ -66,7 +70,7 @@ on the source. If you are having trouble, ask for help before it is too late.
 - Data sets from Kaggle.
 - Data sets analyzed in another course.
 
-There will be limits on the number of groups that can use a given data set, so I encourage you to be creative! 
+No two groups can analyze the same dataset, so I encourage you to be creative! 
 
 Some resources that may be helpful:
 
@@ -75,7 +79,7 @@ Some resources that may be helpful:
 - [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
 
 
-Additions:
+Additional options:
 
 - [World Health Organization](https://www.who.int/gho/database/en/)
 - [The National Bureau of Economic Research](https://data.nber.org/data/)
@@ -95,9 +99,7 @@ Additions:
 - [Election Studies](https://electionstudies.org//)
 
 All analyses must be done in RStudio, and your final written report and 
-analysis **must be reproducible**. This means that you must create an R Markdown
-document attached to a GitHub repository that will create your written report
-exactly upon knitting.
+analysis **must be reproducible**. This means that you must create an R Markdown document attached to a RStudio project repository that will create your written report exactly upon knitting.
 
 ## Project proposal 
 
@@ -130,12 +132,12 @@ For each data set, include the following:
 
 ### Submission 
 
-Submit the PDF of your proposal on Gradescope by **Thursday, October 14 at 11:59pm**. Be sure to select the names of all team members in the submission and mark all the pages associated with each data set. The teaching team will provide feedback on your proposal to help you determine a data set to use for the project. 
+Submit the PDF of your proposal on Canvas by class-time on **Thursday, October 13 (4:20pm)**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
 
 ### Notes 
 
 - Project proposals should have no more than one page of **text.** (not including the output from `glimpse`). 
-- You **must** use one of the data sets in the proposal for the final project, unless instructed otherwise by Prof. Tackett. 
+- You **must** use one of the data sets in the proposal for the final project, unless instructed otherwise by Dr. Fitz. 
 
 ### Proposal grading 
 

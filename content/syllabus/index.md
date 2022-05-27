@@ -164,7 +164,23 @@ If there are life circumstances that are having a longer-term impact on your aca
 
 Click [here](https://www.apu.edu/calendar/academic/) for the full APU academic calendar.
 
-## Course policies
+## Course community and policies
+
+### Inclusive community 
+
+It is my intent that this course models and fosters justice, equity, diversity, and inclusion. We will engage with these values both in content and in practice. Data and statistics can be tools to tell diverse stories and help us learn about the state of the world from a perspective beyond our own lived experience. When used responsibly and with integrity, they can amplify the experiences of vulnerable and historically excluded populations. For example, they can be used to shed light on disparities in our schools, healthcare system, and criminal justice system. 
+
+The research questions we ask, the data we collect, and the way we use that data are infused with (often hidden) values about who and what matters in the world. For example, we should examine if and when marginalized people and their experiences are being excluded from our data, particularly when that data is used in countless ways to drive decision-making and inform society about the state of the world. 
+
+You will be asked to continually and critically engage with these ideas with each dataset and analysis you encounter. You are expected to engage your peers and new perspectives with curiosity, empathy, and intellectual humility. It is my intent that all students be well-served by this course, that your learning needs are met inside and outside the classroom, and that the diversity that you bring to this class be valued and utilized as a resource and strength.
+
+I (like many people) am continually learning how to honor diverse perspectives and identities. If something was said in class (by me or a peer) that made you feel uncomfortable, please let me know. You will also have the opportunity to express concerns anonymously via check-in surveys. APU encourages community members to resolve conflicts directly, when possible. If an APU community member perceives that hostile words or behaviors were directed toward an individual or a group based upon that individual’s or group’s identity, they can submit a Bias Incident Report. Information on the reporting process is available on the website at www.apu.edu/diversity/bias/.
+
+Affirming that diversity is an expression of God’s image, love, and boundless creativity, it is APU's aim to collectively nurture an environment that respects each individual’s uniqueness while celebrating our collective commonalities. It is in this spirit that we collectively strive to create an inclusive environment in which all students, staff, faculty, and administrators thrive.
+
+### Faith Integration 
+
+Academic Faith Integration is recognized as an important feature of courses at APU. My identity as a Christ-follower shapes my worldview and therefore shapes my understanding of data and statistics. You can expect to discover how relevant themes from Christianity and data science meaningfully inform one another. I respectfully recognize that students come from a diversity of faith backgrounds and that they have a variety of perspectives. This diversity in perspective will be valued as a strength and resource that enriches the learning community.
 
 ### Academic integrity
 
@@ -178,59 +194,27 @@ Please abide by the following as you work on assignments in this course:
 
 Any violations in academic integrity standards as outlined in the [APU Academic Integrity Policy](https://www.apu.edu/provost/integrity/) and those specific to this course will automatically result in a 0 for the assignment and will be reported to the Office of the Provost for further action.
 
+### Accessibility & Support Services
+
+If there is any portion of this class that is not accessible to you due to course format or challenges with technology, please let me know so we can make appropriate accommodations. If you have a disability that might prevent you from fully demonstrating your abilities, you should meet with an advisor in [Accessibility and Disability Resources](https://www.apu.edu/academic-success/services/accessibility/) as soon as possible to initiate disability verification and discuss reasonable accommodations that will allow the opportunity for full participation and for successful completion of course requirements. For more information, please contact Accessibility and Disability Resources by phone at 626-815-3849, or email at disabilityservices@apu.edu. 
+
 ## Additional resources
 
-### Academic Resource Center
+If there are life circumstances that are having a long-term impact on your academic performance or well-being, come talk to me, and we can work towards a solution and connect you to the support you need.  
 
-There are times may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The [Academic Resource Center (ARC)](https://arc.duke.edu) offers free services to all students during their undergraduate careers at Duke. Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact <a href="mailto:arc@duke.edu" title="email">ARC\@duke.edu</a>, 919-684-5917.
+### Academic Success Center
 
-### CAPS
+There are times may need help with the class that is beyond what can be provided by the instructor. In those instances, I encourage you to visit the Academic Success Center. The [Academic Success Center](https://www.apu.edu/academic-success/) offers free comprehensive services, programming, and resources to support all students in *thinking* critically, *planning* accordingly, and *thriving* academically as you become difference makers at APU. Drop by the center to learn more about how they can support you. The center is located on East Campus in Building 30. You may also email advising@apu.edu or call (626)-815-3886
 
-[Duke Counseling & Pyschological Services (CAPS)](https://studentaffairs.duke.edu/caps) helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. CAPS recognizes that we are living in unprecedented times and that the changes, challenges and stressors brought on by the COVID-19 pandemic have impacted everyone, often in ways that are tax our well-being. CAPS offers many services to Duke undergraduate students, including brief individual and group counseling, couples counseling and more. CAPS staff also provides outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life. CAPS provides services to students via Telehealth. To initiate services, you can contact their front desk at 919-660-1000.
+### University Counseling Center (UCC)
 
+The [University Counseling Center (UCC)](https://www.apu.edu/counselingcenter/) exists to empower students to realize their personal and academic potential by promoting holistic psychological, social, and spiritual wellness. Students seek counseling for a variety of reasons - help coping with pressures associated with a challenging academic environment or adjustment to college life. Counseling can be beneficial to those who are feeling anxious or depressed, who want to learn to be more effective in developing and maintaining healthy relationships with others, or who want to examine their beliefs or explore thier current life situation. UCC services are FREE for all APU students. 
 
+## Communication
 
-## Course community
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on this course website, [apumath250.netlify.app](apumath250.netlify.app). Canvas will be used only to submit assignments and view grades. All other course interaction and announcements will happen on Campuswire. You are strongly encouraged to set notifications in Campuswire so that you receive alerts via email or push notifications. 
 
-### Duke Community Standard
+If you have a question about course content, assignments, or logistics, you should post your question to Campuswire. 
 
-As a student in this course, you have agreed to uphold the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) as well as the practices specific to this course.
+If you have a personal question that is not suitable for the public forum (e.g. about your grade or a personal accommodation), you are welcome to email me directly. I do my best to respond to emails within 24 hours Monday - Friday. Response time may be slower for emails sent Friday evening through Sunday. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_KN97j30ST4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-
-</iframe>
-
-### Inclusive community
-
-It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke's Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
-
-Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:
-
--   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.
--   I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please let me or a member of the teaching team know.
-
-### Accessibility
-
-If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.
-
-The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update accommodations](https://access.duke.edu/requests) under these circumstances.
-
-  
-
-### Communication
-
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website, [sta199-fa21-003.netlify.app](https://sta199-fa21-003.netlify.app/)
-
-Announcements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.
-
-### Where to get help
-
--   If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
--   The teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!
--   Outside of class and office hours, any general questions about course content or assignments should be posted on [Ed Discussion](https://edstem.org/us/courses/8027/discussion/). There is a chance another student has already asked a similar question, so please check the other posts in Ed Discussion before adding a new question. If you know the answer to a question posted in the discussion forum, I encourage you to respond!
-
-Check out the [Help](/help/) tab for more resources.
-
-### Email
-
-If there is a question that's not appropriate for the public forum, you are welcome to email me directly. **If you email me, please include "STA 199" in the subject line.** Barring extenuating circumstances, I will respond to STA 199 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.

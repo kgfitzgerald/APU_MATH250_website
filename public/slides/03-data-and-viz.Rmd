@@ -1,18 +1,18 @@
 ---
 title: "Data and visualization"
-author: "Prof. Maria Tackett"
+author: "Dr. Katie Fitzgerald"
 output:
   xaringan::moon_reader:
-    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
-    css: "sta199-slides.css"
-    logo: img/sta199-sticker-icon.png
+    css: ["xaringan-themer.css", "slides.css"]
     lib_dir: libs/font-awesome
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    logo: img/MATH_250_sticker.png
     nature:
-      highlightStyle: github
+      ratio: "16:9"
       highlightLines: true
+      highlightStyle: github
       countIncrementalSlides: false
       slideNumberFormat: "%current%" 
-      ratio: "16:9"
 ---
 
 layout: true

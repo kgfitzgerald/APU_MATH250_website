@@ -2,7 +2,7 @@ lessons:
   - title: '<span class="fake-header-table"></span>'
     header: True
     
-  - week: "Week 01"
+  - week: "TEST"
     date: "Mon, Aug 23"
     title: "Welcome to STA 199!"
     slides: "https://apumath250.netlify.app/slides/01-intro.html#1l"

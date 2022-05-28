@@ -5,7 +5,7 @@ lessons:
   - week: "Week 01"
     date: "Tue, Aug 30"
     title: "Welcome to MATH 250!"
-    slides: "/slides/01-intro.html"
+    slides: "01-intro.html"
     ae: "appex01-unvotes.html"
   - date: "Wed, Aug 25"
     title: "Meet the Toolkit - Programming"

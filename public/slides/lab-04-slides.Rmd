@@ -1,6 +1,6 @@
 ---
 title: "STA 199 Lab"
-subtitle: "09.16.21"
+subtitle: "test"
 author: ""
 output:
   xaringan::moon_reader:

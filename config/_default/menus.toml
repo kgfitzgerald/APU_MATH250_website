@@ -39,16 +39,22 @@
     url = "/help/"
     weight = 60
     
+[[main]]
+   # pre = "<i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i>"
+    name = "Acknowledgments"
+    url = "/acknowledgments/"
+    weight = 70
+    
 
 [[main]]
     url = "https://rstudio.cloud"
     name = "<i class=\"fab fa-r-project fa-lg\"></i>"
-    weight = 70
+    weight = 80
     
 [[main]]
     url = "https://github.com/kgfitzgerald/APU_MATH250_website"
     name  = "<i class='fab fa-github fa-lg'></i>"
-    weight = 80
+    weight = 90
     
 #[[main]]
  #   url = "https://edstem.org/us/courses/8027/discussion/"

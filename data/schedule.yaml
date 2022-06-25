@@ -43,15 +43,16 @@ lessons:
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-05.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-05.html"
     exam: "https://kgfitzgerald.github.io/APU_MATH_250/other/exam.html"
+    project: "https://canvas.apu.edu/courses/42480/assignments/692819"
 
   
   - week: "Week 06"
-    date:  "Sep 6 - 8"
+    date:  "Oct 4 - 6"
     title: "Data wrangling pt. 1"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-06.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-06.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-06.html"
-    project: "https://kgfitzgerald.github.io/APU_MATH_250/project/project-01.html"
+    project: "https://apumath250.netlify.app/project/#project-proposal"
   
   - week: "Week 07"
     date:  "Oct 11 - 13"
@@ -66,7 +67,7 @@ lessons:
     title: "Data Ethics"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-08.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-08.html"
-    project: "https://kgfitzgerald.github.io/APU_MATH_250/project/project-02.html"
+    project: "https://apumath250.netlify.app/project/#data-cleaning--preliminary-eda"
   
   - week: "Week 09"
     date:  "Oct 25 - 27"
@@ -90,7 +91,7 @@ lessons:
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-11.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-11.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-10.html"
-    project: "https://kgfitzgerald.github.io/APU_MATH_250/project/project-03.html"
+    project: "https://apumath250.netlify.app/project/#rough-draft-report"
   
   - week: "Week 12"
     date:  "Nov 15 - 17"
@@ -109,7 +110,7 @@ lessons:
     title: "Special Topics: Shiny Apps"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-13.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-13.html"
-    project: "https://kgfitzgerald.github.io/APU_MATH_250/project/project-04.html"
+    project: "https://apumath250.netlify.app/project/#peer-review"
     se: "https://kgfitzgerald.github.io/APU_MATH_250/other/eoc.html"
 
   - week: "Week 14"
@@ -117,9 +118,9 @@ lessons:
     title: "Special Topics: Text analysis"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-14.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-14.html"
-    project: "https://kgfitzgerald.github.io/APU_MATH_250/project/project-05.html"
+    project: "https://apumath250.netlify.app/project/#written-report"
   
   - week: "Week 15"
     date: "Dec 12 - 16"
     title: "FINAL EXAM WEEK - Project Presentation"
-    project: "https://kgfitzgerald.github.io/APU_MATH_250/project/project-06.html"
+    project: "https://apumath250.netlify.app/project/#slides--oral-presentation"

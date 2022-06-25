@@ -57,7 +57,7 @@ By the end of the semester, you will...
 
 Much of the course design, activities, and assessments are adapted from Mine Çetinkaya-Rundel’s [Data Science in a Box](https://datasciencebox.org/index.html) curriculum and Duke University’s open source [Introduction to Data Science](https://www.introds.org) course under the Creative Commons Attribution Share Alike 4.0 International.
 
-Modern data analysis is inherently tied to coding and computational tools, and coding is learned by doing. To facilitate this type of learning, this course utilizes a flipped learning design. Each week, you will watch a series of lecture videos and complete a preparation quiz before class. Then class-time will be dedicated to hands-on application exercises and group lab assignments. The activities and assessments follow a prepare, practice, perform format and are designed to help you develop the foundational skills of a modern data scientist. 
+Modern data analysis is inherently tied to coding and computational tools, and coding is learned by doing. To facilitate this type of learning, this course utilizes a flipped learning design. Each week, you will watch a series of lecture videos and complete a preparation quiz before class. Then classtime will be dedicated to hands-on application exercises and group lab assignments. The activities and assessments follow a prepare, practice, perform format and are designed to help you develop the foundational skills of a modern data scientist. 
 
 -   **Prepare**: Includes lecture videos and optional readings to introduce new concepts and a short quiz ensure a basic comprehension of the material. The goal is to help you prepare for the in-class activities.
 -   **Practice**: Includes in-class application exercises where you will begin to apply the concepts and methods introduced in the lecture videos. The activities will be graded for completion, as they are designed for you to gain experience with the statistical and computing techniques before working on graded assignments.
@@ -73,11 +73,11 @@ The majority of class-time on Tuesdays will be dedicated to working on Applicati
 
 ### Labs (Perform)
 
-The majority of class-time on Thursdays will be dedicated to team lab assignments. The labs are a more in-depth application of the week’s material that will have you complete scaffolded analyses of a real dataset using RStudio Cloud. Teams of 3 will be assigned by the instructor and will rotate approximately every two weeks. Labs are due by class-time the following Tuesday. The lowest lab grade will be dropped at the end of the semester.
+The majority of class-time on Thursdays will be dedicated to team lab assignments. The labs are a more in-depth application of the week’s material that will have you complete scaffolded analyses of a real dataset using RStudio Cloud. Teams of 3 will be assigned by the instructor and will rotate approximately every two weeks. Labs are due by midnight the following Tuesday. The lowest lab grade will be dropped at the end of the semester.
 
 ### Homework (Perform)
 
-Approximately every other week, an individual homework assignment will be due. Homework will be similar in nature to the labs but are to be completed on your own outside of class. You are still encouraged to work together, but homework will be submitted and graded individually. Homework will be assigned on Thursdays and due by class-time the following Thursday. The lowest homework grade will be dropped at the end of the semester.
+Approximately every other week, an individual homework assignment will be due. Homework will be similar in nature to the labs but are to be completed on your own outside of class. You are still encouraged to work together, but homework will be submitted and graded individually. Homework will be assigned on Thursdays and due by midnight the following Thursday. The lowest homework grade will be dropped at the end of the semester.
 
 ### Exam (Perform)
 
@@ -105,8 +105,8 @@ The final course grade will be calculated as follows:
 | Application Exercises       | 3%       |
 | Engagement & Participation  | 2%       |
 | Statistics Experiences      | 5%       |
-| Homework                    | 25%        |
-| Labs                        | 20%        |
+| Homework                    | 20%        |
+| Labs                        | 25%        |
 | Exam 01                     | 15%      |
 | Final Project               | 25%        |
 

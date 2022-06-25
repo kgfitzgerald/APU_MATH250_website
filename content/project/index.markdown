@@ -52,7 +52,8 @@ Total                                                   | 100 pts
 --------------------------------------------------------|--------
 **Project proposal**                                    | 5 pts
 **Preliminary EDA**                                     | 5 pts
-**Written report**                                      | 50 pts
+**Rough Draft     **                                    | 5 pts
+**Written report**                                      | 45 pts
 **Project repo & reproducibility**                      | 10 pts
 **Peer feedback**                                       | 5 pts
 **Slides**                                              | 10 pts
@@ -62,7 +63,7 @@ Total                                                   | 100 pts
 
 ## Data sources
 
-In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have **at least 500 observations and at least ten variables (or has been approved by Dr. Fitz**. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data. 
+In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have **at least 500 observations and at least ten variables (or has been approved by Dr. Fitz)**. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data. 
 
 **Data sets that can't be used:** 
 
@@ -108,17 +109,13 @@ There are two main purposes of the project proposal:
 - To help you think about the project early, so you can get a head start on finding data, reading relevant literature, thinking about the questions you wish to answer, etc.
 - To ensure that the data you wish to analyze, methods you plan to use, and the scope of your analysis are feasible and will help you be successful for this project.
 
-Choose **three** substantially different datasets you are interested in analyzing. For each, identify the components below.
+Choose **three** substantially different datasets you are interested in analyzing. For each dataset, include the following 3 sections in the proposal: 
 
-Include the following in the proposal: 
-
-### Introduction and Data
-
-For each data set, include the following: 
+### Data description & background
 
 - Identify the source of the data, 
-- When and how it was originally collected (by the original data curator, not necessarily how you found the data) 
-- A brief description of the observations 
+- When and how it was originally collected (by the original data curator, not necessarily how you found the data), and 
+- Provide a brief description of the observations 
 
 ### Research question
 
@@ -132,11 +129,11 @@ For each data set, include the following:
 
 ### Submission 
 
-Submit the PDF of your proposal on Canvas by class-time on **Thursday, October 13 (4:20pm)**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
+Submit the PDF of your proposal on Canvas by midnight on **Thursday, October 13**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
 
 ### Notes 
 
-- Project proposals should have no more than one page of **text.** (not including the output from `glimpse`). 
+- Project proposals should have no more than 1-2 pages of **text.** (not including the output from `glimpse`). That is, be concise!
 - You **must** use one of the data sets in the proposal for the final project, unless instructed otherwise by Dr. Fitz. 
 
 ### Proposal grading 
@@ -145,7 +142,7 @@ The project proposal will be graded as follows:
 
 Total                                                   | 5 pts
 --------------------------------------------------------|-------
-**Introduction/data**                                   | 2 pts
+**Data description/background**                                   | 2 pts
 **Research questions**                                  | 2 pts
 **Results**                                             | 1 pts
 
@@ -166,7 +163,7 @@ Total                                                   | 5 pts
 
 The purpose of the rough draft and peer review is to give you an opportunity to get feedback on your analysis before the final product. 
 
-Your team will write the rough draft in the **written-report.Rmd** file in your project repo. You do not need to submit the draft on Canvas. 
+Your team will write the rough draft in the **written-report.Rmd** file in your project repo and submit the pdf or html to Canvas. 
 
 Below is a brief description of the sections to focus on in the draft: 
 
@@ -189,6 +186,15 @@ Provide only the main results from your analysis. The goal is not to do an exhau
 
 As you work on the draft, the focus should be on the analysis and less on crafting the final report. **Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and deriving initial results and conclusions.**
 
+This part of the project will be graded as follows:
+
+Total                                                   | 5 pts
+--------------------------------------------------------|-------
+**Introduction & Data**                                 | 1 pt
+**Methodology**                                         | 1 pts
+**Results**                                             | 1 pt
+**Neatness & Organization**                             | 2 pt
+
 
 ## Peer review
 
@@ -205,13 +211,13 @@ Your final report must be written using R Markdown. All team members must contri
 
 **Submit the final report on Canvas under the <i>Written Report</i> assignment on Gradescope.** Your final report must match your RStudio Cloud repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
 
-The written report is worth 50 points, broken down as follows:
+The written report is worth 45 points, broken down as follows:
 
-Total                                                   | 50 pts
+Total                                                   | 45 pts
 --------------------------------------------------------|-------
 **Introduction/data**                                   | 5 pts
 **Methodology**                                         | 10 pts
-**Results**                                             | 20 pts
+**Results**                                             | 15 pts
 **Discussion**                                          | 10 pts
 **Formatting**                                          | 5 pts
 

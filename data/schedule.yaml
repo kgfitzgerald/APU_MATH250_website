@@ -7,7 +7,7 @@ lessons:
     title: "Welcome to MATH 250!"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/slides/01-intro.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-01.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-01.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-01-hello-r.html"
 
     
   - week:  "Week 02"

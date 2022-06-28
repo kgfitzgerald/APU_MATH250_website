@@ -7,24 +7,19 @@
             <td style="width:55%;text-align:left">{{ .title | markdownify }}</td>
 
             {{- if .header }} 
-            <td style="width:5%;text-align:center" class="mid-table-header">Prepare</td>
-            <td style="width:5%;text-align:center" class="mid-table-header">AE</td>
-            <td style="width:5%;text-align:center" class="mid-table-header">Labs</td>
-            <td style="width:5%;text-align:center" class="mid-table-header">HW</td>
-            <td style="width:5%;text-align:center" class="mid-table-header">Exam</td>
-            <td style="width:5%;text-align:center" class="mid-table-header">Project</td>
-            <td style="width:5%;text-align:center" class="mid-table-header">SE</td>
+            <td style="width:5%;text-align:center" class="mid-table-header">Slides</td>
+            <td style="width:5%;text-align:center" class="mid-table-header">Recording</td>
 
             {{- else }} 
 
-          {{- if .prepare }}
+          {{- if .slides }}
             <td align="center" style="width:8%;text-align:center"><a
-                    href="{{ .prepare }}">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
+                    href="{{ .slides }}">
+                    <i class="fas fa-presentation-screen fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:8%;text-align:center">
                 <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
+                    <i class="fas fa-presentation-screen fa-lg"></i></font>
             </td>
             {{- end }}
             
@@ -32,66 +27,14 @@
 
              
             
-             {{- if .ae }}
+             {{- if .recording }}
             <td align="center" style="width:8%;text-align:center"><a
-                    href="{{ .ae }}">
-                    <i class="fas fa-users fa-lg"></i></a></td>
+                    href="{{ .recording }}">
+                    <i class="fas fa-video fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:8%;text-align:center">
                 <font color="f1f1f1">
-                    <i class="fas fa-users fa-lg"></i></font>
-            </td>
-            {{- end }}
-
-
-            {{- if .lab }}
-            <td align="center" style="width:8%;text-align:center"><a href="{{ .lab }}">
-                    <i class="far fa-file-code fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:8%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="far fa-file-code fa-lg"></i></font>
-            </td>
-            {{- end }}
-
-            {{- if .hw }}
-            <td align="center" style="width:8%;text-align:center"><a href="{{ .hw }}">
-                    <i class="fas fa-edit fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:8%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-edit fa-lg"></i></font>
-            </td>
-            {{- end }}
-            
-               {{- if .exam }}
-            <td align="center" style="width:8%;text-align:center"><a href="{{ .exam }}">
-                    <i class="fas fa-check-square fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:8%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-check-square fa-lg"></i></font>
-            </td>
-            {{- end }}
-            
-               {{- if .project }}
-            <td align="center" style="width:8%;text-align:center"><a href="{{ .project }}">
-                    <i class="fas fa-file-powerpoint fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:8%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-file-powerpoint fa-lg"></i></font>
-            </td>
-            {{- end }}
-            
-            {{- if .se }}
-            <td align="center" style="width:8%;text-align:center"><a
-                    href="{{ .se }}">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:8%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-globe fa-lg"></i></font>
+                    <i class="fas fa-video fa-lg"></i></font>
             </td>
             {{- end }}
 

@@ -11,8 +11,8 @@
             <td style="width:5%;text-align:center" class="mid-table-header">Recording</td>
 
             {{- else }} 
-
-          {{- if .slides }}
+              
+              {{- if .slides }}
             <td align="center" style="width:8%;text-align:center"><a
                     href="{{ .slides }}">
                     <i class="fas fa-presentation-screen fa-lg"></i></a></td>
@@ -22,6 +22,7 @@
                     <i class="fas fa-presentation-screen fa-lg"></i></font>
             </td>
             {{- end }}
+          
             
              {{- if .recording }}
             <td align="center" style="width:8%;text-align:center"><a

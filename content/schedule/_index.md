@@ -3,7 +3,18 @@ title: "Schedule"
 slug: schedule
 ---
 
-This page contains the schedule for the semester. Note that this schedule may be updated as the semester progresses, with all changes documented here.
+## Course schedule by week
+
+The following table provides links to each week's Prepare assignment, Application Exercise (AE), and Lab as well as Homework (HW), Project assignment, and Statistics Experience (SE) when applicable. 
+
+Each week you will include:
+
++ **Prepare**: videos and prep quiz due by classtime Tuesday
++ **Application Exercise**: in-class together on Tuesdays, due Thursday
++ **Lab**: in-class together on Thursdays, due Tuesday
++ **HW, Project component, OR Statistics Experience (SE)**: on your own, assigned Thursdays, due Thursday
+
+Note that this schedule may be updated as the semester progresses, with all changes documented here.
 
 <!--
 - **Prepare** (<i class="fas fa-book-reader fa-lg"></i>): Videos, readings, and slides to prepare for lecture and in-class activities. 
@@ -19,3 +30,10 @@ This page contains the schedule for the semester. Note that this schedule may be
 {{% schedule %}}
 </div>
 
+## Lecture slides and recordings
+
+The table below provides links to all the lecture slides and recordings. Note, these can also be found in the "Prepare" links above.
+
+<div align = "center">
+{{% schedule2 %}}
+</div>

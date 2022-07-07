@@ -7,5 +7,11 @@ lessons:
     title: "Welcome to MATH 250!"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/02-toolkit-R.html"
     recording: "https://youtu.be/Q2QN1RpvLq8"
+    
+  - week: "Week 02"
+    date: "Sep 6 - 8"
+    title: "Data and visualization"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/03-data-viz.html"
+    recording: "https://youtu.be/R1UGnork_Gs"
 
   

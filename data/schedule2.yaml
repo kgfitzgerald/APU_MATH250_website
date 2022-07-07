@@ -13,5 +13,29 @@ lessons:
     title: "Data and visualization"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/03-data-viz.html"
     recording: "https://youtu.be/R1UGnork_Gs"
+    
+  - title: "Visualizing data with ggplot2"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/04-ggplot2.html"
+    recording: "https://youtu.be/u8pIsAhvYsY"
+    
+  - title: "Visualizing numeric data"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/05-viz-num.html"
+    recording: "https://youtu.be/c0i50_M-PUQ"
+    
+  - title: "Visualizing categorical data"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/06-viz-cat.html"
+    recording: "https://youtu.be/ZMECwyhjctU"
+    
+  - title: "Tidy data"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/07-tidy-data.html"
+    recording: "https://youtu.be/J8YvhjEHkCM"
+   
+  - title: "Grammar of Data Wrangling"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/08-grammar-wrangle.html"
+    recording: "https://youtu.be/0jO-5MESCJ4"
+    
+  - week: "Week 03"
+    date:  "Sep 13 - 15"
+  
 
   

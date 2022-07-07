@@ -15,8 +15,8 @@ lessons:
     title: "Data visualization"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-02.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-02.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-02.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-01.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-02-data-viz.html"
+    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-01-airbnb.html"
 
   - week: "Week 03"
     date:  "Sep 13 - 15"

@@ -12,11 +12,6 @@
  #    pre = "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>"
     url = "/schedule/"
     weight = 20
-    
-[[main]]
-    name = "Lectures"
-    url = "/lectures/"
-    weight = 25
 
 [[main]]
    # pre = "<i class=\"fa fa-info-circle\"></i>"

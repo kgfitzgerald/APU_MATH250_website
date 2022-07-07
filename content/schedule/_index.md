@@ -5,11 +5,11 @@ slug: schedule
 
 ## Course schedule by week
 
-The following table provides links to each week's Prepare assignment, Application Exercise (AE), and Lab as well as Homework (HW), Project assignment, and Statistics Experience (SE) when applicable. 
+The following table provides links to all course assignments. 
 
-Each week you will include:
+Each week will include:
 
-+ **Prepare**: videos and prep quiz due by classtime Tuesday
++ **Prepare**: watch videos and complete prep quiz by classtime Tuesday
 + **Application Exercise**: in-class together on Tuesdays, due Thursday
 + **Lab**: in-class together on Thursdays, due Tuesday
 + **HW, Project component, OR Statistics Experience (SE)**: on your own, assigned Thursdays, due Thursday

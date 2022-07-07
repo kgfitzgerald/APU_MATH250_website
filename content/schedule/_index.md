@@ -19,8 +19,3 @@ This page contains the schedule for the semester. Note that this schedule may be
 {{% schedule %}}
 </div>
 
-List of all lecture content can be found below. Note, this can also be found in the Prepare links above.
-
-<div align = "center">
-{{% schedule2 %}}
-</div>

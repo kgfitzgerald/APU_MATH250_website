@@ -38,35 +38,35 @@ lessons:
     
   - title: "Working with a single data frame"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/09-single-df.html"
-    recording: ""
+    recording: "https://youtu.be/EjBTGdiVxvA"
     
   - week: "Week 04"
     date:  "Sep 20 - 22"
     title: "Working with multiple data frames"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/10-multi-df.html"
-    recording: ""
+    recording: "https://youtu.be/IK_uxavp7k8"
     
   - title: "Tidying data"  
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/11-tidying.html"
-    recording: ""
+    recording: "https://youtu.be/e4aCwwLgAfo"
 
   - title: "Data types"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/12-data-types.html"
-    recording: ""
+    recording: "https://youtu.be/ewLpVe5J9uI"
     
   - week: "Week 05"
     date:  "Sep 27 - 29"
     title: "Data classes"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/13-data-classes.html"
-    recording: ""
+    recording: "https://youtu.be/oQWX5btmtn0"
 
   - title: "Importing data"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/14-data-import.html"
-    recording: ""
+    recording: "https://youtu.be/3b9Rb6sWiAk"
 
   - title: "Recoding data"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/15-data-recode.html"
-    recording: ""
+    recording: "https://youtu.be/GeFKGqPqEwk"
 
   - week: "Week 06"
     date:  "Oct 4 - 6" 

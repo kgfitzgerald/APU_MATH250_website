@@ -52,7 +52,7 @@ lessons:
 
   - title: "Data types"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/12-data-types.html"
-    recording: "https://youtu.be/ewLpVe5J9uI"
+    recording: "https://youtu.be/WQYKkfj1bOg"
     
   - week: "Week 05"
     date:  "Sep 27 - 29"
@@ -70,26 +70,26 @@ lessons:
 
   - week: "Week 06"
     date:  "Oct 4 - 6" 
-    title: "Tips for effective data visualization"
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/16-effective-dataviz.html"
+    title: "Doing data science"     
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/19-doing-data-science.html"
     recording: ""
-
-  - week: "Week 07"
-    date:  "Oct 11 - 13"   
-    title: "Scientific studies and confounding"
+    # title: "Tips for effective data visualization"
+    # slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/16-effective-dataviz.html"
+    # recording: ""
+  - title: "Scientific studies and confounding"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/17-studies-confounding.html"
     recording: ""
 
   - title: "Simpson's paradox"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/18-simpsons-paradox.html"
     recording: ""
-
-  - title: "Doing data science"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/19-doing-data-science.html"
+    
+  - title: "The language of models"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/23-language-of-models.html"
     recording: ""
-
-  - week: "Week 08"
-    date:  "Oct 18 - 20"  
+    
+  - week: "Week 07"
+    date:  "Oct 11 - 13"   
     title: "Misrepresentation"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/20-misrepresentation.html"
     recording: ""
@@ -102,13 +102,9 @@ lessons:
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/22-algorithmic-bias.html"
     recording: ""
 
-  - week: "Week 09"
-    date:  "Oct 25 - 27"    
-    title: "The language of models"
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/23-language-of-models.html"
-    recording: ""
-    
-  - title: "Fitting and interpreting models"     
+  - week: "Week 08"
+    date:  "Oct 18 - 20"  
+    title: "Fitting and interpreting models"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/24-fitting-interpreting-models.html"
     recording: ""
 
@@ -124,8 +120,8 @@ lessons:
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/27-more-model-multiple-predictors.html"
     recording: ""
 
-  - week: "Week 10"
-    date:  "Nov 1 - 3"   
+  - week: "Week 09"
+    date:  "Oct 25 - 27"    
     title: "Logistic regression"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/28-logistic-reg.html"
     recording: ""
@@ -134,8 +130,8 @@ lessons:
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/29-prediction-overfitting.html"
     recording: ""
 
-  - week: "Week 11"
-    date:  "Nov 8 - 10" 
+  - week: "Week 10"
+    date:  "Nov 1 - 3"   
     title: "Feature engineering"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/30-feature-engineering.html"
     recording: ""
@@ -144,8 +140,8 @@ lessons:
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/31-cross-validation.html"
     recording: ""
 
-  - week: "Week 12"
-    date:  "Nov 15 - 17" 
+  - week: "Week 11"
+    date:  "Nov 8 - 10" 
     title: "Quantifying uncertainty"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/32-quantify-uncertainty.html"
     recording: ""
@@ -153,6 +149,10 @@ lessons:
   - title: "Bootstrapping"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/33-bootstrap.html"
     recording: ""
+
+  - week: "Week 12"
+    date:  "Nov 15 - 17" 
+
 
   - title: "Hypothesis testing"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/34-hypothesis-testing.html"

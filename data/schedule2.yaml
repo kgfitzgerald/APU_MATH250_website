@@ -78,15 +78,15 @@ lessons:
     # recording: ""
   - title: "Scientific studies and confounding"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/17-studies-confounding.html"
-    recording: ""
+    recording: "https://youtu.be/4_tellSmARQ"
 
   - title: "Simpson's paradox"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/18-simpsons-paradox.html"
-    recording: ""
+    recording: "https://youtu.be/bgIn65yX66g"
     
   - title: "The language of models"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/23-language-of-models.html"
-    recording: ""
+    recording: "https://youtu.be/bQrR8HFKKhI"
     
   - week: "Week 07"
     date:  "Oct 11 - 13"   

@@ -92,15 +92,15 @@ lessons:
     date:  "Oct 11 - 13"   
     title: "Misrepresentation"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/20-misrepresentation.html"
-    recording: ""
+    recording: "https://youtu.be/p4Ip0K-h-a8"
 
   - title: "Data privacy"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/21-privacy.html"
-    recording: ""
+    recording: "https://youtu.be/SM9LXXa5ldI"
 
   - title: "Algorithmic bias"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/22-algorithmic-bias.html"
-    recording: ""
+    recording: "https://youtu.be/WpKOuUgnvxI"
 
   - week: "Week 08"
     date:  "Oct 18 - 20"  

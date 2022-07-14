@@ -51,7 +51,7 @@ lessons:
     title: "Scientific Practice <br/> Data Science Workflow"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-06.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-06.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-06.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-06-smokers.html"
     project: "https://apumath250.netlify.app/project/#project-proposal"
   
   - week: "Week 07"
@@ -59,7 +59,7 @@ lessons:
     title: "Data Ethics"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-07.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-07.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03.html"
+    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03-sad-plots.html"
   
   - week: "Week 08"
     date:  "Oct 18 - 20"
@@ -67,7 +67,7 @@ lessons:
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-08.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-08.html"
     project: "https://apumath250.netlify.app/project/#data-cleaning--preliminary-eda"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-07.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-07-mlr-course-evals.html"
   
   - week: "Week 09"
     date:  "Oct 25 - 27"

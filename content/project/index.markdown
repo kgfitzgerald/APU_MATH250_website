@@ -52,7 +52,7 @@ Total                                                   | 100 pts
 --------------------------------------------------------|--------
 **Project proposal**                                    | 5 pts
 **Preliminary EDA**                                     | 5 pts
-**Rough Draft     **                                    | 5 pts
+**Rough Draft**                                    | 5 pts
 **Written report**                                      | 45 pts
 **Project repo & reproducibility**                      | 10 pts
 **Peer feedback**                                       | 5 pts
@@ -133,7 +133,7 @@ Submit the PDF of your proposal on Canvas by midnight on **Thursday, October 13*
 
 ### Notes 
 
-- Project proposals should have no more than 1-2 pages of **text.** (not including the output from `glimpse`). That is, be concise!
+- Project proposals should have no more than 1-2 pages of **text** (not including the output from `glimpse`). That is, be concise!
 - You **must** use one of the data sets in the proposal for the final project, unless instructed otherwise by Dr. Fitz. 
 
 ### Proposal grading 
@@ -148,7 +148,7 @@ Total                                                   | 5 pts
 
 ## Data cleaning & Preliminary EDA
 
-The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. The cleaning-eda.Rmd file in your RStudio Cloud repo should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file used for analysis. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. This will be evaluated through RStudio Cloud; you do not need to submit this on Canvas. 
+The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. The `cleaning-eda.Rmd` file in your RStudio Cloud repo should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file used for analysis. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. This will be evaluated through RStudio Cloud; you do not need to submit this on Canvas. 
 
 This part of the project will be graded as follows:
 
@@ -163,7 +163,7 @@ Total                                                   | 5 pts
 
 The purpose of the rough draft and peer review is to give you an opportunity to get feedback on your analysis before the final product. 
 
-Your team will write the rough draft in the **written-report.Rmd** file in your project repo and submit the pdf or html to Canvas. 
+Your team will write the rough draft in the `written-report.Rmd` file in your project repo and submit the pdf or html to Canvas. 
 
 Below is a brief description of the sections to focus on in the draft: 
 
@@ -209,7 +209,7 @@ Peer feedback will be graded on the extent to which it comprehensively and const
 Your final report must be written using R Markdown. All team members must contribute meaningfully to the analysis and are responsible for what's contained in the final report. Before you finalize your report, make sure the printing of code chunks is turned off with the option `echo = FALSE`.
 
 
-**Submit the final report on Canvas under the <i>Written Report</i> assignment on Gradescope.** Your final report must match your RStudio Cloud repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
+**Submit the final report on Canvas under the <i>Final Report & Repo</i> assignment.** Your final report must match your RStudio Cloud repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
 
 The written report is worth 45 points, broken down as follows:
 
@@ -299,19 +299,19 @@ Grading of the project will take into account the following:
 
 A general breakdown of scoring is as follows:
 
-- *90%-100%*: Outstanding effort. Student understands how to apply all statistical 
+- *90%-100%*: Outstanding effort. Students understand how to apply all statistical 
 concepts, can put the results into a cogent argument, can identify weaknesses in 
 the argument, and can clearly communicate the results to others.
-- *80%-89%*: Good effort. Student understands most of the concepts, puts together 
-an adequate argument, identifies some weaknesses of their argument, and communicates 
+- *80%-89%*: Good effort. Students understand most of the concepts, put together 
+an adequate argument, identify some weaknesses of their argument, and communicate 
 most results clearly to others.
-- *70%-79%*: Passing effort. Student has misunderstanding of concepts in several 
-areas, has some trouble putting results together in a cogent argument, and communication 
+- *70%-79%*: Passing effort. Students have misunderstanding of concepts in several 
+areas, have some trouble putting results together in a cogent argument, and communication 
 of results is sometimes unclear.
-- *60%-69%*: Struggling effort. Student is making some effort, but has misunderstanding 
-of many concepts and is unable to put together a cogent argument. Communication 
+- *60%-69%*: Struggling effort. Students are making some effort, but have misunderstanding 
+of many concepts and are unable to put together a cogent argument. Communication 
 of results is unclear.
-- *Below 60%*: Student is not making a sufficient effort.
+- *Below 60%*: Students are not making a sufficient effort.
 
 ## Late work policy
 
@@ -323,21 +323,18 @@ The project is very open ended. For instance, in creating a compelling
 visualization(s) of your data in R, there is no limit on what tools or 
 packages you may use. You do not need to visualize all of the data at once. A single high quality visualization will receive a much higher grade than a large number of poor quality visualizations.
 
-Before you finalize your write up, make sure the printing of code chunks is turned off with the option `echo = FALSE`. In addition to code chunks, ensure all messages are turned off with the options `warning = FALSE` and `echo = FALSE`. 
-
-Finally, pay attention to details in your write-up and presentation. Neatness, coherency, and clarity will count.
-
 
 ### Tips
 
 - Ask questions if any of the expectations are 
 unclear.
 
-- *Code*: In your write up your code should be hidden (`echo = FALSE`) so that your document is neat and easy to read. However your document should include all your code such that if I re-knit your Rmd file I should be able to obtain the results you presented. 
+- *Code*: In your write up your code should be hidden (`echo = FALSE`) so that your document is neat and easy to read. However, your document should include all your code such that if I re-knit your .Rmd file I should be able to obtain the results you presented. 
   - **Exception:** If you want to highlight something 
 specific about a piece of code, you're welcome to show that portion. 
 - Make sure each team member is contributing, both in terms of quality and quantity of contribution.
 - All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade adjusted accordingly. While different teams members may have different backgrounds and strengths, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.
+- Finally, pay attention to details in your write-up and presentation. Neatness, coherency, and clarity will count.
 
 ### Formatting + communication 
 
@@ -476,7 +473,7 @@ tidy(model) %>%
 - **Don't use variable names in your narrative!** Use descriptive terms, so the reader understands your narrative without relying on the codebook.
   - ❌ There is a negative linear relationship between mpg and hp.
   - ✅ There is a negative linear relationship between a car's fuel economy (in miles per gallon) and its horsepower.
-- **Know your audience:** Your report should be written for a general audience who has an understanding of statistics at the level of STA 199.
+- **Know your audience:** Your report should be written for a general audience who has an understanding of statistics at the level of MATH 250.
 - **Avoid subject matter jargon:** Don't assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term. 
 - **Tell the "so what":** Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation. 
 - **Tell a story:** All visualizations, tables, model output, and narrative should tell a cohesive story!

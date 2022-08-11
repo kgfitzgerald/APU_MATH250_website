@@ -9,10 +9,10 @@ The following table provides links to all course assignments.
 
 Each week will include:
 
-+ **Prepare**: watch videos and complete prep quiz by classtime Tuesday
-+ **Application Exercise**: in-class together on Tuesdays, due Thursday
-+ **Lab**: in-class together on Thursdays, due Tuesday
-+ **HW, Project component, OR Statistics Experience (SE)**: on your own, assigned Thursdays, due Thursday
++ **Prepare**: watch videos and complete prep quiz by class time Tuesday (4:20pm)
++ **Application Exercise**: in-class together on Tuesdays, due by class time Thursday (4:20pm)
++ **Lab**: in-class together on Thursdays, due Tuesday (11:59pm)
++ **HW, Project component, OR Statistics Experience (SE)**: on your own, assigned Thursdays, due Thursday (11:59pm)
 
 Note that this schedule may be updated as the semester progresses, with all changes documented here.
 

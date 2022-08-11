@@ -27,7 +27,7 @@ All books are freely available online. Hardcopies are also available for purchas
 
 ### Software
 
-This course will utilize the statistical software R via the web version RStudio Cloud. Students will receive instructions in the first week of class for how to set up an RStudio Cloud account. 
+This course will utilize the statistical software R via the web version RStudio Cloud. Students will receive instructions in the first week of class for how to set up an RStudio Cloud account. A \$5/month subscription fee may apply (max \$20 for the semester). 
 
 ### Hardware
 
@@ -35,7 +35,7 @@ Students are expected to bring a laptop to all class sessions. If access to a la
 
 ### Campuswire account
 
-This term we will be using Campuswire as our preferred platform for questions about homework, labs, and general course questions. The system is highly catered to getting you help quickly and efficiently from classmates and the instructor. Rather than emailing questions to the instructor, you should post your questions on Campuswire. See Canvas for Enrollment Code.
+This term we will be using [Campuswire](https://campuswire.com/p/GD02807A2) as our preferred platform for questions about homework, labs, and general course questions. The system is highly catered to getting you help quickly and efficiently from classmates and the instructor. Rather than emailing questions to the instructor, you should post your questions on Campuswire. See Canvas for Enrollment Code.
 
 ## Course Communication
 
@@ -57,7 +57,7 @@ By the end of the semester, you will...
 
 Much of the course design, activities, and assessments are adapted from Mine Çetinkaya-Rundel’s [Data Science in a Box](https://datasciencebox.org/index.html) curriculum and Duke University’s open source [Introduction to Data Science](https://www.introds.org) course under the Creative Commons Attribution Share Alike 4.0 International.
 
-Modern data analysis is inherently tied to coding and computational tools, and coding is learned by doing. To facilitate this type of learning, this course utilizes a flipped learning design. Each week, you will watch a series of lecture videos and complete a preparation quiz before class. Then classtime will be dedicated to hands-on application exercises and group lab assignments. The activities and assessments follow a prepare, practice, perform format and are designed to help you develop the foundational skills of a modern data scientist. 
+Modern data analysis is inherently tied to coding and computational tools, and coding is learned by doing. To facilitate this type of learning, this course utilizes a flipped learning design. Each week, you will watch a series of lecture videos and complete a preparation quiz before class. Then class time will be dedicated to hands-on application exercises and group lab assignments. The activities and assessments follow a prepare, practice, perform format and are designed to help you develop the foundational skills of a modern data scientist. 
 
 -   **Prepare**: Includes lecture videos and optional readings to introduce new concepts and a short quiz ensure a basic comprehension of the material. The goal is to help you prepare for the in-class activities.
 -   **Practice**: Includes in-class application exercises where you will begin to apply the concepts and methods introduced in the lecture videos. The activities will be graded for completion, as they are designed for you to gain experience with the statistical and computing techniques before working on graded assignments.
@@ -65,7 +65,7 @@ Modern data analysis is inherently tied to coding and computational tools, and c
 
 ### Preparation Quizzes (Prepare)
 
-At the beginning of each week, you will watch a series of lecture videos and take a low-stakes preparation quiz in Canvas to check your understanding. Each quiz can be re-taken up to 3 times before the deadline. The quiz is due by class-time on Tuesdays (4:20pm). 
+At the beginning of each week, you will watch a series of lecture videos and take a low-stakes preparation quiz in Canvas to check your understanding. Each quiz can be attempted up to 3 times before the deadline, and your score will be the average of your attempts. The quiz is due by class-time on Tuesdays (4:20pm). 
 
 ### Application Exercises (Practice)
 
@@ -73,11 +73,11 @@ The majority of class-time on Tuesdays will be dedicated to working on Applicati
 
 ### Labs (Perform)
 
-The majority of class-time on Thursdays will be dedicated to team lab assignments. The labs are a more in-depth application of the week’s material that will have you complete scaffolded analyses of a real dataset using RStudio Cloud. Teams of 3 will be assigned by the instructor and will rotate approximately every two weeks. Labs are due by midnight the following Tuesday. The lowest lab grade will be dropped at the end of the semester.
+The majority of class-time on Thursdays will be dedicated to team lab assignments. The labs are a more in-depth application of the week’s material that will have you complete scaffolded analyses of a real dataset using RStudio Cloud. Teams of ~3 will be assigned by the instructor and will rotate approximately every two weeks. Labs are due by midnight the following Tuesday. *The lowest lab grade will be dropped at the end of the semester.*
 
 ### Homework (Perform)
 
-Approximately every other week, an individual homework assignment will be due. Homework will be similar in nature to the labs but are to be completed on your own outside of class. You are still encouraged to work together, but homework will be submitted and graded individually. Homework will be assigned on Thursdays and due by midnight the following Thursday. The lowest homework grade will be dropped at the end of the semester.
+Approximately every other week, an individual homework assignment will be due. Homework will be similar in nature to the labs but are to be completed on your own outside of class. You are still encouraged to work together, but homework will be submitted and graded individually. Homework will be assigned on Thursdays and due by midnight the following Thursday. 
 
 ### Exam (Perform)
 
@@ -87,7 +87,7 @@ You will be given the opportunity to submit annotated test corrections to earn u
 
 ### Statistics Experiences (Practice)
 
-The world of statistics and data science is vast and dynamic! The goal of the statistics experience assignments is to help you engage with the statistics and data science communities outside of the classroom. There are a variety of ways you can participate in "Statistics Experiences”, which include but are not limited to listening to a podcast, reading a book, getting coffee with a statistician, joining the American Statistical Association, or participating in #TidyTuesday. Each experience is worth a varying number of points (see course website for details), and you are required to collect at least 5 "Statistics Experience points" throughout the semester. Up to 10 additional points can be collected and added to your lowest homework grade(s).
+The world of statistics and data science is vast and dynamic! The goal of the statistics experience assignments is to help you engage with the statistics and data science communities outside of the classroom. There are a variety of ways you can participate in "Statistics Experiences”, which include but are not limited to listening to a podcast, reading a book, getting coffee with a statistician, joining the American Statistical Association, or participating in #TidyTuesday. Each experience is worth a varying number of points (see [here](https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html) for details), and you are required to collect at least 5 "Statistics Experience points" throughout the semester. Up to 10 additional points can be collected and added to your lowest homework grade(s).
 
 ### Project (Perform)
 
@@ -135,18 +135,18 @@ The final letter grade will be determined based on the following thresholds:
 
 </center>
 
-### Late work & extesion policies
+### Late work & extension policies
 
 The coding skills gained in this course build cumulatively week-by-week, so it is important to complete and submit all assignments on time. Due dates are there to help you keep up with course material and ensure you receive feedback in a timely manner. 
 
-- Labs and homework may be turned in up to 3 days late, and there will be a 5% reduction for each 24 hour period the assignment is late. 
-- Labs are intended to be completed in teams, and a majority of each lab will be completed in-class on Thursdays. If you are unable to attend a Thursday lab session, you must submit the assignment individually, and a 15% deduction will apply. 
 - Late work will not be accepted for preparation quizzes or application exercises, as these are designed to help you prepare for labs and homework.
+- Labs and homework may be turned in up to 3 days late, and there will be a 5% reduction for each 24 hour period the assignment is late. 
+- Labs are intended to be completed in teams, and a majority of each lab will be completed in-class on Thursdays. If you have an unexcused absence for a Thursday lab session, you must submit the assignment individually, and a 15% deduction will apply. 
 - There are no makeup exams unless specifically coordinated with the instructor in advance.  
 
 ### Waiver for extenuating circumstances 
 
-Life happens, and there are sometimes extenuating circumstances that prevent you from completing an assignment on time. The lowest homework and lowest lab grade will be dropped at the end of the semester to accommodate such circumstances. 
+Life happens, and there are sometimes extenuating circumstances that prevent you from completing an assignment on time. The lowest application exercise, prep quiz, and lab grade will each be dropped at the end of the semester to accommodate such circumstances. 
 
 Additionally, you may request a waiver of the late penalty for one assignment. To do so, email the instructor in advance of the deadline, and the waiver will be granted, no questions asked. You may only request the waiver once, so only use it for truly extenuating circumstances. 
 

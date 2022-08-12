@@ -142,7 +142,7 @@ The coding skills gained in this course build cumulatively week-by-week, so it i
 -   Late work will not be accepted for preparation quizzes or application exercises, as these are designed to help you prepare for labs and homework.
 -   Labs and homework may be turned in up to 3 days late, and there will be a 5% reduction for each 24 hour period the assignment is late.
 -   Labs are intended to be completed in teams, and a majority of each lab will be completed in-class on Thursdays. If you have an unexcused absence for a Thursday lab session, you must submit the assignment individually, and a 15% deduction will apply.
--   There are no makeup exams unless specifically coordinated with the instructor in advance.
+-   Late exams will not be accepted unless specifically coordinated with the instructor in advance.
 
 ### Waiver for extenuating circumstances
 

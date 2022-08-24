@@ -7,7 +7,7 @@ title: About this course
 ## Course Info
 
 | Course                       | Instructor                                                        |     |
-|-------------------------|------------------------|------------------------|
+|-----------------|------------------------------------------|--------------|
 | **MATH 250 - Data Analysis** | Katie Fitzgerald, PhD Statistics                                  |     |
 | Fall 2022                    | Assistant Professor of Statistics                                 |     |
 | Section 01 Class #: 11324    | Email: [kfitzgerald\@apu.edu](mailto:kfitzgerald@apu.edu){.email} |     |
@@ -30,7 +30,7 @@ By the end of the semester, you will...
 This course utilizes two texts that are freely available online. Hardcopies are also available for purchase.
 
 |                                                                         |                          |                                   |
-|----------------|----------------------------|-----------------------------|
+|-------------------------------------|-----------------|------------------|
 | [R for Data Science](http://r4ds.had.co.nz/)                            | Grolemund, Wickham       | O'Reilly, 1st edition, 2016       |
 | [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel, Hardin | OpenIntro Inc., 1st Edition, 2021 |
 
@@ -139,7 +139,7 @@ The final letter grade will be determined based on the following thresholds:
 
 The coding skills gained in this course build cumulatively week-by-week, so it is important to complete and submit all assignments on time. Due dates are there to help you keep up with course material and ensure you receive feedback in a timely manner.
 
--   Late work will not be accepted for preparation quizzes or application exercises, as these are designed to help you prepare for labs and homework.
+-   Late work will not be accepted for preparation quizzes or application exercises, as these are designed to help you prepare for the in-class labs each week.
 -   Labs and homework may be turned in up to 3 days late, and there will be a 5% reduction for each 24 hour period the assignment is late.
 -   Labs are intended to be completed in teams, and a majority of each lab will be completed in-class on Thursdays. If you have an unexcused absence for a Thursday lab session, you must submit the assignment individually, and a 15% deduction will apply.
 -   Late exams will not be accepted unless specifically coordinated with the instructor in advance.

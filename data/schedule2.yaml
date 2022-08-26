@@ -5,6 +5,9 @@ lessons:
   - week: "Week 01"
     date: "Aug 30 - Sep 1"
     title: "Welcome to MATH 250!"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/01-intro.html#1"
+    
+  - title: "Meet the toolkit - programming"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/02-toolkit-R.html"
     recording: "https://youtu.be/Q2QN1RpvLq8"
     

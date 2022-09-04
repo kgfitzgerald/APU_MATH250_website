@@ -16,7 +16,7 @@ lessons:
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-02.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-02.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-02-data-viz.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-01-airbnb.html"
+    se: "https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html"
 
   - week: "Week 03"
     date:  "Sep 13 - 15"
@@ -24,7 +24,8 @@ lessons:
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-03.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-03.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-03-college-majors.html"
-    se: "https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html"
+    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-01-airbnb.html"
+    
     
   - week: "Week 04"
     date:  "Sep 20 - 22"
@@ -33,7 +34,6 @@ lessons:
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-04.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-04-college-rankings.html"
     hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-02.html"
-
 
     
   - week: "Week 05"

@@ -4,7 +4,7 @@ title: "MATH 250 Final Project"
 
 ## Timeline
 
-Choose project teams by **Thursday, October 6**
+Choose project teams by **Tuesday, October 4**
 
 Proposal due **Thursday, October 13**
 
@@ -35,7 +35,7 @@ The project will be completed in self-assigned teams of 2-3. You should choose a
 
 ### Logistics
 
-You should sign up for a team of 2-3 on Canvas no later than **Thursday, October 6**. 
+You should sign up for a team of 2-3 on Canvas no later than **Tuesday, October 4**. 
 
 The four primary deliverables for the final project are
 

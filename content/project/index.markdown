@@ -6,9 +6,11 @@ title: "MATH 250 Final Project"
 
 Choose project teams by **Tuesday, October 4**
 
-Proposal due **Thursday, October 13**
+Project Work Session 1: **Tuesday, October 4**
 
-Project Work Session 1: **Thursday, October 20**
+Proposal due **Wednesday, October 12**
+
+Project Work Session 2: **Thursday, October 13**
 
 Data cleaning & preliminary EDA due **Thursday, October 27**
 
@@ -18,7 +20,7 @@ In-class Peer Review  **Thursday, December 1**
 
 Peer feedback due **Tuesday, December 6**
 
-Project Work Session 2: **Thursday, December 8**
+Project Work Session 3: **Thursday, December 8**
 
 Final written report due **Saturday, December 10** 
 
@@ -129,7 +131,7 @@ Choose **three** substantially different datasets you are interested in analyzin
 
 ### Submission 
 
-Submit the PDF of your proposal on Canvas by midnight on **Thursday, October 13**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
+Submit the PDF of your proposal on Canvas by midnight on **Wednesday, October 12**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
 
 ### Notes 
 

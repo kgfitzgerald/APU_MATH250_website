@@ -110,20 +110,20 @@ lessons:
     title: "Fitting and interpreting models"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/24-fitting-interpreting-models.html"
     recording: "https://youtu.be/ocrpZMWMBwo"
+    
+  - title: "Modeling non-linear relationships"     
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/25-modeling-nonlinear-relationships.html"
+    recording: "https://youtu.be/ODDMLnhbNE8"
 
   - title: "Models with multiple predictors"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/26-model-multiple-predictors.html"
     recording: "https://youtu.be/7gHUTqGqrhs"
 
-  - title: "More models with multiple predictors"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/27-more-model-multiple-predictors.html"
-    recording: "https://youtu.be/6ndAIYUk6UU"
-
   - week: "Week 09"
     date:  "Oct 25 - 27"  
-    title: "Modeling non-linear relationships"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/25-modeling-nonlinear-relationships.html"
-    recording: "https://youtu.be/ODDMLnhbNE8"
+    title: "More models with multiple predictors"     
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/27-more-model-multiple-predictors.html"
+    recording: "https://youtu.be/6ndAIYUk6UU"
     
   - title: "Logistic regression"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/28-logistic-reg.html"

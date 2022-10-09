@@ -74,7 +74,7 @@ lessons:
     title: "Logistic Regression"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-09.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-09.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-08.html"
+    #lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-08.html"
     hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-04.html"
 
   - week: "Week 10"
@@ -82,7 +82,7 @@ lessons:
     title: "Feature Engineering <br/> Cross Validation"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-10.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-10.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-09.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-08.html"
     project: "https://apumath250.netlify.app/project/#rough-draft-report"
     
   
@@ -91,7 +91,7 @@ lessons:
     title: "Uncertainty Quantification <br/> Bootstrapping"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-11.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-11.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-10.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-09.html"
     hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-05.html"
     
   
@@ -100,7 +100,7 @@ lessons:
     title: "Inference"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-12.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-12.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-11.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-10.html"
     se: "https://kgfitzgerald.github.io/APU_MATH_250/other/se-01.html"
 
   - week: "THANKSGIVING"

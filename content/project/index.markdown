@@ -152,6 +152,26 @@ Total                                                   | 5 pts
 
 The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. The `cleaning-eda.Rmd` file in your RStudio Cloud repo should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file used for analysis. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. This will be evaluated through RStudio Cloud; you do not need to submit this on Canvas. 
 
+Your cleaning & EDA steps should include:
+
++ Cleaning variable names
+
++ Converting to appropriate data types (factors, dates, etc) 
+
++ Re-ordering factor levels as needed
+
++ Investigating and handle missing data
+
++ Visualizing each variable (or at least 10 if you have a large number), noting any issues or notable features
+
++ Describing your analysis plan for answering your research question
+
+    + What types of visualizations or summary tables will you create?
+
+    + What types of models or inference procedures will you run, if any? 
+
+You should save the clean data as a .RDS file. 
+
 This part of the project will be graded as follows:
 
 Total                                                   | 5 pts

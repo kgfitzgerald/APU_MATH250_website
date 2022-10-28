@@ -12,7 +12,11 @@ Proposal due **Wednesday, October 12**
 
 Project Work Session 2: **Thursday, October 13**
 
+Project Work Session 3: **Thursday, October 27**
+
 Data cleaning & preliminary EDA due **Thursday, October 27**
+
+Project Work Session 4: **Thursday, November 10**
 
 Draft report due **Thursday, November 17** 
 
@@ -20,7 +24,7 @@ In-class Peer Review  **Thursday, December 1**
 
 Peer feedback due **Tuesday, December 6**
 
-Project Work Session 3: **Thursday, December 8**
+Project Work Session 5: **Thursday, December 8**
 
 Final written report due **Saturday, December 10** 
 

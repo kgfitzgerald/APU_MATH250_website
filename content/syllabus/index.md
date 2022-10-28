@@ -7,7 +7,7 @@ title: About this course
 ## Course Info
 
 | Course                       | Instructor                                                        |     |
-|------------------|-------------------------------------|------------------|
+|------------------------------|-------------------------------------------------------------------|-----|
 | **MATH 250 - Data Analysis** | Katie Fitzgerald, PhD Statistics                                  |     |
 | Fall 2022                    | Assistant Professor of Statistics                                 |     |
 | Section 01 Class #: 11324    | Email: [kfitzgerald\@apu.edu](mailto:kfitzgerald@apu.edu){.email} |     |
@@ -30,7 +30,7 @@ By the end of the semester, you will...
 This course utilizes two texts that are freely available online. Hardcopies are also available for purchase.
 
 |                                                                         |                          |                                   |
-|------------------------------------|-------------------|-------------------|
+|-------------------------------------------------------------------------|--------------------------|-----------------------------------|
 | [R for Data Science](http://r4ds.had.co.nz/)                            | Grolemund, Wickham       | O'Reilly, 1st edition, 2016       |
 | [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel, Hardin | OpenIntro Inc., 1st Edition, 2021 |
 

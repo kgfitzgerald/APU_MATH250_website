@@ -137,11 +137,11 @@ lessons:
     date:  "Nov 1 - 3"   
     title: "Feature engineering"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/30-feature-engineering.html"
-    recording: ""
+    recording: "https://www.youtube.com/watch?v=EEQ06cOtZ60&list=PLDK1scxigct0chEV9L5xiDSge2i2D8Uj0&index=27"
 
   - title: "Cross validation"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/31-cross-validation.html"
-    recording: ""
+    recording: "https://youtu.be/GhG1UpvJtW0"
 
   - week: "Week 11"
     date:  "Nov 8 - 10" 

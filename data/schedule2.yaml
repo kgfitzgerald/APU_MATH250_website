@@ -147,11 +147,11 @@ lessons:
     date:  "Nov 8 - 10" 
     title: "Quantifying uncertainty"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/32-quantify-uncertainty.html"
-    recording: ""
+    recording: "https://youtu.be/lquSgUoYoqk"
 
   - title: "Bootstrapping"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/33-bootstrap.html"
-    recording: ""
+    recording: "https://youtu.be/8kQrseW1Jps"
 
   - week: "Week 12"
     date:  "Nov 15 - 17" 

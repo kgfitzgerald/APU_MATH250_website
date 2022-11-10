@@ -157,11 +157,11 @@ lessons:
     date:  "Nov 15 - 17" 
     title: "Hypothesis testing"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/34-hypothesis-testing.html"
-    recording: ""
+    recording: "https://youtu.be/X2evqS-f5_I"
 
   - title: "Inference overview"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/35-inference-overview.html"
-    recording: ""
+    recording: "https://youtu.be/DdBfSb6PV9k"
     
   - week: "Week 13"
     date:  "Nov 29 - Dec 1"

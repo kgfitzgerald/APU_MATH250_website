@@ -165,11 +165,13 @@ lessons:
     
   - week: "Week 13"
     date:  "Nov 29 - Dec 1"
-    title: "Shiny Apps"
+    title: "Shiny Apps Part I"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/36-shiny.html"
+    recording: "https://youtu.be/clz1QGGu4oY"
     
   - week: "Week 14"
     date:  "Dec 6 - 8"
-    title: "Text Analysis"
+    title: "Shiny Apps Part II"
   
 
   

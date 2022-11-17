@@ -108,7 +108,7 @@ lessons:
 
   - week: "Week 13"
     date:  "Nov 29 - Dec 1"
-    title: "Special Topics: Shiny Apps"
+    title: "Special Topics: Shiny Apps Part I"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-13.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-13.html"
     project: "https://apumath250.netlify.app/project/#peer-review"
@@ -116,7 +116,7 @@ lessons:
 
   - week: "Week 14"
     date:  "Dec 6 - 8"
-    title: "Special Topics: Text analysis"
+    title: "Special Topics: Shiny Apps Part II"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-14.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-14.html"
     project: "https://apumath250.netlify.app/project/#written-report"

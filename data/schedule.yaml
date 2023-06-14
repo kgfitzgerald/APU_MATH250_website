@@ -3,7 +3,7 @@ lessons:
     header: True
     
   - week: "Week 01"
-    date: "Aug 30 - Sep 1"
+    date: "Aug 29 - 31"
     title: "Welcome to MATH 250!"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-01.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-01.html"
@@ -11,7 +11,7 @@ lessons:
 
     
   - week:  "Week 02"
-    date:  "Sep 6 - 8"
+    date:  "Sep 5 - 7"
     title: "Data visualization"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-02.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-02.html"
@@ -19,7 +19,7 @@ lessons:
     se: "https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html"
 
   - week: "Week 03"
-    date:  "Sep 13 - 15"
+    date:  "Sep 12 - 14"
     title: "Data wrangling I"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-03.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-03.html"
@@ -28,7 +28,7 @@ lessons:
     
     
   - week: "Week 04"
-    date:  "Sep 20 - 22"
+    date:  "Sep 19 - 21"
     title: "Data wrangling II"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-04.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-04.html"
@@ -37,7 +37,7 @@ lessons:
 
     
   - week: "Week 05"
-    date:  "Sep 27 - 29"
+    date:  "Sep 26- 28"
     title: "Data importing & cleaning"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-05.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-05.html"
@@ -47,7 +47,7 @@ lessons:
 
   
   - week: "Week 06"
-    date:  "Oct 4 - 6"
+    date:  "Oct 3 - 5"
     title: "Scientific Practice <br/> Data Science Workflow"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-06.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-06.html"
@@ -55,59 +55,59 @@ lessons:
     project: "https://apumath250.netlify.app/project/#project-proposal"
   
   - week: "Week 07"
-    date:  "Oct 11 - 13"
+    date:  "Oct 10 - 12"
     title: "Data Ethics"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-07.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-07.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03-sad-plots.html"
+    #hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03-sad-plots.html"
     project: "https://apumath250.netlify.app/project/#data-cleaning--preliminary-eda"
   
   - week: "Week 08"
-    date:  "Oct 18 - 20"
+    date:  "Oct 17 - 19"
     title: "Simple & Multiple Linear Regression"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-08.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-08.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-07-mlr-course-evals.html"
+    se: "https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html"
   
   - week: "Week 09"
-    date:  "Oct 25 - 27"
-    title: "Logistic Regression"
+    date:  "Oct 24 - 26"
+    title: "Uncertainty Quantification <br/> Confidence Intervals"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-09.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-09.html"
-    #lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-08.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-04-exploring-gss.html"
+    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03-exploring-gss.html"
+    
 
   - week: "Week 10"
-    date:  "Nov 1 - 3"
-    title: "Feature Engineering <br/> Cross Validation"
+    date:  "Oct 31 - Nov 2"
+    title: "Inference <br/> Proportions & Means"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-10.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-10.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-08-the-office.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-08.html"
     project: "https://apumath250.netlify.app/project/#rough-draft-report"
     
   
   - week: "Week 11"
-    date:  "Nov 8 - 10"
-    title: "Uncertainty Quantification <br/> Bootstrapping"
+    date:  "Nov 7 - 9"
+    title: "Inference <br/> Chi-square & ANOVA"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-11.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-11.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-05-modeling-gss.html"
+    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-04.html"
     
   
   - week: "Week 12"
-    date:  "Nov 15 - 17"
-    title: "Inference"
+    date:  "Nov 14 - 16"
+    title: "Communicating results"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-12.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-12.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-09.html"
-    se: "https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html"
+    
 
   - week: "THANKSGIVING"
-    date: "Nov 21 - 25"
+    date: "Nov 20 - 26"
     title: "NO CLASS"
 
   - week: "Week 13"
-    date:  "Nov 29 - Dec 1"
+    date:  "Nov 28 - 30"
     title: "Special Topics: Shiny Apps Part I"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-13.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-13.html"
@@ -115,13 +115,13 @@ lessons:
     se: "https://kgfitzgerald.github.io/APU_MATH_250/other/eoc.html"
 
   - week: "Week 14"
-    date:  "Dec 6 - 8"
+    date:  "Dec 5 - 7"
     title: "Special Topics: Shiny Apps Part II"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-14.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-14.html"
     project: "https://apumath250.netlify.app/project/#written-report"
   
   - week: "Week 15"
-    date: "Dec 12 - 16"
+    date: "Dec 11 - 15"
     title: "FINAL EXAM WEEK - Project Presentation"
     project: "https://apumath250.netlify.app/project/#slides--oral-presentation"

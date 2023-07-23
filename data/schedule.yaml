@@ -16,7 +16,8 @@ lessons:
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-02.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-02.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-02-data-viz.html"
-    se: "https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html"
+    #hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-01-airbnb.html"
+    
 
   - week: "Week 03"
     date:  "Sep 12 - 14"
@@ -24,7 +25,7 @@ lessons:
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-03.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-03.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-03-college-majors.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-01-airbnb.html"
+    se: "https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html"
     
     
   - week: "Week 04"
@@ -33,26 +34,26 @@ lessons:
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-04.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-04.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-04-college-rankings.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-02-avengers.html"
+    #hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-02-avengers.html"
+    project: "https://apumath250.netlify.app/project/"
 
     
   - week: "Week 05"
     date:  "Sep 26- 28"
-    title: "Data importing & cleaning"
+    title: "Scientific Practice & Data Science Workflow"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-05.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-05.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-05-google-survey.html"
     exam: "https://kgfitzgerald.github.io/APU_MATH_250/exam/exam-for-website.html"
-    project: "https://canvas.apu.edu/courses/42480/assignments/692819"
 
   
   - week: "Week 06"
     date:  "Oct 3 - 5"
-    title: "Scientific Practice <br/> Data Science Workflow"
+    title: "Data importing & cleaning"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-06.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-06.html"
-    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-06-smokers.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-05-google-survey.html"
     project: "https://apumath250.netlify.app/project/#project-proposal"
+    
   
   - week: "Week 07"
     date:  "Oct 10 - 12"
@@ -75,7 +76,7 @@ lessons:
     title: "Uncertainty Quantification <br/> Confidence Intervals"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-09.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-09.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03-exploring-gss.html"
+    #hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03-exploring-gss.html"
     
 
   - week: "Week 10"
@@ -92,7 +93,7 @@ lessons:
     title: "Inference <br/> Chi-square & ANOVA"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-11.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-11.html"
-    hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-04.html"
+    #hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-04.html"
     
   
   - week: "Week 12"

@@ -74,7 +74,7 @@ lessons:
   - week: "Week 06"
     date:  "Oct 3 - 5" 
     title: "Doing data science"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/19-doing-data-science.html"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/16-doing-data-science.html"
     recording: ""
     # title: "Tips for effective data visualization"
     # slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/16-effective-dataviz.html"
@@ -86,38 +86,39 @@ lessons:
   - title: "Simpson's paradox"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/18-simpsons-paradox.html"
     recording: "https://youtu.be/bgIn65yX66g"
-    
-  - title: "The language of models"
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/23-language-of-models.html"
-    recording: "https://youtu.be/bQrR8HFKKhI"
+
     
   - week: "Week 07"
     date:  "Oct 10 - 12"   
     title: "Misrepresentation"
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/20-misrepresentation.html"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/19-misrepresentation.html"
     recording: "https://youtu.be/p4Ip0K-h-a8"
 
   - title: "Data privacy"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/21-privacy.html"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/20-privacy.html"
     recording: "https://youtu.be/SM9LXXa5ldI"
 
   - title: "Algorithmic bias"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/22-algorithmic-bias.html"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/21-algorithmic-bias.html"
     recording: "https://youtu.be/WpKOuUgnvxI"
 
   - week: "Week 08"
     date:  "Oct 17 - 19"  
-    title: "Fitting and interpreting models"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/24-fitting-interpreting-models.html"
-    recording: "https://youtu.be/ocrpZMWMBwo"
+    title: "The language of models"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/22-language-of-models.html"
+    recording: "https://youtu.be/bQrR8HFKKhI"
+    
+  - title: "Fitting and interpreting models"     
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/23-fitting-interpreting-models.html"
+    recording: "https://youtu.be/QOfbzyANOoU"
     
   - title: "Modeling non-linear relationships"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/25-modeling-nonlinear-relationships.html"
-    recording: "https://youtu.be/ODDMLnhbNE8"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/24-model-assumptions-diagnostics.html"
+    recording: "https://youtu.be/hQ1vgCCMLH8"
 
   - title: "Models with multiple predictors"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/26-model-multiple-predictors.html"
-    recording: "https://youtu.be/7gHUTqGqrhs"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/25-multiple-predictors-model-selection.html"
+    recording: "https://youtu.be/06ncimugf_w"
 
   - week: "Week 09"
     date:  "Oct 24 - 26"  
@@ -147,7 +148,7 @@ lessons:
     date:  "Nov 7 - 9" 
     title: "Inference - Chi-squared + ANOVA"
     #slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/32-quantify-uncertainty.html"
-    #recording: "https://youtu.be/lquSgUoYoqk"
+    #recording: "https://youtu.be/ZUBq4cMlBjk"
 
   #- title: "Bootstrapping"     
     #slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/33-bootstrap.html"
@@ -157,7 +158,7 @@ lessons:
     date:  "Nov 14 - 16" 
     title: "Communicating results"     
     #slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/34-hypothesis-testing.html"
-    #recording: "https://youtu.be/X2evqS-f5_I"
+    #recording: "https://youtu.be/SSEhrGK9-8k"
 
   #- title: "Inference overview"     
     #slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/35-inference-overview.html"

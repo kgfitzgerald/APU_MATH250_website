@@ -10,11 +10,11 @@ I expect everyone will have questions at some point in the semester, so I encour
 
 If you have a question during class, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
 
-## Office hours
+## Student hours
 
-I am here to help you be successful in the course. You are encouraged to attend office hours during the times posted in the Syllabus to ask questions about the course content and assignments. Even if you don’t know what your specific questions or points of confusion are, we can figure that out together. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
+I am here to help you be successful in the course. You are encouraged to attend student hours during the times posted in the Syllabus to ask questions about the course content and assignments. Even if you don’t know what your specific questions or points of confusion are, we can figure that out together. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
 
-Office hours will be held in person (Segerstrom 112) and on Zoom. Join using the Zoom link in [Canvas](https://canvas.apu.edu). You can find the office hours schedule on the [sylllabus page](https://apumath250.netlify.app/syllabus/) and in Canvas. 
+Student hours will be held in person (Segerstrom 112) and on Zoom, as well as one day a week in the APU Community Garden. Join using the Zoom link in [Canvas](https://canvas.apu.edu). You can find the office hours schedule on the [sylllabus page](https://apumath250.netlify.app/syllabus/) and in Canvas. 
 
 ## Campuswire
 

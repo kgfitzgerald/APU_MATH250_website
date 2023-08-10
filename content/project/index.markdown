@@ -4,31 +4,35 @@ title: "MATH 250 Final Project"
 
 ## Timeline
 
-Choose project teams by **Tuesday, October 4**
+Choose project teams by **Tuesday, September 26, 4:20pm**
 
-Project Work Session 1: **Tuesday, October 4**
+Project Work Session 1: **Tuesday, September 26**
 
-Proposal due **Wednesday, October 12**
+Proposal due **Tuesday, October 10, 11:59pm**
 
-Project Work Session 2: **Thursday, October 13**
+Project Work Session 2: **Thursday, October 12**
 
-Project Work Session 3: **Thursday, October 27**
+Project Work Session 3: **Thursday, October 26**
 
-Data cleaning & preliminary EDA due **Thursday, October 27**
+Data cleaning & preliminary EDA due **Thursday, October 26, 11:59pm**
 
-Project Work Session 4: **Thursday, November 10**
+Project Work Session 4: **Thursday, November 9**
 
-Draft report due **Thursday, November 17** 
+Draft report due **Tuesday, November 14, 11:59pm** 
 
-In-class Peer Review  **Thursday, December 1**
+In-class Peer Review I  **Thursday, November 16**
 
-Peer feedback due **Tuesday, December 6**
+Peer feedback due **Tuesday, November 28, 11:59pm**
 
-Project Work Session 5: **Thursday, December 8**
+Project Work Session 5: **Tuesday, December 5**
 
-Final written report due **Saturday, December 10** 
+Draft of Slides due: **Tuesday, December 5, 11:59pm**
 
-Presentation: **TBD (during Final Exam time slot Dec 12 - 16)**
+In-class Peer Review II  **Thursday, December 7**
+
+Final written report due **Saturday, December 9, 11:59pm** 
+
+Presentation: **TBD (during Final Exam time slot Dec 11 - 15)**
 
 ## Introduction & grading summary
 
@@ -41,12 +45,12 @@ The project will be completed in self-assigned teams of 2-3. You should choose a
 
 ### Logistics
 
-You should sign up for a team of 2-3 on Canvas no later than **Tuesday, October 4**. 
+You should sign up for a team of 2-3 on Canvas no later than **Tuesday, September 26**. 
 
 The four primary deliverables for the final project are
 
 - A written, reproducible report detailing your analysis
-- An RStudio Cloud project repository corresponding to your report
+- An RStudio project repository corresponding to your report
 - An oral presentation during finals week
 - Formal peer review on another team's project
 
@@ -106,7 +110,7 @@ Additional options:
 - [Election Studies](https://electionstudies.org//)
 
 All analyses must be done in RStudio, and your final written report and 
-analysis **must be reproducible**. This means that you must create an R Markdown document attached to a RStudio project repository that will create your written report exactly upon knitting.
+analysis **must be reproducible**. This means that you must create a Quarto document attached to a RStudio project repository that will create your written report exactly upon rendering.
 
 ## Project proposal 
 
@@ -135,7 +139,7 @@ Choose **three** substantially different datasets you are interested in analyzin
 
 ### Submission 
 
-Submit the PDF of your proposal on Canvas by midnight on **Wednesday, October 12**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
+Submit the PDF of your proposal on Canvas by midnight on **Tuesday, October 10**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
 
 ### Notes 
 
@@ -154,7 +158,7 @@ Total                                                   | 5 pts
 
 ## Data cleaning & Preliminary EDA
 
-The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. The `cleaning-eda.Rmd` file in your RStudio Cloud repo should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file used for analysis. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. This will be evaluated through RStudio Cloud; you do not need to submit this on Canvas. 
+The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. The `cleaning-eda.qmd` file in your RStudio project should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file used for analysis. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. You should submit a zip file with the .Rproj file, the .qmd file, and any relevent data or other supplementary files required to Render your Quarto report.  
 
 Your cleaning & EDA steps should include:
 
@@ -189,19 +193,21 @@ Total                                                   | 5 pts
 
 The purpose of the rough draft and peer review is to give you an opportunity to get feedback on your analysis before the final product. 
 
-Your team will write the rough draft in the `written-report.Rmd` file in your project repo and submit the pdf or html to Canvas. 
+Your team will write the rough draft in the `written-report.qmd` file in your project repo and submit the pdf or html to Canvas. 
 
 Below is a brief description of the sections to focus on in the draft: 
 
-#### Introduction and data
+#### Introduction
 
 The introduction provides motivation and context for your research. Describe your topic (citing sources) and provide a concise, clear statement of your research question and hypotheses.
 
-Then, identify the source of the data, when and how it was collected, the cases, a general description of relevant variables.
+#### Data
+
+Identify the source of the data, when and how it was collected, the cases, a general description of relevant variables. This section should also include visualizations and summary statistics *relevant to your research question*.
 
 #### Methodology 
 
-The methodology section should include visualizations and summary statistics relevant to your research question. You should also justify the choice of statistical method(s) used to answer your research question.
+Describe and justify the choice of statistical method(s) used to answer your research question (e.g. modeling choices, inference procedures, etc.).
 
 #### Results 
 
@@ -216,46 +222,52 @@ This part of the project will be graded as follows:
 
 Total                                                   | 5 pts
 --------------------------------------------------------|-------
-**Introduction & Data**                                 | 1 pt
+**Introduction**                                        | 1 pt
+**Data**                                                | 1 pt
 **Methodology**                                         | 1 pts
 **Results**                                             | 1 pt
-**Neatness & Organization**                             | 2 pt
+**Neatness & Organization**                             | 1 pt
 
 
 ## Peer review
 
 Critically reviewing others' work is a crucial part of the scientific process, and giving constructive feedback is an important skill that must be practiced. The process can enhance your ability to self-assess and improve your own work as well.
 
-You will be assigned a team to review. Time will be spent on peer review in class on **Thursday, December 1**, and your team will have until class-time on **Tuesday, December 6** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience reading and constructively critiquing the work of others.
+You will be assigned a team to review. Time will be spent on peer review in class on **Thursday, November 16**, and your team will have until class-time on **Tuesday, November 28** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience reading and constructively critiquing the work of others.
 
 Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
 
+You will also engage in (ungraded) peer review of slides and oral presentation materials in class on Thursday, December 7, in preparation for the final presentations during finals week. 
+
 ## Written report
 
-Your final report must be written using R Markdown. All team members must contribute meaningfully to the analysis and are responsible for what's contained in the final report. Before you finalize your report, make sure the printing of code chunks is turned off with the option `echo = FALSE`.
+Your final report must be written using Quarto. All team members must contribute meaningfully to the analysis and are responsible for what's contained in the final report. Before you finalize your report, make sure the printing of code chunks is turned off with the option `#| echo: false`.
 
 
-**Submit the final report on Canvas under the <i>Final Report & Repo</i> assignment.** Your final report must match your RStudio Cloud repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
+**Submit the final report on Canvas under the <i>Final Report & Repo</i> assignment.** The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
 
 The written report is worth 45 points, broken down as follows:
 
 Total                                                   | 45 pts
 --------------------------------------------------------|-------
-**Introduction/data**                                   | 5 pts
-**Methodology**                                         | 10 pts
+**Introduction & Research Questions**                   | 5 pts
+**Data**                                                | 5 pts
+**Methodology**                                         | 5 pts
 **Results**                                             | 15 pts
 **Discussion**                                          | 10 pts
 **Formatting**                                          | 5 pts
 
-#### Introduction and data
+#### Introduction
 
 The introduction provides motivation and context for your research. Describe your topic (citing sources) and provide a concise, clear statement of your research question and hypotheses.
 
-Then identify the source of the data, when and how it was collected, the cases, a general description of relevant variables.
+#### Data
+
+Identify the source of the data, when and how it was collected, the cases, a general description of relevant variables. This section should also include visualizations and summary statistics *relevant to your research question*.
 
 #### Methodology 
 
-The methodology section should include visualizations and summary statistics relevant to your research question. You should also justify the choice of statistical method(s) used to answer your research question.
+Describe and justify the choice of statistical method(s) used to answer your research question (e.g. modeling choices, inference procedures, etc.).
 
 #### Results 
 
@@ -302,9 +314,9 @@ All written work (with exception of presentation slides) should be reproducible,
 The repo should have the following structure:
 
 - `README`: Short project description and data dictionary
-- `written-report.Rmd` & `written-report.pdf`
+- `written-report.qmd` & `written-report.pdf`
 - `/data`: Folder that contains the data set for the final project.
-- `project-proposal.Rmd` & `project-proposal.pdf`
+- `project-proposal.qmd` & `project-proposal.pdf`
 - `/presentation`: Folder with the presentation slides. 
   - If your presentation slides are online, you can put a link to the slides in a `README.md` file in the `presentation` folder.
   
@@ -383,7 +395,7 @@ knitr::opts_chunk$set(echo = FALSE,
 
 - Include all references in a section called "References" at the end of the report. 
 - This course does not have specific requirements for formatting citations and references.
-- See [Section 4.5](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html) of the R Markdown Cookbook to learn about the citation functionality in R Markdown. 
+- See [Section 4.5](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html) of the R Markdown Cookbook to learn about the citation functionality in R Markdown and [Quarto](https://quarto.org/docs/authoring/footnotes-and-citations.html). 
 
 #### Appendix
 

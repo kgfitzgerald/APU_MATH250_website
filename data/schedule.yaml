@@ -73,7 +73,7 @@ lessons:
   
   - week: "Week 09"
     date:  "Oct 24 - 26"
-    title: "Uncertainty Quantification <br/> Confidence Intervals"
+    title: "Uncertainty Quantification <br/> Confidence Intervals & Hypothesis Tests"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-09.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-09.html"
     #hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-03-exploring-gss.html"
@@ -81,7 +81,7 @@ lessons:
 
   - week: "Week 10"
     date:  "Oct 31 - Nov 2"
-    title: "Inference <br/> Proportions & Means"
+    title: "Inference for Numerical Data <br/> One mean, independent means, paired means, ANOVA"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-10.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-10.html"
     lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-08.html"
@@ -90,7 +90,7 @@ lessons:
   
   - week: "Week 11"
     date:  "Nov 7 - 9"
-    title: "Inference <br/> Chi-square & ANOVA"
+    title: "Inference for Categorical Data <br/> One proportion, difference in proportions, odds ratio, relative risk, Chi-square"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-11.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-11.html"
     #hw: "https://kgfitzgerald.github.io/APU_MATH_250/hw/hw-04.html"

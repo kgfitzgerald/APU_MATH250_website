@@ -2,17 +2,21 @@
 title: About this course
 ---
 
-[**Click here**](MATH250_F22_syllabus.pdf) **to download a PDF copy of the official course syllabus.**
+[**Click here**](MATH250_F23_syllabus.pdf) **to download a PDF copy of the official course syllabus.**
 
 ## Course Info
 
-| Course                       | Instructor                                                        |     |
-|------------------------------|-------------------------------------------------------------------|-----|
-| **MATH 250 - Data Analysis** | Katie Fitzgerald, PhD Statistics                                  |     |
-| Fall 2022                    | Assistant Professor of Statistics                                 |     |
-| Section 01 Class #: 11324    | Email: [kfitzgerald\@apu.edu](mailto:kfitzgerald@apu.edu){.email} |     |
-| Segerstrom 174               | Office: Segerstrom 112                                            |     |
-| Tue & Thurs 4:20 - 5:45pm    | Office hours: Tue 10am -- 12pm, Wed 1-2:20pm                      |     |
+| Course                       | Instructor                                                            |     |
+|------------------|-------------------------------------|------------------|
+| **MATH 250 - Data Analysis** | Katie Fitzgerald, PhD Statistics                                      |     |
+| Fall 2023                    | Assistant Professor of Statistics                                     |     |
+| Section 01 Class #: 10680    | Email: [kfitzgerald\@apu.edu](mailto:kfitzgerald@apu.edu){.email}     |     |
+| Segerstrom 172               | Office: Segerstrom 112                                                |     |
+| Tue & Thurs 4:20 - 5:45pm    | Student hours: M 4:15 - 5:30PM\*, Tue 2:30 - 4PM\*, Th 10-11:30AM\*\* |     |
+
+\*held in Segerstrom 112, and on Zoom
+
+\*\*held at APU Community Garden
 
 ## Course Learning Objectives
 
@@ -30,13 +34,13 @@ By the end of the semester, you will...
 This course utilizes two texts that are freely available online. Hardcopies are also available for purchase.
 
 |                                                                         |                          |                                   |
-|-------------------------------------------------------------------------|--------------------------|-----------------------------------|
+|------------------------------------|-------------------|-------------------|
 | [R for Data Science](http://r4ds.had.co.nz/)                            | Grolemund, Wickham       | O'Reilly, 1st edition, 2016       |
 | [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel, Hardin | OpenIntro Inc., 1st Edition, 2021 |
 
 ### Software
 
-This course will utilize the statistical software R via the web version [RStudio Cloud](https://rstudio.cloud). Students will receive instructions in the first week of class for how to set up an RStudio Cloud account. A \$5/month subscription fee may apply (max \$20 for the semester).
+This course will utilize the statistical software R and RStudio. Students will receive instructions in the first week of class for how download it onto their personal computer.
 
 ### Hardware
 
@@ -57,41 +61,46 @@ This term we will be using [Campuswire](https://campuswire.com/p/GD02807A2) as o
 
 Much of the course design, activities, and assessments are adapted from Mine Çetinkaya-Rundel's [Data Science in a Box](https://datasciencebox.org/index.html) curriculum and Duke University's open source [Introduction to Data Science](https://www.introds.org) course under the Creative Commons Attribution Share Alike 4.0 International.
 
-Modern data analysis is inherently tied to coding and computational tools, and coding is learned by doing. To facilitate this type of learning, this course utilizes a flipped learning design. Each week, you will watch a series of lecture videos and complete a preparation quiz [*before*]{.underline} class on Tuesdays. Then class time will be dedicated to hands-on application exercises and group lab assignments. The activities and assessments follow a prepare, practice, perform format and are designed to help you develop the foundational skills of a modern data scientist.
+Modern data analysis is inherently tied to coding and computational tools, and coding is learned by doing. To facilitate this type of learning, this course utilizes a flipped learning design. Each week, you will watch a series of lecture videos and complete a preparation quiz [*before*]{.underline} class on Tuesdays. Then class time will be dedicated to hands-on application exercises and group lab assignments. The activities and assessments follow a prepare, practice, perform format and are designed to help you develop the foundational skills of a modern data scientist. You will also *engage* with current events and issues of ethics in the data science community. 
 
--   **Prepare**: Includes lecture videos and optional readings to introduce new concepts and a short quiz ensure a basic comprehension of the material. The goal is to help you prepare for the in-class activities.
+-   **Prepare**: Includes lecture videos and optional readings to introduce new concepts and a short quiz to ensure a basic comprehension of the material. The goal is to help you prepare for the in-class activities.
 -   **Practice**: Includes in-class application exercises where you will begin to apply the concepts and methods introduced in the lecture videos. The activities will be graded for completion, as they are designed for you to gain experience with the statistical and computing techniques before working on graded assignments.
--   **Perform**: Includes labs, homework, one exam, and the final project. These assignments build upon the prepare and practice assignments and are the opportunity for you to demonstrate your ability to apply course material to analyze real-world data.
+-   **Perform**: Includes weekly labs, one exam, and the final project. These assignments build upon the prepare and practice assignments and are the opportunity for you to demonstrate your ability to apply course material to analyze real-world data.
+-   **Engage**: Includes weekly data ethics readings & community annotations as well as “statistics experience” points.
 
 ### Preparation Quizzes (Prepare)
 
-At the beginning of each week, you will watch a series of lecture videos and take a low-stakes preparation quiz in Canvas to check your understanding. Each quiz can be attempted up to 3 times before the deadline, and your score will be the average of your attempts. The quiz is due by class-time on Tuesdays (4:20pm).
+At the beginning of each week, you will watch a series of lecture videos and take a low-stakes preparation quiz in Canvas to check your understanding. Each quiz can be attempted up to 3 times before the deadline, and your score will be the average of your attempts. The quiz is due by class-time on Tuesdays (4:20pm). 
 
 ### Application Exercises (Practice)
 
-The majority of class-time on Tuesdays will be dedicated to working on Application Exercises (AEs) in RStudio Cloud, designed to help you practice the new skills, code, and concepts introduced in that week's lecture videos. AEs are due by class-time on Thursdays the same week they are assigned. AEs are graded on completion; demonstrating that a good faith effort has been made on all parts of the assignment will earn full credit.
+The majority of class-time on Tuesdays will be dedicated to working on Application Exercises (AEs) in RStudio, designed to help you practice the new skills, code, and concepts introduced in that week’s lecture videos. AEs are due at the end of class on Tuesdays and serve as your “exit ticket”. AEs are graded on completion; demonstrating that a good faith effort has been made on the assignment will earn full credit.  If you are unable to attend class on a Tuesday, you may still submit your AE for half credit. The two lowest AE scores will be dropped at the end of the semester to accommodate occasional absences.
 
 ### Labs (Perform)
 
-The majority of class-time on Thursdays will be dedicated to team lab assignments. The labs are a more in-depth application of the week's material that will have you complete scaffolded analyses of a real dataset using RStudio Cloud. Teams of \~3 will be assigned by the instructor and will rotate approximately every two weeks. Labs are due by midnight the following Tuesday. *The lowest lab grade will be dropped at the end of the semester.*
-
-### Homework (Perform)
-
-Approximately every other week, an individual homework assignment will be due. Homework will be similar in nature to the labs but are to be completed on your own outside of class. You are still encouraged to work together, but homework will be submitted and graded individually. Homework will be assigned on Thursdays and due by midnight the following Thursday.
+The majority of class-time on Thursdays will be dedicated to lab assignments. The labs are a more in-depth application of the week’s material that will have you complete scaffolded analyses of a real dataset using RStudio. You will collaborate in randomly assigned teams of ~3, and teams will rotate approximately every 2 weeks. Labs are due by class-time the following Tuesday. *The lowest lab grade will be dropped at the end of the semester.*
 
 ### Exam (Perform)
 
 There will be one take-home mid-term exam for you to demonstrate your individual ability to apply what you have learned. It will consist of an analysis and computational tasks related to the material in the prepare, practice, perform assignments. The exam is take-home and open-notes but must be completed individually, without discussing or seeking assistance from anyone inside or outside the course.
 
-You will be given the opportunity to submit annotated test corrections to earn up to 1/3 of the points back on your exam. Specific instructions and expectations will be provided when the exams are graded and returned.
-
-### Statistics Experiences (Practice)
-
-The world of statistics and data science is vast and dynamic! The goal of the Statistics Experience assignments is to help you engage with the statistics and data science communities outside of the classroom. There are a variety of ways you can participate in "Statistics Experiences," which include but are not limited to listening to a podcast, reading a book, getting coffee with a statistician, joining the American Statistical Association, or participating in #TidyTuesday. Each experience is worth a varying number of points (see [here](https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html) for details), and you are required to collect at least 5 "Statistics Experience points" throughout the semester. Up to 10 additional points can be collected and added to your lowest homework grade(s).
+You will be given the opportunity to submit annotated test corrections to earn up to 1/3 of the points back on your exam. Specific instructions and expectations will be provided when the exams are graded and returned. 
 
 ### Project (Perform)
 
-The purpose of the final project is to apply what you've learned throughout the semester to investigate an interesting data-driven research question by analyzing a real-world dataset of your choosing. The project will be completed in self-assigned teams of 2-3. You will be asked to present your findings in a written report and an oral presentation. More details can be found in the [Project](https://apumath250.netlify.app/project/) tab.
+The purpose of the final project is to apply what you’ve learned throughout the semester to investigate an interesting data-driven research question by analyzing a real-world dataset of your choosing. The project will be completed in self-assigned teams of 2-3. You will be asked to present your findings in a written report and an oral presentation. More details can be found in the [Project](https://apumath250.netlify.app/project/) tab.
+
+
+### Data Ethics Readings & Community Annotations (Engage)
+
+Each week, you will read an article or book excerpt that engages with issues related to data ethics. You will engage with the reading via the community annotation tool Perusall. Annotations are due by class-time on Thursdays. 
+
+
+### Statistics Experiences (Engage)
+
+The world of statistics and data science is vast and dynamic! The goal of the Statistics Experience assignments is to help you engage with the statistics and data science communities outside of the classroom. There are a variety of ways you can participate in "Statistics Experiences," which include but are not limited to listening to a podcast, reading a book, getting coffee with a statistician, joining the American Statistical Association, or participating in #TidyTuesday. Each experience is worth a varying number of points (see [here](https://kgfitzgerald.github.io/APU_MATH_250/hw/se-01.html) for details), and you are required to collect at least 5 "Statistics Experience points" throughout the semester. Up to 10 additional points can be collected and added to your lowest homework grade(s).
+
+
 
 ## Grading
 
@@ -101,14 +110,13 @@ The final course grade will be calculated as follows:
 
 | Category                   | Percentage |
 |----------------------------|------------|
-| Prep quizzes               | 5%         |
-| Application Exercises      | 3%         |
-| Engagement & Participation | 2%         |
+| Prep quizzes               | 10%         |
+| Application Exercises      | 5%         |
+| Reading & Annotations      | 5%         |
 | Statistics Experiences     | 5%         |
-| Homework                   | 20%        |
-| Labs                       | 25%        |
+| Labs                       | 30%        |
 | Exam 01                    | 15%        |
-| Final Project              | 25%        |
+| Final Project              | 30%        |
 
 </center>
 
@@ -139,30 +147,26 @@ The final letter grade will be determined based on the following thresholds:
 
 The coding skills gained in this course build cumulatively week-by-week, so it is important to complete and submit all assignments on time. Due dates are there to help you keep up with course material and ensure you receive feedback in a timely manner.
 
--   Late work will not be accepted for preparation quizzes or application exercises, as these are designed to help you prepare for the in-class labs each week.
--   Labs and homework may be turned in up to 3 days late, and there will be a 5% reduction for each 24 hour period the assignment is late.
--   Labs are intended to be completed in teams, and a majority of each lab will be completed in-class on Thursdays. If you have an unexcused absence for a Thursday lab session, you must submit the assignment individually, and a 15% deduction will apply.
--   Late exams will not be accepted unless specifically coordinated with the instructor in advance.
+•	Late work will not be accepted for preparation quizzes or application exercises, as these are designed to help you prepare for the in-class labs each week.
+•	All lab assignments will have a “Best By” date, meaning it’s best for your learning to submit them by the “Best By” date. For any lab assignment, you may submit a “Late work plan” form (available on Canvas) to propose an alternative submission date that is within one week of the Best By date. 
+o	All reasonable requests will be honored, but you must submit your Late work plan PRIOR to the Best By date. 
+o	Late work will not be accepted more than one week after the Best By date
+o	To incentivize on-time work, you will have the opportunity to revise and re-submit any assignments that are turned in by the Best By date. A reasonable attempt needs to have been made on each problem in order to earn additional points on the re-submission. That is, it’s best to attempt each problem by the Best By date if you can, and it doesn’t have to be perfect on the first submission. 
+•	Late exams will not be accepted unless specifically coordinated with the instructor in advance.
+Incompletes are rare and are available only in “special or unusual circumstances” as negotiated with the instructor prior to the end of the term.  See the Catalog for policies regarding Withdrawals and grade record permanence.
+If there are life circumstances that are having a longer-term impact on your academic performance or well-being, come talk to me, and we can work towards a solution and connect you to the support you need. 
 
-### Waiver for extenuating circumstances
-
-Life happens, and there are sometimes extenuating circumstances that prevent you from completing an assignment on time. The lowest application exercise, prep quiz, and lab grade will each be dropped at the end of the semester to accommodate such circumstances.
-
-Additionally, you may request a waiver of the late penalty for one assignment. To do so, email the instructor in advance of the deadline, and the waiver will be granted, no questions asked. You may only request the waiver once, so only use it for truly extenuating circumstances.
-
-If there are life circumstances that are having a longer-term impact on your academic performance or well-being, come talk to me, and we can work towards a solution and connect you to the support you need.
 
 ## Important dates
 
 | Date                 | Event                           |
 |----------------------|---------------------------------|
-| August 30 (Tue)      | First day our class meets       |
-| September 7 (Wed)    | Add Deadline                    |
-| September 9 (Fri)    | Drop Deadline                   |
-| September 29 (Thurs) | Exam 1 assigned                 |
-| October 4 (Tue)      | Exam 1 due                      |
-| November 21 - 27     | Thanksgiving break (NO CLASSES) |
-| December 12 - 16     | Final Exams                     |
+| August 29 (Tue)      | First day our class meets       |
+| September 8 (Fri)    | Drop Deadline                   |
+| September 26 (Tue) | Exam 1 assigned                 |
+| October 3 (Tue)      | Exam 1 due                      |
+| November 20 - 26     | Thanksgiving break (NO CLASSES) |
+| December 11 - 15     | Final Exams (Project presentations) |
 
 Click [here](https://www.apu.edu/calendar/academic/) for the full APU academic calendar.
 

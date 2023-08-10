@@ -98,9 +98,10 @@ lessons:
   
   - week: "Week 12"
     date:  "Nov 14 - 16"
-    title: "Communicating results"
+    title: "Communicating results, Part I"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-12.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-12.html"
+    project: "https://apumath250.netlify.app/project/#peer-review"
     
 
   - week: "THANKSGIVING"
@@ -112,17 +113,17 @@ lessons:
     title: "Special Topics: Shiny Apps Part I"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-13.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-13.html"
-    project: "https://apumath250.netlify.app/project/#peer-review"
     se: "https://kgfitzgerald.github.io/APU_MATH_250/other/eoc.html"
+    project: "https://apumath250.netlify.app/project/#slides--oral-presentation"
 
   - week: "Week 14"
     date:  "Dec 5 - 7"
-    title: "Special Topics: Shiny Apps Part II"
+    title: "Special Topics: Shiny Apps Part II <br/> Communicating results, Part II"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-14.html"
     prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-14.html"
     project: "https://apumath250.netlify.app/project/#written-report"
   
   - week: "Week 15"
     date: "Dec 11 - 15"
-    title: "FINAL EXAM WEEK - Project Presentation"
+    title: "FINAL EXAM WEEK - Project Presentations"
     project: "https://apumath250.netlify.app/project/#slides--oral-presentation"

@@ -10,9 +10,11 @@ The following table provides links to all course assignments.
 Each week will include:
 
 + **Prepare**: watch videos and complete prep quiz by class time Tuesday (4:20pm)
-+ **Application Exercise**: in-class together on Tuesdays, due by class time Thursday (4:20pm)
-+ **Lab**: in-class together on Thursdays, due Tuesday (11:59pm)
-+ **HW, Project component, OR Statistics Experience (SE)**: on your own, assigned Thursdays, due Thursday (11:59pm)
++ **Application Exercise**: in-class together on Tuesdays, due at end of class (5:45pm)
++ **Lab**: in-class together on Thursdays, due class-time the following Tuesday (4:20pm)
++ **Reading Annotations OR Statistics Experience (SE)**: on your own, due Thursdays at class-time (4:20pm)
+
+This course includes a final project, with scaffolded deadlines throughout the semester. We will have several in-class work sessions, but you are expected to complete a majority of the project with your team outside of class. 
 
 Note that this schedule may be updated as the semester progresses, with all changes documented here.
 

@@ -149,15 +149,15 @@ lessons:
     date:  "Nov 7 - 9" 
     title: "Inference for Categorical Data, Part I: One proportion" 
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/31-cat-inf-one-prop.html"
-    #recording: "https://youtu.be/ZUBq4cMlBjk"
+    recording: "https://youtu.be/Di9weeNXhCg"
 
   - title: "Inference for Categorical Data, Part II: Difference in proportions, Odds ration, Relative risk"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/32-cat-inf-diff-props-OR-RR.html"
-    #recording: "https://youtu.be/01_8AKpWg84"
+    recording: "https://youtu.be/u35HGRSxKoY"
     
   - title: "Inference for Categorical Data, Part III: Two-way tables (Chi-square test)"
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/32-cat-inf-two-way-tables.html"
-    #recording: "https://youtu.be/01_8AKpWg84"
+    recording: "https://youtu.be/aUtjnTfmVuA"
 
   - week: "Week 12"
     date:  "Nov 14 - 16" 

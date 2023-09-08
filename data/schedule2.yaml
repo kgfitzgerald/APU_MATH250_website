@@ -59,20 +59,6 @@ lessons:
     
   - week: "Week 05"
     date:  "Sep 26 - 28"
-    title: "Data classes"
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/13-data-classes.html"
-    recording: "https://youtu.be/oQWX5btmtn0"
-
-  - title: "Importing data"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/14-data-import.html"
-    recording: "https://youtu.be/3b9Rb6sWiAk"
-
-  - title: "Recoding data"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/15-data-recode.html"
-    recording: "https://youtu.be/GeFKGqPqEwk"
-
-  - week: "Week 06"
-    date:  "Oct 3 - 5" 
     title: "Doing data science"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/16-doing-data-science.html"
     recording: ""
@@ -86,6 +72,21 @@ lessons:
   - title: "Simpson's paradox"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/18-simpsons-paradox.html"
     recording: "https://youtu.be/bgIn65yX66g"
+
+  - week: "Week 06"
+    date:  "Oct 3 - 5" 
+    title: "Data classes"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/13-data-classes.html"
+    recording: "https://youtu.be/oQWX5btmtn0"
+
+  - title: "Importing data"     
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/14-data-import.html"
+    recording: "https://youtu.be/3b9Rb6sWiAk"
+
+  - title: "Recoding data"     
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/15-data-recode.html"
+    recording: "https://youtu.be/GeFKGqPqEwk"
+    
 
     
   - week: "Week 07"

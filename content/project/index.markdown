@@ -166,17 +166,17 @@ Your cleaning & EDA steps should include:
 
 + Converting to appropriate data types (factors, dates, etc) 
 
-+ Re-ordering factor levels as needed
++ Re-ordering and/or re-labeling factor levels as needed
 
 + Investigating and handle missing data
 
-+ Visualizing each variable (or at least 10 if you have a large number), noting any issues or notable features
++ Visualizing each variable individually (or at least 10 if you have a large number), noting any issues or notable features
 
-+ Describing your analysis plan for answering your research question
++ Describing your analysis plan for answering your research questions
 
     + What types of visualizations or summary tables will you create?
 
-    + What types of models or inference procedures will you run, if any? 
+    + What types of models or inference procedures will you run? 
 
 You should save the clean data as a .RDS file. 
 
@@ -284,32 +284,32 @@ This section is a conclusion and discussion. This will require a summary of what
 
 This is an assessment of the overall presentation and formatting of the written report.
 
-## Slides + Oral Presentation
+## Poster + Oral Presentation
 
-### Slides 
+### Poster
 
-In addition to the write-up, your team must also create presentation
-slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. The slides are due on Canvas by the time of the presentation during finals week.
+In addition to the write-up, your team must also create an academic poster to summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These poster should serve as a visual "elevator pitch" to accompany to your write-up and will be graded for content and quality. The poster is due on Canvas by the time of the presentation during finals week.
 
-Here is a *<u>suggested</u>* outline as you think through the slides; you do *<u>not</u>* have to use this exact format for the slide deck.
+Here is a *<u>suggested</u>* outline as you think through what should be included on the poster; you do *<u>not</u>* have to use these exact categories:
 
-- Title Slide
-- Slide 1: Introduce the topic and motivation
-- Slide 2: Introduce the data
-- Slide 3 - 4: Highlights from EDA
-- Slide 4 - 5: Inference / modeling
-- Slide 6: Conclusions + future work
+- Title / Catchy summary statement of what you found
+- Background / motivation 
+- Research questions investigated
+- The data
+- (Visual) highlights from EDA (if it contributes to your overall story)
+- (Visual) highlights of inference / modeling results
+- Conclusions + future work
+
+We will use the [#betterposter approach](https://www.youtube.com/watch?v=SYk29tnxASs) to ground our posters effective communication best practices! 
 
 
-### Oral presentation
+### Poster session
 
-During our final exam time slot, your group will give an oral presentation of your project. While all members are expected to contribute to the presentation and are responsible for the final product, not all group members must present. Feel free to leverage the individual strengths of your team members. For example, one person may excel in written communication, another in visual communication, and another in oral communication. Not all roles need to be shared equally among all team members so long as the overall work load is distributed fairly. 
-
-The oral presentation should be approximately 10-12 minutes, with about 5 minutes for questions. 
+During our final exam time slot, we will hold a poster session where you will present your posters. Details will be provided during the semester.
 
 ## Project repository
 
-All written work (with exception of presentation slides) should be reproducible, and the RStudio project repo should be neatly organized. 
+All written work (with exception of poster) should be reproducible, and the RStudio project repo should be neatly organized. 
 
 The repo should have the following structure:
 
@@ -317,8 +317,7 @@ The repo should have the following structure:
 - `written-report.qmd` & `written-report.pdf`
 - `/data`: Folder that contains the data set for the final project.
 - `project-proposal.qmd` & `project-proposal.pdf`
-- `/presentation`: Folder with the presentation slides. 
-  - If your presentation slides are online, you can put a link to the slides in a `README.md` file in the `presentation` folder.
+- `/poster`: Folder with the poster and accompanying documents. 
   
 Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project  repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.
 

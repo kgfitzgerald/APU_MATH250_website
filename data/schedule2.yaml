@@ -113,7 +113,7 @@ lessons:
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/23-fitting-interpreting-models.html"
     recording: "https://youtu.be/QOfbzyANOoU"
     
-  - title: "Modeling non-linear relationships"     
+  - title: "Model assumptions & diagnostics"     
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/24-model-assumptions-diagnostics.html"
     recording: "https://youtu.be/hQ1vgCCMLH8"
 

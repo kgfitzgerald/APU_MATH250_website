@@ -193,39 +193,19 @@ Total                                                   | 5 pts
 
 The purpose of the rough draft and peer review is to give you an opportunity to get feedback on your analysis before the final product. 
 
-Your team will write the rough draft in the `written-report.qmd` file in your project repo and submit the pdf or html to Canvas. 
+Your team will write the rough draft in a `written-report.qmd` file in your project repo and submit upload the pdf to the shared Google Drive (link provided on Canvas homepage, at bottom) 
 
-Below is a brief description of the sections to focus on in the draft: 
+See "Written Report" section below for a description of each of the sections expected in your report. 
 
-#### Introduction
-
-The introduction provides motivation and context for your research. Describe your topic (citing sources) and provide a concise, clear statement of your research question and hypotheses.
-
-#### Data
-
-Identify the source of the data, when and how it was collected, the cases, a general description of relevant variables. This section should also include visualizations and summary statistics *relevant to your research question*.
-
-#### Methodology 
-
-Describe and justify the choice of statistical method(s) used to answer your research question (e.g. modeling choices, inference procedures, etc.).
-
-#### Results 
-
-Showcase how you arrived at answers to your research question using the
-techniques we have learned in class (and beyond, if you’re feeling adventurous).
-
-Provide only the main results from your analysis. The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data, that you are skilled in interpreting and presenting results, and that you can accomplish these tasks using R. More is not better.
-
-As you work on the draft, the focus should be on the analysis and less on crafting the final report. **Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and deriving initial results and conclusions.**
+As you work on the draft, the focus should be on the analysis and less on perfecting the presentation of the final report. **Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and deriving initial results and conclusions.**
 
 This part of the project will be graded as follows:
 
 Total                                                   | 5 pts
 --------------------------------------------------------|-------
 **Introduction**                                        | 1 pt
-**Data**                                                | 1 pt
 **Methodology**                                         | 1 pts
-**Results**                                             | 1 pt
+**Results**                                             | 2 pt
 **Neatness & Organization**                             | 1 pt
 
 
@@ -237,7 +217,7 @@ You will be assigned a team to review. Time will be spent on peer review in clas
 
 Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
 
-You will also engage in (ungraded) peer review of slides and oral presentation materials in class on Thursday, December 7, in preparation for the final presentations during finals week. 
+You will also engage in (ungraded) peer review of poster drafts and oral presentation materials in class on Thursday, December 7, in preparation for the final presentations during finals week. 
 
 ## Written report
 
@@ -251,23 +231,36 @@ The written report is worth 45 points, broken down as follows:
 Total                                                   | 45 pts
 --------------------------------------------------------|-------
 **Introduction & Research Questions**                   | 5 pts
-**Data**                                                | 5 pts
-**Methodology**                                         | 5 pts
+**Methodology**                                         | 10 pts
 **Results**                                             | 15 pts
 **Discussion**                                          | 10 pts
 **Formatting**                                          | 5 pts
 
-#### Introduction
+#### Introduction (AKA Background & Significance)
 
 The introduction provides motivation and context for your research. Describe your topic (citing sources) and provide a concise, clear statement of your research question and hypotheses.
 
-#### Data
+In this section you are providing the background of the research area and arguing why it is interesting and significant. This section relies heavily on literature review (prior research done in this area and facts that argue why the research is important). This whole section should provide the necessary background leading up to a presentation (in the last few sentences of this section) of the research questions that you will be investigating in your analysis.  Well-accepted facts and/or referenced statements should serve as the majority of content of this section. Typically, the background and significance section starts very broad and moves towards the specific area/hypotheses you are testing.
 
-Identify the source of the data, when and how it was collected, the cases, a general description of relevant variables. This section should also include visualizations and summary statistics *relevant to your research question*.
+Assessment:
+
++ *Does the background and significance have a logical organization? Does it move from the general to the specific?*
++ *Has sufficient background been provided to understand the paper? How does this work relate to what else is known about this topic?*
++ *Has a reasonable explanation been given for why the analysis was done? Why is the work important? Why is it relevant?*
++ *Does this section end with statements about the research questions/goals of the paper?*
 
 #### Methodology 
 
-Describe and justify the choice of statistical method(s) used to answer your research question (e.g. modeling choices, inference procedures, etc.).
+*Data collection*: Identify the source of the data, when and how it was originally collected, and how you obtained it. State what the observational units are. Additionally, you should provide information on the units that were included to assess representativeness. Non-response rates and other relevant data collection details should be mentioned here if they are an issue. However, you should not discuss the impact of these issues here---save that for the limitations section.
+
+*Variable description / creation*: Detail the variables in your analysis and how they are defined (if necessary). If you created a combined or transformed variable you should describe how. This section should also include visualizations and summary statistics of key variables *relevant to your research question*.
+
+*Analytic Methods*: Explain the statistical procedures that will be used to analyze your data. E.g. Boxplots are used to illustrate differences in GPA across gender and class standing. Correlations are used to assess the impacts of gender and class standing on GPA.
+
+Assessment:
+
++ *Could the analysis be repeated based on the information given here? Is the material organized into logical categories (like the one’s above)?*
+
 
 #### Results 
 
@@ -276,9 +269,23 @@ techniques we have learned in class (and beyond, if you’re feeling adventurous
 
 Provide only the main results from your analysis. The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data,  that you are skilled in interpreting and presenting results, and that you can  accomplish these tasks using R. More is not necessarily better.
 
+Typically, results sections start with descriptive statistics, e.g. what percent of the sample is male/female, what is the mean GPA overall, in the different groups, etc. Figures can be nice to illustrate these differences! However, information presented must be relevant in helping to answer the research question(s) of interest. Typically, inferential (e.g. hypothesis tests, confidence intervals) statistics come next. Tables can often be helpful for results from multiple regression. Do not give computer output here! This should look like a peer-reviewed journal article results section. Tables and figures should be labeled, embedded in the text, and referenced appropriately. The results section typically makes for fairly dry reading. It does not explain the impact of findings, it merely highlights and reports statistical information.
+
+Assessment:
+
++ *Is the content appropriate for a results section? Is there a clear description of the results?*
++ *Are the results/data analyzed well? Given the data in each figure/table is the interpretation accurate and logical? Is the analysis of the data thorough (anything ignored?)*
++ *Are the figures/tables appropriate for the data being discussed? Are the figure legends and titles clear and concise?*
+
 #### Discussion
 
-This section is a conclusion and discussion. This will require a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. You should critique your own methods and provide suggestions for improving your analysis and future work. Any potential issues pertaining to the reliability and validity of your data and the appropriateness of the statistical analyses should also be discussed. Additionally, include a brief paragraph on ideas for future work.
+This section is a conclusion and discussion. This will require a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. Restate your objective and draw connections between your analyses and objective. In other words, how did (or didn’t) you answer/address your objective. Place these all in the larger scope of previous research on your topic (i.e. what you found from the literature review), that is, how do your findings help the field move forward?  You should critique your own methods and discuss the limitations of your findings. Any potential issues pertaining to the reliability and validity of your data and the appropriateness of the statistical analyses should also be discussed. Provide a brief paragraph with suggestions for future research to better investigate your research question. 
+
+Assessment:
+
++ *Do the authors clearly state whether the results answer the question (e.g. support or disprove the hypothesis)?*
++ *Were specific data cited from the results to support each interpretation? Does the author clearly articulate the basis for each conclusion they draw?*
++ *Does the author adequately relate the results of the current work to what is previously known about the topic?*
 
 ### Formatting
 
@@ -309,14 +316,16 @@ During our final exam time slot, we will hold a poster session where you will pr
 
 ## Project repository
 
-All written work (with exception of poster) should be reproducible, and the RStudio project repo should be neatly organized. 
+All written work (with exception of poster) should be reproducible, and the RStudio project repo should be neatly organized, submitted as a .zip file.
 
 The repo should have the following structure:
 
 - `README`: Short project description and data dictionary
+- `.Rproj` file
 - `written-report.qmd` & `written-report.pdf`
-- `/data`: Folder that contains the data set for the final project.
 - `project-proposal.qmd` & `project-proposal.pdf`
+- `cleaning-eda.qmd` & `cleaning-eda.html`
+- `/data`: Folder that contains the data set for the final project.
 - `/poster`: Folder with the poster and accompanying documents. 
   
 Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project  repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.

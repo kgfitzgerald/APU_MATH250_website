@@ -163,7 +163,7 @@ lessons:
   - week: "Week 12"
     date:  "Nov 14 - 16" 
     title: "Communicating results"     
-    #slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/34-hypothesis-testing.html"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/34-effective-comm.html"
     #recording: "https://youtu.be/SSEhrGK9-8k"
 
   #- title: "Inference overview"     

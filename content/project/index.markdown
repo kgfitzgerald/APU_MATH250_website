@@ -32,7 +32,7 @@ In-class Peer Review II  **Thursday, December 7**
 
 Final written report due **Saturday, December 9, 11:59pm** 
 
-Poster Presentation: **TBD (during Final Exam time slot Dec 11 - 15)**
+Poster Presentation: **Thursday, December 14, 4:05pm**
 
 ## Introduction & grading summary
 
@@ -310,9 +310,9 @@ Here is a *<u>suggested</u>* outline as you think through what should be include
 We will use the [#betterposter approach](https://www.youtube.com/watch?v=SYk29tnxASs) to ground our posters effective communication best practices! 
 
 
-### Poster session
+### Poster presentation
 
-During our final exam time slot, we will hold a poster session where you will present your posters. Details will be provided during the semester.
+During our final exam time slot, we will hold a poster session where you will present your posters. You will also turn in a 2-5 minute recorded video of your poster "elevator pitch." Details will be provided during the semester.
 
 ## Project repository
 

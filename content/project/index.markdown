@@ -26,13 +26,13 @@ Peer feedback due **Tuesday, November 28, 11:59pm**
 
 Project Work Session 5: **Tuesday, December 5**
 
-Draft of Slides due: **Tuesday, December 5, 11:59pm**
+Draft of Poster due: **Tuesday, December 5, 11:59pm**
 
 In-class Peer Review II  **Thursday, December 7**
 
 Final written report due **Saturday, December 9, 11:59pm** 
 
-Presentation: **TBD (during Final Exam time slot Dec 11 - 15)**
+Poster Presentation: **TBD (during Final Exam time slot Dec 11 - 15)**
 
 ## Introduction & grading summary
 
@@ -51,7 +51,7 @@ The four primary deliverables for the final project are
 
 - A written, reproducible report detailing your analysis
 - An RStudio project repository corresponding to your report
-- An oral presentation during finals week
+- A poster presentation during finals week
 - Formal peer review on another team's project
 
 ### Grading summary
@@ -66,8 +66,8 @@ Total                                                   | 100 pts
 **Written report**                                      | 45 pts
 **Project repo & reproducibility**                      | 10 pts
 **Peer feedback**                                       | 5 pts
-**Slides**                                              | 10 pts
-**Oral presentation**                                   | 15 pts
+**Poster presentation**                                 | 25 pts
+
 
 **<i>Note: No late projects are accepted.</i>**
 
@@ -295,7 +295,7 @@ This is an assessment of the overall presentation and formatting of the written 
 
 ### Poster
 
-In addition to the write-up, your team must also create an academic poster to summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These poster should serve as a visual "elevator pitch" to accompany to your write-up and will be graded for content and quality. The poster is due on Canvas by the time of the presentation during finals week.
+In addition to the write-up, your team must also create an academic poster to summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These poster should serve as a visual "elevator pitch" to accompany to your write-up and will be graded for content and quality. The poster is due on Canvas **no later than noon on Friday, December 8.** This will allow time to have them printed before the presentations during Finals Week. 
 
 Here is a *<u>suggested</u>* outline as you think through what should be included on the poster; you do *<u>not</u>* have to use these exact categories:
 
@@ -521,7 +521,7 @@ tidy(model) %>%
   - ✅ There is a negative linear relationship between a car's fuel economy (in miles per gallon) and its horsepower.
 - **Know your audience:** Your report should be written for a general audience who has an understanding of statistics at the level of MATH 250.
 - **Avoid subject matter jargon:** Don't assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term. 
-- **Tell the "so what":** Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation. 
+- **Tell the "so what":** Your report and poster should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your poster. 
 - **Tell a story:** All visualizations, tables, model output, and narrative should tell a cohesive story!
 - **Use one voice:** Though multiple people are writing the report, it should read as if it's from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.
 

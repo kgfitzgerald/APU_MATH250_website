@@ -4,55 +4,57 @@ title: "MATH 250 Final Project"
 
 ## Timeline
 
-Choose project teams by **Tuesday, September 26, 4:20pm**
+Project Brainstorm due **Thursday, September 19, 11:59pm**
 
-Project Work Session 1: **Tuesday, September 26**
+Choose project teams by **Tuesday, September 24, 4:20pm**
 
-Proposal due **Tuesday, October 10, 11:59pm**
+Proposal due **Saturday, October 5, 11:59pm**
 
-Project Work Session 2: **Thursday, October 12**
+Data cleaning & preliminary EDA due **Thursday, October 17, 11:59pm**
 
-Project Work Session 3: **Thursday, October 26**
+Preliminary Data Story due **Thursday, October 31, 11:59pm**
 
-Data cleaning & preliminary EDA due **Thursday, October 26, 11:59pm**
+Poster rough draft due **Thursday, November 14, 11:59pm**
 
-Project Work Session 4: **Thursday, November 9**
+Written report rough draft due **Tuesday, November 19, 11:59pm** 
 
-Draft report due **Tuesday, November 14, 11:59pm** 
+Elevator pitch draft due **Thursday, December 5, 4:20pm**
 
-In-class Peer Review I  **Thursday, November 16**
+Final written report due **Saturday, December 7, 11:59pm** 
 
-Peer feedback due **Tuesday, November 28, 11:59pm**
-
-Project Work Session 5: **Tuesday, December 5**
-
-Draft of Poster due: **Tuesday, December 5, 11:59pm**
-
-In-class Peer Review II  **Thursday, December 7**
-
-Final written report due **Saturday, December 9, 11:59pm** 
-
-Poster Presentation: **Thursday, December 14, 4:05pm**
+Poster Presentation: **TBD during Exam Week (Dec 9 - 13)**
 
 ## Introduction & grading summary
 
-**TL;DR**: *Pick a dataset and do something with it. That is your 
+**TL;DR**: *Analyze data for social good. That is your 
 final project.*
 
-The purpose of the final project is to apply what you’ve learned throughout the semester to investigate an interesting data-driven research question by analyzing a real-world dataset of your choosing. 
+The purpose of the final project is to apply what you’ve learned throughout the semester to investigate an interesting data-driven question about a social issue you care about. 
 
 The project will be completed in self-assigned teams of 2-3. You should choose a dataset for your project based on your group's interests. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way. 
 
+### Choosing a topic (Project Brainstorm)
+
+Below are some reflection questions to help you identify a topic you might want to explore.
+
++ What are the biggest challenges you and your peers are facing in your lives?
++ What needs are your neighbors facing? What barriers prevent them from flourishing? Consider physical, financial, educational, health, nutritional, transportation, legal, relational, employment, and spiritual needs. Consider Azusa, Los Angeles, California, the U.S., your hometown, and/or another place of significance to you. 
++ What's broken in the world that you would like to see healed?
++ What social or political issue do you want to understand better? 
++ What is a cause you feel inspired to volunteer your time for or donate money towards?
++ What's one dream you have for contributing good to the world? 
+
+You will submit **three** potential topics along with a brief reflection on Canvas by Thursday, September 19. This can help you identify areas of common interest when forming your project team. 
+
 ### Logistics
 
-You should sign up for a team of 2-3 on Canvas no later than **Tuesday, September 26**. 
+You should sign up for a team of 2-3 on Canvas no later than **Tuesday, September 24**. 
 
-The four primary deliverables for the final project are
+The three primary deliverables for the final project are
 
 - A written, reproducible report detailing your analysis
 - An RStudio project repository corresponding to your report
 - A poster presentation during finals week
-- Formal peer review on another team's project
 
 ### Grading summary
 
@@ -60,20 +62,27 @@ The grade breakdown is as follows:
 
 Total                                                   | 100 pts
 --------------------------------------------------------|--------
-**Project proposal**                                    | 5 pts
-**Preliminary EDA**                                     | 5 pts
-**Rough Draft**                                    | 5 pts
-**Written report**                                      | 45 pts
-**Project repo & reproducibility**                      | 10 pts
+**Project brainstorm**                                  | 2 pts
+**Project proposal**                                    | 3 pts
+**Preliminary EDA**                                     | 3 pts
+**Preliminary Data Story**                              | 3 pts
+**Poster Rough Draft**                                  | 3 pts
+**Written Rough Draft**                                 | 3 pts
+**Elevator Pitch Draft**                                | 3 pts
 **Peer feedback**                                       | 5 pts
-**Poster presentation**                                 | 25 pts
+**Written report**                                      | 30 pts
+**Project repo & reproducibility**                      | 15 pts
+**Poster presentation**                                 | 30 pts
 
 
 **<i>Note: No late projects are accepted.</i>**
 
 ## Data sources
 
-In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have **at least 500 observations and at least ten variables (or has been approved by Dr. Fitz)**. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data. 
+In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Your dataset must have **at least 500 observations and at least 8 variables**. The dataset should include a rich mix of categorical, discrete numeric, and continuous numeric data. At least 6 of the variables must be useful and unique explanatory variables. 
+
++ Identifier variables such as “name”, “social security number”, etc. are not useful explanatory variables.
++ If you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique explanatory variables.
 
 **Data sets that can't be used:** 
 
@@ -85,32 +94,43 @@ No two groups can analyze the same dataset, so I encourage you to be creative!
 
 Some resources that may be helpful:
 
-- [R Data Sources for Regression Analysis](https://rfun.library.duke.edu/blog/data-sources-for-regression-analysis/)
-- [FiveThirtyEight data](https://data.fivethirtyeight.com/)
-- [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+- [Los Angeles Data Justice Hub](https://communityengagement.ucla.edu/programs/los-angeles-data-justice-hub/#toggle-id-1-closed)
+-   [Awesome public datasets](https://github.com/awesomedata/awesome-public-datasets)
+-   [Bikeshare data portal](https://www.bikeshare.com/data/)
+-   [CDC](https://www.cdc.gov/datastatistics/)
+-   [Data.gov](https://www.data.gov/)
+-   [Data is Plural](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0)
+-   [Durham Open Data Portal](https://live-durhamnc.opendata.arcgis.com/)
+-   [Edinburgh Open Data](https://edinburghopendata.info/)
+-   [Election Studies](https://electionstudies.org//)
+-   [European Statistics](https://ec.europa.eu/eurostat/)
+-   [CORGIS: The Collection of Really Great, Interesting, Situated Datasets](https://think.cs.vt.edu/corgis/csv/)
+-   [General Social Survey](https://gss.norc.org/)
+-   [Google Dataset Search](https://datasetsearch.research.google.com/)
+-   [Harvard Dataverse](https://dataverse.harvard.edu/)
+-   [International Monetary Fund](https://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42&sId=1479329328660)
+-   [IPUMS survey data from around the world](https://ipums.org/)
+-   [Los Angeles Open Data](https://data.lacity.org/browse)
+-   [NHS Scotland Open Data](https://www.opendata.nhs.scot/)
+-   [NYC OpenData](https://opendata.cityofnewyork.us/)
+-   [Open access to Scotland's official statistics](https://statistics.gov.scot/home)
+-   [Pew Research](https://www.pewresearch.org/download-datasets/)
+-   [PRISM Data Archive Project](https://www.icpsr.umich.edu/icpsrweb/content/ICPSR/fenway.html)
+-   [Statistics Canada](https://www.statcan.gc.ca/en/start)
+-   [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+-   [The National Bureau of Economic Research](https://www.nber.org/research/data?page=1&perPage=50)
+-   [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
+-   [UK Government Data](https://data.gov.uk/)
+-   [UNICEF Data](https://data.unicef.org/)
+-   [United Nations Data](http://data.un.org/)
+-   [United Nations Statistics Division](https://unstats.un.org/UNSDWebsite/)
+-   [US Census Data](https://www.census.gov/data.html)
+-   [US Government Data](https://sctyner.github.io/static/presentations/Misc/GraphicsGroupISU/2018-11-16-us-govt-data.html)
+-   [World Bank Data](https://datacatalog.worldbank.org/home)
+-   [Youth Risk Behavior Surveillance System (YRBSS)](https://chronicdata.cdc.gov/Youth-Risk-Behaviors/DASH-Youth-Risk-Behavior-Surveillance-System-YRBSS/q6p7-56au)
+-   [FRED Economic Data](https://fred.stlouisfed.org/)
 
-
-Additional options:
-
-- [World Health Organization](https://www.who.int/gho/database/en/)
-- [The National Bureau of Economic Research](https://data.nber.org/data/)
-- [International Monetary Fund](https://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42&sId=1479329328660)
-- [General Social Survey](http://gss.norc.org/)
-- [United Nations Data](http://data.un.org/)
-- [United Nations Statistics Division](https://unstats.un.org/home/)
-- [U.K. Data](https://data.gov.uk/)
-- [U.S. Data](https://www.data.gov/)
-- [U.S. Census Data](https://www.census.gov/data.html)
-- [European Statistics](https://ec.europa.eu/eurostat/)
-- [Statistics Canada](https://www.statcan.gc.ca/eng/start)
-- [Pew Research](https://www.pewresearch.org/download-datasets/)
-- [UNICEF](https://data.unicef.org/)
-- [CDC](https://www.cdc.gov/datastatistics/index.html)
-- [World Bank](https://datacatalog.worldbank.org/)
-- [Election Studies](https://electionstudies.org//)
-
-All analyses must be done in RStudio, and your final written report and 
-analysis **must be reproducible**. This means that you must create a Quarto document attached to a RStudio project repository that will create your written report exactly upon rendering.
+All analyses must be done in RStudio, and your final written report and analysis **must be reproducible**. This means that you must create a Quarto document attached to a RStudio project repository that will create your written report exactly upon rendering.
 
 ## Project proposal 
 
@@ -125,13 +145,13 @@ Choose **three** substantially different datasets you are interested in analyzin
 
 - Identify the source of the data, 
 - When and how it was originally collected (by the original data curator, not necessarily how you found the data), and 
-- Provide a brief description of the observations 
+- Provide a brief description of what it contains
 
 ### Research question
 
 - Describe the research topic along with a concise statement of the research question and hypotheses.
 
-### Data set
+### Data glimpse
 
 - Use the `glimpse` function to provide a glimpse of the data set.
 
@@ -139,7 +159,7 @@ Choose **three** substantially different datasets you are interested in analyzin
 
 ### Submission 
 
-Submit the PDF of your proposal on Canvas by midnight on **Tuesday, October 10**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
+Submit the PDF of your proposal on Canvas by midnight on **Tuesday, October 5**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
 
 ### Notes 
 
@@ -150,19 +170,21 @@ Submit the PDF of your proposal on Canvas by midnight on **Tuesday, October 10**
 
 The project proposal will be graded as follows:
 
-Total                                                   | 5 pts
+Total                                                   | 3 pts
 --------------------------------------------------------|-------
-**Data description/background**                                   | 2 pts
-**Research questions**                                  | 2 pts
-**Results**                                             | 1 pts
+**Data description/background**                         | 1 pts
+**Research questions**                                  | 1 pts
+**Data glimpse**                                        | 1 pts
 
 ## Data cleaning & Preliminary EDA
 
-The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. The `cleaning-eda.qmd` file in your RStudio project should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file used for analysis. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. You should submit a zip file with the .Rproj file, the .qmd file, and any relevent data or other supplementary files required to Render your Quarto report.  
+The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. **The `cleaning-eda.qmd` file in your RStudio project should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file to be used for analysis**. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. You should submit a zip file with the .Rproj file, the .qmd file, and any relevent data or other supplementary files required to Render your Quarto report.  
 
 Your cleaning & EDA steps should include:
 
 + Cleaning variable names
+
++ Visualizing each variable individually (or at least 10 identified for analysis if you have a large number), noting any issues or notable features
 
 + Converting to appropriate data types (factors, dates, etc) 
 
@@ -170,24 +192,22 @@ Your cleaning & EDA steps should include:
 
 + Investigating and handle missing data
 
-+ Visualizing each variable individually (or at least 10 if you have a large number), noting any issues or notable features
-
 + Describing your analysis plan for answering your research questions
 
     + What types of visualizations or summary tables will you create?
 
     + What types of models or inference procedures will you run? 
 
-You should save the clean data as a .RDS file. 
+**You should save the clean data as a .RDS file.** 
 
 This part of the project will be graded as follows:
 
-Total                                                   | 5 pts
+Total                                                   | 3 pts
 --------------------------------------------------------|-------
 **Original & cleaned datasets included**                | 1 pt
-**Reproducible data cleaning**                          | 2 pts
+**Reproducible data cleaning**                          | 0.5 pts
 **EDA**                                                 | 1 pt
-**Future analysis plan**                                | 1 pt
+**Future analysis plan**                                | 0.5 pt
 
 ## Rough Draft report 
 

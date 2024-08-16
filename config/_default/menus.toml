@@ -26,13 +26,7 @@
     name = " Canvas"
     weight = 40
 
-[[main]]
-    # pre = "<i class=\"fa fa-check-square\" aria-hidden=\"true\"></i>"
-    url = "https://campuswire.com/p/G7C5D99E0"
-    name = "Campuswire"
-    weight = 50
-    
-    
+
 [[main]]
    # pre = "<i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i>"
     name = "Help"

@@ -74,12 +74,12 @@ country_list <- c("United States", "Ghana", "Mexico", "France")
 ```
 
 ```{r plot-yearly-yes, fig.width=10, warning=FALSE}
-un_votes %>%
-  filter(country %in% country_list) %>%
-  inner_join(un_roll_calls, by = "rcid") %>% 
-  group_by(year = year(date), country) %>%
+un_votes |>
+  filter(country %in% country_list) |>
+  inner_join(un_roll_calls, by = "rcid") |> 
+  group_by(year = year(date), country) |>
   summarize(votes = n(),
-            percent_yes = mean(vote == "yes")) %>%
+            percent_yes = mean(vote == "yes")) |>
   ggplot(mapping = aes(x = year, y = percent_yes, color = country)) +
     geom_line() +
     ylab("% of votes that are 'Yes'") +
@@ -91,14 +91,14 @@ un_votes %>%
 Next, let's see how the voting records have changed over the years on each of the issues.
 
 ```{r plot-yearly-yes-issue, fig.width=10, message = FALSE, warning=FALSE}
-un_votes %>%
-  filter(country %in% c("United States", "France")) %>%
-  inner_join(un_roll_calls, by = "rcid") %>%
-  inner_join(un_roll_call_issues, by = "rcid") %>%
-  group_by(country, year = year(date), issue) %>%
+un_votes |>
+  filter(country %in% c("United States", "France")) |>
+  inner_join(un_roll_calls, by = "rcid") |>
+  inner_join(un_roll_call_issues, by = "rcid") |>
+  group_by(country, year = year(date), issue) |>
   summarize(votes = n(),
-            percent_yes = mean(vote == "yes")) %>%
-  filter(votes > 5) %>%  # Only use records where there are more than 5 votes
+            percent_yes = mean(vote == "yes")) |>
+  filter(votes > 5) |>  # Only use records where there are more than 5 votes
   ggplot(mapping = aes(x = year, y = percent_yes, color = country)) +
     geom_point() +
     geom_smooth(method = "loess", se = FALSE) + 
@@ -135,9 +135,9 @@ un_votes %>%
 Below is a list of countries in the data set:
 
 ```{r}
-un_votes %>% 
-  arrange(country) %>% 
-  select(country) %>%
-  distinct() %>%
+un_votes |> 
+  arrange(country) |> 
+  select(country) |>
+  distinct() |>
   datatable()
 ```

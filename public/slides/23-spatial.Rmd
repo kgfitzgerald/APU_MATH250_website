@@ -123,7 +123,7 @@ Our (new) simple feature object:
 .midi[
 ```{r echo=FALSE}
 nc <- st_read("data/nc_votes.shp", quiet = TRUE)
-nc %>% 
+nc |> 
   select(name, regstrd, voted)
 ```
 ]
@@ -614,7 +614,7 @@ class: center, middle
 ## `select`
 
 ```{r}
-nc %>% 
+nc |> 
   select(name, regstrd, voted)
 ```
 
@@ -623,7 +623,7 @@ nc %>%
 ## `filter`
 
 ```{r}
-nc %>% 
+nc |> 
   filter(regstrd > 100000)
 ```
 
@@ -632,7 +632,7 @@ nc %>%
 ## `summarize`
 
 ```{r}
-nc %>% 
+nc |> 
   summarize(mean_registered  = mean(regstrd),
             mean_voted = median(voted))
 ```
@@ -647,9 +647,9 @@ The geometry is kept until it is deliberated dropped using `st_drop_geometry`.
 --
 
 ```{r}
-nc %>% 
-  select(name, regstrd) %>% 
-  filter(regstrd > 100000) %>% 
+nc |> 
+  select(name, regstrd) |> 
+  filter(regstrd > 100000) |> 
   st_drop_geometry() #<<
 ```
 

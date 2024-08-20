@@ -497,9 +497,9 @@ ggplot(data = mpg, aes(x = manufacturer)) +
 
 
 ```r
-mpg %>%
-  count(manufacturer) %>%
-  mutate(manufacturer = str_to_title(manufacturer)) %>%
+mpg |>
+  count(manufacturer) |>
+  mutate(manufacturer = str_to_title(manufacturer)) |>
   ggplot(aes(x = fct_reorder(manufacturer,n), y = n)) +
   geom_bar(stat = "identity", fill = "steelblue") +
   coord_flip() +
@@ -522,7 +522,7 @@ mpg %>%
 
 ```r
 model <- lm(mpg ~ hp, data = mtcars)
-tidy(model) %>%
+tidy(model) |>
   kable(digits = 3)
 ```
 

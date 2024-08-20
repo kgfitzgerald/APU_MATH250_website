@@ -131,16 +131,16 @@ Is each of the following a dataset or a summary table?
 .midi[
 .pull-left[
 ```{r echo=FALSE}
-starwars %>%
+starwars |>
   select(name, height, mass)
 ```
 ]
 .pull-right[
 ```{r echo=FALSE}
-starwars %>%
-  group_by(gender) %>%
+starwars |>
+  group_by(gender) |>
   summarize(
-    avg_height = mean(height, na.rm = TRUE) %>% round(2)
+    avg_height = mean(height, na.rm = TRUE) |> round(2)
   )
 ```
 ]
@@ -151,7 +151,7 @@ starwars %>%
 ## Displaying data
 
 ```{r eval=FALSE}
-starwars %>%
+starwars |>
   select(name, height, mass)
 ```
 
@@ -162,10 +162,10 @@ starwars %>%
 ## Summarizing data
 
 ```{r eval=FALSE}
-starwars %>%
-  group_by(gender) %>%
+starwars |>
+  group_by(gender) |>
   summarize(
-    avg_height = mean(height, na.rm = TRUE) %>% round(2)
+    avg_height = mean(height, na.rm = TRUE) |> round(2)
   )
 ```
 
@@ -252,7 +252,7 @@ View only the `lead_time` (number of days between booking and arrival date):
 --
 .pull-left[
 ```{r}
-hotels %>%
+hotels |>
   select(lead_time)
 ```
 ]
@@ -276,7 +276,7 @@ View only the `hotel` type and `lead_time`:
 
 .pull-left[
 ```{r}
-hotels %>%
+hotels |>
   select(hotel, lead_time)
 ```
 ]
@@ -294,7 +294,7 @@ What if we wanted to select these columns, and then arrange the data in descendi
 .pull-left[
 .vocab[Select:]
 ```{r}
-hotels %>%
+hotels |>
   select(hotel, lead_time)
 ```
 ]
@@ -303,8 +303,8 @@ hotels %>%
 .pull-right[
 .vocab[Select, then arrange:]
 ```{r}
-hotels %>%
-  select(hotel, lead_time) %>%
+hotels |>
+  select(hotel, lead_time) |>
   arrange(desc(lead_time))
 ```
 ]
@@ -329,8 +329,8 @@ In programming, a pipe is a technique for passing information from one process t
 .pull-right[
 .small[
 ```{r}
-hotels %>% #<<
-  select(hotel, lead_time) %>%
+hotels |> #<<
+  select(hotel, lead_time) |>
   arrange(desc(lead_time))
 ```
 ]
@@ -349,8 +349,8 @@ In programming, a pipe is a technique for passing information from one process t
 .pull-right[
 .small[
 ```{r}
-hotels %>%
-  select(hotel, lead_time) %>% #<<
+hotels |>
+  select(hotel, lead_time) |> #<<
   arrange(desc(lead_time))
 ```
 ]
@@ -370,8 +370,8 @@ In programming, a pipe is a technique for passing information from one process t
 .pull-right[
 .small[
 ```{r}
-hotels %>%
-  select(hotel, lead_time) %>% 
+hotels |>
+  select(hotel, lead_time) |> 
   arrange(desc(lead_time)) #<<
 ```
 ]
@@ -419,9 +419,9 @@ park(drive(start_car(find("keys")), to = "work"))
 structure:
   - Read the pipe as "and then"
 ```{r eval=FALSE}
-find("keys") %>%
-  start_car() %>%
-  drive(to = "work") %>%
+find("keys") |>
+  start_car() |>
+  drive(to = "work") |>
   park()
 ```
 
@@ -435,8 +435,8 @@ Use the dot to
 - use the previous result for multiple arguments
 
 ```{r fig.height=1.8, fig.width = 3.75}
-hotels %>%
-  filter(hotel == "Resort Hotel") %>%
+hotels |>
+  filter(hotel == "Resort Hotel") |>
   lm(adr ~ lead_time, data = .) #<<
 ```
 
@@ -458,7 +458,7 @@ class: middle
 ## `select` to keep variables
 
 ```{r}
-hotels %>%
+hotels |>
   select(hotel, lead_time) #<<
 ```
 
@@ -468,7 +468,7 @@ hotels %>%
 
 .small[
 ```{r}
-hotels %>%
+hotels |>
   select(-agent) #<<
 ```
 ]
@@ -478,7 +478,7 @@ hotels %>%
 ## `select` a range of variables
 
 ```{r}
-hotels %>%
+hotels |>
   select(hotel:arrival_date_month) #<<
 ```
 
@@ -488,15 +488,15 @@ hotels %>%
 
 .pull-left[
 ```{r}
-hotels %>%
-  select(adults, children, babies) %>%
+hotels |>
+  select(adults, children, babies) |>
   arrange(babies) #<<
 ```
 ]
 .pull-right[
 ```{r}
-hotels %>%
-  select(adults, children, babies) %>%
+hotels |>
+  select(adults, children, babies) |>
   arrange(desc(babies)) #<<
 ```
 ]
@@ -508,7 +508,7 @@ hotels %>%
 .midi[
 ```{r}
 # first five
-hotels %>%
+hotels |>
   slice(1:5) #<<
 ```
 ]
@@ -525,9 +525,9 @@ certain lines of code while debugging.
 
 .small[
 ```{r}
-hotels %>%
+hotels |>
   # slice the first five rows  # this line is a comment
-  #select(hotel) %>%           # this one doesn't run
+  #select(hotel) |>           # this one doesn't run
   slice(1:5)                   # this line runs
 ```
 ]
@@ -540,7 +540,7 @@ hotels %>%
 ```{r}
 # last five
 last_row <- nrow(hotels) # nrow() gives the number of rows in a data frame
-hotels %>%
+hotels |>
   slice((last_row - 4):last_row) #<<
 ```
 ]
@@ -552,7 +552,7 @@ hotels %>%
 .midi[
 ```{r}
 # bookings in City Hotels
-hotels %>%
+hotels |>
   filter(hotel == "City Hotel") #<<
 ````
 ]
@@ -562,11 +562,11 @@ hotels %>%
 ## `filter` for many conditions at once
 
 ```{r}
-hotels %>%
+hotels |>
   filter( 
     adults == 0,     #<<
     children >= 1    #<<
-    ) %>% 
+    ) |> 
   select(adults, babies, children)
 ```
 
@@ -576,11 +576,11 @@ hotels %>%
 
 ```{r}
 # bookings with no adults and some children or babies in the room
-hotels %>%
+hotels |>
   filter( 
     adults == 0,     
     children >= 1 | babies >= 1     # | means or  #<<
-    ) %>%
+    ) |>
   select(adults, babies, children)
 ```
 
@@ -620,15 +620,15 @@ options(dplyr.print_max = 20)
 .small[
 .pull-left[
 ```{r}
-hotels %>% 
-  distinct(market_segment) %>% #<<
+hotels |> 
+  distinct(market_segment) |> #<<
   arrange(market_segment)
 ```
 ]
 .pull-right[
 ```{r}
-hotels %>% 
-  distinct(hotel, market_segment) %>% #<<
+hotels |> 
+  distinct(hotel, market_segment) |> #<<
   arrange(hotel, market_segment)
 ```
 ]
@@ -641,7 +641,7 @@ hotels %>%
 .pull-left[
 ```{r}
 # alphabetical order by default
-hotels %>%
+hotels |>
   count(market_segment) #<<
 ```
 ]
@@ -649,7 +649,7 @@ hotels %>%
 .pull-right[
 ```{r}
 # descending frequency order
-hotels %>%
+hotels |>
   count(market_segment, 
         sort = TRUE) #<<
 ```
@@ -662,8 +662,8 @@ hotels %>%
 .pull-left[
 ```{r}
 # ascending frequency order
-hotels %>%
-  count(market_segment) %>%
+hotels |>
+  count(market_segment) |>
   arrange(n) #<<
 ```
 ]
@@ -671,8 +671,8 @@ hotels %>%
 ```{r}
 # descending frequency order
 # just like adding sort = TRUE
-hotels %>%
-  count(market_segment) %>%
+hotels |>
+  count(market_segment) |>
   arrange(desc(n)) #<<
 ```
 ]
@@ -682,7 +682,7 @@ hotels %>%
 ## `count` for multiple variables
 
 ```{r}
-hotels %>%
+hotels |>
   count(hotel, market_segment) #<<
 ```
 
@@ -694,14 +694,14 @@ hotels %>%
 .pull-left[
 ```{r}
 # hotel type first
-hotels %>%
+hotels |>
   count(hotel, market_segment) #<<
 ```
 ]
 .pull-right[
 ```{r}
 # market segment first
-hotels %>%
+hotels |>
   count(market_segment, hotel) #<<
 ```
 ]
@@ -718,9 +718,9 @@ class: middle, center
 ## `mutate` to add a new variable
 
 ```{r}
-hotels %>%
-  mutate(little_ones = children + babies) %>% #<<
-  select(children, babies, little_ones) %>%
+hotels |>
+  mutate(little_ones = children + babies) |> #<<
+  select(children, babies, little_ones) |>
   arrange(desc(little_ones))
 ```
 
@@ -734,24 +734,24 @@ hotels %>%
 .pull-left[
 ```{r}
 # Resort Hotel
-hotels %>%
-  mutate(little_ones = children + babies) %>%
+hotels |>
+  mutate(little_ones = children + babies) |>
   filter(
     little_ones >= 1,
     hotel == "Resort Hotel"
-    ) %>%
+    ) |>
   select(hotel, little_ones)
 ```
 ]
 .pull-right[
 ```{r}
 # City Hotel
-hotels %>%
-  mutate(little_ones = children + babies) %>%
+hotels |>
+  mutate(little_ones = children + babies) |>
   filter(
     little_ones > 1,
     hotel == "City Hotel"
-    )  %>%
+    )  |>
   select(hotel, little_ones)
 ```
 ]
@@ -765,9 +765,9 @@ What is happening in the following chunk?
 
 .midi[
 ```{r}
-hotels %>%
-  mutate(little_ones = children + babies) %>%
-  count(hotel, little_ones) %>%
+hotels |>
+  mutate(little_ones = children + babies) |>
+  count(hotel, little_ones) |>
   mutate(prop = n / sum(n))
 ```
 ]
@@ -778,7 +778,7 @@ hotels %>%
 
 ```{r}
 # mean average daily rate for all bookings
-hotels %>%
+hotels |>
   summarise(mean_adr = mean(adr)) #<<
 ```
 
@@ -802,7 +802,7 @@ column, but that's not recommended!
 
 
 ```{r}
-hotels %>%
+hotels |>
   summarise(mean(adr))
 ```
 ]
@@ -811,7 +811,7 @@ hotels %>%
 `r emo::ji("white_check_mark")`
 
 ```{r}
-hotels %>%
+hotels |>
   summarise(mean_adr = mean(adr))
 ```
 ]
@@ -822,8 +822,8 @@ hotels %>%
 
 ```{r}
 # mean average daily rate for all booking at city and resort hotels
-hotels %>%
-  group_by(hotel) %>% #<<
+hotels |>
+  group_by(hotel) |> #<<
   summarise(mean_adr =  mean(adr))
 ```
 
@@ -835,14 +835,14 @@ The following two give the same result, so `count` is simply short for `group_by
 
 .pull-left[
 ```{r}
-hotels %>%
-  group_by(hotel) %>%
+hotels |>
+  group_by(hotel) |>
   summarise(n = n())
 ```
 ]
 .pull-right[
 ```{r}
-hotels %>%
+hotels |>
   count(hotel)
 ```
 ]
@@ -854,7 +854,7 @@ hotels %>%
 `summarise` can be used for multiple summary statistics as well
 
 ```{r}
-hotels %>%
+hotels |>
   summarise(
     min_adr = min(adr),
     mean_adr = mean(adr),

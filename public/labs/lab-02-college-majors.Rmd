@@ -164,7 +164,7 @@ variable. By default, `arrange()` sorts in ascending order, which is what we
 want here -- we're interested in the major with the *lowest* unemployment rate.
 
 ```{r lowest-unemp}
-college_recent_grads %>%
+college_recent_grads |>
   arrange(unemployment_rate)
 ```
 
@@ -177,12 +177,12 @@ in which order:
 
 ```{marginfigure}
 Note how easily we expanded our code with adding another step to our pipeline, 
-with the pipe operator: `%>%`.
+with the pipe operator: `|>`.
 ```
 
 ```{r lowest-unemp-select}
-college_recent_grads %>%
-  arrange(unemployment_rate) %>%
+college_recent_grads |>
+  arrange(unemployment_rate) |>
   select(rank, major, unemployment_rate)
 ```
 
@@ -199,9 +199,9 @@ how you would do both of these:
   variable, by `round`ing it to `4` decimal places.
   
 ```{r}
-college_recent_grads %>%
-  arrange(unemployment_rate) %>%
-  select(rank, major, unemployment_rate) %>%
+college_recent_grads |>
+  arrange(unemployment_rate) |>
+  select(rank, major, unemployment_rate) |>
   mutate(unemployment_rate = round(unemployment_rate, digits = 4))
 ```
 
@@ -234,8 +234,8 @@ order.
 ```
 
 ```{r}
-college_recent_grads %>%
-  arrange(desc(unemployment_rate)) %>%
+college_recent_grads |>
+  arrange(desc(unemployment_rate)) |>
   select(rank, major, unemployment_rate)
 ```
 
@@ -298,7 +298,7 @@ We can also calculate summary statistics for this distribution using the
 `summarise()` function:
 
 ```{r}
-college_recent_grads %>%
+college_recent_grads |>
   summarise(min  = min(median), 
             max  = max(median),
             mean = mean(median), 
@@ -334,9 +334,9 @@ to quantify the typical median income.
    the correct order. 
    
 ```{r eval=FALSE}
-college_recent_grads %>%
-  group_by(major_category) %>%
-  summarise(___ = ___(median)) %>%
+college_recent_grads |>
+  group_by(major_category) |>
+  summarise(___ = ___(median)) |>
   arrange(___)
 ```
 
@@ -347,7 +347,7 @@ college_recent_grads %>%
    in row 1 of the resulting data frame.
    
 ```{r}
-college_recent_grads %>%
+college_recent_grads |>
   count(major_category)
 ```
 
@@ -370,7 +370,7 @@ We can use this to create a new variable in our data frame indicating whether a
 major is STEM or not.
 
 ```{r}
-college_recent_grads <- college_recent_grads %>%
+college_recent_grads <- college_recent_grads |>
   mutate(major_type = ifelse(major_category %in% stem_categories, "stem", "not stem"))
 ```
 
@@ -407,7 +407,7 @@ the conditions that the major type is STEM and the median salary is less than
 \$36,000.
 
 ```{r}
-college_recent_grads %>%
+college_recent_grads |>
   filter(
     major_type == "stem",
     median < 36000

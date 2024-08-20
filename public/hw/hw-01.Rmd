@@ -88,7 +88,7 @@ Remember that continuing to develop a sound workflow for reproducible data analy
     - `courage_home`: whether or not Courage was the home team (you will use this variable later on). 
 
 ```{r start-code, eval =  FALSE}
-courage <- courage %>% 
+courage <- courage |> 
   mutate(courage_points = if_else(home_team == "NC", home_pts, away_pts), 
          courage_home = if_else(home_team == "NC", "Home", "Away"))
 ```

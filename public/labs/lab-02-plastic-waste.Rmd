@@ -103,7 +103,7 @@ ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
 One country stands out as an unusual observation at the top of the distribution. One way of identifying this country is to filter the data for countries where plastic waste per capita is greater than 3.5 kg/person. *Note: We will talk about the `filter` function in class soon!*
 
 ```{r plastic_waste_per_cap-max, eval=TRUE}
-plastic_waste %>%
+plastic_waste |>
   filter(plastic_waste_per_cap > 3.5)
 ```
 
@@ -197,7 +197,7 @@ Hint: The colors are from the viridis color palette. Take a look at the function
 
 
 ```{r eval = F}
-plastic_waste <- plastic_waste %>%
+plastic_waste <- plastic_waste |>
   filter(plastic_waste_per_cap < 3)
 ```
 

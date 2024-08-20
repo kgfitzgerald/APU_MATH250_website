@@ -65,7 +65,7 @@ We'll use the following variables in the analysis:
 - `num_char` - Number of characters in the email  (in thousands)
 
 ```{r}
-email <- read_csv("data/email.csv") %>%
+email <- read_csv("data/email.csv") |>
     mutate(spam = factor(spam))
 ```
 

@@ -39,32 +39,32 @@ get_pkgdown_urls <-
     }
     
     topic_info <-
-      purrr::map(pkg_name, ~ pkgdown::as_pkgdown(fs::path(pth, .x))) %>%
-      purrr::map( ~ pluck(.x, "topics")) %>%
-      purrr::map2(pkg_name, ~ .x %>% mutate(pkg = .y)) %>%
-      bind_rows()  %>%
-      unnest(cols = c(alias)) %>%
-      full_join(x, by = "pkg") %>% 
+      purrr::map(pkg_name, ~ pkgdown::as_pkgdown(fs::path(pth, .x))) |>
+      purrr::map( ~ pluck(.x, "topics")) |>
+      purrr::map2(pkg_name, ~ .x |> mutate(pkg = .y)) |>
+      bind_rows()  |>
+      unnest(cols = c(alias)) |>
+      full_join(x, by = "pkg") |> 
       mutate(url = map2_chr(base_url, file_out, paste0),
-             topic = alias) %>%
-      dplyr::select(topic, alias, title, url, pkg) %>%
-      mutate(title = str_replace(title, "\\n", " ")) %>%
-      dplyr::filter(str_detect(topic, fltr)) %>%
-      na.omit() %>%
+             topic = alias) |>
+      dplyr::select(topic, alias, title, url, pkg) |>
+      mutate(title = str_replace(title, "\\n", " ")) |>
+      dplyr::filter(str_detect(topic, fltr)) |>
+      na.omit() |>
       dplyr::filter(
         str_detect(topic, "reexport", negate = TRUE),
         str_detect(topic, "-package$", negate = TRUE),
         str_detect(title, "^Internal", negate = TRUE),
         topic != "_PACKAGE",
         title != "Pipe",
-        topic != "%>%",
+        topic != "|>",
         title != "Objects exported from other packages"
-      ) %>%
-      dplyr::arrange(topic, pkg) %>%
+      ) |>
+      dplyr::arrange(topic, pkg) |>
       mutate(topic = paste0("<a href='", url, 
                             "'  target='_blank'><tt>", 
                             topic, "</tt></a>")
-      ) %>%
+      ) |>
       dplyr::select(topic, package = pkg, title, alias)
     
     topic_info

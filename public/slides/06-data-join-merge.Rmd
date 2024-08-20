@@ -123,7 +123,7 @@ skim(fisheries) #skimr package
 ## Some summary stats
 
 ```{r}
-fisheries %>%
+fisheries |>
   summarise(
     mean_cap = mean(capture),
     mean_aqc = mean(aquaculture),
@@ -144,7 +144,7 @@ well, that was boring...
 ## A new approach!
 
 ```{r}
-fisheries %>%
+fisheries |>
   summarise(across(capture:total, mean))
 ```
 
@@ -185,7 +185,7 @@ Filter out countries whose total harvest was less than 100,000 tons since they
 are not included in the visualization:
 
 ```{r}
-fisheries <- fisheries %>%
+fisheries <- fisheries |>
   filter(total >= 100000)
 
 fisheries
@@ -201,7 +201,7 @@ class: middle, center
 
 .pull-left[
 ```{r}
-fisheries %>% select(country)
+fisheries |> select(country)
 ```
 ]
 .pull-right[
@@ -349,7 +349,7 @@ corresponding continents. Which join function should we use?
 
 .pull-left[
 ```{r}
-fisheries %>% select(country)
+fisheries |> select(country)
 ```
 ]
 .pull-right[
@@ -377,7 +377,7 @@ Hint:
 - Variables in the original fisheries dataset:
 
 ```{r echo=FALSE}
-fisheries %>% select(-continent) %>% names()
+fisheries |> select(-continent) |> names()
 ```
 
 - Variables in the continents dataset:
@@ -392,7 +392,7 @@ names(continents)
 ## Check the data
 
 ```{r}
-fisheries %>%
+fisheries |>
   filter(is.na(continent))
 ```
 
@@ -402,7 +402,7 @@ fisheries %>%
 
 .small[
 ```{r}
-fisheries <- fisheries %>%
+fisheries <- fisheries |>
   mutate(continent = case_when(
     country == "Democratic Republic of the Congo" ~ "Africa",
     country == "Hong Kong"                        ~ "Asia",
@@ -420,7 +420,7 @@ options(width=90)
 ]
 
 ```{r}
-fisheries %>%
+fisheries |>
   filter(is.na(continent))
 ```
 
@@ -431,7 +431,7 @@ What does the following code do?
 ]
 
 ```{r eval=FALSE}
-fisheries %>%
+fisheries |>
   mutate(aquaculture_perc = aquaculture / total)
 ```
 
@@ -465,11 +465,11 @@ class: middle, center
 ---
 
 ```{r include=FALSE}
-fisheries <- fisheries %>%
+fisheries <- fisheries |>
   mutate(aquaculture_perc = aquaculture / total)
 
-fisheries_summary <- fisheries %>%
-  group_by(continent) %>%
+fisheries_summary <- fisheries |>
+  group_by(continent) |>
   summarise(
     min_ap  = min(aquaculture_perc),
     mean_ap = mean(aquaculture_perc),

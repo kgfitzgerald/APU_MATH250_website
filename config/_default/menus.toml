@@ -41,11 +41,6 @@
     
 
 [[main]]
-    url = "https://rstudio.cloud"
-    name = "<i class=\"fab fa-r-project fa-lg\"></i>"
-    weight = 80
-    
-[[main]]
     url = "https://github.com/kgfitzgerald/APU_MATH250_website"
     name  = "<i class='fab fa-github fa-lg'></i>"
     weight = 90

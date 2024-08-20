@@ -139,7 +139,7 @@ class: middle
 
 .pull-left[
 - The **rvest** package makes basic processing and manipulation of HTML data straight forward
-- It's designed to work with pipelines built with `%>%`
+- It's designed to work with pipelines built with `|>`
 ]
 .pull-right[
 ```{r echo=FALSE,out.width=230,fig.align="right"}
@@ -235,7 +235,7 @@ Let's extract the highlighted component below.
 
 .midi[
 ```{r}
-h1_nodes <-page %>%
+h1_nodes <-page |>
   html_nodes(css = "h1")
 h1_nodes
 ```
@@ -266,7 +266,7 @@ Let's extract "Using rvest" and `h1`.
 .pull-left[
 .midi[
 ```{r}
-h1_nodes %>% 
+h1_nodes |> 
   html_text()
 ```
 ]
@@ -275,7 +275,7 @@ h1_nodes %>%
 .pull-right[
 .midi[
 ```{r}
-h1_nodes %>% 
+h1_nodes |> 
   html_name()
 ```
 ]
@@ -378,8 +378,8 @@ page <- read_html("http://www.imdb.com/chart/top")
 
 .small[
 ```{r message=FALSE, cache=TRUE}
-titles <- page %>%
-  html_nodes(".titleColumn a") %>%
+titles <- page |>
+  html_nodes(".titleColumn a") |>
   html_text()
 ```
 ]
@@ -388,11 +388,11 @@ titles <- page %>%
 
 .small[
 ```{r message=FALSE, cache=TRUE}
-years <- page %>%
-  html_nodes(".secondaryInfo") %>%
-  html_text() %>%
-  str_replace("\\(", "") %>% # remove (
-  str_replace("\\)", "") %>% # remove )
+years <- page |>
+  html_nodes(".secondaryInfo") |>
+  html_text() |>
+  str_replace("\\(", "") |> # remove (
+  str_replace("\\)", "") |> # remove )
   as.numeric()
 ```
 ]
@@ -401,9 +401,9 @@ years <- page %>%
 
 .small[
 ```{r message=FALSE, cache=TRUE}
-scores <- page %>%
-  html_nodes("#main strong") %>%
-  html_text() %>%
+scores <- page |>
+  html_nodes("#main strong") |>
+  html_text() |>
   as.numeric()
 ```
 ]
@@ -426,7 +426,7 @@ imdb_top_250
 ---
 .small[
 ```{r}
-imdb_top_250 %>%
+imdb_top_250 |>
   DT::datatable(options(list(dom = "p"))) #<<
 ```
 ]
@@ -451,7 +451,7 @@ glimpse(imdb_top_250)
 
 .midi[
 ```{r}
-imdb_top_250 <- imdb_top_250 %>%
+imdb_top_250 <- imdb_top_250 |>
   mutate(rank = 1:nrow(imdb_top_250))
 ```
 ]
@@ -460,7 +460,7 @@ imdb_top_250 <- imdb_top_250 %>%
 
 .small[
 ```{r}
-imdb_top_250 %>%
+imdb_top_250 |>
   DT::datatable(options(list(dom = "p")), height = 350)
 ```
 ]
@@ -477,7 +477,7 @@ How would you go about answering this question: Which 1995 movies made the list?
 
 .midi[
 ```{r}
-imdb_top_250 %>% 
+imdb_top_250 |> 
   filter(year == 1995)
 ```
 ]
@@ -494,10 +494,10 @@ How would you go about answering this question: Which years have the most movies
 
 .midi[
 ```{r}
-imdb_top_250 %>% 
-  group_by(year) %>%
-  summarise(total = n()) %>%
-  arrange(desc(total)) %>%
+imdb_top_250 |> 
+  group_by(year) |>
+  summarise(total = n()) |>
+  arrange(desc(total)) |>
   head(5)
 ```
 ]
@@ -516,9 +516,9 @@ How would you go about creating this visualization: Visualize the average yearly
 
 .panel[.panel-name[Code]
 ```{r imdb-plot, fig.show = "hide"}
-imdb_top_250 %>% 
-  group_by(year) %>%
-  summarise(avg_score = mean(score)) %>%
+imdb_top_250 |> 
+  group_by(year) |>
+  summarise(avg_score = mean(score)) |>
   ggplot(aes(y = avg_score, x = year)) +
     geom_point() +
     geom_smooth(method = "lm") +

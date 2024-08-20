@@ -103,7 +103,7 @@ organ_donor <- tibble(
 ```
 
 ```{r}
-organ_donor %>% 
+organ_donor |> 
   count(outcome)
 ```
 
@@ -282,7 +282,7 @@ complications?
 
 ```{r}
 glimpse(organ_donor)
-organ_donor %>%
+organ_donor |>
   count(outcome)
 ```
 
@@ -351,12 +351,12 @@ We need a way to automate this process!
 
 .midi[
 ```{r}
-null_dist <- organ_donor %>%
-  specify(response = outcome, success = "complication") %>% 
+null_dist <- organ_donor |>
+  specify(response = outcome, success = "complication") |> 
   hypothesize(null = "point", 
               p = c("complication" = 0.10, "no complication" = 0.90) 
-              ) %>% 
-  generate(reps = 100, type = "simulate") %>% 
+              ) |> 
+  generate(reps = 100, type = "simulate") |> 
   calculate(stat = "prop")
 ```
 ]
@@ -368,12 +368,12 @@ null_dist <- organ_donor %>%
 
 .midi[
 ```{r}
-null_dist <- organ_donor %>%
-  specify(response = outcome, success = "complication") %>% #<<
+null_dist <- organ_donor |>
+  specify(response = outcome, success = "complication") |> #<<
   hypothesize(null = "point", 
               p = c("complication" = 0.10, "no complication" = 0.90) 
-              ) %>% 
-  generate(reps = 100, type = "simulate") %>% 
+              ) |> 
+  generate(reps = 100, type = "simulate") |> 
   calculate(stat = "prop")
 ```
 ]
@@ -388,12 +388,12 @@ null_dist <- organ_donor %>%
 
 .midi[
 ```{r}
-null_dist <- organ_donor %>%
-  specify(response = outcome, success = "complication") %>% 
+null_dist <- organ_donor |>
+  specify(response = outcome, success = "complication") |> 
   hypothesize(null = "point", #<<
               p = c("complication" = 0.10, "no complication" = 0.90) #<<
-              ) %>% #<< 
-  generate(reps = 100, type = "simulate") %>% 
+              ) |> #<< 
+  generate(reps = 100, type = "simulate") |> 
   calculate(stat = "prop")
 ```
 ]
@@ -410,12 +410,12 @@ choose **`"point"`**
 
 .midi[
 ```{r}
-null_dist <- organ_donor %>%
-  specify(response = outcome, success = "complication") %>% 
+null_dist <- organ_donor |>
+  specify(response = outcome, success = "complication") |> 
   hypothesize(null = "point", 
               p = c("complication" = 0.10, "no complication" = 0.90) 
-              ) %>% 
-  generate(reps = 100, type = "simulate") %>%  #<<
+              ) |> 
+  generate(reps = 100, type = "simulate") |>  #<<
   calculate(stat = "prop")
 ```
 ]
@@ -430,12 +430,12 @@ null_dist <- organ_donor %>%
 
 .midi[
 ```{r}
-null_dist <- organ_donor %>%
-  specify(response = outcome, success = "complication") %>% 
+null_dist <- organ_donor |>
+  specify(response = outcome, success = "complication") |> 
   hypothesize(null = "point", 
               p = c("complication" = 0.10, "no complication" = 0.90) 
-              ) %>% 
-  generate(reps = 100, type = "simulate") %>%  
+              ) |> 
+  generate(reps = 100, type = "simulate") |>  
   calculate(stat = "prop") #<<
 ```
 ]
@@ -449,12 +449,12 @@ null_dist <- organ_donor %>%
 
 .midi[
 ```{r}
-null_dist <- organ_donor %>% #<<
-  specify(response = outcome, success = "complication") %>% 
+null_dist <- organ_donor |> #<<
+  specify(response = outcome, success = "complication") |> 
   hypothesize(null = "point", 
               p = c("complication" = 0.10, "no complication" = 0.90) 
-              ) %>% 
-  generate(reps = 100, type = "simulate") %>%  
+              ) |> 
+  generate(reps = 100, type = "simulate") |>  
   calculate(stat = "prop") 
 ```
 ]
@@ -462,7 +462,7 @@ null_dist <- organ_donor %>% #<<
 --
 
 ```{r echo=FALSE}
-null_dist %>% 
+null_dist |> 
   mutate(
     replicate = as.numeric(replicate),
     stat = round(stat, 3)
@@ -509,8 +509,8 @@ ggplot(data = null_dist, mapping = aes(x = stat)) +
 ## Calculating the p-value, directly
 
 ```{r}
-null_dist %>%
-  filter(stat <= (3/62)) %>%
+null_dist |>
+  filter(stat <= (3/62)) |>
   summarise(p_value = n()/nrow(null_dist))
 ```
 

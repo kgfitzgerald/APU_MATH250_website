@@ -102,7 +102,7 @@ The code to reorder levels for `indus` is below. Use this code to make `indus` a
 
 
 ```{r eval = F}
-gss <- gss %>%
+gss <- gss |>
   mutate(indus = factor(indus, levels = c("Not dangerous", "Somewhat dangerous", 
                                           "Very dangerous", 
                                           "Extremely dangerous")))

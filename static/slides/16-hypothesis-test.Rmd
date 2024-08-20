@@ -454,7 +454,7 @@ example, we use the sample proportion, $\bar{x} = 76.6$.
 ```{r}
 asheville <- read_csv("data/asheville.csv")
 
-asheville %>% 
+asheville |> 
   summarize(mean_price = mean(ppg))
 ```
 
@@ -549,9 +549,9 @@ ggplot(temp, aes(x = ppg)) +
 set.seed(12345)
 library(infer)
 
-boot_means <- asheville %>% 
-  specify(response = ppg) %>% 
-  generate(reps = 5000, type = "bootstrap") %>% 
+boot_means <- asheville |> 
+  specify(response = ppg) |> 
+  generate(reps = 5000, type = "bootstrap") |> 
   calculate(stat = "mean")
 
 ggplot(data = boot_means, aes(stat)) +
@@ -572,7 +572,7 @@ Asheville area Airbnbs, but remember that in the hypothesis testing paradigm,
 we must assess our observed evidence *under the assumption that* $H_0$ *is true*.
 
 ```{r, eval = T}
-boot_means %>% 
+boot_means |> 
   summarize(mean(stat))
 ```
 
@@ -588,9 +588,9 @@ Where should the bootstrap distribution of means be centered under $H_0$?
 set.seed(12345)
 library(infer)
 
-boot_means <- asheville %>% 
-  specify(response = ppg) %>% 
-  generate(reps = 5000, type = "bootstrap") %>% 
+boot_means <- asheville |> 
+  specify(response = ppg) |> 
+  generate(reps = 5000, type = "bootstrap") |> 
   calculate(stat = "mean")
 
 ggplot(data = boot_means, aes(stat)) +

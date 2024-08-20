@@ -97,7 +97,7 @@ See [*Introduction to the viridis color maps*](https://cran.r-project.org/web/pa
 7. For this exercise, you should begin with the data wrangling code below. We will learn more about data wrangling code next week. 
 
 ```{r hint, eval = FALSE}
-midwest %>%
+midwest |>
   mutate(metro = ifelse(inmetro == 1, "Yes", "No"))
 ```
 

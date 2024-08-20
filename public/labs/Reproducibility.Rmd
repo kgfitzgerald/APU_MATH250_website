@@ -46,9 +46,9 @@ num_reps <- 100
 
 
 ```{r example_analysis}
-boot_dist <- diamonds %>%
-  infer::specify(response = price) %>%
-  infer::generate(reps=num_reps, type = "bootstrap") %>%
+boot_dist <- diamonds |>
+  infer::specify(response = price) |>
+  infer::generate(reps=num_reps, type = "bootstrap") |>
   infer::calculate(stat="mean")
 ```
 

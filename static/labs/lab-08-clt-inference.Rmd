@@ -172,7 +172,7 @@ We already know $\bar{x}$ and $\frac{s}{\sqrt{n}}$, so let's focus on the calcul
 ```
 
 ```{r eval= F}
-burritos %>%
+burritos |>
   t_test(response = _____, 
          alternative = "______", 
          mu = ______, 
@@ -189,10 +189,10 @@ The results should be the same as the calculations from Exercise 8.
 
 
 ```{r eval= F}
-burritos %>%
+burritos |>
   t_test(response = _____, 
          conf_int = TRUE, 
-         conf_level = _____) %>%
+         conf_level = _____) |>
   select(lower_ci, upper_ci)
 ```
 

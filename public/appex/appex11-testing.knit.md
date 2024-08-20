@@ -31,12 +31,12 @@ $$H_0: p = 0.1 \text{ vs }H_a: p \neq 0.1$$
 
 
 ```r
-null_dist <- organ_donor %>%
-  specify(response = outcome, success = "complication") %>% #<<
+null_dist <- organ_donor |>
+  specify(response = outcome, success = "complication") |> #<<
   hypothesize(null = "point", 
               p = c("complication" = 0.10, "no complication" = 0.90) 
-              ) %>% 
-  generate(reps = 100, type = "simulate") %>% 
+              ) |> 
+  generate(reps = 100, type = "simulate") |> 
   calculate(stat = "prop")
 ```
 
@@ -44,8 +44,8 @@ null_dist <- organ_donor %>%
 
 
 ```r
-null_dist %>%
-  filter(stat <= (3/62)) %>%
+null_dist |>
+  filter(stat <= (3/62)) |>
   summarise(p_value = n()/nrow(null_dist))
 ```
 
@@ -100,10 +100,10 @@ set.seed(092120)
 
 
 ```r
-#null_dist <- asheville %>%
-  #specify(response = ______) %>%
-  #hypothesize(null = ______, mu = ______) %>%
-  #generate(reps = 100, type = "bootstrap") %>%
+#null_dist <- asheville |>
+  #specify(response = ______) |>
+  #hypothesize(null = ______, mu = ______) |>
+  #generate(reps = 100, type = "bootstrap") |>
   #calculate(stat = _____)
 ```
 
@@ -113,15 +113,15 @@ Use the null distribution from Exercise 2 to calculate the p-value.
 
 
 ```r
-mean_ppg <- asheville %>% 
-  summarise(mean_ppg = mean(ppg)) %>%
+mean_ppg <- asheville |> 
+  summarise(mean_ppg = mean(ppg)) |>
   pull()
 ```
 
 
 ```r
-#null_dist %>%
-  #filter(______) %>%
+#null_dist |>
+  #filter(______) |>
   #summarise(p_value = ______)
 ```
 

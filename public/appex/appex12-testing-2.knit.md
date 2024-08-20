@@ -68,17 +68,17 @@ set.seed(092320)
 
 
 ```r
-null_dist <- asheville %>%
-  specify(response = ppg) %>%
-  hypothesize(null = "point", mu = 80) %>%
-  generate(reps = 1000, type = "bootstrap") %>%
+null_dist <- asheville |>
+  specify(response = ppg) |>
+  hypothesize(null = "point", mu = 80) |>
+  generate(reps = 1000, type = "bootstrap") |>
   calculate(stat = "mean")
 ```
 
 
 ```r
-mean_ppg <- asheville %>%
-  summarise(mean_ppg = mean(ppg)) %>%
+mean_ppg <- asheville |>
+  summarise(mean_ppg = mean(ppg)) |>
   pull()
 ```
 
@@ -107,8 +107,8 @@ visualize(null_dist) +
 
 
 ```r
-null_dist %>%
-  filter(stat <= mean_ppg) %>%
+null_dist |>
+  filter(stat <= mean_ppg) |>
   summarise(p_value = n() / nrow(null_dist))
 ```
 

@@ -238,7 +238,7 @@ example, we use the sample mean: $\bar{x} = 76.6$:
 ```{r}
 asheville <- read_csv("data/asheville.csv")
 
-asheville %>% 
+asheville |> 
   summarize(mean_price = mean(ppg))
 ```
 
@@ -300,9 +300,9 @@ that we have from our original sample?
 set.seed(12345)
 library(infer)
 
-boot_means <- asheville %>% 
-  specify(response = ppg) %>% #<<
-  generate(reps = 5000, type =  "bootstrap") %>% #<<
+boot_means <- asheville |> 
+  specify(response = ppg) |> #<<
+  generate(reps = 5000, type =  "bootstrap") |> #<<
   calculate(stat = "mean") #<<
 ```
 
@@ -322,9 +322,9 @@ ggplot(data = boot_means, aes(stat)) +
 set.seed(12345)
 library(infer)
 
-boot_means <- asheville %>% 
-  specify(response = ppg) %>% 
-  generate(reps = 5000, type = "bootstrap") %>% 
+boot_means <- asheville |> 
+  specify(response = ppg) |> 
+  generate(reps = 5000, type = "bootstrap") |> 
   calculate(stat = "mean")
 
 ggplot(data = boot_means, aes(stat)) +
@@ -344,7 +344,7 @@ hypothesis is true.
 
 .pull-left[
 ```{r, eval = T}
-boot_means %>% 
+boot_means |> 
   summarize(mean(stat))
 ```
 ]
@@ -371,11 +371,11 @@ were actually true?
 ## Shifting the distribution
 
 ```{r}
-ash_boot_mean <- boot_means %>% 
-  summarize(mean = mean(stat)) %>% 
+ash_boot_mean <- boot_means |> 
+  summarize(mean = mean(stat)) |> 
   pull()
 
-boot_means <- boot_means %>% #<<
+boot_means <- boot_means |> #<<
   mutate(null_dist_stat = stat - (ash_boot_mean - 100)) #<<
 ```
 
@@ -405,10 +405,10 @@ ggplot(data = boot_means, aes(x = null_dist_stat)) + #<<
 ## Simulating the null distribution with infer
 
 ```{r}
-null_dist <- asheville %>%
-  specify(response = ppg) %>%
-  hypothesize(null = "point", mu = 100) %>%
-  generate(reps = 5000, type = "bootstrap") %>%  #<<
+null_dist <- asheville |>
+  specify(response = ppg) |>
+  hypothesize(null = "point", mu = 100) |>
+  generate(reps = 5000, type = "bootstrap") |>  #<<
   calculate(stat = "mean")
 ```
 
@@ -420,7 +420,7 @@ null_dist
 
 .pull-right[
 ```{r}
-null_dist %>%
+null_dist |>
   summarise(mean = mean(stat))
 ```
 ]
@@ -441,8 +441,8 @@ ggplot(data = null_dist, aes(x = stat)) +
 ## `r emo::ji("three")` Assessing the evidence
 
 ```{r}
-null_dist %>%
-  filter(stat <= 76.6 | stat >= (100 + (100 - 76.6))) %>%
+null_dist |>
+  filter(stat <= 76.6 | stat >= (100 + (100 - 76.6))) |>
   summarise(p_value = n()/nrow(null_dist))
 ```
 
@@ -457,9 +457,9 @@ What might we conclude at the $\alpha$ = 0.05 level?
 
 ```{r, echo = F}
 options(scipen=999)
-p_val <- null_dist %>%
-  filter(stat <= 76.6 | stat >= (100 + (100 - 76.6))) %>%
-  summarise(p_value = n()/nrow(null_dist)) %>%
+p_val <- null_dist |>
+  filter(stat <= 76.6 | stat >= (100 + (100 - 76.6))) |>
+  summarise(p_value = n()/nrow(null_dist)) |>
   pull() 
 ```
 

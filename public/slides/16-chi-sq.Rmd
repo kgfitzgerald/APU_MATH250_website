@@ -247,7 +247,7 @@ coffee_data <- tibble(coffee = coffee,
 ```
 
 ```{r}
-coffee_data %>%
+coffee_data |>
   slice(1:10)
 ```
 
@@ -256,7 +256,7 @@ coffee_data %>%
 ## Chi-square test using infer
 
 ```{r}
-coffee_data %>%
+coffee_data |>
   chisq_test(formula = health_outcome ~ coffee)
 ```
 

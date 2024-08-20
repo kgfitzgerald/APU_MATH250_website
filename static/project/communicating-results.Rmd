@@ -120,9 +120,9 @@ ggplot(data = mpg, aes(x = manufacturer)) +
 - *Optional: Applied a theme - Use same theme throughout paper / presentation*
 
 ```{r}
-mpg %>%
-  count(manufacturer) %>%
-  mutate(manufacturer = str_to_title(manufacturer)) %>%
+mpg |>
+  count(manufacturer) |>
+  mutate(manufacturer = str_to_title(manufacturer)) |>
   ggplot(aes(x = fct_reorder(manufacturer,n), y = n)) +
   geom_bar(stat = "identity", fill = "steelblue") +
   coord_flip() +
@@ -142,7 +142,7 @@ mpg %>%
 
 ```{r model-ex}
 model <- lm(mpg ~ hp, data = mtcars)
-tidy(model) %>%
+tidy(model) |>
   kable(digits = 3)
 ```
 

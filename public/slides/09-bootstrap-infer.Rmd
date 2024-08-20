@@ -163,7 +163,7 @@ as the "best guess", or estimate, for the population parameter.
 ```{r}
 abb <- read_csv("data/asheville.csv")
 
-abb %>% 
+abb |> 
   summarize(mean_price = mean(ppg))
 ```
 
@@ -363,7 +363,7 @@ original sample:
 set.seed(1)
 indices <- sample(1:nrow(abb), 50, replace = T)
 
-boot_samp_1 <- abb %>% 
+boot_samp_1 <- abb |> 
   slice(indices)
 ```
 
@@ -417,7 +417,7 @@ distribution of sample means:
 ```{r, echo = F}
 set.seed(1)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp1 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +
@@ -431,7 +431,7 @@ samp1 <- ggplot(data = temp, aes(ppg)) +
 ```{r, echo = F}
 set.seed(2)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp2 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +
@@ -448,7 +448,7 @@ samp2 <- ggplot(data = temp, aes(ppg)) +
 ```{r, echo = F}
 set.seed(3)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp3 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +
@@ -462,7 +462,7 @@ samp3 <- ggplot(data = temp, aes(ppg)) +
 ```{r, echo = F}
 set.seed(4)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp4 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +
@@ -618,7 +618,7 @@ In other words, it ensures we'll get the same random sample each time we run the
 ## Generate bootstrap means
 
 ```{r eval=FALSE}
-abb %>%
+abb |>
   # specify the variable of interest
   specify(response = ppg) #<<
 ```
@@ -628,9 +628,9 @@ abb %>%
 ## Generate bootstrap means
 
 ```{r eval=FALSE}
-abb %>%
+abb |>
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
   generate(reps = 15000, type = "bootstrap") #<<
 ```
@@ -640,11 +640,11 @@ abb %>%
 ## Generate bootstrap means
 
 ```{r eval=FALSE}
-abb %>%
+abb |>
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
-  generate(reps = 15000, type = "bootstrap") %>% 
+  generate(reps = 15000, type = "bootstrap") |> 
   # calculate the statistic of each bootstrap sample
   calculate(stat = "mean") #<<
 ```
@@ -663,11 +663,11 @@ num_reps <- 100
 
 ```{r}
 # save resulting bootstrap distribution
-boot_dist <- abb %>% #<<
+boot_dist <- abb |> #<<
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
-  generate(reps = num_reps, type = "bootstrap") %>% 
+  generate(reps = num_reps, type = "bootstrap") |> 
   # calculate the statistic of each bootstrap sample
   calculate(stat = "mean")
 ```
@@ -709,7 +709,7 @@ distribution.
 Use `dplyr` functions:
 
 ```{r}
-boot_dist %>%
+boot_dist |>
   summarize(lower_bound = quantile(stat, 0.025),
             upper_bound = quantile(stat, 0.975))
 ```
@@ -721,12 +721,12 @@ boot_dist %>%
 Using `geom_vline()` to mark the bounds of the confidence interval
 
 ```{r echo=FALSE}
-lower_bound <- boot_dist %>% 
-  summarize(lower_bound = quantile(stat, 0.025)) %>% 
+lower_bound <- boot_dist |> 
+  summarize(lower_bound = quantile(stat, 0.025)) |> 
   pull()
 
-upper_bound <- boot_dist %>% 
-  summarize(upper_bound = quantile(stat, 0.975)) %>% 
+upper_bound <- boot_dist |> 
+  summarize(upper_bound = quantile(stat, 0.975)) |> 
   pull()
 ```
 

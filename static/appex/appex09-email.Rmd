@@ -49,9 +49,9 @@ set.seed(09132020)
 ### Bootstrap distribution
 
 ```{r calc-boot-dist}
-boot_dist <- gss_email %>%
-  specify(response = email) %>% 
-  generate(reps = 1000, type = "bootstrap") %>% 
+boot_dist <- gss_email |>
+  specify(response = email) |> 
+  generate(reps = 1000, type = "bootstrap") |> 
   calculate(stat = "mean")
 ```
 
@@ -66,7 +66,7 @@ glimpse(boot_dist)
 ### Calculate 95% confidence interval
 
 ```{r calc-ci}
-ci <- boot_dist %>%
+ci <- boot_dist |>
   summarise(lower = quantile(stat, 0.025),
             upper = quantile(stat, 0.975))
 
@@ -127,9 +127,9 @@ set.seed(1234)
 Uncomment the lines and fill in the blanks to create a data frame containing the bootstrapped data - sample medians in our case.  
 
 ```{r create-bootstrap-dist}
-boot_dist <- gss_email #%>%
-  #specify(______) %>%
-  #generate(______) %>%
+boot_dist <- gss_email #|>
+  #specify(______) |>
+  #generate(______) |>
   #calculate(______)
 ```
 
@@ -145,7 +145,7 @@ Glimpse the data frame of the bootstrapped data.
 Uncomment the lines and fill in the blanks to construct the 95% bootstrap confidence interval for the median amount of time Americans spend on email weekly.
 
 ```{r confidence-interval-email}
-#___ %>%
+#___ |>
 #  summarise(lower = quantile(______),
   #          upper = quantile(______))
 ```

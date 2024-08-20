@@ -71,7 +71,7 @@ library(stringr)
 ```
 
 ```{r, eval = F}
-tweets <- read_csv("data/stats-tweets.csv") %>%
+tweets <- read_csv("data/stats-tweets.csv") |>
   mutate(tweet_num = 1:nrow())
 ```
 
@@ -108,9 +108,9 @@ We can also visualize the most common words using a word cloud.
 ```{r}
 #library(wordcloud)
 #set.seed(10282020)
-# _____ %>%
-#  anti_join(stop_words) %>%
- # count(word) %>%
+# _____ |>
+#  anti_join(stop_words) |>
+ # count(word) |>
 #  with(wordcloud(word, n, max.words = 100))
 ```
 

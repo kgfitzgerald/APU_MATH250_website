@@ -52,9 +52,9 @@ The code below fills in the gaps from joining the data sets to creating the upda
 
 
 ```r
-fisheries <- fisheries %>%
-  filter(total > 100000) %>%
-  left_join(continents) %>%
+fisheries <- fisheries |>
+  filter(total > 100000) |>
+  left_join(continents) |>
   mutate(
     continent = case_when(
       country == "Democratic Republic of the Congo" ~ "Africa",
@@ -77,8 +77,8 @@ Note that the function for calculating the mean is `mean()` in R.
 
 
 ```r
-fisheries %>%                  # start with the fisheries data frame
-  ___ %>%                      # group by continent
+fisheries |>                  # start with the fisheries data frame
+  ___ |>                      # group by continent
   ___(mean_ap = ___)           # calculate mean aquaculture
 ```
 
@@ -91,7 +91,7 @@ respectively.
 
 
 ```r
-fisheries %>%                  # start with the fisheries data frame
+fisheries |>                  # start with the fisheries data frame
   # and the rest of the code goes here         
 ```
 
@@ -103,7 +103,7 @@ fisheries data.
 
 
 ```r
-fisheries_summary <- fisheries %>%
+fisheries_summary <- fisheries |>
   # you can reuse code from Exercise 2 here                        
 ```
 
@@ -114,7 +114,7 @@ order of mean aquaculture percentage.
 
 
 ```r
-fisheries_summary %>%      # start with the fisheries_summary_continent data frame
+fisheries_summary |>      # start with the fisheries_summary_continent data frame
   ___                                # order in descending order of mean_ap
 ```
 

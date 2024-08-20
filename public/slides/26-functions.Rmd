@@ -93,19 +93,19 @@ first_info_url <- "https://collections.ed.ac.uk/art/./record/20144?highlight=*:*
 page <- read_html(first_info_url)
 
 ## scrape headers 
-headers <- page %>%
-  html_nodes("th") %>%
+headers <- page |>
+  html_nodes("th") |>
   html_text()
 
 ## scrape values 
-values <- page %>%
-  html_nodes("td") %>%
-  html_text() %>%
+values <- page |>
+  html_nodes("td") |>
+  html_text() |>
   str_squish()
 
 ## put together in a tibble and add link to help keep track ----
-tibble(headers, values) %>%
-  pivot_wider(names_from = headers, values_from = values) %>%
+tibble(headers, values) |>
+  pivot_wider(names_from = headers, values_from = values) |>
   add_column(link = first_info_url)
 ```
 ]
@@ -164,19 +164,19 @@ first_info_url <- "https://collections.ed.ac.uk/art/./record/20144?highlight=*:*
 page <- read_html(first_info_url)
 
 ## scrape headers ----
-headers <- page %>%
-  html_nodes("th") %>%
+headers <- page |>
+  html_nodes("th") |>
   html_text()
 
 ## scrape values ----
-values <- page %>%
-  html_nodes("td") %>%
-  html_text() %>%
+values <- page |>
+  html_nodes("td") |>
+  html_text() |>
   str_squish()
 
 ## put together in a tibble and add link to help keep track ----
-tibble(headers, values) %>%
-  pivot_wider(names_from = headers, values_from = values) %>%
+tibble(headers, values) |>
+  pivot_wider(names_from = headers, values_from = values) |>
   add_column(link = first_info_url)
 ```
 ]
@@ -194,19 +194,19 @@ first_info_url <- "https://collections.ed.ac.uk/art/./record/20144?highlight=*:*
 page <- read_html(first_info_url) #<<
 
 ## scrape headers ----
-headers <- page %>%
-  html_nodes("th") %>%
+headers <- page |>
+  html_nodes("th") |>
   html_text()
 
 ## scrape values ----
-values <- page %>%
-  html_nodes("td") %>%
-  html_text() %>%
+values <- page |>
+  html_nodes("td") |>
+  html_text() |>
   str_squish()
 
 ## put together in a tibble and add link to help keep track ----
-tibble(headers, values) %>%
-  pivot_wider(names_from = headers, values_from = values) %>%
+tibble(headers, values) |>
+  pivot_wider(names_from = headers, values_from = values) |>
   add_column(link = first_info_url) #<<
 ```
 ]
@@ -278,19 +278,19 @@ scrape_art_info <- function(x){
   page <- read_html(x)
   
   # scrape headers ----
-  headers <- page %>%
-    html_nodes("th") %>%
+  headers <- page |>
+    html_nodes("th") |>
     html_text()
   
   # scrape values ----
-  values <- page %>%
-    html_nodes("td") %>%
-    html_text() %>%
+  values <- page |>
+    html_nodes("td") |>
+    html_text() |>
     str_squish()
 
   # put together in a tibble and add link to help keep track ----
-  tibble(headers, values) %>%
-    pivot_wider(names_from = headers, values_from = values) %>%
+  tibble(headers, values) |>
+    pivot_wider(names_from = headers, values_from = values) |>
     add_column(link = x)
   
 }
@@ -303,7 +303,7 @@ scrape_art_info <- function(x){
 
 .midi[
 ```{r}
-scrape_art_info(uoe_art$link[1]) %>%
+scrape_art_info(uoe_art$link[1]) |>
   glimpse()
 ```
 ]
@@ -317,7 +317,7 @@ scrape_art_info(uoe_art$link[1]) %>%
 
 .midi[
 ```{r}
-scrape_art_info(uoe_art$link[2]) %>%
+scrape_art_info(uoe_art$link[2]) |>
   glimpse()
 ```
 ]

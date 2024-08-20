@@ -281,7 +281,7 @@ ggplot(data = rs_pop, aes(x = x)) +
 **The true population parameters**
 .small[
 ```{r echo = F}
-rs_pop %>%
+rs_pop |>
   summarise(mu = mean(x), sigma = sd(x))
 ```
 ]
@@ -292,8 +292,8 @@ rs_pop %>%
 
 ```{r}
 set.seed(1)
-samp_1 <- rs_pop %>%
-  sample_n(size = 50) %>%
+samp_1 <- rs_pop |>
+  sample_n(size = 50) |>
   summarise(x_bar = mean(x))
 ```
 
@@ -307,8 +307,8 @@ samp_1
 
 ```{r}
 set.seed(2)
-samp_2 <- rs_pop %>%
-  sample_n(size = 50) %>% 
+samp_2 <- rs_pop |>
+  sample_n(size = 50) |> 
   summarise(x_bar = mean(x))
 ```
 
@@ -321,8 +321,8 @@ samp_2
 
 ```{r}
 set.seed(3)
-samp_3 <- rs_pop %>%
-  sample_n(size = 50) %>% 
+samp_3 <- rs_pop |>
+  sample_n(size = 50) |> 
   summarise(x_bar = mean(x))
 ```
 
@@ -341,9 +341,9 @@ keep repeating...
 .small[
 ```{r}
 set.seed(092620)
-sampling <- rs_pop %>%
-  rep_sample_n(size = 50, replace = TRUE, reps = 5000) %>%
-  group_by(replicate) %>%
+sampling <- rs_pop |>
+  rep_sample_n(size = 50, replace = TRUE, reps = 5000) |>
+  group_by(replicate) |>
   summarise(xbar = mean(x))
 ```
 ]
@@ -358,7 +358,7 @@ ggplot(data = sampling, aes(x = xbar)) +
 ```
 
 ```{r}
-sampling %>%
+sampling |>
   summarise(mean = mean(xbar), se = sd(xbar))
 ```
 

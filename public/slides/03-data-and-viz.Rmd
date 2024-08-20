@@ -140,7 +140,7 @@ knitr::include_graphics("img/03/grammar-of-graphics.png")
 
 ```{r echo = F}
 # reduce number of categories for hair color
-starwars <- starwars %>%
+starwars <- starwars |>
   mutate(hair_color = case_when(
     hair_color == "black" ~ "black",
     hair_color == "none" | is.na(hair_color) ~ "none",
@@ -340,7 +340,7 @@ ggplot(data = starwars, mapping = aes(x = height, y = mass)) +
        x = "Height (cm)", y = "Weight (kg)")
 invisible(dev.off())
 
-out <- fig %>% image_composite(jabba, offset = "+1000+30")
+out <- fig |> image_composite(jabba, offset = "+1000+30")
 
 image_write(out, "img/03/jabbaplot.png", format = "png")
 knitr::include_graphics("img/03/jabbaplot.png")

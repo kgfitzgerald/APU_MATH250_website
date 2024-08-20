@@ -126,7 +126,7 @@ class: center, middle
 ## Starwars data 
 
 ```{r echo = FALSE}
-starwars <- starwars %>%
+starwars <- starwars |>
   mutate(hair_color = case_when(
     hair_color == "black" ~ "black",
     hair_color == "none" | is.na(hair_color) ~ "none",
@@ -196,7 +196,7 @@ ggplot(data = starwars, mapping = aes(x = hair_color)) +
 ## Segmented bar plots, counts
 
 ```{r echo = FALSE}
-starwars <- starwars %>%
+starwars <- starwars |>
   mutate(eye_color2 = fct_other(eye_color, 
                                  keep = c("black", "blue", "brown", "yellow")))
 ```
@@ -280,7 +280,7 @@ Below is an excerpt from the `datasaurus_dozen` dataset:
 
 ```{r datasaurus-view-wide,  echo=FALSE}
 library(datasauRus)
-datasaurus_dozen_wide %>%
+datasaurus_dozen_wide |>
   select(1:8)
 ```
 
@@ -289,8 +289,8 @@ datasaurus_dozen_wide %>%
 ## Summary statistics
 
 ```{r datasaurus-cor}
-datasaurus_dozen %>%
-  group_by(dataset) %>%
+datasaurus_dozen |>
+  group_by(dataset) |>
   summarise(r = cor(x, y))
 ```
 
@@ -331,8 +331,8 @@ quartet[23:44,]
 ## Summarising Anscombe's quartet
 
 ```{r quartet-summary}
-quartet %>%
-  group_by(set) %>%
+quartet |>
+  group_by(set) |>
   summarise(
     mean_x = mean(x), mean_y = mean(y),
     sd_x = sd(x), sd_y = sd(y),
@@ -407,8 +407,8 @@ ggplot(d, aes(x = fct_reorder(category, value), y = value)) +
 
 
 ```{r echo=FALSE, out.width=500, fig.align="center"}
-d %>%
-  mutate(category = str_replace(category, " ", "\n")) %>%
+d |>
+  mutate(category = str_replace(category, " ", "\n")) |>
   ggplot(aes(x = category, y = value, fill = category)) +
     geom_col() +
     theme_minimal() +

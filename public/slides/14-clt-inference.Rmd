@@ -383,12 +383,12 @@ Is there evidence that, on average, Durham residents are generally satisfied (sc
 ## Exploratory Data Analysis
 
 ```{r fig.height=2.5, fig.width=5, message=FALSE}
-durham <- read_csv("data/durham_survey.csv") %>%
+durham <- read_csv("data/durham_survey.csv") |>
   filter(quality_library != 9)
 ```
 
 ```{r}
-durham %>% 
+durham |> 
   summarise(x_bar = mean(quality_library), 
             med = median(quality_library), 
             sd = sd(quality_library), n = n())
@@ -399,8 +399,8 @@ durham %>%
 ## Exploratory Data Analysis
 
 ```{r warning = F, echo = F, fig.height = 2.5}
-durham %>% 
-  filter(quality_library!= 9) %>% 
+durham |> 
+  filter(quality_library!= 9) |> 
   ggplot(aes(x = quality_library)) + 
     geom_histogram(binwidth = 0.95) +
     labs(x = "Satisfaction with public library system", y = "Count",
@@ -452,8 +452,8 @@ based on the CLT? Are these conditions satisfied?
 Summary statistics from the sample:
 
 ```{r fig.height=3, fig.width=5, echo=FALSE}
-durham_summary <- durham %>% 
-  filter(quality_library != 9) %>%
+durham_summary <- durham |> 
+  filter(quality_library != 9) |>
   summarise(xbar = mean(quality_library), s = sd(quality_library), n = n())
 durham_summary
 ```
@@ -598,7 +598,7 @@ $$H_0: \mu = 3 \text{ vs }H_a: \mu > 3$$
 --
 
 ```{r}
-durham %>%
+durham |>
   t_test(response = quality_library, 
          mu = 3, 
          alternative = "greater", 
@@ -613,7 +613,7 @@ Calculate a 95% confidence interval for the mean satisfaction rating.
 --
 
 ```{r}
-durham %>%
+durham |>
   t_test(response = quality_library, 
          alternative = "two-sided",
          conf_int = TRUE, conf_level = 0.95) 

@@ -12,20 +12,20 @@ scrape_art_data <- function(url){
 page <- read_html(url)
 
 # title -----------------------------------------------------------------------
-titles <- page %>%
-  html_nodes("h3 a") %>%
-  html_text() %>%
+titles <- page |>
+  html_nodes("h3 a") |>
+  html_text() |>
   str_squish() 
 
 # artist -----------------------------------------------------------------------
-artists <- page %>%
-  html_nodes(".artist") %>%
+artists <- page |>
+  html_nodes(".artist") |>
   html_text()
   
 
 # link ------------------------------------------------------------------------
-links <- page %>%
-  html_nodes("h3 a") %>%
+links <- page |>
+  html_nodes("h3 a") |>
   html_attr("href")
 
 links <- paste0("https://collections.ed.ac.uk/art/", links)

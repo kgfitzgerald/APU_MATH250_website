@@ -142,7 +142,7 @@ text_df
 ## What is tidy text?
 
 ```{r, message=FALSE, warning=FALSE}
-text_df %>%
+text_df |>
   unnest_tokens(word, text)
 ```
 
@@ -180,7 +180,7 @@ tswift
 ## What songs are in the album?
 
 ```{r, message = F, warning = F}
-tswift %>%
+tswift |>
   distinct(track_title)
 ```
 
@@ -191,7 +191,7 @@ tswift %>%
 Length is measured by number of lines
 
 ```{r, message = F, warning = F}
-tswift %>%
+tswift |>
   count(track_title, sort = TRUE)
 ```
 
@@ -200,7 +200,7 @@ tswift %>%
 ## Tidy up your lyrics!
 
 ```{r, message = F, warning = F}
-tswift_lyrics <- tswift %>%
+tswift_lyrics <- tswift |>
   unnest_tokens(word, lyric)
 
 tswift_lyrics
@@ -211,8 +211,8 @@ tswift_lyrics
 ## What are the most common words?
 
 ```{r, message = F, warning = F}
-tswift_lyrics %>%
-  count(word) %>%
+tswift_lyrics |>
+  count(word) |>
   arrange(desc(n))
 ```
 
@@ -232,9 +232,9 @@ single list of stop words used by all natural language processing tools.
 ## What are the most common words?
 
 ```{r, message = F, warning = F}
-tswift_lyrics %>%
-  anti_join(stop_words) %>%
-  count(word) %>%
+tswift_lyrics |>
+  anti_join(stop_words) |>
+  count(word) |>
   arrange(desc(n))
 ```
 
@@ -246,11 +246,11 @@ tswift_lyrics %>%
 ## What are the most common words?
 
 ```{r, echo=FALSE, message=FALSE, fig.height = 5.75, fig.width = 11}
-tswift_lyrics %>%
-  anti_join(get_stopwords(source = "smart")) %>%
-  count(word) %>%
-  arrange(desc(n)) %>%
-  top_n(20) %>%
+tswift_lyrics |>
+  anti_join(get_stopwords(source = "smart")) |>
+  count(word) |>
+  arrange(desc(n)) |>
+  top_n(20) |>
   ggplot(aes(fct_reorder(word, n), n)) +
     geom_col() +
     coord_flip() + 
@@ -266,11 +266,11 @@ tswift_lyrics %>%
 ## ...the code
 
 ```{r, eval  = F}
-tswift_lyrics %>%
-  anti_join(get_stopwords(source = "smart")) %>%
-  count(word) %>%
-  arrange(desc(n)) %>%
-  top_n(20) %>%
+tswift_lyrics |>
+  anti_join(get_stopwords(source = "smart")) |>
+  count(word) |>
+  arrange(desc(n)) |>
+  top_n(20) |>
   ggplot(aes(fct_reorder(word, n), n)) +
     geom_col() +
     coord_flip() + 
@@ -342,7 +342,7 @@ get_sentiments("loughran")
 - Not every word is in a lexicon!
 
 ```{r}
-get_sentiments("bing") %>% 
+get_sentiments("bing") |> 
   filter(word == "data")
 ```
 
@@ -359,8 +359,8 @@ get_sentiments("bing") %>%
 ## Sentiments in lyrics
 
 ```{r, message = F, warning = F}
-tswift_lyrics %>%
-  inner_join(get_sentiments("bing")) %>%
+tswift_lyrics |>
+  inner_join(get_sentiments("bing")) |>
   count(sentiment, word, sort = TRUE) 
 ```
 
@@ -369,12 +369,12 @@ tswift_lyrics %>%
 ## Let's visualize T.Swift's top 10 sentiments
 
 ```{r}
-tswift_top10 <- tswift_lyrics %>%
-  inner_join(get_sentiments("bing")) %>%
-  count(sentiment, word) %>%
-  arrange(desc(n)) %>%
-  group_by(sentiment) %>%
-  top_n(10) %>%
+tswift_top10 <- tswift_lyrics |>
+  inner_join(get_sentiments("bing")) |>
+  count(sentiment, word) |>
+  arrange(desc(n)) |>
+  group_by(sentiment) |>
+  top_n(10) |>
   ungroup()
 ```
 
@@ -429,8 +429,8 @@ ggplot(tswift_top10, aes(fct_reorder(word, n), n, fill = sentiment)) +
 
 .midi[
 ```{r}
-tswift_lyrics %>%
-  anti_join(stop_words) %>%
+tswift_lyrics |>
+  anti_join(stop_words) |>
   left_join(get_sentiments("afinn"))
 ```
 ]
@@ -441,12 +441,12 @@ tswift_lyrics %>%
 
 .midi[
 ```{r}
-tswift_lyrics %>%
-  anti_join(stop_words) %>%
-  left_join(get_sentiments("afinn")) %>%
-  filter(!is.na(value)) %>%
-  group_by(track_title) %>%
-  summarise(total_sentiment = sum(value)) %>%
+tswift_lyrics |>
+  anti_join(stop_words) |>
+  left_join(get_sentiments("afinn")) |>
+  filter(!is.na(value)) |>
+  group_by(track_title) |>
+  summarise(total_sentiment = sum(value)) |>
   arrange(total_sentiment)
 ```
 ]
@@ -455,17 +455,17 @@ tswift_lyrics %>%
 ## Visualizing sentiment scores
 
 ```{r echo  = F, fig.height = 2.5}
-tswift_lyrics %>%
-  anti_join(stop_words) %>%
-  left_join(get_sentiments("afinn")) %>%
-  filter(!is.na(value)) %>%
-  group_by(track_title) %>%
-  summarise(total_sentiment = sum(value)) %>%
-  ungroup() %>%
-  arrange(total_sentiment) %>%
+tswift_lyrics |>
+  anti_join(stop_words) |>
+  left_join(get_sentiments("afinn")) |>
+  filter(!is.na(value)) |>
+  group_by(track_title) |>
+  summarise(total_sentiment = sum(value)) |>
+  ungroup() |>
+  arrange(total_sentiment) |>
   mutate(
     total_sentiment_sign = if_else(total_sentiment < 0, "negative", "positive")
-  ) %>%
+  ) |>
   ggplot(aes(x = reorder(track_title, total_sentiment), y = total_sentiment, fill = total_sentiment_sign)) +
   geom_col() +
   guides(fill = FALSE) +
@@ -482,17 +482,17 @@ tswift_lyrics %>%
 
 .small[
 ```{r eval = F}
-tswift_lyrics %>%
-  anti_join(stop_words) %>%
-  left_join(get_sentiments("afinn")) %>%
-  filter(!is.na(value)) %>%
-  group_by(track_title) %>%
-  summarise(total_sentiment = sum(value)) %>%
-  ungroup() %>%
-  arrange(total_sentiment) %>%
+tswift_lyrics |>
+  anti_join(stop_words) |>
+  left_join(get_sentiments("afinn")) |>
+  filter(!is.na(value)) |>
+  group_by(track_title) |>
+  summarise(total_sentiment = sum(value)) |>
+  ungroup() |>
+  arrange(total_sentiment) |>
   mutate(
     total_sentiment_sign = if_else(total_sentiment < 0, "negative", "positive")
-  ) %>%
+  ) |>
   ggplot(aes(x = reorder(track_title, total_sentiment), y = total_sentiment, 
              fill = total_sentiment_sign)) +
   geom_col() +

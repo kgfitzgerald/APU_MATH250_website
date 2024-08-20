@@ -10,20 +10,20 @@ url <- "https://collections.ed.ac.uk/art/search/*/Classification:%22landscapes+%
 page <- read_html(url)
 
 # title -----------------------------------------------------------------------
-titles <- page %>%
-  html_nodes("h3 a") %>%
-  html_text() %>%
+titles <- page |>
+  html_nodes("h3 a") |>
+  html_text() |>
   str_squish() 
 
 # artist -----------------------------------------------------------------------
-artists <- page %>%
-  html_nodes(".artist") %>%
+artists <- page |>
+  html_nodes(".artist") |>
   html_text()
 
 
 # link ------------------------------------------------------------------------
-links <- page %>%
-  html_nodes("h3 a") %>%
+links <- page |>
+  html_nodes("h3 a") |>
   html_attr("href") 
 
 links <- paste0("https://collections.ed.ac.uk/art/", links)
@@ -48,20 +48,20 @@ scrape_landscape_info <- function(x) {
   page <- read_html(x)
   
   # title -----------------------------------------------------------------------
-  titles <- page %>%
-    html_nodes("h3 a") %>%
-    html_text() %>%
+  titles <- page |>
+    html_nodes("h3 a") |>
+    html_text() |>
     str_squish() 
   
   # artist -----------------------------------------------------------------------
-  artists <- page %>%
-    html_nodes(".artist") %>%
+  artists <- page |>
+    html_nodes(".artist") |>
     html_text()
   
   
   # link ------------------------------------------------------------------------
-  links <- page %>%
-    html_nodes("h3 a") %>%
+  links <- page |>
+    html_nodes("h3 a") |>
     html_attr("href") 
   
   links <- paste0("https://collections.ed.ac.uk/art/", links)
@@ -92,19 +92,19 @@ scrape_art_info <- function(x){
   page <- read_html(x)
   
   # scrape headers ----
-  headers <- page %>%
-    html_nodes("th") %>%
+  headers <- page |>
+    html_nodes("th") |>
     html_text()
   
   # scrape values ----
-  values <- page %>%
-    html_nodes("td") %>%
-    html_text() %>%
+  values <- page |>
+    html_nodes("td") |>
+    html_text() |>
     str_squish()
   
   # put together in a tibble and add link to help keep track ----
-  tibble(headers, values) %>%
-    pivot_wider(names_from = headers, values_from = values) %>%
+  tibble(headers, values) |>
+    pivot_wider(names_from = headers, values_from = values) |>
     add_column(link = x)
   
 }

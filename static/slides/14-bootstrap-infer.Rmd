@@ -73,7 +73,7 @@ In other words, it ensures we'll get the same random sample each time we run the
 ## Generate bootstrap means
 
 ```{r eval=FALSE}
-abb %>%
+abb |>
   # specify the variable of interest
   specify(response = ppg) #<<
 ```
@@ -83,9 +83,9 @@ abb %>%
 ## Generate bootstrap means
 
 ```{r eval=FALSE}
-abb %>%
+abb |>
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
   generate(reps = 15000, type = "bootstrap") #<<
 ```
@@ -95,11 +95,11 @@ abb %>%
 ## Generate bootstrap means
 
 ```{r eval=FALSE}
-abb %>%
+abb |>
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
-  generate(reps = 15000, type = "bootstrap") %>% 
+  generate(reps = 15000, type = "bootstrap") |> 
   # calculate the statistic of each bootstrap sample
   calculate(stat = "mean") #<<
 ```
@@ -118,11 +118,11 @@ num_reps <- 15000
 
 ```{r}
 # save resulting bootstrap distribution
-boot_dist <- abb %>% #<<
+boot_dist <- abb |> #<<
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
-  generate(reps = num_reps, type = "bootstrap") %>% 
+  generate(reps = num_reps, type = "bootstrap") |> 
   # calculate the statistic of each bootstrap sample
   calculate(stat = "mean")
 ```
@@ -162,7 +162,7 @@ A 95% confidence interval is bounded by the middle 95% of the bootstrap
 distribution.
 
 ```{r}
-boot_dist %>%
+boot_dist |>
   summarize(lower_bound = quantile(stat, 0.025),
             upper_bound = quantile(stat, 0.975))
 ```
@@ -172,12 +172,12 @@ boot_dist %>%
 ## Visualize the confidence interval
 
 ```{r echo=FALSE}
-lower_bound <- boot_dist %>% 
-  summarize(lower_bound = quantile(stat, 0.025)) %>% 
+lower_bound <- boot_dist |> 
+  summarize(lower_bound = quantile(stat, 0.025)) |> 
   pull()
 
-upper_bound <- boot_dist %>% 
-  summarize(upper_bound = quantile(stat, 0.975)) %>% 
+upper_bound <- boot_dist |> 
+  summarize(upper_bound = quantile(stat, 0.975)) |> 
   pull()
 ```
 

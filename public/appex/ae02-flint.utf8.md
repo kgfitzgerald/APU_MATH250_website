@@ -64,7 +64,7 @@ Let's see how many homes are in the data set.
 
 
 ```r
-flint %>%
+flint |>
   count(id)
 ```
 
@@ -89,7 +89,7 @@ Fill in the code to see how many samples samples were taken from each zip code. 
 
 
 ```r
-# flint %>% 
+# flint |> 
  # count(______)
 ```
 
@@ -101,8 +101,8 @@ Next, let's look at the mean and median lead contaminant values for each zip cod
 
 
 ```r
-flint %>% 
-  group_by(zip, draw) %>% 
+flint |> 
+  group_by(zip, draw) |> 
   summarise(mean_pb = mean(lead))
 ```
 
@@ -130,8 +130,8 @@ flint %>%
 
 
 ```r
-flint %>% 
-  group_by(zip, draw) %>% 
+flint |> 
+  group_by(zip, draw) |> 
   summarise(median_pb = median(lead))
 ```
 
@@ -165,8 +165,8 @@ Modify the code below to compute the mean and median lead contaminant values for
 
 
 ```r
-flint %>% 
-  # filter(zip == 48503, draw == "_____") %>% 
+flint |> 
+  # filter(zip == 48503, draw == "_____") |> 
   summarise(mean_pb = mean(lead),
             median_pb = median(lead))
 ```
@@ -184,7 +184,7 @@ Let’s make some plots, where we will focus on zip codes 48503, 48504, 48505, 4
 
 
 ```r
-flint_focus <- flint %>% 
+flint_focus <- flint |> 
   filter(zip %in% 48503:48507, lead < 1000)
 ```
 

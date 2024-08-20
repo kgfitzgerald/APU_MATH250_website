@@ -125,7 +125,7 @@ as the "best guess", or estimate, for the population parameter.
 ```{r}
 abb <- read_csv("data/asheville.csv")
 
-abb %>% 
+abb |> 
   summarize(mean_price = mean(ppg))
 ```
 
@@ -323,7 +323,7 @@ original sample:
 set.seed(1)
 indices <- sample(1:nrow(abb), 50, replace = T)
 
-boot_samp_1 <- abb %>% 
+boot_samp_1 <- abb |> 
   slice(indices)
 ```
 
@@ -377,7 +377,7 @@ distribution of sample means:
 ```{r, echo = F}
 set.seed(1)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp1 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +
@@ -392,7 +392,7 @@ samp1 <- ggplot(data = temp, aes(ppg)) +
 ```{r, echo = F}
 set.seed(2)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp2 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +
@@ -409,7 +409,7 @@ samp2 <- ggplot(data = temp, aes(ppg)) +
 ```{r, echo = F}
 set.seed(3)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp3 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +
@@ -424,7 +424,7 @@ samp3 <- ggplot(data = temp, aes(ppg)) +
 ```{r, echo = F}
 set.seed(4)
 
-temp <- abb %>% slice(sample(1:50, replace = T))
+temp <- abb |> slice(sample(1:50, replace = T))
 samp4 <- ggplot(data = temp, aes(ppg)) +
   geom_histogram(binwidth = 25, color = "darkblue", fill = "skyblue") +
   labs(x = "", y = "") +

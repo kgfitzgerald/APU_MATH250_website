@@ -265,8 +265,8 @@ ggplot(data = sports_car_prices,
 ```{r}
 m_main <- lm(price ~ age + car, data = sports_car_prices)
 
-m_main %>%
-  tidy() %>%
+m_main |>
+  tidy() |>
   select(term, estimate)
 ```
 
@@ -336,14 +336,14 @@ ggplot(data = sports_car_prices,
 ## Main effects
 
 ```{r echo=FALSE}
-m_main %>%
-  tidy() %>%
+m_main |>
+  tidy() |>
   select(term, estimate)
 ```
 
 ```{r include=FALSE}
-m_main_coefs <- m_main %>%
-  tidy() %>%
+m_main_coefs <- m_main |>
+  tidy() |>
   select(term, estimate)
 ```
 
@@ -451,8 +451,8 @@ ggplot(data = sports_car_prices,
 
 ```{r model_int}
 m_int <- lm(price ~ age + car + age * car, data = sports_car_prices) 
-m_int %>%
-  tidy() %>%
+m_int |>
+  tidy() |>
   select(term, estimate)
 ```
 

@@ -106,7 +106,7 @@ In this study 50 people were randomly assigned to two groups: **34** to a group 
 --
 
 ```{r}
-yawn %>% #in the openintro package
+yawn |> #in the openintro package
   count(group, result)
 ```
 
@@ -116,9 +116,9 @@ yawn %>% #in the openintro package
 
 .small[
 ```{r}
-yawn %>%
-  count(group, result) %>%
-  group_by(group) %>%
+yawn |>
+  count(group, result) |>
+  group_by(group) |>
   mutate(p_hat = n / sum(n))
 ```
 ]
@@ -143,9 +143,9 @@ Based on the proportions we calculated, do you think yawning is really contagiou
 ]
 
 ```{r echo=FALSE}
-yawn %>%
-  count(group, result) %>%
-  group_by(group) %>%
+yawn |>
+  count(group, result) |>
+  group_by(group) |>
   mutate(p_hat = n / sum(n))
 ```
 
@@ -201,10 +201,10 @@ H_a: p_t > p_c
 
 ```{r}
 set.seed(102020)
-null_dist <- yawn %>%
-  specify(result ~ group, success = "yawn") %>%
-  hypothesize(null = "independence") %>%
-  generate(reps  = 1000, type = "permute") %>%
+null_dist <- yawn |>
+  specify(result ~ group, success = "yawn") |>
+  hypothesize(null = "independence") |>
+  generate(reps  = 1000, type = "permute") |>
   calculate(stat = "diff in props", order = c("trmt", "ctrl"))
 ```
 
@@ -215,10 +215,10 @@ null_dist <- yawn %>%
 
 ```{r eval = F}
 set.seed(102020)  #<<
-null_dist <- yawn %>%  #<<
-  specify(result ~ group, success = "yawn") %>%
-  hypothesize(null = "independence") %>% 
-  generate(reps  = 1000, type = "permute") %>% 
+null_dist <- yawn |>  #<<
+  specify(result ~ group, success = "yawn") |>
+  hypothesize(null = "independence") |> 
+  generate(reps  = 1000, type = "permute") |> 
   calculate(stat = "diff in props", order = c("trmt", "ctrl"))
 ```
 
@@ -228,10 +228,10 @@ null_dist <- yawn %>%  #<<
 
 ```{r eval = F}
 set.seed(102020)  
-null_dist <- yawn %>% 
-  specify(result ~ group, success = "yawn") %>% #<<
-  hypothesize(null = "independence") %>% 
-  generate(reps  = 1000, type = "permute") %>% 
+null_dist <- yawn |> 
+  specify(result ~ group, success = "yawn") |> #<<
+  hypothesize(null = "independence") |> 
+  generate(reps  = 1000, type = "permute") |> 
   calculate(stat = "diff in props", order = c("trmt", "ctrl"))
 ```
 
@@ -241,10 +241,10 @@ null_dist <- yawn %>%
 
 ```{r eval = F}
 set.seed(102020)  
-null_dist <- yawn %>% 
-  specify(result ~ group, success = "yawn") %>%
-  hypothesize(null = "independence") %>%  #<<
-  generate(reps  = 1000, type = "permute") %>% 
+null_dist <- yawn |> 
+  specify(result ~ group, success = "yawn") |>
+  hypothesize(null = "independence") |>  #<<
+  generate(reps  = 1000, type = "permute") |> 
   calculate(stat = "diff in props", order = c("trmt", "ctrl"))
 ```
 
@@ -254,10 +254,10 @@ null_dist <- yawn %>%
 
 ```{r eval = F}
 set.seed(102020)  
-null_dist <- yawn %>% 
-  specify(result ~ group, success = "yawn") %>%
-  hypothesize(null = "independence") %>% 
-  generate(reps  = 1000, type = "permute") %>% #<<
+null_dist <- yawn |> 
+  specify(result ~ group, success = "yawn") |>
+  hypothesize(null = "independence") |> 
+  generate(reps  = 1000, type = "permute") |> #<<
   calculate(stat = "diff in props", order = c("trmt", "ctrl"))
 ```
 
@@ -267,10 +267,10 @@ null_dist <- yawn %>%
 
 ```{r eval = F}
 set.seed(102020)  
-null_dist <- yawn %>% 
-  specify(result ~ group, success = "yawn") %>%
-  hypothesize(null = "independence") %>% 
-  generate(reps  = 1000, type = "permute") %>% 
+null_dist <- yawn |> 
+  specify(result ~ group, success = "yawn") |>
+  hypothesize(null = "independence") |> 
+  generate(reps  = 1000, type = "permute") |> 
   calculate(stat = "diff in props", order = c("trmt", "ctrl")) #<<
 ```
 
@@ -327,8 +327,8 @@ ggplot(data = null_dist, mapping = aes(x = stat)) +
 ## Calculating the p-value
 
 ```{r}
-null_dist %>%
-  filter(stat >= 0.0441) %>%
+null_dist |>
+  filter(stat >= 0.0441) |>
   summarise(p_value = n()/nrow(null_dist))
 ```
 

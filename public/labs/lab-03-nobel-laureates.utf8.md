@@ -149,7 +149,7 @@ First, we'll create a new variable to identify whether the laureate was in the U
 
 
 ```r
-nobel_living <- nobel_living %>%
+nobel_living <- nobel_living |>
   mutate(
     country_us = if_else(country == "USA", "USA", "Other")
   )
@@ -159,7 +159,7 @@ Next, we will limit our analysis to only the following categories: Physics, Medi
 
 
 ```r
-nobel_living_science <- nobel_living %>%
+nobel_living_science <- nobel_living |>
   filter(category %in% c("Physics", "Medicine", "Chemistry", "Economics"))
 ```
 

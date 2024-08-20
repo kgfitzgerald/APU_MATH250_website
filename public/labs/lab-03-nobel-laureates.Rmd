@@ -157,7 +157,7 @@ Note that we can achieve the same result using the `fct_other()` function (i.e. 
 ```
 
 ```{r}
-nobel_living <- nobel_living %>%
+nobel_living <- nobel_living |>
   mutate(
     country_us = if_else(country == "USA", "USA", "Other")
   )
@@ -166,7 +166,7 @@ nobel_living <- nobel_living %>%
 Next, we will limit our analysis to only the following categories: Physics, Medicine, Chemistry, and Economics.
 
 ```{r}
-nobel_living_science <- nobel_living %>%
+nobel_living_science <- nobel_living |>
   filter(category %in% c("Physics", "Medicine", "Chemistry", "Economics"))
 ```
 

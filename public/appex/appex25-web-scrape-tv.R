@@ -6,13 +6,13 @@ library(rvest)
 page <- read_html("http://www.imdb.com/chart/tvmeter")
 
 # years ------------------------------------------------------------------------
-years <- page %>%
-  html_nodes("___") %>%
-  html_text() %>%
+years <- page |>
+  html_nodes("___") |>
+  html_text() |>
   ___
 
 # scores -----------------------------------------------------------------------
-scores <- page %>%
+scores <- page |>
   ___
 
 # names ------------------------------------------------------------------------

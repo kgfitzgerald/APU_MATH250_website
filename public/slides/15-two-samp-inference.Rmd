@@ -173,9 +173,9 @@ parkinsons <- read_csv("data/parkinsons.csv")
 
 library(infer)
 
-boot_diffs <- parkinsons %>% 
-  specify(jitter ~ status) %>% #<<
-  generate(reps = 1000, type = "bootstrap") %>% 
+boot_diffs <- parkinsons |> 
+  specify(jitter ~ status) |> #<<
+  generate(reps = 1000, type = "bootstrap") |> 
   calculate(stat = "diff in means", #<<
             order = c("Healthy", "PD")) #<<
 ```
@@ -201,7 +201,7 @@ ggplot(boot_diffs, aes(x = stat)) +
 Let's construct the bootstrap distribution for the **difference in means**.
 
 ```{r}
-boot_diffs %>% 
+boot_diffs |> 
   summarize(lower = quantile(stat, 0.025),
             upper = quantile(stat, 0.975))
 ```
@@ -211,7 +211,7 @@ boot_diffs %>%
 ## CI for difference in means
 
 ```{r echo = F}
-ci <- boot_diffs %>% 
+ci <- boot_diffs |> 
   summarize(lower = quantile(stat, 0.025),
             upper = quantile(stat, 0.975))
 ci
@@ -246,10 +246,10 @@ If the two means are truly equal (i.e., if $H_0$ is true), then the difference, 
 Let's construct the simulated .vocab[null distribution] for the difference in means, $\mu_H - \mu_P$. If the two means are truly equal (i.e., if $H_0$ is true), then this difference should be zero.
 
 ```{r}
-null_dist <- parkinsons %>%
-  specify(jitter ~ status) %>%
-  hypothesize(null = "independence") %>% #<<
-  generate(reps = 1000, type = "permute") %>% #<<
+null_dist <- parkinsons |>
+  specify(jitter ~ status) |>
+  hypothesize(null = "independence") |> #<<
+  generate(reps = 1000, type = "permute") |> #<<
   calculate(stat = "diff in means", 
             order = c("Healthy", "PD")) #<<
 ```
@@ -272,9 +272,9 @@ ggplot(null_dist, aes(x = stat)) +
 ## Hypothesis testing
 
 ```{r}
-obs_diff <- parkinsons %>% 
-  specify(jitter ~ status) %>% 
-  calculate(stat = "diff in means", order = c("Healthy", "PD")) %>% 
+obs_diff <- parkinsons |> 
+  specify(jitter ~ status) |> 
+  calculate(stat = "diff in means", order = c("Healthy", "PD")) |> 
   pull()
 obs_diff
 ```
@@ -282,8 +282,8 @@ obs_diff
 --
 
 ```{r}
-null_dist %>% 
-  filter(abs(stat) >= abs(obs_diff)) %>%
+null_dist |> 
+  filter(abs(stat) >= abs(obs_diff)) |>
   summarise(p_val = n() / nrow(null_dist))
 ```
 
@@ -323,7 +323,7 @@ degrees of freedom, are a complicated fraction that no one calculates by hand. L
 ## CLT: Difference in means
 
 ```{r}
-parkinsons %>%
+parkinsons |>
   t_test(jitter ~ status, 
          mu = 0,
          order = c("Healthy", "PD"), 
@@ -336,7 +336,7 @@ parkinsons %>%
 ## CLT: Difference in means 
 
 ```{r, echo = F}
-parkinsons %>%
+parkinsons |>
   t_test(jitter ~ status, 
          mu = 0,
          order = c("Healthy", "PD"), 

@@ -97,7 +97,7 @@ One country stands out as an unusual observation at the top of the distribution.
 
 
 ```r
-plastic_waste %>%
+plastic_waste |>
   filter(plastic_waste_per_cap > 3.5)
 ```
 
@@ -210,7 +210,7 @@ apparent in the box plots but not in the violin plots?
 
 
 ```r
-plastic_waste <- plastic_waste %>%
+plastic_waste <- plastic_waste |>
   filter(plastic_waste_per_cap < 3)
 ```
 

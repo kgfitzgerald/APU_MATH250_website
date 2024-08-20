@@ -177,22 +177,22 @@ knitr::include_graphics("img/18/auction-catalogue.png")
 ---
 
 ```{r}
-paris_paintings %>% filter(name == "R1777-89a") %>% 
-  select(name:endbuyer) %>% glimpse()
+paris_paintings |> filter(name == "R1777-89a") |> 
+  select(name:endbuyer) |> glimpse()
 ```
 
 ---
 
 ```{r}
-paris_paintings %>% filter(name == "R1777-89a") %>% 
-  select(Interm:finished) %>% glimpse()
+paris_paintings |> filter(name == "R1777-89a") |> 
+  select(Interm:finished) |> glimpse()
 ```
 
 ---
 
 ```{r}
-paris_paintings %>% filter(name == "R1777-89a") %>% 
-  select(lrgfont:other) %>% glimpse()
+paris_paintings |> filter(name == "R1777-89a") |> 
+  select(lrgfont:other) |> glimpse()
 ```
 
 ---
@@ -681,8 +681,8 @@ average, to be 22.68 inches tall.
 ## Categorical predictor with 2 levels
 
 ```{r echo=FALSE}
-paris_paintings %>% 
-  select(name, price, landsALL) %>% 
+paris_paintings |> 
+  select(name, price, landsALL) |> 
   slice(1:8)
 ```
 
@@ -723,10 +723,10 @@ to .vocab[dummy variables]
 ## How dummy variables are made
 
 ```{r echo=FALSE}
-paris_paintings %>% 
-  select(school_pntg) %>% 
-  group_by(school_pntg) %>% 
-  sample_n(1) %>%
+paris_paintings |> 
+  select(school_pntg) |> 
+  group_by(school_pntg) |> 
+  sample_n(1) |>
   mutate(
     D_FL = as.integer(ifelse(school_pntg == "D/FL", 1L, 0)),
     F    = as.integer(ifelse(school_pntg == "F", 1L, 0)),
@@ -780,7 +780,7 @@ On average, how tall are paintings that are 400 inches wide?
 
 ```{r extrapolate, warning = FALSE, echo=FALSE, fig.height = 2}
 newdata <- tibble(Width_in = 400)
-newdata <- newdata %>%
+newdata <- newdata |>
   mutate(Height_in = predict(m_ht_wt, newdata = newdata))
 
 ggplot(data = paris_paintings, aes(x = Width_in, y = Height_in)) +
@@ -883,8 +883,8 @@ tidy(m_ht_wt)
 
 
 ```{r}
-tidy(m_ht_wt) %>%
-  select(term, estimate) %>%
+tidy(m_ht_wt) |>
+  select(term, estimate) |>
   mutate(estimate = round(estimate, 3))
 ```
 

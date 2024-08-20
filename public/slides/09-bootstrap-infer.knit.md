@@ -131,7 +131,7 @@ as the "best guess", or estimate, for the population parameter.
 ```r
 abb <- read_csv("data/asheville.csv")
 
-abb %>% 
+abb |> 
   summarize(mean_price = mean(ppg))
 ```
 
@@ -405,7 +405,7 @@ In other words, it ensures we'll get the same random sample each time we run the
 
 
 ```r
-abb %>%
+abb |>
   # specify the variable of interest
 * specify(response = ppg)
 ```
@@ -416,9 +416,9 @@ abb %>%
 
 
 ```r
-abb %>%
+abb |>
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
 * generate(reps = 15000, type = "bootstrap")
 ```
@@ -429,11 +429,11 @@ abb %>%
 
 
 ```r
-abb %>%
+abb |>
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
-  generate(reps = 15000, type = "bootstrap") %>% 
+  generate(reps = 15000, type = "bootstrap") |> 
   # calculate the statistic of each bootstrap sample
 * calculate(stat = "mean")
 ```
@@ -448,11 +448,11 @@ abb %>%
 
 ```r
 # save resulting bootstrap distribution
-*boot_dist <- abb %>%
+*boot_dist <- abb |>
   # specify the variable of interest
-  specify(response = ppg) %>% 
+  specify(response = ppg) |> 
   # generate 15000 bootstrap samples
-  generate(reps = 15000, type = "bootstrap") %>% 
+  generate(reps = 15000, type = "bootstrap") |> 
   # calculate the statistic of each bootstrap sample
   calculate(stat = "mean")
 ```
@@ -507,7 +507,7 @@ Use `dplyr` functions:
 
 
 ```r
-boot_dist %>%
+boot_dist |>
   summarize(lower_bound = quantile(stat, 0.025),
             upper_bound = quantile(stat, 0.975))
 ```

@@ -31,12 +31,15 @@ By the end of the semester, you will...
 
 ### Texts
 
-This course utilizes two texts that are freely available online. Hardcopies are also available for purchase.
+This course utilizes three texts that are freely available online or through APU's Library. Hardcopies are also available for purchase.
 
 |                                                                         |                          |                                   |
 |------------------------------------|-------------------|-------------------|
+| Communicating with Data: The Art of Writing for Data Science\* | Nolan, Stoudt | Oxford University Press,  2021. ISBN: 978-0-1988-6275-8
 | [R for Data Science](http://r4ds.had.co.nz/)                            | Grolemund, Wickham       | O'Reilly, 1st edition, 2016       |
 | [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel, Hardin | OpenIntro Inc., 1st Edition, 2021 |
+
+\* Available as an eBook through APU's Library
 
 ### Software
 

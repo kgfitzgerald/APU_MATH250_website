@@ -31,7 +31,7 @@ final project.*
 
 The purpose of the final project is to apply what you’ve learned throughout the semester to investigate an interesting data-driven question about a social issue you care about. 
 
-The project will be completed in self-assigned teams of 2-3. You should choose a dataset for your project based on your group's interests. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way. 
+The project will be completed in self-assigned teams of 2. You should choose a dataset for your project based on your group's interests. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way. 
 
 ### Choosing a topic (Project Brainstorm)
 
@@ -48,7 +48,7 @@ You will submit **three** potential topics along with a brief reflection on Canv
 
 ### Logistics
 
-You should sign up for a team of 2-3 on Canvas no later than **Tuesday, September 24**. 
+You should sign up for a team of 2 on Canvas no later than **Tuesday, September 24**. 
 
 The three primary deliverables for the final project are
 
@@ -208,6 +208,10 @@ Total                                                   | 3 pts
 **Reproducible data cleaning**                          | 0.5 pts
 **EDA**                                                 | 1 pt
 **Future analysis plan**                                | 0.5 pt
+
+## Preliminary Data Story
+
+[DETAILS FORTHCOMING]
 
 ## Rough Draft report 
 

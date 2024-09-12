@@ -52,10 +52,14 @@ lessons:
   - title: "Tidying data"  
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/11-tidying.html"
     recording: "https://youtu.be/e4aCwwLgAfo"
+    
+  - title: "Simpson's paradox"     
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/18-simpsons-paradox.html"
+    recording: "https://youtu.be/bgIn65yX66g"
 
-  - title: "Data types"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/12-data-types.html"
-    recording: "https://youtu.be/WQYKkfj1bOg"
+  # - title: "Data types"     
+  #   slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/12-data-types.html"
+  #   recording: "https://youtu.be/WQYKkfj1bOg"
     
   - week: "Week 05"
     date:  "Sep 24- 26"
@@ -69,9 +73,6 @@ lessons:
     slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/17-studies-confounding.html"
     recording: "https://youtu.be/4_tellSmARQ"
 
-  - title: "Simpson's paradox"     
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/18-simpsons-paradox.html"
-    recording: "https://youtu.be/bgIn65yX66g"
 
   - week: "Week 06"
     date:  "Oct 1 - 3"

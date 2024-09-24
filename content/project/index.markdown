@@ -207,6 +207,8 @@ Your cleaning & EDA steps should include:
 
 + Investigating and handling missing data - report how much is missing for each variable and how you intend to handle it
 
++ Documenting any cases excluded from the analyses (including filtering code and justification)
+
 + Joining multiple datasets as needed
 
 + Describing your analysis plan for answering your research questions

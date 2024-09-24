@@ -50,9 +50,9 @@ lessons:
     date:  "Oct 1 - 3"
     title: "Data importing & cleaning"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-06.html"
-    #prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-06.html"
-    #lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-05-google-survey.html"
-    #project: "https://apumath250.netlify.app/project/#project-proposal"
+    prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-06.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-05-google-survey.html"
+    project: "https://apumath250.netlify.app/project/#project-proposal"
     
   
   - week: "Week 07"

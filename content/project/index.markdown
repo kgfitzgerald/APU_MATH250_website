@@ -143,13 +143,20 @@ Choose **three** substantially different datasets you are interested in analyzin
 
 ### Data description & background
 
-- Identify the source of the data, 
-- When and how it was originally collected (by the original data curator, not necessarily how you found the data), and 
-- Provide a brief description of what it contains
+- Identify the source of the data (including URL to where you accessed it) and who originally collected or curated it
+- Answer the three Ws (Table 2.2 of Communicating Data)
+    + *Who*: Who are the subjects of the study?
+    + *When*: When were the data collected, e.g. when did the subjects participate in the study?
+    + *Where*: Where were the data collected, e.g., where were the subjects under study located?
+- Provide a brief description of what it contains:
+    + How many observations 
+    + How many variables
+    + Summary of what info the variables provide about the observatioanl units
 
-### Research question
+### Research questions
 
-- Describe the research topic along with a concise statement of the research question and hypotheses.
+- Describe the research topic along with 2-3 research questions that could be explored with the data
+    + make sure to indicate which variable(s) in the data you could use as response variables and explanatory variables to answer the research question
 
 ### Data glimpse
 
@@ -159,7 +166,7 @@ Choose **three** substantially different datasets you are interested in analyzin
 
 ### Submission 
 
-Submit the PDF of your proposal on Canvas by midnight on **Tuesday, October 5**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
+Submit the PDF of your proposal on Canvas by midnight on **Saturday, October 5**. I will provide feedback on your proposal to help you determine a data set to use for the project. 
 
 ### Notes 
 
@@ -180,7 +187,15 @@ Total                                                   | 3 pts
 
 The purpose of this step is to help scaffold steady progress and give you an opportunity to get early feedback on your analysis plan. **The `cleaning-eda.qmd` file in your RStudio project should include reproducible data cleaning steps that begin with reading in your original data file and outputting the data file to be used for analysis**. You should also include preliminary exploratory data analysis and a brief description of your analysis plan. You should submit a zip file with the .Rproj file, the .qmd file, and any relevent data or other supplementary files required to Render your Quarto report.  
 
+At the top of your document, you should copy, paste the relevant information from your proposal for the final dataset you chose. Additionally, provide the following information about Data Provenance (see Section 3.1 of book):
+
++ What procedures were used to select subjects and collect measurements?
++ Link to the codebook / documentation 
+
+
 Your cleaning & EDA steps should include:
+
++ Reading in raw data
 
 + Cleaning variable names
 
@@ -190,15 +205,26 @@ Your cleaning & EDA steps should include:
 
 + Re-ordering and/or re-labeling factor levels as needed
 
-+ Investigating and handle missing data
++ Investigating and handling missing data - report how much is missing for each variable and how you intend to handle it
+
++ Joining multiple datasets as needed
 
 + Describing your analysis plan for answering your research questions
-
+    + What are your primary outcomes of interest? What explanatory variables will you use to understand these outcomes?
+    
     + What types of visualizations or summary tables will you create?
 
     + What types of models or inference procedures will you run? 
 
-**You should save the clean data as a .RDS file.** 
++ **You should save the clean data as a .RDS file.**
+
+Your zip file submitted on Canvas should contain:
+
++ .Rproj file
++ cleaning-eda.qmd
++ data folder with original and clean data
++ proposal files
++ any other supplementary files needed to Render your .qmd reproducibly
 
 This part of the project will be graded as follows:
 

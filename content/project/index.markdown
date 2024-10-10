@@ -10,7 +10,7 @@ Choose project teams by **Tuesday, September 24, 4:20pm**
 
 Proposal due **Saturday, October 5, 11:59pm**
 
-Data cleaning & preliminary EDA due **Thursday, October 17, 11:59pm**
+Data cleaning & preliminary EDA due **Saturday, October 19, 11:59pm**
 
 Preliminary Data Story due **Thursday, October 31, 11:59pm**
 

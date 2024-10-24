@@ -239,7 +239,13 @@ Total                                                   | 3 pts
 
 ## Preliminary Data Story
 
-[DETAILS FORTHCOMING]
+For this part of the project, you should follow Chapter 6 of *Communicating with Data* as a guide. 
+
++ To get started, in addition to your EDA plots, you should produce at least 10 visualizations or tables to investigate your research question. 
++ Then, complete steps 1 - 6 on pages 128 - 129
++ As your deliverable, you should submit a pdf (Rendered from a .qmd) that includes:
+    + A brief write-up of your process for steps 1 - 5
+    + The visualizations chosen for your storyboard (in the sequence decided upon), accompanied by the captions/transitions written for step 6
 
 ## Rough Draft report 
 

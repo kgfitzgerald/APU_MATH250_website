@@ -12,7 +12,7 @@ Proposal due **Saturday, October 5, 11:59pm**
 
 Data cleaning & preliminary EDA due **Saturday, October 19, 11:59pm**
 
-Preliminary Data Story due **Thursday, October 31, 11:59pm**
+Preliminary Data Story due **Tuesday, November 5, 11:59pm**
 
 Poster rough draft due **Thursday, November 14, 11:59pm**
 

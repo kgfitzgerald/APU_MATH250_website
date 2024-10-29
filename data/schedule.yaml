@@ -83,8 +83,8 @@ lessons:
     date:  "Oct 29 – 31"
     title: "Inference for Numerical Data"
     ae: "https://kgfitzgerald.github.io/APU_MATH_250/ae/week-10.html"
-    #prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-10.html"
-    #lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-07-inference.html"
+    prepare: "https://kgfitzgerald.github.io/APU_MATH_250/prepare/week-10.html"
+    lab: "https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-07-inference.html"
     #project: "https://apumath250.netlify.app/project/#rough-draft-report"
     
   

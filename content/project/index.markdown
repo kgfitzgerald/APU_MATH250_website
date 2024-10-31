@@ -271,11 +271,11 @@ Total                                                   | 5 pts
 
 Critically reviewing others' work is a crucial part of the scientific process, and giving constructive feedback is an important skill that must be practiced. The process can enhance your ability to self-assess and improve your own work as well.
 
-You will be assigned a team to review. Time will be spent on peer review in class on **Thursday, November 16**, and your team will have until class-time on **Tuesday, November 28** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience reading and constructively critiquing the work of others.
+You will be assigned a team to review. Time will be spent on peer review in class in Week 13, and your team will have until class-time on **Tuesday in Week 14** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience reading and constructively critiquing the work of others.
 
 Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
 
-You will also engage in (ungraded) peer review of poster drafts and oral presentation materials in class on Thursday, December 7, in preparation for the final presentations during finals week. 
+You will also engage in (ungraded) peer review of poster drafts and oral presentation materials in class in Weeks 13 & 14, in preparation for the final presentations during finals week. 
 
 ## Written report
 

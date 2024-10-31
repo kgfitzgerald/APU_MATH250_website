@@ -158,7 +158,7 @@ lessons:
     recording: "https://youtu.be/u35HGRSxKoY"
     
   - title: "Inference for Categorical Data, Part III: Two-way tables (Chi-square test)"
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/32-cat-inf-two-way-tables.html"
+    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/33-cat-inf-two-way-tables.html"
     recording: "https://youtu.be/aUtjnTfmVuA"
 
   - week: "Week 12"
@@ -174,8 +174,8 @@ lessons:
   - week: "Week 13"
     date:  "Nov 19 - 21"
     title: "Communicating Results II"
-    slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/36-shiny.html"
-    recording: "https://youtu.be/clz1QGGu4oY"
+    #slides: "https://kgfitzgerald.github.io/APU_MATH_250/slides/36-shiny.html"
+    #recording: "https://youtu.be/clz1QGGu4oY"
     
   - week: "Week 14"
     date:  "Dec 3 - 5"
